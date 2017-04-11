@@ -31,7 +31,7 @@ import java.util.List;
 
 public class _A_Question extends Fragment implements View.OnClickListener {
     EditText txt_Oras_Nagsimula, txt_a_numero, txt_a_tirahan;
-
+    String alex;
     c_params cpar;
     MainDataBaseHandler da;
     MaterialBetterSpinner cbo_a_miyembro_dikasama, cbo_a_miyembro_ofw, cbo_a_miyembro_solomagulang, cbo_a_miyembro_maykapansanan, cbo_a_miyembro_seniorcitizen, cbo_a_miyembro_nakapasa, cbo_a_ilan_miyembro, cbo_a_ilan_magasawa, cbo_a_miyembro_namatay;
