@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="absnitsolution.modifiedcommunitybasemonitoringsystem._3rdstatedrow_Question">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    card_view:cardCornerRadius="4dp"
+                    card_view:contentPadding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_3rd_pangalan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="41. Ano ang kanyang pangalan?"
+                                android:inputType="textPersonName"
+                                android:tag="_3rd_001"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/cbo_3rd_relasyon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:hint="42. Ano ang relasyon ni ___ puno ng sambahayan?"
+                            android:tag="_3rd_002"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp"
+                            app:met_floatingLabel="highlight" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_3rd_saangbansa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="43. Saang bansa naghahanapbuhay si ___?"
+                                android:inputType="textPersonName"
+                                android:tag="_3rd_003"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_3rd_hanapbuhay"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="44. Ano ang hanapbuhay ni ___?"
+                                android:inputType="textPersonName"
+                                android:tag="_3rd_004"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

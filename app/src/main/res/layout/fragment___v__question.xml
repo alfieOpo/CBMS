@@ -1,0 +1,2438 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="absnitsolution.modifiedcommunitybasemonitoringsystem._V_Question">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="55dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/textView46"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="147. Kayo ba o sinumang miyembro ng pamilya ay nakatanggap ng lupang sakahan mula sa Comprehensive Land Reform Program?" />
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_147"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:tag="D_440"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="148. Kailan ninyo natanggap ang titulo ng lupa mula sa CARP?"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="horizontal">
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/cbo_v_148_month"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:hint="Month"
+                            android:tag="D_441"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp"
+                            app:met_floatingLabel="highlight" />
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/cbo_v_148_day"
+                            android:layout_width="88dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:hint="Day"
+                            android:tag="D_442"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp"
+                            app:met_floatingLabel="highlight" />
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/cbo_v_148_year"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:hint="Year"
+                            android:tag="D_443"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp"
+                            app:met_floatingLabel="highlight" />
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="149. Noong nakaraang labing-dalawang buwan, mayroon bang miyembro ng pamilya na nakibahagi o nakatanggap ng mga sumusunod na programa?"
+                        android:textSize="16dp" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_149"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Ilagay ang pangalan"
+                            android:inputType="textPersonName"
+                            android:tag="D_445"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <CheckBox
+                        android:id="@+id/chk_v_149_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:tag="D_446"
+                        android:text="149.1. Philhealth para sa mahihirap"
+                        android:textSize="14dp" />
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_173_1_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="149.1.1 Nagamit ba?"
+                        android:tag="D_447"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+
+                    <CheckBox
+                        android:id="@+id/chk_v_149_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:checked="false"
+                        android:tag="D_448"
+                        android:text="149.2. Programa na nagbibigay tulong medikal at pangkalusugan (Health assistance)"
+                        android:textSize="14dp" />
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_173_2_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="149.2.1 Nagamit ba?"
+                        android:tag="D_449"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+
+                    <CheckBox
+                        android:id="@+id/chk_v_149_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:checked="false"
+                        android:tag="D_450"
+                        android:text="149.3. Programa na nagbibigay karagdagang pagpapakain para sa mga bata 0-5 taong gulang na kulang sa timbang (Supplemental feeding)"
+                        android:textSize="14dp" />
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_173_3_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="149.3.1 Nakatulong ba?"
+                        android:tag="D_451"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+
+                    <CheckBox
+                        android:id="@+id/chk_v_149_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:checked="false"
+                        android:tag="D_452"
+                        android:text="149.4. Programa na nagbibigay ng tulong sa pagpapaaral (Education / scholarship program)"
+                        android:textSize="14dp" />
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_173_4_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="149.4.1 Nakatapos ba ng kurso?"
+                        android:tag="D_453"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+
+                    <CheckBox
+                        android:id="@+id/chk_v_149_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:checked="false"
+                        android:tag="D_454"
+                        android:text="149.5. Programa na nagbibigay ng pagsasanay sa anumang gawaing pangkabuhayan (Skills or livelihood training program)"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/textView39"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="149.5.1 Nagamit ba ang kanyang pinagaralan bilang pangunahing hanapbuhay? " />
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_173_5_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:tag="D_455"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+
+                    <CheckBox
+                        android:id="@+id/chk_v_149_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:checked="false"
+                        android:tag="D_456"
+                        android:text="149.6. Programa na nagbibigay ng murang pabahay (Housing program)"
+                        android:textSize="14dp" />
+
+                    <CheckBox
+                        android:id="@+id/chk_v_149_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:tag="D_457"
+                        android:text="149.7. Programa na nagpapautang o nagpapahiram ng puhunan (Credit program)"
+                        android:textSize="14dp" />
+
+                    <CheckBox
+                        android:id="@+id/chk_v_149_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:checked="false"
+                        android:tag="D_458"
+                        android:text="149.8. Pantawid Pamilyang Pilipino Programs (4Ps)"
+                        android:textSize="14dp" />
+
+                    <CheckBox
+                        android:id="@+id/chk_v_149_9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:checked="false"
+                        android:tag="D_459"
+                        android:text="149.9. Agrarian Reform Community Development Program (ARCDP)"
+                        android:textSize="14dp" />
+
+                    <CheckBox
+                        android:id="@+id/chk_v_149_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:checked="false"
+                        android:tag="D_460"
+                        android:text="149.10. Training for Work Scholarship Program (TWSP)"
+                        android:textSize="14dp" />
+
+
+                    <CheckBox
+                        android:id="@+id/chk_v_149_11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:checked="false"
+                        android:tag="D_461"
+                        android:text="149.11. Community - Based Employment Program (CBEP)"
+                        android:textSize="14dp" />
+
+                    <CheckBox
+                        android:id="@+id/chk_v_149_12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:checked="false"
+                        android:tag="D_462"
+                        android:text="149.12. Philhealth – OFW"
+                        android:textSize="14dp" />
+
+                    <CheckBox
+                        android:id="@+id/chk_v_149_13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:checked="false"
+                        android:tag="D_463"
+                        android:text="149.13. Philhealth – Employed"
+                        android:textSize="14dp" />
+
+                    <CheckBox
+                        android:id="@+id/chk_v_149_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:checked="false"
+                        android:tag="D_464"
+                        android:text="149.14. Philhealth – Individually paying"
+                        android:textSize="14dp" />
+
+                    <CheckBox
+                        android:id="@+id/chk_v_149_15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:checked="false"
+                        android:tag="D_465"
+                        android:text="149.15. Philhealth – Sponsored"
+                        android:textSize="14dp" />
+
+                    <CheckBox
+                        android:id="@+id/chk_v_149_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:checked="false"
+                        android:tag="D_466"
+                        android:text="149.16. Philhealth - Lifetime"
+                        android:textSize="14dp" />
+
+
+                    <CheckBox
+                        android:id="@+id/chk_v_149_17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:checked="false"
+                        android:tag="D_467"
+                        android:text="149.17. Iba pang programa, itala"
+                        android:textSize="14dp" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_149_17"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Iba pang programa, itala"
+                            android:inputType="textPersonName"
+                            android:tag="D_468"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="150.  Sino ang namahala ng programang ito?"
+                        android:textSize="16dp" />
+
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_150_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="150.1. Philhealth para sa mahihirap  "
+                        android:tag="D_469"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_ibapa_150_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:hint="Iba pa, itala"
+                            android:inputType="textPersonName"
+                            android:tag="D_556"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_150_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="150.2. Programa na nagbibigay tulong medikal at pangkalusugan (Health assistance) "
+                        android:tag="D_470"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_ibapa_150_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:hint="Iba pa, itala"
+                            android:inputType="textPersonName"
+                            android:tag="D_557"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <TextView
+                        android:id="@+id/textView40"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="150.3. Programa na nagbibigay karagdagang pagpapakain para sa mga bata 0-5 taong gulang na kulang sa timbang (Supplemental feeding)" />
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_150_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:tag="D_471"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_ibapa_150_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:hint="Iba pa, itala"
+                            android:inputType="textPersonName"
+                            android:tag="D_558"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <TextView
+                        android:id="@+id/textView45"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="150.4. Programa na nagbibigay ng tulong sa pagpapaaral (Education / scholarship program)" />
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_150_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:tag="D_472"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_ibapa_150_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:hint="Iba pa, itala"
+                            android:inputType="textPersonName"
+                            android:tag="D_559"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <TextView
+                        android:id="@+id/textView41"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="150.5. Programa na nagbibigay ng pagsasanay sa anumang gawaing pangkabuhayan (Skills or livelihood training program)" />
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_150_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:tag="D_473"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_ibapa_150_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:hint="Iba pa, itala"
+                            android:inputType="textPersonName"
+                            android:tag="D_560"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_150_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="150.6. Programa na nagbibigay ng murang pabahay (Housing program)"
+                        android:tag="D_474"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_ibapa_150_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:hint="Iba pa, itala"
+                            android:inputType="textPersonName"
+                            android:tag="D_561"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_150_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="150.7. Programa na nagpapautang o nagpapahiram ng puhunan (Credit program)"
+                        android:tag="D_475"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_ibapa_150_7"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:hint="Iba pa, itala"
+                            android:inputType="textPersonName"
+                            android:tag="D_562"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_150_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="150.8. Pantawid Pamilyang Pilipino Program (4Ps)"
+                        android:tag="D_476"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_ibapa_150_8"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:hint="Iba pa, itala"
+                            android:inputType="textPersonName"
+                            android:tag="D_563"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_150_9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="150.9. Agrarian Reform Community Development Program (ARCDP)"
+                        android:tag="D_477"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_ibapa_150_9"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:hint="Iba pa, itala"
+                            android:inputType="textPersonName"
+                            android:tag="D_564"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_150_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="150.10. Training for Work Scholarship Program (TWSP)"
+                        android:tag="D_478"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_ibapa_150_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:hint="Iba pa, itala"
+                            android:inputType="textPersonName"
+                            android:tag="D_565"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_150_11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="150.11. Community - Based Employment Program (CBEP)"
+                        android:tag="D_479"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_ibapa_150_11"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:hint="Iba pa, itala"
+                            android:inputType="textPersonName"
+                            android:tag="D_566"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_150_12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="150.12. Philhealth – OFW"
+                        android:tag="D_480"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_ibapa_150_12"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:hint="Iba pa, itala"
+                            android:inputType="textPersonName"
+                            android:tag="D_567"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_150_13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="150.13. Philhealth – Employed"
+                        android:tag="D_481"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_ibapa_150_13"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:hint="Iba pa, itala"
+                            android:inputType="textPersonName"
+                            android:tag="D_568"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_150_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="150.14. Philhealth – Individually paying"
+                        android:tag="D_482"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_ibapa_150_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:hint="Iba pa, itala"
+                            android:inputType="textPersonName"
+                            android:tag="D_569"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_150_15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="150.15 Philhealth – Sponsored"
+                        android:tag="D_483"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_ibapa_150_15"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:hint="Iba pa, itala"
+                            android:inputType="textPersonName"
+                            android:tag="D_570"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_150_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="150.16. Philhealth - Lifetime  "
+                        android:tag="D_484"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_ibapa_150_16"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:hint="Iba pa, itala"
+                            android:inputType="textPersonName"
+                            android:tag="D_571"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_150_17"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="150.17. Iba pang programa, itala"
+                            android:inputType="textPersonName"
+                            android:tag="D_485"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_150_17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="150.17."
+                        android:tag="D_486"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_ibapa_150_17"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:hint="Iba pa, itala"
+                            android:inputType="textPersonName"
+                            android:tag="D_572"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="151. Paano nakaapekto ang ganitong programa sa inyong pamilya? "
+                        android:textSize="16dp" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_151_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="151.1. Philhealth para sa mahihirap "
+                            android:inputType="textPersonName"
+                            android:tag="D_487"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_151_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="151.2. Programa na nagbibigay tulong medikal at pangkalusugan (Health assistance)"
+                            android:inputType="textPersonName"
+                            android:tag="D_488"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_151_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="151.3. Programa na nagbibigay karagdagang pagpapakain para sa mga bata 0-5 taong gulang na kulang sa timbang (Supplemental feeding)"
+                            android:inputType="textPersonName"
+                            android:tag="D_489"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_151_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="151.4. Programa na nagbibigay ng tulong sa pagpapaaral (Education / scholarship program)"
+                            android:inputType="textPersonName"
+                            android:tag="D_490"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_151_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="151.5. Programa na nagbibigay ng pagsasanay sa anumang gawaing pangkabuhayan (Skills or livelihood training program)"
+                            android:inputType="textPersonName"
+                            android:tag="D_491"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_151_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="151.6. Programa na nagbibigay ng murang pabahay (Housing program)"
+                            android:inputType="textPersonName"
+                            android:tag="D_492"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_151_7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="151.7. Programa na nagpapautang o nagpapahiram ng puhunan (Credit program) "
+                            android:inputType="textPersonName"
+                            android:tag="D_493"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_151_8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="151.8. Pantawid Pamilyang Pilipino Program (4Ps)"
+                            android:inputType="textPersonName"
+                            android:tag="D_494"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_151_9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="151.9. Agrarian Reform Community Development Program (ARCDP) "
+                            android:inputType="textPersonName"
+                            android:tag="D_495"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_151_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="151.10. Training for Work Scholarship Program (TWSP) "
+                            android:inputType="textPersonName"
+                            android:tag="D_496"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_151_11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="151.11. Community - Based Employment Program (CBEP)"
+                            android:inputType="textPersonName"
+                            android:tag="D_497"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_151_12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="151.12. Philhealth – OFW"
+                            android:inputType="textPersonName"
+                            android:tag="D_498"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_151_13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="151.13. Philhealth – Employed"
+                            android:inputType="textPersonName"
+
+                            android:tag="D_499"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_151_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="151.14. Philhealth – Individually paying"
+                            android:inputType="textPersonName"
+                            android:tag="D_500"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_151_15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="151.15. Philhealth – Sponsored"
+                            android:inputType="textPersonName"
+                            android:tag="D_501"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_151_16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="151.16. Philhealth - Lifetime"
+                            android:inputType="textPersonName"
+                            android:tag="D_502"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_151_17"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="151.17. Iba pang programa, itala"
+                            android:inputType="textPersonName"
+                            android:tag="D_503"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="152. Paano mo iuuri ang epekto sa inyong pamilya?"
+                        android:textSize="16dp" />
+
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_152_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="152.1. Philhealth para sa mahihirap "
+                        android:tag="D_504"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_152_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="152.2. Programa na nagbibigay tulong medikal at pangkalusugan (Health assistance)"
+                        android:tag="D_505"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+                    <TextView
+                        android:id="@+id/textView42"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="152.3. Programa na nagbibigay karagdagang pagpapakain para sa mga bata 0-5 taong gulang na kulang sa timbang (Supplemental feeding)" />
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_152_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:tag="D_506"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+                    <TextView
+                        android:id="@+id/textView43"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="152.4. Programa na nagbibigay ng tulong sa pagpapaaral (Education / scholarship program)" />
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_152_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:tag="D_507"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+
+                    <TextView
+                        android:id="@+id/textView44"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="152.5. Programa na nagbibigay ng pagsasanay sa anumang gawaing pangkabuhayan (Skills or livelihood training program)" />
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_152_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:tag="D_508"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_152_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="152.6. Programa na nagbibigay ng murang pabahay (Housing program)"
+                        android:tag="D_509"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_152_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="152.7. Programa na nagpapautang o nagpapahiram ng puhunan (Credit program)"
+                        android:tag="D_510"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_152_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="152.8. Pantawid Pamilyang Pilipino Program (4Ps)"
+                        android:tag="D_511"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_152_9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="152.9. Agrarian Reform Community Development Program (ARCDP)"
+                        android:tag="D_512"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_152_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="152.10. Training for Work Scholarship Program (TWSP)"
+                        android:tag="D_513"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_152_11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="152.11. Community - Based Employment Program (CBEP)"
+                        android:tag="D_514"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_152_12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="152.12. Philhealth – OFW"
+                        android:tag="D_515"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_152_13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="152.13. Philhealth – Employed"
+                        android:tag="D_516"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_152_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="152.14. Philhealth – Individually paying"
+                        android:tag="D_517"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_152_15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="152.15 Philhealth – Sponsored"
+                        android:tag="D_518"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_152_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="152.16. Philhealth - Lifetime  "
+                        android:tag="D_519"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_152_17"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="152.17. Iba pang programa, itala"
+                            android:inputType="textPersonName"
+                            android:tag="D_520"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_152_17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:hint="152.17."
+                        android:tag="D_521"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="153. Ilan ba sa inyong pamilya ang sakop o miyembro ng nasabing programa? "
+                        android:textSize="16dp" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_153_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="153.1. Philhealth para sa mahihirap "
+                            android:inputType="textPersonName"
+                            android:tag="D_522"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_153_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="153.2. Programa na nagbibigay tulong medikal at pangkalusugan (Health assistance)"
+                            android:inputType="textPersonName"
+                            android:tag="D_523"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_153_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="153.3. Programa na nagbibigay karagdagang pagpapakain para sa mga bata 0-5 taong gulang na kulang sa timbang (Supplemental feeding)"
+                            android:inputType="textPersonName"
+                            android:tag="D_524"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_153_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="153.4. Programa na nagbibigay ng tulong sa pagpapaaral (Education / scholarship program)"
+                            android:inputType="textPersonName"
+                            android:tag="D_525"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_153_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="153.5. Programa na nagbibigay ng pagsasanay sa anumang gawaing pangkabuhayan (Skills or livelihood training program)"
+                            android:inputType="textPersonName"
+                            android:tag="D_526"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_153_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="153.6. Programa na nagbibigay ng murang pabahay (Housing program)"
+                            android:inputType="textPersonName"
+                            android:tag="D_527"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_153_7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="153.7. Programa na nagpapautang o nagpapahiram ng puhunan (Credit program) "
+                            android:inputType="textPersonName"
+                            android:tag="D_528"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_153_8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="153.8. Pantawid Pamilyang Pilipino Program (4Ps)"
+                            android:inputType="textPersonName"
+                            android:tag="D_529"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_153_9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="153.9. Agrarian Reform Community Development Program (ARCDP) "
+                            android:inputType="textPersonName"
+                            android:tag="D_530"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_153_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="153.10. Training for Work Scholarship Program (TWSP) "
+                            android:inputType="textPersonName"
+                            android:tag="D_531"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_153_11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="153.11. Community - Based Employment Program (CBEP)"
+                            android:inputType="textPersonName"
+                            android:tag="D_532"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_153_12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="153.12. Philhealth – OFW"
+                            android:inputType="textPersonName"
+                            android:tag="D_533"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_153_13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="153.13. Philhealth – Employed"
+                            android:inputType="textPersonName"
+                            android:tag="D_534"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_153_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="153.14. Philhealth – Individually paying"
+                            android:inputType="textPersonName"
+                            android:tag="D_535"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_153_15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="153.15. Philhealth – Sponsored"
+                            android:inputType="textPersonName"
+                            android:tag="D_536"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_153_16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="153.16. Philhealth - Lifetime"
+                            android:inputType="textPersonName"
+                            android:tag="D_537"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_v_153_17"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="153.17. Iba pang programa, itala"
+                            android:inputType="textPersonName"
+                            android:tag="D_538"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="154. Tukuyin kung sino sa pamilya ang miyembro ng nasabing programa."
+                        android:textSize="16dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_v_154_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:hint="154.1. Philhealth para sa mahihirap "
+                                android:inputType="textPersonName"
+                                android:tag="D_539"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/btn_philhealt_para_sa_mahirap"
+                            android:layout_width="74dp"
+                            android:layout_height="match_parent"
+                            android:tag="_1st_058"
+                            android:text="View"
+                            android:textColor="#ffffff"
+                            android:textSize="8sp"
+                            android:theme="@style/MyButton" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_v_154_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="154.2. Programa na nagbibigay tulong medikal at pangkalusugan (Health assistance)"
+                                android:inputType="textPersonName"
+                                android:tag="D_540"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/btn_heilt_assistance"
+                            android:layout_width="74dp"
+                            android:layout_height="match_parent"
+                            android:tag="_1st_059"
+                            android:text="View"
+                            android:textColor="#ffffff"
+                            android:textSize="8sp"
+                            android:theme="@style/MyButton" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_v_154_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="154.3. Programa na nagbibigay karagdagang pagpapakain para sa mga bata 0-5 taong gulang na kulang sa timbang (Supplemental feeding)"
+                                android:inputType="textPersonName"
+                                android:tag="D_541"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/btn_suplemental_feeding"
+                            android:layout_width="74dp"
+                            android:layout_height="match_parent"
+                            android:tag="_1st_060"
+                            android:text="View"
+                            android:textColor="#ffffff"
+                            android:textSize="8sp"
+                            android:theme="@style/MyButton" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_v_154_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="154.4. Programa na nagbibigay ng tulong sa pagpapaaral (Education / scholarship program)"
+                                android:inputType="textPersonName"
+                                android:tag="D_542"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/btn_Education"
+                            android:layout_width="74dp"
+                            android:layout_height="match_parent"
+                            android:tag="_1st_061"
+                            android:text="View"
+                            android:textColor="#ffffff"
+                            android:textSize="8sp"
+                            android:theme="@style/MyButton" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_v_154_5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="154.5. Programa na nagbibigay ng pagsasanay sa anumang gawaing pangkabuhayan (Skills or livelihood training program)"
+                                android:inputType="textPersonName"
+                                android:tag="D_543"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/btn_Skills"
+                            android:layout_width="74dp"
+                            android:layout_height="match_parent"
+                            android:tag="_1st_062"
+                            android:text="View"
+                            android:textColor="#ffffff"
+                            android:textSize="8sp"
+                            android:theme="@style/MyButton" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_v_154_6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="154.6. Programa na nagbibigay ng murang pabahay (Housing program)"
+                                android:inputType="textPersonName"
+                                android:tag="D_544"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/btn_Housing_program"
+                            android:layout_width="74dp"
+                            android:layout_height="match_parent"
+                            android:tag="_1st_063"
+                            android:text="View"
+                            android:textColor="#ffffff"
+                            android:textSize="8sp"
+                            android:theme="@style/MyButton" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_v_154_7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="154.7. Programa na nagpapautang o nagpapahiram ng puhunan (Credit program) "
+                                android:inputType="textPersonName"
+                                android:tag="D_545"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/btn_Credit_program"
+                            android:layout_width="74dp"
+                            android:layout_height="match_parent"
+                            android:tag="_1st_064"
+                            android:text="View"
+                            android:textColor="#ffffff"
+                            android:textSize="8sp"
+                            android:theme="@style/MyButton" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_v_154_8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="154.8. Pantawid Pamilyang Pilipino Program (4Ps)"
+                                android:inputType="textPersonName"
+                                android:tag="D_546"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/btn_4Ps"
+                            android:layout_width="74dp"
+                            android:layout_height="match_parent"
+                            android:tag="_1st_065"
+                            android:text="View"
+                            android:textColor="#ffffff"
+                            android:textSize="8sp"
+                            android:theme="@style/MyButton" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_v_154_9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="154.9. Agrarian Reform Community Development Program (ARCDP) "
+                                android:inputType="textPersonName"
+                                android:tag="D_547"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/btn_ARCDP"
+                            android:layout_width="74dp"
+                            android:layout_height="match_parent"
+                            android:tag="_1st_066"
+                            android:text="View"
+                            android:textColor="#ffffff"
+                            android:textSize="8sp"
+                            android:theme="@style/MyButton" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_v_154_10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="154.10. Training for Work Scholarship Program (TWSP) "
+                                android:inputType="textPersonName"
+                                android:tag="D_548"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/btn_TWSP"
+                            android:layout_width="74dp"
+                            android:layout_height="match_parent"
+                            android:tag="_1st_067"
+                            android:text="View"
+                            android:textColor="#ffffff"
+                            android:textSize="8sp"
+                            android:theme="@style/MyButton" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_v_154_11"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="154.11. Community - Based Employment Program (CBEP)"
+                                android:inputType="textPersonName"
+                                android:tag="D_549"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/btn_CBEP"
+                            android:layout_width="74dp"
+                            android:layout_height="match_parent"
+                            android:tag="_1st_068"
+                            android:text="View"
+                            android:textColor="#ffffff"
+                            android:textSize="8sp"
+                            android:theme="@style/MyButton" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_v_154_12"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="154.12. Philhealth – OFW"
+                                android:inputType="textPersonName"
+                                android:tag="D_550"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/btn_OFW"
+                            android:layout_width="74dp"
+                            android:layout_height="match_parent"
+                            android:tag="_1st_069"
+                            android:text="View"
+                            android:textColor="#ffffff"
+                            android:textSize="8sp"
+                            android:theme="@style/MyButton" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_v_154_13"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="154.13. Philhealth – Employed"
+                                android:inputType="textPersonName"
+                                android:tag="D_551"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/btn_Employed"
+                            android:layout_width="74dp"
+                            android:layout_height="match_parent"
+                            android:tag="_1st_070"
+                            android:text="View"
+                            android:textColor="#ffffff"
+                            android:textSize="8sp"
+                            android:theme="@style/MyButton" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_v_154_14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="154.14. Philhealth – Individually paying"
+                                android:inputType="textPersonName"
+                                android:tag="D_552"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/btn_Individually_paying"
+                            android:layout_width="74dp"
+                            android:layout_height="match_parent"
+                            android:tag="_1st_071"
+                            android:text="View"
+                            android:textColor="#ffffff"
+                            android:textSize="8sp"
+                            android:theme="@style/MyButton" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_v_154_15"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="154.15. Philhealth – Sponsored"
+                                android:inputType="textPersonName"
+                                android:tag="D_553"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/btn_Sponsored"
+                            android:layout_width="74dp"
+                            android:layout_height="match_parent"
+                            android:tag="_1st_072"
+                            android:text="View"
+                            android:textColor="#ffffff"
+                            android:textSize="8sp"
+                            android:theme="@style/MyButton" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_v_154_16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="154.16. Philhealth - Lifetime"
+                                android:inputType="textPersonName"
+                                android:tag="D_554"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/btn_Lifetime"
+                            android:layout_width="74dp"
+                            android:layout_height="match_parent"
+                            android:tag="_1st_073"
+                            android:text="View"
+                            android:textColor="#ffffff"
+                            android:textSize="8sp"
+                            android:theme="@style/MyButton" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/pnl_next_and_back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/back_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    card_view:cardCornerRadius="5dp"
+                    card_view:cardElevation="10dp"
+                    card_view:cardMaxElevation="10dp">
+
+                    <ImageButton
+                        android:id="@+id/btn_back"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:layout_alignParentBottom="true"
+                        android:layout_weight="1"
+
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/left"
+                        android:text="Back" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/next_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    card_view:cardCornerRadius="5dp"
+                    card_view:cardElevation="10dp"
+                    card_view:cardMaxElevation="10dp">
+
+                    <ImageButton
+                        android:id="@+id/btn_next"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/right"
+                        android:text="Nex" />
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+

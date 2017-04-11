@@ -1,0 +1,274 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="absnitsolution.modifiedcommunitybasemonitoringsystem._U_Question">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/text_w_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="I-E. DALAS NG PAGKAIN"
+                    android:textSize="16dp" />
+
+                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:id="@+id/cbo_7th_58"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:hint="58 Mula Enero 2016 hangang sa kasalukuyan, nangyari ba kahit isang beses na nakaranas ang pamilya ng gutom at walang makain?"
+                    android:tag="D_429"
+                    android:textColorHint="#05ab9a"
+                    android:textSize="10dp"
+                    app:met_floatingLabel="highlight" />
+
+                <LinearLayout
+                    android:id="@+id/layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_w_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="59 Noong nakaraang 3 buwan, ilang araw nakaranas ang pamilya ng gutom at walang makain? "
+                        android:textSize="14dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/text_w_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="false"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="1"
+                            android:text="(60) Pangalan ng Buwan"
+                            android:textAlignment="viewStart"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/text_w_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="false"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="1"
+                            android:text="(61) Bilang ng Araw"
+                            android:textAlignment="viewStart"
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="horizontal">
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/cbo_7th_59_1_buwan"
+                            android:layout_width="176dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:hint=""
+                            android:tag="D_430"
+                            android:text="59.1 Unang Buwan"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="10dp"
+                            app:met_floatingLabel="highlight" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_7th_61_1_bilangaraw"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:hint=""
+                                android:inputType="number"
+                                android:tag="D_431"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="horizontal">
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/cbo_7th_59_2_buwan"
+                            android:layout_width="177dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:hint=""
+                            android:tag="D_432"
+                            android:text="59.2 Pangalawang Buwan"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="10dp"
+                            app:met_floatingLabel="highlight" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_7th_61_2_bilangaraw"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:hint=""
+                                android:inputType="number"
+                                android:tag="D_433"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="horizontal">
+
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/cbo_7th_59_3_buwan"
+                            android:layout_width="177dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:hint=""
+                            android:tag="D_434"
+                            android:text="59.3 Pangatlong Buwan"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="10dp"
+                            app:met_floatingLabel="highlight" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_7th_61_3_bilangaraw"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:hint=""
+                                android:inputType="number"
+                                android:tag="D_435"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pnl_next_and_back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/back_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+
+                    card_view:cardCornerRadius="5dp"
+                    card_view:cardElevation="10dp"
+                    card_view:cardMaxElevation="10dp">
+
+                    <ImageButton
+                        android:id="@+id/btn_back"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:layout_alignParentBottom="true"
+                        android:layout_weight="1"
+
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/left"
+                        android:text="Back" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/next_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    card_view:cardCornerRadius="5dp"
+                    card_view:cardElevation="10dp"
+                    card_view:cardMaxElevation="10dp">
+
+                    <ImageButton
+                        android:id="@+id/btn_next"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/right"
+                        android:text="Nex" />
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

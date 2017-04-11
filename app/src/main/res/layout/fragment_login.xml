@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    tools:context="absnitsolution.modifiedcommunitybasemonitoringsystem.login">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="Modified Community Base Monitoring System"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000"
+
+        tools:text="Modified Community Base Monitoring System" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:tag="D_007"
+            android:textColorHint="#05ab9a"
+            android:textSize="16sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:tag="D_007"
+            android:textColorHint="#05ab9a"
+            android:textSize="16sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txt_password"
+        android:layout_alignStart="@+id/txt_password"
+        android:layout_below="@+id/txt_password"
+        android:text="Login"
+        android:textColor="#ffffff"
+        android:theme="@style/MyButton" />
+
+    <TextView
+        android:id="@+id/lbl_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_save"
+        android:layout_below="@+id/btn_save"
+        android:layout_gravity="right"
+        android:layout_marginTop="18dp"
+        android:gravity="right"
+        android:inputType="textUri"
+        android:text="Register"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

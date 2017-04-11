@@ -1,0 +1,558 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="absnitsolution.modifiedcommunitybasemonitoringsystem._R_Question">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    card_view:cardCornerRadius="4dp"
+                    card_view:contentPadding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="135. Saan nangingisda ang pamilya? "
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16dp" />
+
+
+                        <CheckBox
+                            android:id="@+id/chk_r_135_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_270"
+                            android:text="135.1 Fishpond  "
+                            android:textSize="14dp" />
+
+
+                        <CheckBox
+                            android:id="@+id/chk_r_135_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_271"
+                            android:text="135.2 River "
+                            android:textSize="14dp" />
+
+
+                        <CheckBox
+                            android:id="@+id/chk_r_135_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_272"
+                            android:text="135.3  Iba pa, itala "
+                            android:textSize="14dp" />
+
+
+                        <EditText
+                            android:id="@+id/txt_r_135_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Iba pa, itala"
+                            android:inputType="textPersonName"
+                            android:tag="D_273"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="12sp" />
+
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/cbo_r_136"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:hint="136. Gaano kalawak ang inyong fishpond? "
+                            android:tag="D_274"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp"
+                            app:met_floatingLabel="highlight" />
+
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="137. Noong nakaraang labing-dalawang buwan, anu-ano ang mga nahuling isda o iba pang yamang-tubig? "
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16dp" />
+
+
+                        <CheckBox
+                            android:id="@+id/chk_r_137_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_275"
+                            android:text="137.1 Tilapia"
+                            android:textSize="14dp" />
+
+
+                        <CheckBox
+                            android:id="@+id/chk_r_137_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_276"
+                            android:text="137.2 Hito"
+                            android:textSize="14dp" />
+
+
+                        <CheckBox
+                            android:id="@+id/chk_r_137_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_277"
+                            android:text="137.3 Mudfish"
+                            android:textSize="14dp" />
+
+
+                        <CheckBox
+                            android:id="@+id/chk_r_137_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_278"
+                            android:text="137.4 Carp"
+                            android:textSize="14dp" />
+
+
+                        <CheckBox
+                            android:id="@+id/chk_r_137_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_279"
+                            android:text="137.5 Pangasius"
+                            android:textSize="14dp" />
+
+
+                        <CheckBox
+                            android:id="@+id/chk_r_137_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_280"
+                            android:text="137.6 Iba pa, itala "
+                            android:textSize="14dp" />
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_r_137_6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Iba pa, itala"
+                                android:inputType="textPersonName"
+                                android:tag="D_281"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    card_view:cardCornerRadius="4dp"
+                    card_view:contentPadding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="138. Gaano kadami ang karaniwang ani/huli na isda o iba pang yamang tubig? (kilograms)"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16dp" />
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_r_138_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="138.1 Tilapia  "
+                                android:inputType="textPersonName"
+                                android:tag="D_282"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_r_138_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="138.2 Hito  "
+                                android:inputType="textPersonName"
+                                android:tag="D_283"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_r_138_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="138.3 Mudfish  "
+                                android:inputType="textPersonName"
+                                android:tag="D_284"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_r_138_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="138.4 Carp "
+                                android:inputType="textPersonName"
+                                android:tag="D_285"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_r_138_5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="138.5 Pangasius  "
+                                android:inputType="textPersonName"
+                                android:tag="D_286"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <EditText
+                                    android:id="@+id/txt_r_138_6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:hint="138.6 Iba pa, itala "
+                                    android:inputType="textPersonName"
+                                    android:tag="D_287"
+                                    android:textColorHint="#05ab9a"
+                                    android:textSize="12sp" />
+                            </android.support.design.widget.TextInputLayout>
+
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <EditText
+                                    android:id="@+id/txt_r_ibapa_138_6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:hint="138.6 Kilograms"
+                                    android:inputType="textPersonName"
+                                    android:tag="D_298"
+                                    android:textColorHint="#05ab9a"
+                                    android:textSize="12sp" />
+                            </android.support.design.widget.TextInputLayout>
+
+                        </LinearLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_r_138_7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="138.7 Kabuuang dami"
+                                android:inputType="textPersonName"
+                                android:tag="D_288"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="139. Kayo ba o sinuman miyembro ng pamilya ay gumagamit ng mga sumusunod na kagamitan?"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16dp" />
+
+
+                        <CheckBox
+                            android:id="@+id/chk_r_139_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_289"
+                            android:text="139.1 Fish net"
+                            android:textSize="14dp" />
+
+
+                        <CheckBox
+                            android:id="@+id/chk_r_139_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_290"
+                            android:text="139.2 Electricity "
+                            android:textSize="14dp" />
+
+
+                        <CheckBox
+                            android:id="@+id/chk_r_139_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_291"
+                            android:text="139.3 Bagnets "
+                            android:textSize="14dp" />
+
+
+                        <CheckBox
+                            android:id="@+id/chk_r_139_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_292"
+                            android:text="139.4 Gillnets    "
+                            android:textSize="14dp" />
+
+                        <CheckBox
+                            android:id="@+id/chk_r_139_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_293"
+                            android:text="139.5 Traps    "
+                            android:textSize="14dp" />
+
+                        <CheckBox
+                            android:id="@+id/chk_r_139_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_294"
+                            android:text="139.6 Hooks and line"
+                            android:textSize="14dp" />
+
+
+                        <CheckBox
+                            android:id="@+id/chk_r_139_7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_295"
+                            android:text="139.7 Sift net"
+                            android:textSize="14dp" />
+
+
+                        <CheckBox
+                            android:id="@+id/chk_r_139_8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_296"
+                            android:text="139.8 Iba pa, itala"
+                            android:textSize="14dp" />
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_r_139_8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Iba pa, itala"
+                                android:inputType="textPersonName"
+                                android:tag="D_297"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/pnl_next_and_back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/back_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+
+                    card_view:cardCornerRadius="5dp"
+                    card_view:cardElevation="10dp"
+                    card_view:cardMaxElevation="10dp">
+
+                    <ImageButton
+                        android:id="@+id/btn_back"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:layout_alignParentBottom="true"
+                        android:layout_weight="1"
+
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/left"
+                        android:text="Back" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/next_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    card_view:cardCornerRadius="5dp"
+                    card_view:cardElevation="10dp"
+                    card_view:cardMaxElevation="10dp">
+
+                    <ImageButton
+                        android:id="@+id/btn_next"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/right"
+                        android:text="Nex" />
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+

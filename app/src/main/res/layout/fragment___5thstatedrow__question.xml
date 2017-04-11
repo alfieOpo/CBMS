@@ -1,0 +1,392 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="absnitsolution.modifiedcommunitybasemonitoringsystem._5thstatedrow_Question">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    card_view:cardCornerRadius="4dp"
+                    card_view:contentPadding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_5th_pangalan_maykapansanan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="49. Ano ang pangalan ng kapamilya na may kapansanan? "
+                                android:inputType="textPersonName"
+                                android:tag="_5th_001"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <TextView
+                            android:id="@+id/text_w_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="50. Ano ang uri ng kapansanan niya.?"
+                            android:textSize="16dp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_5h_totalblindness"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="_5th_002"
+                                    android:text="Total Blindness"
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_5th_partialblindness"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="_5th_003"
+                                    android:text="Partial Blindness"
+                                    android:textSize="14dp" />
+
+                                <CheckBox
+                                    android:id="@+id/chk_5th_lowvision"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="_5th_004"
+                                    android:text="Low Vision"
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_5th_totallydeaf"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="_5th_005"
+                                    android:text="Totally Deaf"
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_5th_partiallydeaf"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="_5th_006"
+                                    android:text="Partially Deaf"
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_5th_hardofhearing"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="_5th_007"
+                                    android:text="Hard of hearing"
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_5th_oraldefect"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="_5th_008"
+                                    android:text="Oral defect"
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_5th_onehand"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="_5th_009"
+                                    android:text="One Hand"
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_5th_nohands"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="_5th_010"
+                                    android:text="No Hands"
+                                    android:textSize="14dp" />
+
+                                <CheckBox
+                                    android:id="@+id/chk_5th_oneleg"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="_5th_011"
+                                    android:text="One Leg"
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_5th_nolegs"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="_5th_012"
+                                    android:text="No Legs"
+                                    android:textSize="14dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_5th_mildcelebralpalsy"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="_5th_013"
+                                    android:text="Mild cerebral palsy"
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_5th_severecelebralpalsy"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="_5th_014"
+                                    android:text="Severe cerebral palsy"
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_5th_regularlyintellectuallyimpaired"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="_5th_015"
+                                    android:text="Regularly intellectually impaired"
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_5th_severelyintellectuallyimpaired"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="_5th_016"
+                                    android:text="Severely intellectually impaired"
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_5th_regularlyimpairedmentalillnes"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="_5th_017"
+                                    android:text="Regularly impaired by mental illness"
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_5th_severelyimpairedmentalillnes"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="_5th_018"
+                                    android:text="Severely impaired by mental illness"
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_5th_regularlymultipledimpaired"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="_5th_019"
+                                    android:text="Regularly multiple impaired"
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_5th_harelip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="_5th_020"
+                                    android:text="Harelip, Cleft palate"
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_5th_clubfoot"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="_5th_021"
+                                    android:text="Club Foot"
+                                    android:textSize="14dp" />
+
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <EditText
+                                        android:id="@+id/txt_5th_ibapa_kapansanan"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:ems="10"
+                                        android:hint="Iba pa, itala"
+                                        android:inputType="textPersonName"
+                                        android:tag="_5th_022"
+                                        android:textColorHint="#05ab9a"
+                                        android:textSize="14dp" />
+                                </android.support.design.widget.TextInputLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/cbo_5th_sanhi_kapansanan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:hint="51. Ano ang sanhi ng kapansanan ni ___? "
+                            android:tag="_5th_023"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp"
+                            app:met_floatingLabel="highlight" />
+
+
+                        <TextView
+                            android:id="@+id/textView59"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="52. Anong tulong ang natangap ni ___ dahil sa kanyang kapansanan? " />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_5th_tulongnatanggap"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:inputType="textPersonName"
+                                android:tag="_5th_024"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/cbo_5th_saangalingtulong"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:hint="53. Saan nanggaling ang tulong kay ___?"
+                            android:tag="_5th_025"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp"
+                            app:met_floatingLabel="highlight" />
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_5th_ibapa_saangaling"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Iba pa, itala"
+                                android:inputType="textPersonName"
+                                android:tag="_5th_026"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

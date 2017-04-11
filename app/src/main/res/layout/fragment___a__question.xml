@@ -1,0 +1,591 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="absnitsolution.modifiedcommunitybasemonitoringsystem._A_Question">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/txt_a_numero"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Numerong Pagkakakilanlan ng Pamilya"
+                            android:inputType="textPersonName"
+                            android:tag="D_006"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/txt_a_tirahan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Tirahan ng Pamilya"
+                            android:inputType="textPersonName"
+                            android:tag="D_007"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/txt_a_nakapanayam"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Pangalan ng Nakapanayam"
+                            android:inputType="textPersonName"
+                            android:tag="D_001"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/txt_a_orasnagsimula"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Petsa ng panayam at Oras Nagsimula"
+                            android:inputType="textPersonName"
+                            android:tag="D_009"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/txt_a_pangalantagapanayam"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Pangalan ng Tagapanayam"
+                            android:inputType="textPersonName"
+                            android:tag="D_010"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <CheckBox
+                        android:id="@+id/chk_a_hindinagpaunlak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:checked="false"
+                        android:tag="D_012"
+                        android:text="Hindi nagpaunlak ng panayam"
+                        android:textSize="14dp" />
+
+
+                    <CheckBox
+                        android:id="@+id/chk_a_callback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:checked="false"
+                        android:tag="D_034"
+                        android:text="Callback"
+                        android:textSize="14dp" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:orientation="vertical">
+
+
+                    <!-- 1st stated row -->
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="D . DEMOGRAPIYA" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/cbo_a_ilan_miyembro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_toLeftOf="@+id/btn_myembro_ng_pamilya"
+                            android:layout_toStartOf="@+id/btn_myembro_ng_pamilya"
+                            android:layout_weight="1"
+                            android:hint="Ilang Miyembro mayroon dito sa inyong pamilya?"
+                            android:tag="D_014"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp"
+                            app:met_floatingLabel="highlight" />
+
+                        <Button
+
+                            android:id="@+id/btn_myembro_ng_pamilya"
+
+                            android:layout_width="74dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="View"
+                            android:textColor="#ffffff"
+                            android:textSize="8sp"
+                            android:theme="@style/MyButton" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/pop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="G. IBANG MIYEMBRO NG PAMILYA"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/cbo_a_miyembro_dikasama"
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_weight="1"
+                            android:hint="34. Mayroon bang miyembro ng pamilya na di kasama sa pamilya ngunit inaasahan na babalik sa pamilya sa loob ng 12 buwan?"
+                            android:tag="D_017"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="10dp"
+                            app:met_floatingLabel="highlight" />
+
+                        <Button
+                            android:id="@+id/btn_ibang_myembro"
+                            android:layout_width="74dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="View"
+                            android:textColor="#ffffff"
+                            android:textSize="8sp"
+                            android:theme="@style/MyButton" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/ooooyy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="H. OVERSEAS FILIPINO WORKER"
+                        android:textSize="16dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="horizontal">
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/cbo_a_miyembro_ofw"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_toLeftOf="@+id/btn_ofw"
+                            android:layout_toStartOf="@+id/btn_ofw"
+                            android:hint="40. Mayroon ba kayong dating kapamilya na OFW?"
+                            android:tag="D_019"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp"
+                            app:met_floatingLabel="highlight" />
+
+                        <Button
+                            android:id="@+id/btn_ofw"
+                            android:layout_width="74dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="1"
+                            android:text="VIEW"
+                            android:textColor="#ffffff"
+                            android:textSize="8sp"
+                            android:theme="@style/MyButton" />
+
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/lll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="I.A MGA KAPAMILYA NA SOLO PARENT"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="horizontal">
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/cbo_a_miyembro_solomagulang"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_weight="1"
+                            android:hint="45. May miyembro ba ng pamilya na solong magulang na may kinakalingang anak"
+                            android:tag="D_021"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="10dp"
+                            app:met_floatingLabel="highlight" />
+
+                        <Button
+                            android:id="@+id/btn_kapamilya_na_solo_parent"
+                            android:layout_width="74dp"
+                            android:layout_height="match_parent"
+
+                            android:text="VIEW"
+                            android:textColor="#ffffff"
+                            android:textSize="8sp"
+                            android:theme="@style/MyButton" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/ghjkg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="I.B MGA KAPAMILYA NA MAY KAPANSANAN"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/cbo_a_miyembro_maykapansanan"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_toLeftOf="@+id/btn_mga_kapamilya_na_may_kapansanan"
+                            android:layout_toStartOf="@+id/btn_mga_kapamilya_na_may_kapansanan"
+                            android:layout_weight="1"
+                            android:hint="48. May miyembro ba ng pamilya na may kapansanan?"
+                            android:tag="D_023"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="10dp"
+                            app:met_floatingLabel="highlight" />
+
+                        <Button
+                            android:id="@+id/btn_mga_kapamilya_na_may_kapansanan"
+                            android:layout_width="74dp"
+                            android:layout_height="match_parent"
+                            android:text="VIEW"
+                            android:textColor="#ffffff"
+                            android:textSize="8sp"
+                            android:theme="@style/MyButton" />
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/fhjf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="I.C MGA KAPAMILYA NA SENIOR CITIZEN"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="horizontal">
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/cbo_a_miyembro_seniorcitizen"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_weight="1"
+                            android:hint="54. May miyembro ba ang pamilya na may 60 taong gulang pataas?"
+                            android:tag="D_025"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="10dp"
+                            app:met_floatingLabel="highlight" />
+
+                        <Button
+                            android:id="@+id/btn_mga_kapamilya_na_senior_citizen"
+                            android:layout_width="74dp"
+                            android:layout_height="match_parent"
+                            android:text="VIEW"
+                            android:textColor="#ffffff"
+                            android:textSize="8sp"
+                            android:theme="@style/MyButton" />
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/drhdfg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="I.D MGA KAPAMILYA NA NAKAPASA SA BOARD O BAR EXAM"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="horizontal">
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/cbo_a_miyembro_nakapasa"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_weight="1"
+                            android:hint="62. Mayroon ba kayong kapamilya na nakapasa sa board o bar exam?"
+                            android:tag="D_027"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="10dp"
+                            app:met_floatingLabel="highlight" />
+
+                        <Button
+                            android:id="@+id/btn_mga_pamilya_na_nakapasa_sa_board_o_bar_exam"
+                            android:layout_width="74dp"
+                            android:layout_height="match_parent"
+
+                            android:text="VIEW"
+                            android:textColor="#ffffff"
+                            android:textSize="8sp"
+                            android:theme="@style/MyButton" />
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="MAG-ASAWA SA PAMILYA"
+                        android:textSize="16dp" />
+
+                    <!-- 9th stated row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/cbo_a_ilan_magasawa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_weight="1"
+                            android:hint="68. Ilan ang mag-asawa sa inyong pamilya"
+                            android:tag="D_031"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp"
+                            app:met_floatingLabel="highlight" />
+
+                        <Button
+                            android:id="@+id/btn_a_ilan_magasawa"
+                            android:layout_width="74dp"
+                            android:layout_height="match_parent"
+
+                            android:text="VIEW"
+                            android:textColor="#ffffff"
+                            android:textSize="8sp"
+                            android:theme="@style/MyButton" />
+                    </LinearLayout>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="K. MGA DATING KAPAMILYA"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/cbo_a_miyembro_namatay"
+                            android:layout_width="221dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_weight="1"
+                            android:hint="73. Mayroon ba kayong dating kapamilya na namatay noong nakaraang 12 buwan?"
+                            android:tag="D_032"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="10dp"
+                            app:met_floatingLabel="highlight" />
+
+                        <Button
+                            android:id="@+id/btn_mga_dating_kapamilya"
+                            android:layout_width="74dp"
+                            android:layout_height="match_parent"
+                            android:text="VIEW"
+                            android:textColor="#ffffff"
+                            android:textSize="8sp"
+                            android:theme="@style/MyButton" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/pnl_next_and_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/back_card"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+
+                            card_view:cardCornerRadius="5dp"
+                            card_view:cardElevation="10dp"
+                            card_view:cardMaxElevation="10dp">
+
+                            <ImageButton
+                                android:id="@+id/btn_back"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+
+                                android:layout_alignParentBottom="true"
+                                android:layout_weight="1"
+
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/left"
+                                android:text="Back" />
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/next_card"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+
+                            card_view:cardCornerRadius="5dp"
+                            card_view:cardElevation="10dp"
+                            card_view:cardMaxElevation="10dp">
+
+                            <ImageButton
+                                android:id="@+id/btn_next"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/right"
+                                android:text="Nex" />
+
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,690 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="absnitsolution.modifiedcommunitybasemonitoringsystem._N_Question">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="55dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    card_view:cardCornerRadius="4dp"
+                    card_view:contentPadding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/textView23"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="85. Ano ang katayuan ng inyong pamilya sa pamamalagi sa bahay at lupang inyong tinitirahan? " />
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/cbo_n_85"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:tag="D_090"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="16dp"
+                            app:met_floatingLabel="highlight" />
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_n_ibapa_85"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Iba pa, itala"
+                                android:inputType="textPersonName"
+                                android:tag="D_091"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <TextView
+                            android:id="@+id/textView24"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="86. Sa inyong palagay, magkano ang tantiyang upa sa isang buwan sa inyong tinitirahan kung ito ay inyong inuupahan? " />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_n_86"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:inputType="textPersonName"
+                                android:tag="D_092"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <TextView
+                            android:id="@+id/textView25"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="87. May kuryente ba sa inyong bahay?" />
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/cbo_n_87"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:tag="D_093"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="16dp"
+                            app:met_floatingLabel="highlight" />
+
+                        <TextView
+                            android:id="@+id/textView26"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="88. Ano ang pinanggagalingan ng kuryente sa bahay?" />
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/cbo_n_88"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:tag="D_094"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="16dp"
+                            app:met_floatingLabel="highlight" />
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_n_ibapa_88"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Iba pa, itala "
+                                android:inputType="textPersonName"
+                                android:tag="D_096"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <TextView
+                            android:id="@+id/textView27"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="89. Magkano ang karaniwang binabayaran ninyo para sa konsumo sa kuryente kada buwan? " />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_n_89"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:inputType="textPersonName"
+                                android:tag="D_095"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <TextView
+                            android:id="@+id/text_o_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="90. Mayroon ba ang inyong pamilya ng mga sumusunod na nagagamit na kasangkapan? "
+                            android:textSize="16dp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/chk_n_radio"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_097"
+                                    android:text="Radio/Radio Casette"
+                                    android:textSize="14dp" />
+
+                                <CheckBox
+                                    android:id="@+id/chk_n_telebisyon"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_098"
+                                    android:text="Telebisyon"
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_n_cd"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_099"
+                                    android:text="CD/VCD/DVD player"
+                                    android:textSize="14dp" />
+
+                                <CheckBox
+                                    android:id="@+id/chk_n_stereo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_100"
+                                    android:text="Stereo/Component"
+                                    android:textSize="14dp" />
+
+                                <CheckBox
+                                    android:id="@+id/chk_n_karaoke"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_101"
+                                    android:text="Karaoke"
+                                    android:textSize="14dp" />
+
+                                <CheckBox
+                                    android:id="@+id/chk_n_refrigerator"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_102"
+                                    android:text="Refrigerator / Freezer"
+                                    android:textSize="14dp" />
+
+                                <CheckBox
+                                    android:id="@+id/chk_n_electricfan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_103"
+                                    android:text="Electric Fan"
+                                    android:textSize="14dp" />
+
+                                <CheckBox
+                                    android:id="@+id/chk_n_electriciron"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_104"
+                                    android:text="Electric Iron"
+                                    android:textSize="14dp" />
+
+                                <CheckBox
+                                    android:id="@+id/chk_n_lpg"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_105"
+                                    android:text="LPG Gas Stove/ Range"
+                                    android:textSize="14dp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_n_washing"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_106"
+                                    android:text="Washing Machine"
+                                    android:textSize="14dp" />
+
+                                <CheckBox
+                                    android:id="@+id/chk_n_microwave"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_107"
+                                    android:text="Microwave Oven"
+                                    android:textSize="14dp" />
+
+                                <CheckBox
+                                    android:id="@+id/chk_n_computer"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_108"
+                                    android:text="Personal Computer / Laptop"
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_n_mobilephone"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_109"
+                                    android:text="Mobile Phone/ Cellular Phone"
+                                    android:textSize="14dp" />
+
+                                <CheckBox
+                                    android:id="@+id/chk_n_landline"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_110"
+                                    android:text="Landline Telephone"
+                                    android:textSize="14dp" />
+
+                                <CheckBox
+                                    android:id="@+id/chk_n_aircon"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_111"
+                                    android:text="Air Conditioner"
+                                    android:textSize="14dp" />
+
+                                <CheckBox
+                                    android:id="@+id/chk_n_sewing"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_112"
+                                    android:text="Sewing Machine"
+                                    android:textSize="14dp" />
+
+                                <CheckBox
+                                    android:id="@+id/chk_n_car"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_113"
+                                    android:text="Car, Jeep, Motorcycle/other motorized vehicles"
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_n_ibapa_gamit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_114"
+                                    android:text="Iba pa, itala"
+                                    android:textSize="14dp" />
+
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+                                    <EditText
+                                        android:id="@+id/txt_n_ibapa_gamit"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:ems="10"
+                                        android:hint="Iba pa, itala"
+                                        android:inputType="textPersonName"
+                                        android:tag="D_115"
+                                        android:textColorHint="#05ab9a"
+                                        android:textSize="12sp" />
+                                </android.support.design.widget.TextInputLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView" />
+
+
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    card_view:cardCornerRadius="4dp"
+                    card_view:contentPadding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="SAGUTIN BATAY SA URI NG MATERYALES NA GINAGAMIT AT SA PAGKAKAGAWA SA NASABING BAHAGI NG BAHAY:"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="91. Materyales na ginamit sa DINGDING "
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="14dp" />
+
+
+                        <CheckBox
+                            android:id="@+id/chk_n_91_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_116"
+                            android:text="1. Strong materials (concrete, brick, stone, wood, galvanized iron, asbestos) "
+                            android:textSize="14dp" />
+
+                        <CheckBox
+                            android:id="@+id/chk_n_91_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_117"
+                            android:text="2. Light materials (bamboo, sawali, cogon, nipa)"
+                            android:textSize="14dp" />
+
+                        <CheckBox
+                            android:id="@+id/chk_n_91_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_118"
+                            android:text="3. Salvaged/makeshift materials"
+                            android:textSize="14dp" />
+
+                        <CheckBox
+                            android:id="@+id/chk_n_91_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_119"
+                            android:text="4. Mixed but predominantly strong materials"
+                            android:textSize="14dp" />
+
+                        <CheckBox
+                            android:id="@+id/chk_n_91_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_120"
+                            android:text="5. Mixed but predominantly light materials"
+                            android:textSize="14dp" />
+
+                        <CheckBox
+                            android:id="@+id/chk_n_91_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_121"
+                            android:text="6. Mixed but predominantly salvaged materials"
+                            android:textSize="14dp" />
+
+                        <CheckBox
+                            android:id="@+id/chk_n_92_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_122"
+                            android:text="1. Strong materials (concrete, brick, stone, wood, galvanized iron, asbestos) "
+                            android:textSize="14dp" />
+
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="92. Materyales na ginamit sa BUBONG"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="14dp" />
+
+
+                        <CheckBox
+                            android:id="@+id/chk_n_92_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_123"
+                            android:text="2. Light materials (bamboo, sawali, cogon, nipa)"
+                            android:textSize="14dp" />
+
+                        <CheckBox
+                            android:id="@+id/chk_n_92_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_124"
+                            android:text="3. Salvaged/makeshift materials"
+                            android:textSize="14dp" />
+
+                        <CheckBox
+                            android:id="@+id/chk_n_92_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_125"
+                            android:text="4. Mixed but predominantly strong materials"
+                            android:textSize="14dp" />
+
+                        <CheckBox
+                            android:id="@+id/chk_n_92_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_126"
+                            android:text="5. Mixed but predominantly light materials"
+                            android:textSize="14dp" />
+
+                        <CheckBox
+                            android:id="@+id/chk_n_92_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_127"
+                            android:text="6. Mixed but predominantly salvaged materials"
+                            android:textSize="14dp" />
+
+
+                        <TextView
+                            android:id="@+id/textView28"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="93. Ang bahay ba nakatirik sa mapanganib na lugar?" />
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/cbo_o_nakatirik"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:hint="93. Ang bahay ba nakatirik sa mapanganib na lugar?"
+                            android:tag="D_128"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="16dp"
+                            app:met_floatingLabel="highlight" />
+
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/cbo_oo_nakatirik"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:hint="94. Kung oo,"
+                            android:tag="D_129"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="16dp"
+                            app:met_floatingLabel="highlight" />
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_n_ibapa_94"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Iba pa, itala"
+                                android:inputType="textPersonName"
+                                android:tag="D_130"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/pnl_next_and_back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/back_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+
+                    card_view:cardCornerRadius="5dp"
+                    card_view:cardElevation="10dp"
+                    card_view:cardMaxElevation="10dp">
+
+                    <ImageButton
+                        android:id="@+id/btn_back"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:layout_alignParentBottom="true"
+                        android:layout_weight="1"
+
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/left"
+                        android:text="Back" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/next_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    card_view:cardCornerRadius="5dp"
+                    card_view:cardElevation="10dp"
+                    card_view:cardMaxElevation="10dp">
+
+                    <ImageButton
+                        android:id="@+id/btn_next"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/right"
+                        android:text="Nex" />
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

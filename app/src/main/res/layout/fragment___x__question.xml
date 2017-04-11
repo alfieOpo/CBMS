@@ -1,0 +1,1073 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="absnitsolution.modifiedcommunitybasemonitoringsystem._X_Question">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    card_view:cardCornerRadius="4dp"
+                    card_view:contentPadding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/cbo_x_124"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:hint="124. Ilang taon ka ng nagsasaka?"
+                            android:tag="D_360"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp"
+                            app:met_floatingLabel="highlight" />
+
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/cbo_x_125"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:hint="125. Kumpara nung nakaraang 3 taon, ang ani mo ay ___?"
+                            android:tag="D_361"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp"
+                            app:met_floatingLabel="highlight" />
+
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="false"
+                            android:layout_centerHorizontal="true"
+                            android:text="126. Ano ang pangunahing dahilan bakit kumonti o nabawasan ang iyong ani? "
+                            android:textAlignment="viewStart"
+                            android:textSize="16dp" />
+
+
+                        <CheckBox
+                            android:id="@+id/chk_x_126_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_362"
+                            android:text="1. Pagtaas ng presyo ng binhi, pataba atbp."
+                            android:textSize="14dp" />
+
+
+                        <CheckBox
+                            android:id="@+id/chk_x_126_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_363"
+                            android:text="2. Apektado ng tagtuyot"
+                            android:textSize="14dp" />
+
+
+                        <CheckBox
+                            android:id="@+id/chk_x_126_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_364"
+                            android:text="3. Apektado ng bagyo"
+                            android:textSize="14dp" />
+
+
+                        <CheckBox
+                            android:id="@+id/chk_x_126_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_365"
+                            android:text="4. Apektado ng baha"
+                            android:textSize="14dp" />
+
+
+                        <CheckBox
+                            android:id="@+id/chk_x_126_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_366"
+                            android:text="5. Apektado ng salot/peste sa pananim"
+                            android:textSize="14dp" />
+
+
+                        <CheckBox
+                            android:id="@+id/chk_x_126_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_367"
+                            android:text="6. Kakulangan ng tubig"
+                            android:textSize="14dp" />
+
+
+                        <CheckBox
+                            android:id="@+id/chk_x_126_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_368"
+                            android:text="7. Pagbabago ng pangunahing pinagkakakitaan"
+                            android:textSize="14dp" />
+
+
+                        <CheckBox
+                            android:id="@+id/chk_x_126_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_369"
+                            android:text="8. Kung may iba pa, itala"
+                            android:textSize="14dp" />
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_x_126_8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Iba pa, itala"
+                                android:inputType="textPersonName"
+                                android:tag="D_370"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <TextView
+                            android:id="@+id/textView48"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="127. Sa nakalipas na 3 taon, sinunod nyo ba ang tamang panahon ng pagtatanim? " />
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/cbo_x_127"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:tag="D_371"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp"
+                            app:met_floatingLabel="highlight" />
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_x_127_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="127.1 Pagpapalit ng klase/uri ng binhi "
+                                android:inputType="textPersonName"
+                                android:tag="D_372"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_x_127_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="127.2 Pagpapalit ng pangunahing binhi"
+                                android:inputType="textPersonName"
+                                android:tag="D_373"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/cbo_x_128"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:hint="128."
+                            android:tag="D_374"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp"
+                            app:met_floatingLabel="highlight" />
+
+
+                        <TextView
+                            android:id="@+id/text_w_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="false"
+                            android:layout_centerHorizontal="true"
+                            android:text="129. May kasiguraduhan ka ba sa mga sumusunod?"
+                            android:textAlignment="viewStart"
+                            android:textSize="16dp" />
+
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/cbo_x_129_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:hint="129.1 Pananim/ Binhi"
+                            android:tag="D_375"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp"
+                            app:met_floatingLabel="highlight" />
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/cbo_x_129_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:hint="129.2 Kagamitang pang agrikultura"
+                            android:tag="D_376"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp"
+                            app:met_floatingLabel="highlight" />
+
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="false"
+                            android:layout_centerHorizontal="true"
+                            android:text="130. Sino ang sponsor? "
+                            android:textAlignment="viewStart"
+                            android:textSize="16dp" />
+
+
+                        <CheckBox
+                            android:id="@+id/chk_x_130_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_377"
+                            android:text="1. Sarili"
+                            android:textSize="14dp" />
+
+
+                        <CheckBox
+                            android:id="@+id/chk_x_130_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_378"
+                            android:text="2. Gobyerno"
+                            android:textSize="14dp" />
+
+
+                        <CheckBox
+                            android:id="@+id/chk_x_130_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="D_379"
+                            android:text="3. Iba pa, itala"
+                            android:textSize="14dp" />
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_x_130_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Iba pa, itala"
+                                android:inputType="textPersonName"
+                                android:tag="D_380"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    card_view:cardCornerRadius="4dp"
+                    card_view:contentPadding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_w_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="false"
+                            android:layout_centerHorizontal="true"
+                            android:text="131. Kayo ba o sinumang miyembro ng pamilya ay gumagamit ng mga sumusunod na kagamitang pang- agrikultura ? (Kung meron, ilan?)  "
+                            android:textAlignment="viewStart"
+                            android:textSize="16dp" />
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_x_131_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="131.1 Plow"
+                                android:inputType="textPersonName"
+                                android:tag="D_381"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_x_131_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="131.2 Mower"
+                                android:inputType="textPersonName"
+                                android:tag="D_382"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_x_131_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="131.3 Harrow"
+                                android:inputType="textPersonName"
+                                android:tag="D_383"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_x_131_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="131.4 Thresher / Corn shelter"
+                                android:inputType="textPersonName"
+                                android:tag="D_384"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_x_131_5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="131.5 Knapsack sprayer"
+                                android:inputType="textPersonName"
+                                android:tag="D_385"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_x_131_6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="131.6 Farm Tractor"
+                                android:inputType="textPersonName"
+                                android:tag="D_386"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_x_131_7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="131.7 Hand Tractor"
+                                android:inputType="textPersonName"
+                                android:tag="D_387"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_x_131_8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="131.8 Farmshed"
+                                android:inputType="textPersonName"
+                                android:tag="D_388"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_x_131_9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="131.9 Planter/Transplan-ter/Dryer"
+                                android:inputType="textPersonName"
+                                android:tag="D_389"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_x_131_10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="131.10 Mechanical dryer"
+                                android:inputType="textPersonName"
+                                android:tag="D_390"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_x_131_11"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="131.11 Multipurpose drying pavement"
+                                android:inputType="textPersonName"
+                                android:tag="D_391"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_x_131_12"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="131.12 Rice/corn/feed mill"
+                                android:inputType="textPersonName"
+                                android:tag="D_392"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_x_131_13"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="131.13 Harvester, any crop"
+                                android:inputType="textPersonName"
+                                android:tag="D_393"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_x_131_14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="131.14 Warehouse. granary"
+                                android:inputType="textPersonName"
+                                android:tag="D_394"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_x_131_15"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="131.15 Irrigation pump"
+                                android:inputType="textPersonName"
+                                android:tag="D_395"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_x_131_15_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="131.15.1 Robin Pump"
+                                android:inputType="textPersonName"
+                                android:tag="D_396"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_x_131_15_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="131.15.2 Diesel Pump"
+                                android:inputType="textPersonName"
+                                android:tag="D_397"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <TextView
+                            android:id="@+id/textView49"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="131.15.3 Pump Irrigation System for Open Source (PISOS)" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_x_131_15_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:inputType="textPersonName"
+                                android:tag="D_398"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <EditText
+                                    android:id="@+id/txt_x_131_16"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:hint="131.16 Iba pa, itala"
+                                    android:inputType="textPersonName"
+                                    android:tag="D_399"
+                                    android:textColorHint="#05ab9a"
+                                    android:textSize="14dp" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <EditText
+                                    android:id="@+id/txt_x_ibapa_131_16"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:hint="131.16 Ilan"
+                                    android:inputType="textPersonName"
+                                    android:tag="D_420"
+                                    android:textColorHint="#05ab9a"
+                                    android:textSize="14dp" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/text_o_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="132.Ang mga sumusunod ba ay pag-aari ng pamilya? "
+                            android:textSize="16dp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/chk_x_132_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_400"
+                                    android:text="132.1 Plow"
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_x_132_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_401"
+                                    android:text="132.2 Mower"
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_x_132_3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_402"
+                                    android:text="132.3 Harrow"
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_x_132_4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_403"
+                                    android:text="132.4 Thresher / Corn shelter"
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_x_132_5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_404"
+                                    android:text="132.5 Knapsack sprayer    "
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_x_132_6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_405"
+                                    android:text="132.6 Farm Tractor"
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_x_132_7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_406"
+                                    android:text="132.7 Hand Tractor"
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_x_132_8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_407"
+                                    android:text="132.8 Farmshed"
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_x_132_9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_408"
+                                    android:text="132.9 Planter/Transplan-ter/Dryer"
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_x_132_10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_409"
+                                    android:text="132.10 Mechanical dryer"
+                                    android:textSize="14dp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_x_132_11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_410"
+                                    android:text="132.11 Multipurpose drying pavement   "
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_x_132_12"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_411"
+                                    android:text="132.12 Rice/corn/feed mill"
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_x_132_13"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_412"
+                                    android:text="132.13 Harvester, any crop"
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_x_132_14"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_413"
+                                    android:text="132.14 Warehouse. granary"
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_x_132_15"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_414"
+                                    android:text="132.15 Irrigation pump    "
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_x_132_15_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_415"
+                                    android:text="132.15.1 Robin Pump"
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_x_132_15_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_416"
+                                    android:text="132.15.2 Diesel Pump"
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_x_132_15_3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_417"
+                                    android:text="132.15.3 Pump Irrigation System for Open Source (PISOS)"
+                                    android:textSize="14dp" />
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_x_132_16"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:checked="false"
+                                    android:tag="D_418"
+                                    android:text="132.16 Iba pa, itala "
+                                    android:textSize="14dp" />
+
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+                                    <EditText
+                                        android:id="@+id/txt_x_132_16"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:ems="10"
+                                        android:hint="Iba pa, itala"
+                                        android:inputType="textPersonName"
+                                        android:tag="D_419"
+                                        android:textColorHint="#05ab9a"
+                                        android:textSize="12sp" />
+                                </android.support.design.widget.TextInputLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/pnl_next_and_back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/back_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+
+                    card_view:cardCornerRadius="5dp"
+                    card_view:cardElevation="10dp"
+                    card_view:cardMaxElevation="10dp">
+
+                    <ImageButton
+                        android:id="@+id/btn_back"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:layout_alignParentBottom="true"
+                        android:layout_weight="1"
+
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/left"
+                        android:text="Back" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/next_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    card_view:cardCornerRadius="5dp"
+                    card_view:cardElevation="10dp"
+                    card_view:cardMaxElevation="10dp">
+
+                    <ImageButton
+                        android:id="@+id/btn_next"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/right"
+                        android:text="Nex" />
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+

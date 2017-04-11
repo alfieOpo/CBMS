@@ -1,0 +1,1361 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="absnitsolution.modifiedcommunitybasemonitoringsystem._O_Question">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="55dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="false"
+                        android:layout_centerHorizontal="true"
+                        android:text="O.A  GAWAING PANGKABUHAYAN"
+
+                        android:textSize="16dp" />
+
+
+                    <!-- 1st row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp">
+
+
+                        <TextView
+
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="false"
+                            android:layout_centerHorizontal="true"
+
+                            android:layout_weight="10"
+                            android:paddingBottom="10dp"
+                            android:text="Noong nakaraang labing-dalawang buwan, kayo ba o sinuman sa mga kapamilya ay nagsagawa ng mga sumusunod na gawaing pangkabuhayan para magkaroon ng kita para sa pamilya?" />
+
+                        <TextView
+
+                            android:id="@+id/textView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="false"
+                            android:layout_centerHorizontal="true"
+
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="-1"
+                            android:gravity="bottom"
+                            android:paddingRight="5dp"
+                            android:text="Sa salapi"
+                            android:textAlignment="gravity"
+                            android:textSize="12dp" />
+
+                        <TextView
+
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="false"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="1"
+                            android:gravity="bottom"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Sa bagay"
+                            android:textAlignment="gravity"
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+
+                    <!-- 1st row -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp">
+
+                        <CheckBox
+                            android:id="@+id/chk_o_95"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:tag="D_140"
+                            android:text="95. Pagsasaka at paghahalaman tulad ng pagtatanim ng palay, mais, kamote, gulay, prutas, at iba pang pananim." />
+
+
+                        <EditText
+                            android:id="@+id/txt_o_95a"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_141"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+                        <EditText
+                            android:id="@+id/txt_o_95b"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_142"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+
+
+                    <!-- 2nd row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp">
+
+                        <CheckBox
+                            android:id="@+id/chk_o_96"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:tag="D_143"
+                            android:text="96. Pag-aalaga ng mga hayop katulad ng kalabaw, baka, baboy, kambing, manok, bibe at iba pa. Kasama sa gawaing ito ang pagkuha ng gatas mula sa kalabaw, baka at kambing at pagkuha ng itlog mula sa manok, bibe at pugo." />
+
+
+                        <EditText
+                            android:id="@+id/txt_o_96a"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_144"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+                        <EditText
+                            android:id="@+id/txt_o_97b"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_145"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+
+
+                    <!-- 3rd row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp">
+
+                        <CheckBox
+                            android:id="@+id/chk_o_97"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:tag="D_146"
+                            android:text="97. Pangingisda o panghuhuli ng isda at iba pang yamang tubig tulad ng  suso. Kasama din dito ang pag-aalaga ng isda katulad ng tilapia, bulig at iba pa." />
+
+
+                        <EditText
+                            android:id="@+id/txt_o_97a"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_147"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+                        <EditText
+                            android:id="@+id/txt_o_96b"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_148"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+
+
+                    <!-- 4th row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp">
+
+                        <CheckBox
+                            android:id="@+id/chk_o_98"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:tag="D_149"
+                            android:text="98. Pagtitinda o pangangalakal ng anumang produkto (wholesale o retail). Kasama dito ang pagtitinda sa palengke, lansangan, malls, bahay-bahay at iba pa." />
+
+                        <EditText
+                            android:id="@+id/txt_o_98a"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_150"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+                        <EditText
+                            android:id="@+id/txt_o_98b"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_151"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+
+
+                    <!-- 5th row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp">
+
+                        <CheckBox
+                            android:id="@+id/chk_o_99"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:tag="D_152"
+                            android:text="99. Paggawa ng produkto tulad ng basahan, patahian ng damit, tsinelas, bagoong, tuyo at iba pa." />
+
+                        <EditText
+                            android:id="@+id/txt_o_99a"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_153"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+                        <EditText
+                            android:id="@+id/txt_o_99b"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_154"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+
+
+                    <!-- 6th row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp">
+
+                        <CheckBox
+                            android:id="@+id/chk_o_100"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:tag="D_155"
+                            android:text="100. Mga serbisyong pantao o pangbayan tulad ng serbisyong pangkalusugan, dental, pamamalakad ng paaralan, restaurants, hotel at iba pa." />
+
+                        <EditText
+                            android:id="@+id/txt_o_100a"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_156"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+
+                        <EditText
+                            android:id="@+id/txt_o_100b"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_157"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+
+
+                    <!-- 7th row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp">
+
+                        <CheckBox
+                            android:id="@+id/chk_o_101"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:tag="D_158"
+                            android:text="101. Serbisyo sa transportasyon at komunikasyon. Halimbawa nito ay pagpapasada ng dyipni, trisikel, taxi, messenger at postal service. Kasama din dito ang mga negosyong nagbibigay ng serbisyong pagtatago at pag-iimbak ng produkto." />
+
+                        <EditText
+                            android:id="@+id/txt_o_101a"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_159"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+                        <EditText
+                            android:id="@+id/txt_o_101b"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_160"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+
+
+                    <!-- 8th row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/chk_o_102"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:tag="D_161"
+                            android:text="102. Pagkuha ng graba, buhangin, iskombro at nagdudulang ng ginto." />
+
+
+                        <EditText
+                            android:id="@+id/txt_o_102a"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_162"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+                        <EditText
+                            android:id="@+id/txt_o_102b"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_163"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+
+
+                    <!-- 9th row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/chk_o_103"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:tag="D_164"
+                            android:text="103. Konstruksyon tulad ng paggawa at pagkumpuni ng bahay,gusali, tulay at iba pa." />
+
+                        <EditText
+                            android:id="@+id/txt_o_103a"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_165"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+                        <EditText
+                            android:id="@+id/txt_o_103b"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_166"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+
+
+                    <!-- 10th row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp">
+
+                        <CheckBox
+                            android:id="@+id/chk_o_104"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:tag="D_167"
+                            android:text="104. Mga gawaing pangkabuhayan na hindi kahalintulad sa mga nabanggit, tulad ng serbisyo sa kuryente, gaas at tubig, mga negosyo ukol sa pinansyal tulad ng real estate, insurance at iba pa." />
+
+                        <EditText
+                            android:id="@+id/txt_o_104a"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_168"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+                        <EditText
+                            android:id="@+id/txt_o_104b"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_169"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/textView29"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="105.KABUUANG NETONG KITA MULA SA GAWAING PANGKABUHAYAN" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/txt_o_105"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="numberDecimal"
+                            android:tag="D_170"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <TextView
+                        android:id="@+id/textView30"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="105a. Pagsamahin ang netong kita mula (95A) hanggang (104A) " />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/txt_o_105a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="numberDecimal"
+                            android:tag="D_171"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="105b. Pagsamahin ang netong kita mula (95B) hanggang (104B)" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/txt_o_105b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="numberDecimal"
+                            android:tag="D_172"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_compute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Compute"
+                android:textColor="#ffffff"
+                android:theme="@style/MyButton" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="O-B SAHOD/SWELDO MULA SA PINAPASUKANG TRABAHO"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="horizontal">
+
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/cbo_o_106"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_weight="1"
+                            android:hint="106. Noong nakaraang labing-dalawang buwan, ano ang kabuuang halaga ng sweldo/sahod na natanggap ninyo o sinumang namamasukan na kapamilya?"
+                            android:tag="D_173"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="10dp"
+                            app:met_floatingLabel="highlight" />
+
+
+                        <Button
+                            android:id="@+id/btn_o"
+                            android:layout_width="71dp"
+                            android:layout_height="match_parent"
+                            android:text="View"
+                            android:textColor="#ffffff"
+                            android:textSize="10sp"
+                            android:theme="@style/MyButton" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="false"
+                        android:layout_centerHorizontal="true"
+                        android:text="O-C IBA PANG PINAGKUKUNAN NG KITA"
+
+                        android:textSize="16dp" />
+
+
+                    <!-- 1st row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="false"
+                            android:layout_centerHorizontal="true"
+
+                            android:layout_weight="10"
+                            android:paddingBottom="10dp"
+                            android:text="Noong nakaraang labing-dalawang buwan, magkano ang natanggap ninyo o sinuman sa inyong kapamilya mula sa mga sumusunod?"
+
+                            android:textSize="14dp" />
+
+
+                        <TextView
+
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="false"
+                            android:layout_centerHorizontal="true"
+
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="-1"
+                            android:gravity="bottom"
+                            android:paddingRight="5dp"
+                            android:text="Sa salapi"
+                            android:textAlignment="gravity"
+
+                            android:textSize="12dp" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="false"
+                            android:layout_centerHorizontal="true"
+
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="-1"
+                            android:gravity="bottom"
+                            android:paddingRight="5dp"
+                            android:text="Sa bagay"
+                            android:textAlignment="gravity"
+
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+
+                    <!-- 1st row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp">
+
+                        <CheckBox
+                            android:id="@+id/chk_o_107"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:tag="D_175"
+                            android:text="107. Bahaging produksyon katulad ng ani na pananim (hal. palay, gulay at prutas) at mga hayop (hal. baka, manok, etc) na pinaalagaan sa ibang pamilya. " />
+
+                        <EditText
+                            android:id="@+id/txt_o_107a"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_176"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+                        <EditText
+                            android:id="@+id/txt_o_107b"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_177"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+
+
+                    <!-- 2nd row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp">
+
+                        <CheckBox
+                            android:id="@+id/chk_o_108"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:tag="D_178"
+                            android:text="108. Suporta galing sa mga kamag-anak na nasa ibang bansa o Overseas Filipino Workers (OFW)." />
+
+                        <EditText
+                            android:id="@+id/txt_o_108a"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_179"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+                        <EditText
+                            android:id="@+id/txt_o_108b"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_180"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+
+
+                    <!-- 3rd row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp">
+
+                        <CheckBox
+                            android:id="@+id/chk_o_109"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:tag="D_181"
+                            android:text="109. Iba pang suporta galing sa ibang bansa, katulad ng pensyon, benepisyo, kita mula sa puhunan sa negosyo, tulong pinansyal o regalong natanggap mula sa mga institusyon na nasa ibang bansa" />
+
+                        <EditText
+                            android:id="@+id/txt_o_109a"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_182"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+                        <EditText
+                            android:id="@+id/txt_o_109b"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_183"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+
+
+                    <!-- 4th row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp">
+
+                        <CheckBox
+                            android:id="@+id/chk_o_110"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:tag="D_184"
+                            android:text="110. Suporta o tulong pinansyal galing sa mga kamag-anak,pamahalaan o pribadong institusyon dito sa bansa." />
+
+                        <EditText
+                            android:id="@+id/txt_o_110a"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_185"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+                        <EditText
+                            android:id="@+id/txt_o_110b"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_186"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+
+
+                    <!-- 5th row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp">
+
+                        <CheckBox
+                            android:id="@+id/chk_o_111"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:tag="D_187"
+                            android:text="111. Bayad galing sa pinauupahang lupa, gusali at iba pang ari-arian. Hindi kasama dito ang mga lupain na ginagamit sa agrikultura (agricultural land)." />
+
+                        <EditText
+                            android:id="@+id/txt_o_111a"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_188"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+                        <EditText
+                            android:id="@+id/txt_o_111b"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_189"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+
+
+                    <!-- 6th row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp">
+
+                        <CheckBox
+                            android:id="@+id/chk_o_112"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:tag="D_190"
+                            android:text="112. Mga interes o tubo galing sa perang nakaimpok sa banko at mga pautang sa ibang tao o pamilya." />
+
+
+                        <EditText
+                            android:id="@+id/txt_o_112a"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_191"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+                        <EditText
+                            android:id="@+id/txt_o_112b"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_192"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+
+
+                    <!-- 7th row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp">
+
+                        <CheckBox
+                            android:id="@+id/chk_o_113"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:tag="D_193"
+                            android:text="113. Pensyon, benepisyo mula sa pagreretiro, at social security benefits." />
+
+                        <EditText
+                            android:id="@+id/txt_o_113a"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_194"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+                        <EditText
+                            android:id="@+id/txt_o_113b"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_195"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+
+
+                    <!-- 8th row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp">
+
+                        <CheckBox
+                            android:id="@+id/chk_o_114"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:tag="D_196"
+                            android:text="114. Dibidendo o mga kita sa mga pinamuhunan sa ibang negosyo." />
+
+                        <EditText
+                            android:id="@+id/txt_o_114a"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_197"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+                        <EditText
+                            android:id="@+id/txt_o_114b"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_198"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+
+
+                    <!-- 9th row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp">
+
+                        <CheckBox
+                            android:id="@+id/chk_o_115"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:tag="D_199"
+                            android:text="115. Iba pang kita na hindi kasama sa mga nabanggit." />
+
+                        <EditText
+                            android:id="@+id/txt_o_115a"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_200"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+                        <EditText
+                            android:id="@+id/txt_o_115b"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20"
+                            android:ems="10"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:tag="D_201"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="false"
+                        android:layout_centerHorizontal="true"
+                        android:text="116. KABUUANG KITA MULA SA IBA PANG PINAGKUKUNAN NG KITA "
+
+                        android:textSize="14dp" />
+
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="116a. Pagsamahin ang kita mula (107a) hanggang (115A) " />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/txt_o_116a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="numberDecimal"
+                            android:tag="D_202"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="116b. Pagsamahin ang kita mula (107B) hanggang (115B)" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/txt_o_116b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="numberDecimal"
+                            android:tag="D_203"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <Button
+                        android:id="@+id/btn_compute2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Compute"
+                        android:textColor="#ffffff"
+                        android:theme="@style/MyButton" />
+
+                    <TextView
+                        android:id="@+id/textView34"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="117. KABUUANG TANTIYA NG UPA NG TINITIRAHANG BAHAY AT LUPA" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/txt_o_117"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:tag="D_204"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <TextView
+
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="false"
+                        android:layout_centerHorizontal="true"
+                        android:text="118. KABUUANG KITA SA SALAPI AT SA BAGAY "
+                        android:textSize="14dp" />
+
+
+                    <TextView
+                        android:id="@+id/textView35"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="118a.  118A  = (105A) + (106A) + (116A)" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/txt_o_118a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="numberDecimal"
+                            android:tag="D_206"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/textView36"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="118b.  118B  = (105B) + (106B) + (115B)+(117)" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/txt_o_118b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="numberDecimal"
+                            android:tag="D_207"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/textView37"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="119. 115  = (118A) + (118B)" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/txt_o_119"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="numberDecimal"
+                            android:tag="D_208"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/btn_compute3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Compute"
+                        android:textColor="#ffffff"
+                        android:theme="@style/MyButton" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/pnl_next_and_back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/back_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+
+                    card_view:cardCornerRadius="5dp"
+                    card_view:cardElevation="10dp"
+                    card_view:cardMaxElevation="10dp">
+
+                    <ImageButton
+                        android:id="@+id/btn_back"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:layout_alignParentBottom="true"
+                        android:layout_weight="1"
+
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/left"
+                        android:text="Back" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/next_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    card_view:cardCornerRadius="5dp"
+                    card_view:cardElevation="10dp"
+                    card_view:cardMaxElevation="10dp">
+
+                    <ImageButton
+                        android:id="@+id/btn_next"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/right"
+                        android:text="Nex" />
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

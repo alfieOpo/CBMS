@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="absnitsolution.modifiedcommunitybasemonitoringsystem.Upload">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/lbl_internetmessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:text="UPLOAD" />
+        <!-- android:theme="@style/MyButton"-->
+        <!-- android:textColor="#ffffff"-->
+
+
+        <TextView
+            android:id="@+id/tv_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Step 0 of 12" />
+
+        <ProgressBar
+            android:id="@+id/pb_main"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.06"
+            android:max="11"
+            android:progress="0"
+            android:progressDrawable="@drawable/progresscustom" />
+
+        <TextView
+            android:id="@+id/tv_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Step - of -" />
+
+        <ProgressBar
+            android:id="@+id/pb_details"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.06"
+            android:max="10"
+            android:progress="0"
+            android:progressDrawable="@drawable/progresscustom" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
