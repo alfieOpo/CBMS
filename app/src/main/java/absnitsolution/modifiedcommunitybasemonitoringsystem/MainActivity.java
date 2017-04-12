@@ -367,14 +367,7 @@ UsersDatabase ud=new UsersDatabase(getApplication());
                         values.put("AndroidID", AndroidID);
                         da.CreateGO_1st_Row(values);
                     }
-                    ContentValues values = new ContentValues();
-                    values.put("person_image", "null");
-                    values.put("house_image", "null");
-                    values.put("M_ID", Config.ID);
-                    values.put("IMEI", IMEI);
-                    values.put("IMSI", IMSI);
-                    values.put("AndroidID", AndroidID);
-                    da.CreateImageRow(values);
+
                     showStatus("FINISH");
                 } catch (Exception e) {
                 }//

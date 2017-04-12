@@ -9,6 +9,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.v4.app.Fragment;
@@ -51,6 +52,7 @@ public class New extends Fragment {
     public New() {
         // Required empty public constructor
     }
+
 
 
     @Override
@@ -140,28 +142,36 @@ public class New extends Fragment {
                     return;
                 }
 
-if(!Config.EDIT){
-                String ts = Context.TELEPHONY_SERVICE;
-                TelephonyManager mTelephonyMgr = (TelephonyManager) getActivity().getSystemService(ts);
-                String IMSI = mTelephonyMgr.getSubscriberId();
-                String IMEI = mTelephonyMgr.getDeviceId();
-                String AndroidID = Settings.Secure.getString(getActivity().getContentResolver(), Settings.Secure.ANDROID_ID);
-                ContentValues values1 = new ContentValues();
-                values1.put("D_001", "");
-                values1.put("longitude", Config.Longitude);
-                values1.put("latitude", Config.Latitude);
-                values1.put("IMEI", IMEI);
-                values1.put("IMSI", IMSI);
-                values1.put("AndroidID", AndroidID);
-                da.CreateNewRow(values1);
-                da.setMaxID();
+                if(!Config.EDIT){
+                    String ts = Context.TELEPHONY_SERVICE;
+                    TelephonyManager mTelephonyMgr = (TelephonyManager) getActivity().getSystemService(ts);
+                    String IMSI = mTelephonyMgr.getSubscriberId();
+                    String IMEI = mTelephonyMgr.getDeviceId();
+                    String AndroidID = Settings.Secure.getString(getActivity().getContentResolver(), Settings.Secure.ANDROID_ID);
+                    ContentValues values1 = new ContentValues();
+                    values1.put("D_001", "");
+                    values1.put("longitude", Config.Longitude);
+                    values1.put("latitude", Config.Latitude);
+                    values1.put("IMEI", IMEI);
+                    values1.put("IMSI", IMSI);
+                    values1.put("AndroidID", AndroidID);
+                    da.CreateNewRow(values1);
+                    da.setMaxID();
 
 
+                    ContentValues values = new ContentValues();
+                    values.put("person_image", "null");
+                    values.put("house_image", "null");
+                    values.put("M_ID", Config.ID);
+                    values.put("IMEI", IMEI);
+                    values.put("IMSI", IMSI);
+                    values.put("AndroidID", AndroidID);
+                    da.CreateImageRow(values);
 
 
-                ((MainActivity)getActivity()).CreateNew();
+                     ((MainActivity)getActivity()).CreateNew();
 
-                da = new MainDataBaseHandler(getActivity().getApplicationContext());
+                }
 
                 cpar.set_key(Config.ID);
                 txt_name.setText(txt_f.getText().toString() + " " + txt_m.getText().toString() + " " + txt_l.getText().toString());
@@ -177,8 +187,25 @@ if(!Config.EDIT){
                 cpar.putEditText(R.id.txt_last_name);
                 cpar.add("latitude", Config.Latitude);
                 cpar.add("longitude", Config.Longitude);
+                da.c_Update(cpar);
 
-                da.c_Update(cpar);}
+
+                try {
+                    BitmapDrawable drawable = (BitmapDrawable) img_Fromcam.getDrawable();
+                    Bitmap bitmap = drawable.getBitmap();
+                    ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                    bitmap.compress(Bitmap.CompressFormat.JPEG, 20, stream);
+                    byte[] byteArray = stream.toByteArray();
+
+                    String AndroidID = Settings.Secure.getString(getActivity().getContentResolver(), Settings.Secure.ANDROID_ID);
+                    ContentValues cv = new ContentValues();
+                    cv.put("person_image", byteArray);
+                    da.UpdateImage(cv, Config.ID, AndroidID);
+                }catch (Exception xx){
+
+                }
+
+
 
                 Fragment fragment = null;
                 try {
@@ -234,14 +261,7 @@ if(!Config.EDIT){
             Bitmap photo = (Bitmap) data.getExtras().get("data");
             img_Fromcam.setImageBitmap(photo);
 
-            ByteArrayOutputStream stream = new ByteArrayOutputStream();
-            photo.compress(Bitmap.CompressFormat.JPEG, 100, stream);
-            byte[] byteArray = stream.toByteArray();
-            MainDataBaseHandler da = new MainDataBaseHandler(getActivity());
-            String AndroidID = Settings.Secure.getString(getActivity().getContentResolver(), Settings.Secure.ANDROID_ID);
-            ContentValues cv = new ContentValues();
-            cv.put("person_image", byteArray);
-            da.UpdateImage(cv, Config.ID, AndroidID);
+
         }
     }
 
