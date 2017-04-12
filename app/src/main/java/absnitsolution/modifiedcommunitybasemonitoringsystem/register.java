@@ -21,7 +21,7 @@ import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
 public class register extends Fragment {
 
     Button btn_save;
-    EditText txt_first_name, txt_middle_name, txt_last_name,   txt_id_number, txt_confirmpassword;
+    EditText txt_first_name, txt_middle_name, txt_last_name,   txt_id_number;
   MaterialBetterSpinner cbo_barangay;
 
     public register() {
@@ -35,7 +35,6 @@ public class register extends Fragment {
         View view = inflater.inflate(R.layout.fragment_register, container, false);
 
         btn_save = (Button) view.findViewById(R.id.btn_save);
-        txt_confirmpassword = (EditText) view.findViewById(R.id.txt_confirmpassword);
         cbo_barangay = (MaterialBetterSpinner) view.findViewById(R.id.cbo_barangay);
         txt_id_number = (EditText) view.findViewById(R.id.txt_id_number);
         txt_last_name = (EditText) view.findViewById(R.id.txt_last_name);

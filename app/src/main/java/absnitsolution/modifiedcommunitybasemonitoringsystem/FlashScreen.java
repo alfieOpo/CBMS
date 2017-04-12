@@ -17,7 +17,7 @@ public class FlashScreen extends AppCompatActivity {
             public void run() {
                 try {
                     UsersDatabase UD = new UsersDatabase(getApplicationContext());
-                    UD.IsLogin();
+
                     sleep(2000);
                     Intent startmainactivity = new Intent(getApplicationContext(), MainActivity.class);
                     startActivity(startmainactivity);
@@ -31,7 +31,6 @@ public class FlashScreen extends AppCompatActivity {
         thread.start();
     }
 
-    public void Atnagbagonga() {
-    }
+
 
 }
