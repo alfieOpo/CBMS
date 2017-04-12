@@ -101,16 +101,16 @@ public class _A_Question extends Fragment implements View.OnClickListener {
 
         txt_a_numero = (EditText) view.findViewById(R.id.txt_a_numero);
 
-        this.cpar.setDropdown(R.id.cbo_a_miyembro_namatay, R.array.ilan_wala, "Select One");
+        this.cpar.setDropdown(R.id.cbo_a_miyembro_namatay, R.array.ilan_wala, "Wala");
 
-        this.cpar.setDropdown(R.id.cbo_a_miyembro_nakapasa, R.array.ilan_wala, "Select One");
-        this.cpar.setDropdown(R.id.cbo_a_miyembro_seniorcitizen, R.array.ilan_wala, "Select One");
-        this.cpar.setDropdown(R.id.cbo_a_miyembro_maykapansanan, R.array.ilan_wala, "Select One");
-        this.cpar.setDropdown(R.id.cbo_a_miyembro_solomagulang, R.array.ilan_wala, "Select One");
-        this.cpar.setDropdown(R.id.cbo_a_miyembro_ofw, R.array.ilan_wala, "Select One");
-        this.cpar.setDropdown(R.id.cbo_a_miyembro_dikasama, R.array.ilan_wala, "Select One");
-        this.cpar.setDropdown(R.id.cbo_a_ilan_magasawa, R.array.ilan_wala, "Select One");
-        this.cpar.setDropdown(R.id.cbo_a_ilan_miyembro, R.array.ilan_wala, "Select One");
+        this.cpar.setDropdown(R.id.cbo_a_miyembro_nakapasa, R.array.ilan_wala, "Wala");
+        this.cpar.setDropdown(R.id.cbo_a_miyembro_seniorcitizen, R.array.ilan_wala, "Wala");
+        this.cpar.setDropdown(R.id.cbo_a_miyembro_maykapansanan, R.array.ilan_wala, "Wala");
+        this.cpar.setDropdown(R.id.cbo_a_miyembro_solomagulang, R.array.ilan_wala, "Wala");
+        this.cpar.setDropdown(R.id.cbo_a_miyembro_ofw, R.array.ilan_wala,"Wala");
+        this.cpar.setDropdown(R.id.cbo_a_miyembro_dikasama, R.array.ilan_wala, "Wala");
+        this.cpar.setDropdown(R.id.cbo_a_ilan_magasawa, R.array.ilan_wala, "Wala");
+        this.cpar.setDropdown(R.id.cbo_a_ilan_miyembro, R.array.ilan_wala, "Wala");
         this.cpar.setEditText(R.id.txt_a_orasnagsimula);
         this.cpar.setEditText(R.id.txt_a_numero);
         this.cpar.setCheckBox(R.id.chk_a_callback);
@@ -435,6 +435,16 @@ public class _A_Question extends Fragment implements View.OnClickListener {
                 } else {
                     Toast.makeText(getActivity(), "Fill up all important field.!", Toast.LENGTH_SHORT).show();
                 }
+
+                Config.ColorTheVIEW(txt_a_tirahan,"Tirahan ng Pamilya");
+                Config.ColorTheVIEW(cbo_a_miyembro_namatay,"73. Mayroon ba kayong dating kapamilya na namatay noong nakaraang 12 buwan?");
+                Config.ColorTheVIEW(cbo_a_miyembro_nakapasa,"62. Mayroon ba kayong kapamilya na nakapasa sa board o bar exam?");
+                Config.ColorTheVIEW(cbo_a_miyembro_seniorcitizen,"54. May miyembro ba ang pamilya na may 60 taong gulang pataas?");
+                Config.ColorTheVIEW(cbo_a_miyembro_maykapansanan,"48. May miyembro ba ng pamilya na may kapansanan?");
+                Config.ColorTheVIEW(cbo_a_miyembro_solomagulang,"45. May miyembro ba ng pamilya na solong magulang na may kinakalingang anak");
+                Config.ColorTheVIEW(cbo_a_miyembro_ofw,"40. Mayroon ba kayong dating kapamilya na OFW?");
+                Config.ColorTheVIEW(cbo_a_ilan_miyembro,"Ilang Miyembro mayroon dito sa inyong pamilya?");
+
             }
         });
 

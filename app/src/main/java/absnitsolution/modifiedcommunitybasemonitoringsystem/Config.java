@@ -45,31 +45,28 @@ public class Config {
         boolean walanglaman=txt.getText().toString().toLowerCase().equals("");
 
         if(walanglaman){
-            txt.setHint("Fill up  this field to proceed.");
-            txt.setTextColor(Color.RED);
+
+            txt.setHintTextColor(Color.RED);
         }
         else{
-            txt.setHint(Default_hint);
-            txt.setTextColor(Color.BLACK);
+
+            txt.setHintTextColor(Color.BLACK);
         }
     }
     public  static void ColorTheVIEW(MaterialBetterSpinner combobox,String Default_hint){
-        boolean wala=combobox.getText().toString().toLowerCase().equals("wala");
-        boolean hindi=combobox.getText().toString().toLowerCase().equals("hindi");
         boolean walanglaman=combobox.getText().toString().toLowerCase().equals("");
-        if(wala||hindi||walanglaman){
-            combobox.setHint("Fill up  this field to proceed.");
-            combobox.setTextColor(Color.RED);
+        boolean dasdas=combobox.getText().toString().toLowerCase().equals("--");
+        if(walanglaman||dasdas){
+
+            combobox.setHintTextColor(Color.RED);
         }
         else{
-            combobox.setHint(Default_hint);
-            combobox.setTextColor(Color.BLACK);
+
+            combobox.setHintTextColor(Color.BLACK);
         }
     }
 
-    public static String getImagePath() {
-        return "sdcard/ModifiedCommunityBasemonitoringSystem/" + ImageName + Config.ID + ".jpg";
-    }
+
 
     private static String zeroPad(String value, String Many) {
         int val = 0;
