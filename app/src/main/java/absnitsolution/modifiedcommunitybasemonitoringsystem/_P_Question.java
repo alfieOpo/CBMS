@@ -1,7 +1,10 @@
 package absnitsolution.modifiedcommunitybasemonitoringsystem;
 
 
+import android.icu.text.NumberFormat;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
@@ -24,7 +27,7 @@ public class _P_Question extends Fragment {
     MainDataBaseHandler da;
     ImageButton btn_back, btn_next;
     MaterialBetterSpinner cbo_converter;
-EditText txt_equals;
+EditText txt_equals,txt_p_121;
     public _P_Question() {
     }
 
@@ -41,26 +44,35 @@ EditText txt_equals;
 
         cbo_converter=(MaterialBetterSpinner)view.findViewById(R.id.cbo_converter);
         txt_equals=(EditText) view.findViewById(R.id.txt_equals);
-        this.cpar.setDropdown(R.id.cbo_p_120, R.array.p_katayuan_sinasaka, "Select One");
-        
+        txt_p_121=(EditText) view.findViewById(R.id.txt_p_121);
+        this.cpar.setDropdown(R.id.cbo_p_120, R.array.p_katayuan_sinasaka, "N/A");
+        this.cpar.setDropdown(R.id.cbo_converter, R.array.area, "square meter");
         this.cpar.setEditText(R.id.txt_p_120);
+        this.cpar.setEditText(R.id.txt_equals);
         this.cpar.setEditText(R.id.txt_p_121_1);
-        this.cpar.setEditText(R.id.txt_p_122_1);
-        this.cpar.setEditText(R.id.txt_p_122_2);
-        this.cpar.setEditText(R.id.txt_p_122_3);
-        this.cpar.setEditText(R.id.txt_p_122_4);
-        this.cpar.setEditText(R.id.txt_p_122_5);
         this.cpar.setEditText(R.id.txt_p_123_1);
-        this.cpar.setEditText(R.id.txt_p_122_2);
-        this.cpar.setEditText(R.id.txt_p_122_3);
         this.cpar.setEditText(R.id.txt_p_123_4);
         this.cpar.setEditText(R.id.txt_p_123_5);
-
-
-        cbo_converter.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        cbo_converter.setOnItemClickListener(new AdapterView.OnItemClickListener()  {
+            @RequiresApi(api = Build.VERSION_CODES.N)
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                double mainvalue=0;
 
+                try {
+                    mainvalue=Double.valueOf(txt_p_121.getText().toString());
+                }
+                catch (Exception xx){
+
+                }
+                if(position==0){
+                    txt_equals.setText(Config.toCurrency(mainvalue));
+                }
+
+                else if(position ==1){
+                    double value=(mainvalue * 10000);
+                    txt_equals.setText(Config.toCurrency(value));
+                }
             }
         });
 
@@ -101,18 +113,12 @@ EditText txt_equals;
         da = new MainDataBaseHandler(getActivity().getApplicationContext());
         this.cpar.putDropdown(R.id.cbo_p_120);
         this.cpar.putEditText(R.id.txt_p_120);
-        //this.cpar.putDropdown(R.id.cbo_p_121);
         this.cpar.putEditText(R.id.txt_p_121_1);
-        this.cpar.putEditText(R.id.txt_p_122_1);
-        this.cpar.putEditText(R.id.txt_p_122_2);
-        this.cpar.putEditText(R.id.txt_p_122_3);
-        this.cpar.putEditText(R.id.txt_p_122_4);
-        this.cpar.putEditText(R.id.txt_p_122_5);
         this.cpar.putEditText(R.id.txt_p_123_1);
-        this.cpar.putEditText(R.id.txt_p_122_2);
-        this.cpar.putEditText(R.id.txt_p_122_3);
         this.cpar.putEditText(R.id.txt_p_123_4);
         this.cpar.putEditText(R.id.txt_p_123_5);
+        this.cpar.putDropdown(R.id.cbo_converter);
+        this.cpar.putEditText(R.id.txt_equals);
         da.c_Update(cpar);
         super.onDestroy();
     }

@@ -209,6 +209,12 @@ else if (id == R.id.nav_register) {
             startActivity(startmainactivity);
             finish();
         }
+        else if (id == R.id.nav_register) {
+
+            register register=new register();
+            LoadFrame(register,"User");
+
+        }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;

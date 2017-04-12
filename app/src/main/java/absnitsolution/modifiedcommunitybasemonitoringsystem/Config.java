@@ -91,6 +91,10 @@ public class Config {
         public static String last_name = "";
         public static String ISLOGIN = "";
     }
+    public static String toCurrency(double v){
+        String value=DecimalFormat.getCurrencyInstance().format(v).replace("$","");
+        return value;
+    }
 }
 
 
