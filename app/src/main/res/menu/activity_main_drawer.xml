@@ -41,10 +41,6 @@
                 android:id="@+id/nav_about_us"
                 android:icon="@drawable/question"
                 android:title="About Us" />
-            <item
-                android:id="@+id/nav_logout"
-                android:icon="@drawable/logout"
-                android:title="Logout" />
 
         </menu>
 

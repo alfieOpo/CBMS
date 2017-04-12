@@ -6,6 +6,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.EditText;
+
+import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
 
 
 /**
@@ -14,8 +18,9 @@ import android.view.ViewGroup;
 public class _4thstatedrow_Question extends Fragment {
     c_params cpar;
     String _key = "";
+    EditText txt_4th_pangalan,txt_4th_ibapa_dahilan;
     MainDataBaseHandler da;
-
+    MaterialBetterSpinner cbo_4th_dahilan;
     public _4thstatedrow_Question() {
         // Required empty public constructor
     }
@@ -33,6 +38,23 @@ public class _4thstatedrow_Question extends Fragment {
         this.cpar.setEditText(R.id.txt_4th_pangalan);
         this.cpar.setDropdown(R.id.cbo_4th_dahilan, R.array._4th_soloparent, "Select One");
         this.cpar.setEditText(R.id.txt_4th_ibapa_dahilan);
+        txt_4th_pangalan=(EditText)view.findViewById(R.id.txt_4th_pangalan);
+        txt_4th_ibapa_dahilan=(EditText)view.findViewById(R.id.txt_4th_ibapa_dahilan);
+        cbo_4th_dahilan   =(MaterialBetterSpinner)view.findViewById(R.id.cbo_4th_dahilan);
+        txt_4th_pangalan.setSelectAllOnFocus(true);
+        cbo_4th_dahilan.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(position == 8){
+
+                    txt_4th_ibapa_dahilan.setVisibility(View.VISIBLE);
+                }
+                else{
+                    txt_4th_ibapa_dahilan.setText("");
+                    txt_4th_ibapa_dahilan.setVisibility(View.INVISIBLE);
+                }
+            }
+        });
         return view;
 
     }

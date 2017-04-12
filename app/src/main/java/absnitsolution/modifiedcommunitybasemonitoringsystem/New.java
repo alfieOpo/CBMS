@@ -30,6 +30,8 @@ import android.widget.Toast;
 import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
 
 import java.io.ByteArrayOutputStream;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -41,12 +43,13 @@ public class New extends Fragment {
     TextView tv_latitude;
     TextView tv_longitude;
     EditText txt_name;
+    List<String> list;
     MainDataBaseHandler da;
     EditText txt_f, txt_m, txt_l;
     ImageButton btn_home, btn_next;
     c_params cpar;
     MaterialBetterSpinner cbo_lalawigan, cbo_purok_sitio, cbo_barangay;
-    EditText txt_purok_sitio;
+    EditText txt_first_name,txt_last_name;
     private ProgressDialog progressDialog;
 
     public New() {
@@ -76,7 +79,6 @@ public class New extends Fragment {
         img_Fromcam = (ImageView) view.findViewById(R.id.img_Fromcam);
         cbo_barangay = (MaterialBetterSpinner) view.findViewById(R.id.cbo_barangay);
         cbo_purok_sitio = (MaterialBetterSpinner) view.findViewById(R.id.cbo_purok_sitio);
-
 
 
         String barangay=Config.usersinfo.barangay;
@@ -134,7 +136,14 @@ public class New extends Fragment {
         btn_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+list=new ArrayList<String>();
+addField(txt_f.getText().toString());
+                addField(txt_l.getText().toString());
+                addField(cbo_purok_sitio.getText().toString());
+                if(!Valid()){
+                    Toast.makeText(getActivity(), "Fill out all important field!", Toast.LENGTH_SHORT).show();
+                    return;
+                }
 
                 if(img_Fromcam.getDrawable() == null){
 
@@ -365,5 +374,17 @@ public class New extends Fragment {
 
         }
     }
+    private void addField(String value) {
+        list.add(value);
+    }
 
+    private boolean Valid() {
+
+        for (String value : list) {
+            if (value.equals("Select One") || value.equals("")) {
+                return false;
+            }
+        }
+        return true;
+    }
 }

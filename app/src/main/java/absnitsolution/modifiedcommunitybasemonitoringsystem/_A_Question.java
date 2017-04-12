@@ -455,7 +455,7 @@ public class _A_Question extends Fragment implements View.OnClickListener {
                         FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                         fragmentManager.beginTransaction().replace(R.id.frame, fragment, "I-E. DALAS NG PAGKAIN").commit();
                     } else {
-                        Toast.makeText(getActivity(), "Fill up all important field.!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), "Fill out all important field!", Toast.LENGTH_SHORT).show();
                     }
                 }
                 Config.EDIT=true;

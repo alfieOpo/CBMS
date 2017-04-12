@@ -61,12 +61,9 @@
                             android:textColorHint="#05ab9a"
                             android:textSize="16sp" />
                     </android.support.design.widget.TextInputLayout>
-
-
                     <android.support.design.widget.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
-
                         <EditText
                             android:id="@+id/txt_a_nakapanayam"
                             android:layout_width="match_parent"
@@ -78,12 +75,9 @@
                             android:textColorHint="#05ab9a"
                             android:textSize="16sp" />
                     </android.support.design.widget.TextInputLayout>
-
-
                     <android.support.design.widget.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
-
                         <EditText
                             android:id="@+id/txt_a_orasnagsimula"
                             android:layout_width="match_parent"
@@ -166,7 +160,15 @@
                         android:id="@+id/textView8"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
                         android:text="D . DEMOGRAPIYA" />
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2 . Ilang Miyembro mayroon dito sa inyong pamilya?" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -180,7 +182,7 @@
                             android:layout_toLeftOf="@+id/btn_myembro_ng_pamilya"
                             android:layout_toStartOf="@+id/btn_myembro_ng_pamilya"
                             android:layout_weight="1"
-                            android:hint="2 . Ilang Miyembro mayroon dito sa inyong pamilya?"
+                            android:hint="Select One"
                             android:tag="D_014"
                             android:textColorHint="#05ab9a"
                             android:textSize="14dp"
@@ -208,8 +210,15 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
                         android:layout_centerHorizontal="true"
+                        android:paddingBottom="5dp"
                         android:text="G. IBANG MIYEMBRO NG PAMILYA"
                         android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textView65"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="34. Mayroon bang miyembro ng pamilya na di kasama sa pamilya ngunit inaasahan na babalik sa pamilya sa loob ng 12 buwan?" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -222,7 +231,6 @@
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_weight="1"
-                            android:hint="34. Mayroon bang miyembro ng pamilya na di kasama sa pamilya ngunit inaasahan na babalik sa pamilya sa loob ng 12 buwan?"
                             android:tag="D_017"
                             android:textColorHint="#05ab9a"
                             android:textSize="10dp"
@@ -249,8 +257,15 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
                         android:layout_centerHorizontal="true"
+                        android:paddingBottom="5dp"
                         android:text="H. OVERSEAS FILIPINO WORKER"
                         android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textView66"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="40. Mayroon ba kayong dating kapamilya na OFW?" />
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -264,7 +279,6 @@
                             android:layout_alignParentLeft="true"
                             android:layout_toLeftOf="@+id/btn_ofw"
                             android:layout_toStartOf="@+id/btn_ofw"
-                            android:hint="40. Mayroon ba kayong dating kapamilya na OFW?"
                             android:tag="D_019"
                             android:textColorHint="#05ab9a"
                             android:textSize="14dp"
@@ -293,8 +307,15 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
                         android:layout_centerHorizontal="true"
+                        android:paddingBottom="5dp"
                         android:text="I.A MGA KAPAMILYA NA SOLO PARENT"
                         android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textView67"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="45. May miyembro ba ng pamilya na solong magulang na may kinakalingang anak" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -307,7 +328,6 @@
                             android:layout_height="match_parent"
                             android:layout_alignParentLeft="true"
                             android:layout_weight="1"
-                            android:hint="45. May miyembro ba ng pamilya na solong magulang na may kinakalingang anak"
                             android:tag="D_021"
                             android:textColorHint="#05ab9a"
                             android:textSize="10dp"
@@ -332,8 +352,15 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
                         android:layout_centerHorizontal="true"
+                        android:paddingBottom="5dp"
                         android:text="I.B MGA KAPAMILYA NA MAY KAPANSANAN"
                         android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textView68"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="48. May miyembro ba ng pamilya na may kapansanan?" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -349,7 +376,6 @@
                             android:layout_toLeftOf="@+id/btn_mga_kapamilya_na_may_kapansanan"
                             android:layout_toStartOf="@+id/btn_mga_kapamilya_na_may_kapansanan"
                             android:layout_weight="1"
-                            android:hint="48. May miyembro ba ng pamilya na may kapansanan?"
                             android:tag="D_023"
                             android:textColorHint="#05ab9a"
                             android:textSize="10dp"
@@ -374,8 +400,15 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
                         android:layout_centerHorizontal="true"
+                        android:paddingBottom="5dp"
                         android:text="I.C MGA KAPAMILYA NA SENIOR CITIZEN"
                         android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textView69"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="54. May miyembro ba ang pamilya na may 60 taong gulang pataas?" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -388,7 +421,6 @@
                             android:layout_height="match_parent"
                             android:layout_alignParentLeft="true"
                             android:layout_weight="1"
-                            android:hint="54. May miyembro ba ang pamilya na may 60 taong gulang pataas?"
                             android:tag="D_025"
                             android:textColorHint="#05ab9a"
                             android:textSize="10dp"
@@ -413,8 +445,15 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
                         android:layout_centerHorizontal="true"
+                        android:paddingBottom="5dp"
                         android:text="I.E MGA KAPAMILYA NA NAKAPASA SA BOARD O BAR EXAM"
                         android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textView70"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="62. Mayroon ba kayong kapamilya na nakapasa sa board o bar exam?" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -427,7 +466,6 @@
                             android:layout_height="match_parent"
                             android:layout_alignParentLeft="true"
                             android:layout_weight="1"
-                            android:hint="62. Mayroon ba kayong kapamilya na nakapasa sa board o bar exam?"
                             android:tag="D_027"
                             android:textColorHint="#05ab9a"
                             android:textSize="10dp"
@@ -453,10 +491,17 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
                         android:layout_centerHorizontal="true"
+                        android:paddingBottom="5dp"
                         android:text="I.F MAG-ASAWA SA PAMILYA"
                         android:textSize="16dp" />
 
                     <!-- 9th stated row -->
+                    <TextView
+                        android:id="@+id/textView71"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="68. Ilan ang mag-asawa sa inyong pamilya" />
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -468,7 +513,6 @@
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_weight="1"
-                            android:hint="68. Ilan ang mag-asawa sa inyong pamilya"
                             android:tag="D_031"
                             android:textColorHint="#05ab9a"
                             android:textSize="14dp"
@@ -491,8 +535,15 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
                         android:layout_centerHorizontal="true"
+                        android:paddingBottom="5dp"
                         android:text="K. MGA DATING KAPAMILYA"
                         android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textView72"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="73. Mayroon ba kayong dating kapamilya na namatay noong nakaraang 12 buwan?" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -506,7 +557,6 @@
                             android:layout_height="match_parent"
                             android:layout_alignParentLeft="true"
                             android:layout_weight="1"
-                            android:hint="73. Mayroon ba kayong dating kapamilya na namatay noong nakaraang 12 buwan?"
                             android:tag="D_032"
                             android:textColorHint="#05ab9a"
                             android:textSize="10dp"
