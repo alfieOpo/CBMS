@@ -83,6 +83,7 @@ public class UsersDatabase extends SQLiteOpenHelper {
             String countQuery = "select * from " + TABLE_SERVER ;
             SQLiteDatabase db = this.getReadableDatabase();
             Cursor cursor = db.rawQuery(countQuery, null);
+
             cursor.moveToFirst();
             Config.usersinfo.first_name = cursor.getString(cursor.getColumnIndexOrThrow(KEY_FIRST_NAME));
             Config.usersinfo.middle_name = cursor.getString(cursor.getColumnIndexOrThrow(KEY_MIDDLE_NAME));
@@ -90,9 +91,11 @@ public class UsersDatabase extends SQLiteOpenHelper {
             Config.usersinfo.barangay = cursor.getString(cursor.getColumnIndexOrThrow(KEY_BARANGAY));
             Config.usersinfo.id_number = cursor.getString(cursor.getColumnIndexOrThrow(KEY_ID_NUMBER));
             Config.Tagapanayam=Config.usersinfo.first_name+" "+Config.usersinfo.middle_name+" "+Config.usersinfo.last_name;
-
+          String a=Config.usersinfo.first_name+" "+Config.usersinfo.middle_name+" "+Config.usersinfo.last_name;
+            String ab=Config.usersinfo.first_name+" "+Config.usersinfo.middle_name+" "+Config.usersinfo.last_name;
             cursor.close();
-        } catch (Exception xx) {
+            }
+        catch (Exception xx) {
 
         }
 

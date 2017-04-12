@@ -42,6 +42,7 @@ public class _A_Question extends Fragment implements View.OnClickListener {
     CheckBox chk_a_callback;
     ImageButton btn_back, btn_next;
     List<String> list;
+    EditText txt_a_pangalantagapanayam;
     TimePickerDialog.OnTimeSetListener t = new TimePickerDialog.OnTimeSetListener() {
         @Override
         public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
@@ -75,7 +76,7 @@ public class _A_Question extends Fragment implements View.OnClickListener {
         btn_mga_pamilya_na_nakapasa_sa_board_o_bar_exam = (Button) view.findViewById(R.id.btn_mga_pamilya_na_nakapasa_sa_board_o_bar_exam);
         btn_mga_dating_kapamilya = (Button) view.findViewById(R.id.btn_mga_dating_kapamilya);
         txt_a_tirahan = (EditText) view.findViewById(R.id.txt_a_tirahan);
-
+        txt_a_pangalantagapanayam = (EditText) view.findViewById(R.id.txt_a_pangalantagapanayam);
         chk_a_callback = (CheckBox) view.findViewById(R.id.chk_a_callback);
 
         btn_myembro_ng_pamilya.setOnClickListener(this);
@@ -87,6 +88,9 @@ public class _A_Question extends Fragment implements View.OnClickListener {
         btn_mga_dating_kapamilya.setOnClickListener(this);
         btn_ibang_myembro.setOnClickListener(this);
         btn_a_ilan_magasawa.setOnClickListener(this);
+
+
+
 
         cbo_a_miyembro_namatay = (MaterialBetterSpinner) view.findViewById(R.id.cbo_a_miyembro_namatay);
         cbo_a_miyembro_dikasama = (MaterialBetterSpinner) view.findViewById(R.id.cbo_a_miyembro_dikasama);
@@ -117,6 +121,12 @@ public class _A_Question extends Fragment implements View.OnClickListener {
         Config.CallbackIsCheck = chk_a_callback.isChecked();
         this.cpar.setEditText(R.id.txt_a_nakapanayam);
         this.cpar.setEditText(R.id.txt_a_pangalantagapanayam);
+
+
+        if(txt_a_pangalantagapanayam.getText().toString().equals("")){
+            txt_a_pangalantagapanayam.setText(Config.Tagapanayam);
+        }
+
         // this.cpar.setEditText(R.id.txt_a_puna);
         this.cpar.setEditText(R.id.txt_a_tirahan);
         this.cpar.setCheckBox(R.id.chk_a_hindinagpaunlak);
