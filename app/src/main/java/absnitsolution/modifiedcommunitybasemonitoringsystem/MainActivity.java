@@ -47,16 +47,25 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     UsersDatabase UD=new UsersDatabase(getApplicationContext());
-        if(UD.GetBaragay().equals("0")){
+
+        String User=UD.GetBaragay();
+
+        if (Config.NewOPen == 0) {
+            ListofPerson list = new ListofPerson();
+            LoadFrame(list, "List");
+            Config.NewOPen = 1;
+        }
+        if(User.equals("")){
             UD.addUser();
             register register=new register();
             LoadFrame(register,"User Account");
 
         }
-        if (Config.NewOPen == 0) {
-            ListofPerson list = new ListofPerson();
-            LoadFrame(list, "List");
-            Config.NewOPen = 1;
+        if(User.equals("0")){
+         UD.SetUserInfo();
+            register register=new register();
+            LoadFrame(register,"User Account");
+
         }
 /*
         if(Config.EDIT){
@@ -85,9 +94,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
              }
      }
        else{
-         login login=new login();
-         LoadFrame(login,"LOGIN");
-         NextAndBack(false,false);
+
      }*/
 
     }

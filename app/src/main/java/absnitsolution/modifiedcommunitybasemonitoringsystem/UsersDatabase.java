@@ -52,7 +52,7 @@ public class UsersDatabase extends SQLiteOpenHelper {
         values.put(KEY_ID_NUMBER, "0");
         values.put(KEY_BARANGAY, "0");
         db.insert(TABLE_SERVER, null, values);
-
+        SetUserInfo();
         db.close();
     }
     void UpdateUser(UsersInfo users) {
