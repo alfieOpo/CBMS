@@ -33,6 +33,12 @@
                         android:orientation="vertical">
 
 
+                        <TextView
+                            android:id="@+id/textView63"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="I.A MGA KAPAMILYA NG SOLO PARENT" />
+
                         <android.support.design.widget.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
@@ -69,7 +75,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="Iba pa, itala"
                                 android:inputType="textPersonName"
                                 android:tag="_4th_003"
                                 android:textColorHint="#05ab9a"

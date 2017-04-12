@@ -13,26 +13,21 @@ import java.text.NumberFormat;
  * Created by Arlene on 09/02/2017.
  */
 public class Config {
-    public static String action = "list";
     public static String Latitude = "";
     public static String Longitude = "";
-    public static String ImageName = "";
     public static String ID = "0";
     public static String STATUS = "";
     public static Boolean EDIT = false;
     public static int Count = 0;
-    public static String Form = "";
     public static Fragment fragmentform = null;
     public static String Title = "";
-    public static String Grid_ID = "0";
-    public static String Stated = "";
     public static String AndroidID = "";
     public static String Table = "";
     public static String F_field = "";
     public static boolean CallbackIsCheck = false;
     public static String Sitio = "";
     public static String Barangay_code = "";
-    public static int ItemID = 0;
+
     public  static String Tagapanayam="";
     public static int NewOPen = 0;
 

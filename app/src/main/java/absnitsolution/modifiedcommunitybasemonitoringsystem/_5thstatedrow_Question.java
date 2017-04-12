@@ -6,6 +6,12 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.EditText;
+
+import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
 
 
 /**
@@ -15,7 +21,9 @@ public class _5thstatedrow_Question extends Fragment {
     c_params cpar;
     String _key = "";
     MainDataBaseHandler da;
-
+    CheckBox chk_ibapa;
+    MaterialBetterSpinner cbo_5th_saangalingtulong,cbo_5th_sanhi_kapansanan;
+    EditText txt_5th_ibapa_kapansanan,txt_5th_ibapa_saangaling,txt_iba_itala,txt_5th_pangalan_maykapansanan;
     public _5thstatedrow_Question() {
         // Required empty public constructor
     }
@@ -27,6 +35,15 @@ public class _5thstatedrow_Question extends Fragment {
         // Inflate the layout for this fragment
         this._key = getArguments().getString("_id");
         View view = inflater.inflate(R.layout.fragment___5thstatedrow__question, container, false);
+        chk_ibapa=(CheckBox)view.findViewById(R.id.chk_ibapa);
+        txt_5th_ibapa_kapansanan=(EditText)view.findViewById(R.id.txt_5th_ibapa_kapansanan);
+        txt_5th_ibapa_saangaling=(EditText)view.findViewById(R.id.txt_5th_ibapa_saangaling);
+        txt_5th_pangalan_maykapansanan=(EditText)view.findViewById(R.id.txt_5th_pangalan_maykapansanan);
+        cbo_5th_saangalingtulong=(MaterialBetterSpinner)view.findViewById(R.id.cbo_5th_saangalingtulong);
+        cbo_5th_sanhi_kapansanan=(MaterialBetterSpinner)view.findViewById(R.id.cbo_5th_sanhi_kapansanan);
+
+        txt_5th_pangalan_maykapansanan.setSelectAllOnFocus(true);
+        txt_iba_itala=(EditText)view.findViewById(R.id.txt_iba_itala);
         this.cpar = new c_params(Config.ID, container, view);
         this.cpar.set_table("ga_5th");
         this.cpar.set_key(this._key);
@@ -56,6 +73,46 @@ public class _5thstatedrow_Question extends Fragment {
         this.cpar.setEditText(R.id.txt_5th_tulongnatanggap);
         this.cpar.setDropdown(R.id.cbo_5th_saangalingtulong, R.array._5th_saangaling_tulong, "Select One");
         this.cpar.setEditText(R.id.txt_5th_ibapa_saangaling);
+
+        chk_ibapa.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+                if(isChecked){
+                    txt_5th_ibapa_kapansanan.setVisibility( View.VISIBLE);
+                }
+                else{
+                    txt_5th_ibapa_kapansanan.setText("");
+                    txt_5th_ibapa_kapansanan.setVisibility( View.INVISIBLE);
+                }
+
+            }
+        });
+        cbo_5th_saangalingtulong.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(position==5){
+                    txt_5th_ibapa_saangaling.setVisibility( View.VISIBLE);
+                }
+                else{
+                    txt_5th_ibapa_saangaling.setText("");
+                    txt_5th_ibapa_saangaling.setVisibility( View.INVISIBLE);
+                }
+            }
+        });
+
+        cbo_5th_sanhi_kapansanan.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(position==4){
+                    txt_iba_itala.setVisibility( View.VISIBLE);
+                }
+                else{
+                    txt_iba_itala.setText("");
+                    txt_iba_itala.setVisibility( View.INVISIBLE);
+                }
+            }
+        });
         return view;
 
     }

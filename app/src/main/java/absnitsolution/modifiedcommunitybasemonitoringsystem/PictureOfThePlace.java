@@ -91,21 +91,15 @@ public class PictureOfThePlace extends Fragment {
                 }
                 // Insert the fragment by replacing any existing fragment
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.frame, fragment, "A. PAGKAKAKILANLAN").commit();
+                fragmentManager.beginTransaction().replace(R.id.frame,new _V_Question()).commit();
             }
         });
         btn_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Fragment fragment = null;
-                try {
-                    fragment = ListofPerson.class.newInstance();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
 
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.frame, fragment, "I-E. DALAS NG PAGKAIN").commit();
+                fragmentManager.beginTransaction().replace(R.id.frame, new switcher()).commit();
             }
         });
         if (txt_oras_nag_simula.getText().toString().equals("")) {

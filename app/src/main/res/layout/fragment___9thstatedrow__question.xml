@@ -33,6 +33,12 @@
                         android:orientation="vertical">
 
 
+                        <TextView
+                            android:id="@+id/textView76"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="I.F MAG-ASAWA SA PAMILYA" />
+
                         <android.support.design.widget.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
@@ -70,93 +76,68 @@
                             android:textAlignment="viewStart"
                             android:textSize="14dp" />
 
-                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                            android:id="@+id/cbo_9th_71_1"
+                        <CheckBox
+                            android:id="@+id/chk_9th_71_1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:hint="1.Natural Method "
-                            android:tag="_9th_003"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="10dp"
-                            app:met_floatingLabel="highlight" />
+                            android:text="1.Natural Method " />
 
-                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                            android:id="@+id/cbo_9th_71_2"
+                        <CheckBox
+                            android:id="@+id/chk_9th_71_2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:hint="2. Barrier method (condom, diaphragm) "
-                            android:tag="_9th_004"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="10dp"
-                            app:met_floatingLabel="highlight" />
+                            android:tag="_9th_004 "
+                            android:text="2. Barrier method (condom, diaphragm) " />
 
-                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                            android:id="@+id/cbo_9th_71_3"
+                        <CheckBox
+                            android:id="@+id/chk_9th_71_3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:hint="3. IUD "
                             android:tag="_9th_005"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="10dp"
-                            app:met_floatingLabel="highlight" />
+                            android:text="3. IUD " />
 
-                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                            android:id="@+id/cbo_9th_71_4"
+                        <CheckBox
+                            android:id="@+id/chk_9th_71_4"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:hint="4. Pills "
                             android:tag="_9th_006"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="10dp"
-                            app:met_floatingLabel="highlight" />
+                            android:text="4. Pills " />
 
-                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                            android:id="@+id/cbo_9th_71_5"
+                        <CheckBox
+                            android:id="@+id/chk_9th_71_5"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:hint="5. Injectible"
                             android:tag="_9th_007"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="10dp"
-                            app:met_floatingLabel="highlight" />
+                            android:text="5. Injectible" />
 
-                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                            android:id="@+id/cbo_9th_71_6"
+                        <CheckBox
+                            android:id="@+id/chk_9th_71_6"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:hint="6. Vasectomy "
                             android:tag="_9th_008"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="10dp"
-                            app:met_floatingLabel="highlight" />
+                            android:text="6. Vasectomy" />
 
-                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                            android:id="@+id/cbo_9th_71_7"
+                        <CheckBox
+                            android:id="@+id/chk_9th_71_7"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
                             android:hint="7. Tubal ligation "
                             android:tag="_9th_009"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="10dp"
-                            app:met_floatingLabel="highlight" />
+                            android:text="7. Tubal ligation " />
 
-                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                            android:id="@+id/cbo_9th_71_8"
+                        <CheckBox
+                            android:id="@+id/chk_9th_71_8"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:hint="8. Hindi alam "
                             android:tag="_9th_010"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="10dp"
-                            app:met_floatingLabel="highlight" />
+                            android:text="8. Hindi alam " />
+
+                        <CheckBox
+                            android:id="@+id/chk_9th_71_9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:tag="_9th_012"
+                            android:text="9. Iba pa, itala ___ " />
 
                         <android.support.design.widget.TextInputLayout
                             android:layout_width="match_parent"
@@ -167,23 +148,11 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="9. Iba pa, itala ___ "
                                 android:inputType="textPersonName"
                                 android:tag="_9th_011"
                                 android:textColorHint="#05ab9a"
                                 android:textSize="14dp" />
                         </android.support.design.widget.TextInputLayout>
-
-                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                            android:id="@+id/cbo_9th_71_9"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:hint="9. Iba pa, itala ___ "
-                            android:tag="_9th_012"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="10dp"
-                            app:met_floatingLabel="highlight" />
 
                         <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                             android:id="@+id/cbo_9th_72"

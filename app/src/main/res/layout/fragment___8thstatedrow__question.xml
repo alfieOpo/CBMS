@@ -33,6 +33,13 @@
 
 
                         <TextView
+                            android:id="@+id/textView75"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:text="I.E MGA KAPAMILYA NAKAPASA SA BOARD EXAM" />
+
+                        <TextView
                             android:id="@+id/textView60"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"

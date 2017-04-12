@@ -32,6 +32,13 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
+                        <TextView
+                            android:id="@+id/textView73"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="I.B MGA KAPAMILYA NA MAY KAPANSANAN" />
+
                         <android.support.design.widget.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
@@ -66,7 +73,7 @@
 
 
                             <LinearLayout
-                                android:layout_width="200dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:orientation="vertical">
 
@@ -84,7 +91,7 @@
 
                                 <CheckBox
                                     android:id="@+id/chk_5th_partialblindness"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_centerHorizontal="true"
                                     android:checked="false"
@@ -94,7 +101,7 @@
 
                                 <CheckBox
                                     android:id="@+id/chk_5th_lowvision"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_centerHorizontal="true"
                                     android:checked="false"
@@ -105,7 +112,7 @@
 
                                 <CheckBox
                                     android:id="@+id/chk_5th_totallydeaf"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_centerHorizontal="true"
                                     android:checked="false"
@@ -116,7 +123,7 @@
 
                                 <CheckBox
                                     android:id="@+id/chk_5th_partiallydeaf"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_centerHorizontal="true"
                                     android:checked="false"
@@ -127,7 +134,7 @@
 
                                 <CheckBox
                                     android:id="@+id/chk_5th_hardofhearing"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_centerHorizontal="true"
                                     android:checked="false"
@@ -138,7 +145,7 @@
 
                                 <CheckBox
                                     android:id="@+id/chk_5th_oraldefect"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_centerHorizontal="true"
                                     android:checked="false"
@@ -149,7 +156,7 @@
 
                                 <CheckBox
                                     android:id="@+id/chk_5th_onehand"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_centerHorizontal="true"
                                     android:checked="false"
@@ -160,7 +167,7 @@
 
                                 <CheckBox
                                     android:id="@+id/chk_5th_nohands"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_centerHorizontal="true"
                                     android:checked="false"
@@ -170,7 +177,7 @@
 
                                 <CheckBox
                                     android:id="@+id/chk_5th_oneleg"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_centerHorizontal="true"
                                     android:checked="false"
@@ -181,7 +188,7 @@
 
                                 <CheckBox
                                     android:id="@+id/chk_5th_nolegs"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_centerHorizontal="true"
                                     android:checked="false"
@@ -296,6 +303,12 @@
                                     android:textSize="14dp" />
 
 
+                                <CheckBox
+                                    android:id="@+id/chk_ibapa"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Iba pa, Itala" />
+
                                 <android.support.design.widget.TextInputLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content">
@@ -305,7 +318,6 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:ems="10"
-                                        android:hint="Iba pa, itala"
                                         android:inputType="textPersonName"
                                         android:tag="_5th_022"
                                         android:textColorHint="#05ab9a"
@@ -330,6 +342,14 @@
                             android:textSize="14dp"
                             app:met_floatingLabel="highlight" />
 
+
+                        <EditText
+                            android:id="@+id/txt_iba_itala"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName" />
 
                         <TextView
                             android:id="@+id/textView59"
@@ -374,7 +394,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="Iba pa, itala"
                                 android:inputType="textPersonName"
                                 android:tag="_5th_026"
                                 android:textColorHint="#05ab9a"

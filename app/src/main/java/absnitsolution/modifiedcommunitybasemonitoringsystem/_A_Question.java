@@ -145,10 +145,7 @@ public class _A_Question extends Fragment implements View.OnClickListener {
                                                                builder2.setMessage(DialogText);
                                                                builder2.setPositiveButton("OO", new DialogInterface.OnClickListener() {
                                                                    public void onClick(DialogInterface dialog, int id) {
-
                                                                        LoadIntent("1", cbo_a_ilan_miyembro, "ga_1st", "_1st_001");
-
-
                                                                    }
                                                                });
                                                                builder2.setNegativeButton("HINDI", new DialogInterface.OnClickListener() {
@@ -164,7 +161,7 @@ public class _A_Question extends Fragment implements View.OnClickListener {
 
                                                            }
 
-                                  }
+                                                       }
                                                    }
         );
         cbo_a_miyembro_dikasama.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -241,7 +238,6 @@ public class _A_Question extends Fragment implements View.OnClickListener {
                 } else {
 
                 }
-
             }
         });
         cbo_a_miyembro_maykapansanan.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -253,11 +249,7 @@ public class _A_Question extends Fragment implements View.OnClickListener {
                     builder2.setMessage(DialogText);
                     builder2.setPositiveButton("OO", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
-
-
                             LoadIntent("5", cbo_a_miyembro_maykapansanan, "ga_5th", "_5th_001");
-
-
                         }
                     });
                     builder2.setNegativeButton("HINDI", new DialogInterface.OnClickListener() {
@@ -429,22 +421,6 @@ public class _A_Question extends Fragment implements View.OnClickListener {
                 addField(cbo_a_miyembro_ofw.getText().toString());
                 addField(cbo_a_ilan_magasawa.getText().toString());
                 addField(cbo_a_ilan_miyembro.getText().toString());
-
-
-                if (Valid()) {
-                    Fragment fragment = null;
-                    try {
-                        fragment = _U_Question.class.newInstance();
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                    // Insert the fragment by replacing any existing fragment
-                    FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                    fragmentManager.beginTransaction().replace(R.id.frame, fragment, "I-E. DALAS NG PAGKAIN").commit();
-                } else {
-                    Toast.makeText(getActivity(), "Fill up all important field.!", Toast.LENGTH_SHORT).show();
-                }
-
                 Config.ColorTheVIEW(txt_a_tirahan,"Tirahan ng Pamilya");
                 Config.ColorTheVIEW(cbo_a_miyembro_namatay,"73. Mayroon ba kayong dating kapamilya na namatay noong nakaraang 12 buwan?");
                 Config.ColorTheVIEW(cbo_a_miyembro_nakapasa,"62. Mayroon ba kayong kapamilya na nakapasa sa board o bar exam?");
@@ -454,6 +430,35 @@ public class _A_Question extends Fragment implements View.OnClickListener {
                 Config.ColorTheVIEW(cbo_a_miyembro_ofw,"40. Mayroon ba kayong dating kapamilya na OFW?");
                 Config.ColorTheVIEW(cbo_a_ilan_miyembro,"Ilang Miyembro mayroon dito sa inyong pamilya?");
 
+                if(Config.CallbackIsCheck){
+                    Fragment fragment = null;
+                    try {
+                        fragment = PictureOfThePlace.class.newInstance();
+                        //fragment = (Fragment) PictureOfThePlace.class.newInstance();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                    // Insert the fragment by replacing any existing fragment
+                    FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                    getActivity().setTitle("Household Photo");
+                    fragmentManager.beginTransaction().replace(R.id.frame, fragment).commit();
+                }
+                else{
+                    if (Valid()) {
+                        Fragment fragment = null;
+                        try {
+                            fragment = _U_Question.class.newInstance();
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                        // Insert the fragment by replacing any existing fragment
+                        FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                        fragmentManager.beginTransaction().replace(R.id.frame, fragment, "I-E. DALAS NG PAGKAIN").commit();
+                    } else {
+                        Toast.makeText(getActivity(), "Fill out all important field!", Toast.LENGTH_SHORT).show();
+                    }
+                }
+                Config.EDIT=true;
             }
         });
 

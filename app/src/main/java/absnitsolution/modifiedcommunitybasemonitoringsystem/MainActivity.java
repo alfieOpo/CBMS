@@ -51,52 +51,26 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         String BARANGAY=UD.GetBaragay();
         UD. SetUserInfo();
         if (Config.NewOPen == 0) {
-            ListofPerson list = new ListofPerson();
-            LoadFrame(list, "List");
+
+            switcher switcher = new switcher();
+            LoadFrame(switcher, "Home");
             Config.NewOPen = 1;
         }
         if(BARANGAY.equals("")){
+
             UD.addUser();
             register register=new register();
             LoadFrame(register,"User Account");
 
         }
         if(BARANGAY.equals("0")){
-         UD.SetUserInfo();
+
+            UD.SetUserInfo();
             register register=new register();
             LoadFrame(register,"User Account");
 
         }
         Config.usersinfo.barangay=BARANGAY;
-/*
-        if(Config.EDIT){
-            New _new=new New();
-            LoadFrame(_new,"New");
-            counter=0;
-        }
-        else {*/
-
-
-        //}
-        /*
-        if(Config.ISLOGIN){
-             if(Config.EDIT){
-                 New _new=new New();
-                 LoadFrame(_new,"New");
-                 NextAndBack(true,false);
-                 counter=0;
-             }
-             else {
-        }
-
-                 ListofPerson list=new ListofPerson();
-                 LoadFrame(list,"List");
-                 NextAndBack(false,false);
-             }
-     }
-       else{
-
-     }*/
 
     }
 
@@ -194,13 +168,8 @@ else if (id == R.id.nav_register) {
             mySettings settings = new mySettings();
             LoadFrame(settings, "Settings");
 
-        } else if (id == R.id.nav_new) {
-            Config.ID = "";
-            New _new = new New();
-            LoadFrame(_new, "New");
-            CreateNew();
-            counter = 0;
-        } else if (id == R.id.nav_upload) {
+        }
+        else if (id == R.id.nav_upload) {
 
             UploadData upload = new UploadData();
             LoadFrame(upload, "Upload");
@@ -219,7 +188,14 @@ else if (id == R.id.nav_register) {
         else if (id == R.id.nav_register) {
 
             register register=new register();
-            LoadFrame(register,"User");
+            LoadFrame(register,"User Account");
+
+        }
+
+        else if (id == R.id.nav_home) {
+
+            switcher switcher=new switcher();
+            LoadFrame(switcher,"Home");
 
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -277,27 +253,14 @@ else if (id == R.id.nav_register) {
                 Toast.LENGTH_SHORT).show();
     }
 
-    private void CreateNew() {
+    public void CreateNew() {
 
 
-        String ts = Context.TELEPHONY_SERVICE;
 
-        TelephonyManager mTelephonyMgr = (TelephonyManager) getSystemService(ts);
 
-        String IMSI = mTelephonyMgr.getSubscriberId();
-        String IMEI = mTelephonyMgr.getDeviceId();
-        String AndroidID = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
 
-        ContentValues values1 = new ContentValues();
-        values1.put("D_001", "");
-        values1.put("longitude", "none");
-        values1.put("latitude", "none");
-        values1.put("IMEI", IMEI);
-        values1.put("IMSI", IMSI);
-        values1.put("AndroidID", AndroidID);
-        da.CreateNewRow(values1);
-        da.setMaxID();
-
+UsersDatabase ud=new UsersDatabase(getApplication());
+        ud.SetUserInfo();
         showStatus("MCBMS");
         new Thread() {
 
@@ -404,14 +367,7 @@ else if (id == R.id.nav_register) {
                         values.put("AndroidID", AndroidID);
                         da.CreateGO_1st_Row(values);
                     }
-                    ContentValues values = new ContentValues();
-                    values.put("person_image", "null");
-                    values.put("house_image", "null");
-                    values.put("M_ID", Config.ID);
-                    values.put("IMEI", IMEI);
-                    values.put("IMSI", IMSI);
-                    values.put("AndroidID", AndroidID);
-                    da.CreateImageRow(values);
+
                     showStatus("FINISH");
                 } catch (Exception e) {
                 }//

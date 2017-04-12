@@ -6,6 +6,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.EditText;
+
+import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
 
 
 /**
@@ -15,7 +19,8 @@ public class _2ndstatedrow_Question extends Fragment {
     c_params cpar;
     String _key = "";
     MainDataBaseHandler da;
-
+    MaterialBetterSpinner cbo_2nd_relasyon,cbo_2nd_dahilan_wala ;
+    EditText txt_2nd_ibapa_relasyon,txt_2nd_ibapa_dahilan,txt_2nd_pangalan;
     public _2ndstatedrow_Question() {
         // Required empty public constructor
     }
@@ -27,6 +32,12 @@ public class _2ndstatedrow_Question extends Fragment {
         // Inflate the layout for this fragment
         this._key = getArguments().getString("_id");
         View view = inflater.inflate(R.layout.fragment___2ndstatedrow__question, container, false);
+
+        cbo_2nd_relasyon=(MaterialBetterSpinner)view.findViewById(R.id.cbo_2nd_relasyon);
+        cbo_2nd_dahilan_wala=(MaterialBetterSpinner)view.findViewById(R.id.cbo_2nd_dahilan_wala);
+        txt_2nd_ibapa_relasyon=(EditText)view.findViewById(R.id.txt_2nd_ibapa_relasyon);
+        txt_2nd_ibapa_dahilan=(EditText)view.findViewById(R.id.txt_2nd_ibapa_dahilan);
+        txt_2nd_pangalan=(EditText)view.findViewById(R.id.txt_2nd_pangalan);
         this.cpar = new c_params(Config.ID, container, view);
         this.cpar.set_table("ga_2nd");
         this.cpar.set_key(this._key);
@@ -38,6 +49,41 @@ public class _2ndstatedrow_Question extends Fragment {
         this.cpar.setDropdown(R.id.cbo_2nd_dahilan_wala, R.array._2nd_dahilan, "Select One");
         this.cpar.setEditText(R.id.txt_2nd_ibapa_dahilan);
 
+        txt_2nd_pangalan.setSelectAllOnFocus(true);
+        cbo_2nd_relasyon.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(position>5){
+
+                    txt_2nd_ibapa_relasyon.setVisibility(View.VISIBLE);
+
+
+                }
+                else{
+                    txt_2nd_ibapa_relasyon.setText("");
+                    txt_2nd_ibapa_relasyon.setVisibility(View.INVISIBLE);
+                }
+            }
+        });
+
+
+
+        cbo_2nd_dahilan_wala.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(position>1){
+
+
+                    txt_2nd_ibapa_dahilan.setVisibility(View.VISIBLE);
+
+
+                }
+                else{
+                    txt_2nd_ibapa_dahilan.setText("");
+                    txt_2nd_ibapa_dahilan.setVisibility(View.INVISIBLE);
+                }
+            }
+        });
 
         return view;
 

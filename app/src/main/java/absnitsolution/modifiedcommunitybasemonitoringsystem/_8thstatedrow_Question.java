@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 
 
 /**
@@ -15,7 +16,7 @@ public class _8thstatedrow_Question extends Fragment {
     c_params cpar;
     String _key = "";
     MainDataBaseHandler da;
-
+EditText  txt_8th_63;
     public _8thstatedrow_Question() {
         // Required empty public constructor
     }
@@ -32,7 +33,8 @@ public class _8thstatedrow_Question extends Fragment {
         this.cpar.set_key(this._key);
         this.cpar.setEditText(R.id.txt_8th_63);
         this.cpar.setEditText(R.id.txt_8th_64);
-
+        txt_8th_63=(EditText)view.findViewById(R.id.txt_8th_63);
+        txt_8th_63.setSelectAllOnFocus(true);
 
         return view;
 

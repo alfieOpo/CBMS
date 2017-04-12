@@ -396,6 +396,7 @@
         <item>Oo</item>
         <item>Hindi</item>
         <item>Hindi alam</item>
+        <item>N/A</item>
     </string-array>
 
     <string-array name="month">
@@ -886,6 +887,7 @@
         <item>Manugang</item>
         <item>Apo</item>
         <item>Magulang</item>
+        <item>Kapatid</item>
         <item>Iba pang kamag-anak, itala</item>
         <item>Kapamilya</item>
         <item>Iba pang hindi kamag-anak, itala</item>
@@ -1111,6 +1113,7 @@
         <item>Manugang</item>
         <item>Apo</item>
         <item>Magulang</item>
+        <item>Kapatid</item>
         <item>Iba pang kamag-anak, itala</item>
     </string-array>
 

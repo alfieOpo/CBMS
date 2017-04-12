@@ -30,7 +30,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
-                    android:text="I-E. DALAS NG PAGKAIN"
+                    android:text="I-D. DALAS NG PAGKAIN"
                     android:textSize="16dp" />
 
                 <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner

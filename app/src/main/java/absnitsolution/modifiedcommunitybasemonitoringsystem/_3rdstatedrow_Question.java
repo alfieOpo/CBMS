@@ -6,6 +6,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.EditText;
+
+import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
 
 
 /**
@@ -15,7 +19,8 @@ public class _3rdstatedrow_Question extends Fragment {
     c_params cpar;
     String _key = "";
     MainDataBaseHandler da;
-
+    MaterialBetterSpinner cbo_3rd_relasyon;
+    EditText txt_iba_pa,txt_3rd_pangalan;
     public _3rdstatedrow_Question() {
         // Required empty public constructor
     }
@@ -27,6 +32,9 @@ public class _3rdstatedrow_Question extends Fragment {
         // Inflate the layout for this fragment
         this._key = getArguments().getString("_id");
         View view = inflater.inflate(R.layout.fragment___3rdstatedrow__question, container, false);
+        cbo_3rd_relasyon=(MaterialBetterSpinner)view.findViewById(R.id.cbo_3rd_relasyon);
+        txt_iba_pa=(EditText)view.findViewById(R.id.txt_iba_pa);
+        txt_3rd_pangalan=(EditText)view.findViewById(R.id.txt_3rd_pangalan);
         this.cpar = new c_params(Config.ID, container, view);
         this.cpar.set_table("ga_3rd");
         this.cpar.set_key(this._key);
@@ -34,6 +42,21 @@ public class _3rdstatedrow_Question extends Fragment {
         this.cpar.setDropdown(R.id.cbo_3rd_relasyon, R.array._1st_relasyon, "Select One");
         this.cpar.setEditText(R.id.txt_3rd_saangbansa);
         this.cpar.setEditText(R.id.txt_3rd_hanapbuhay);
+
+        txt_3rd_pangalan.setSelectAllOnFocus(true);
+        cbo_3rd_relasyon.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(position == 7||position == 9){
+
+                    txt_iba_pa.setVisibility(View.VISIBLE);
+                }
+                else{
+                    txt_iba_pa.setText("");
+                    txt_iba_pa.setVisibility(View.INVISIBLE);
+                }
+            }
+        });
         return view;
 
     }
