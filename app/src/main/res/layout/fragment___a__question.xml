@@ -55,7 +55,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:ems="10"
-                            android:hint="Tirahan ng Pamilya"
+                            android:hint="(House No. , Blk No. , Lot No. , Street Name)"
                             android:inputType="textPersonName"
                             android:tag="D_007"
                             android:textColorHint="#05ab9a"
