@@ -408,6 +408,8 @@ public class _A_Question extends Fragment implements View.OnClickListener {
         btn_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
                 list.clear();
                 addField(txt_a_tirahan.getText().toString());
                 addField(cbo_a_miyembro_namatay.getText().toString());

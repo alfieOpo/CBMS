@@ -1,6 +1,10 @@
 package absnitsolution.modifiedcommunitybasemonitoringsystem;
 
+import android.graphics.Color;
 import android.support.v4.app.Fragment;
+import android.widget.EditText;
+
+import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
@@ -31,6 +35,37 @@ public class Config {
     public static int ItemID = 0;
     public static boolean ISLOGIN = usersinfo.ISLOGIN.equals("1");
     public static int NewOPen = 0;
+
+
+    public  static void DisableCombo(MaterialBetterSpinner combobox,boolean value){
+        combobox.setEnabled(value);
+    }
+
+    public  static void ColorTheVIEW(EditText txt,String Default_hint){
+        boolean walanglaman=txt.getText().toString().toLowerCase().equals("");
+
+        if(walanglaman){
+            txt.setHint("Fill up  this field to proceed.");
+            txt.setTextColor(Color.RED);
+        }
+        else{
+            txt.setHint(Default_hint);
+            txt.setTextColor(Color.BLACK);
+        }
+    }
+    public  static void ColorTheVIEW(MaterialBetterSpinner combobox,String Default_hint){
+        boolean wala=combobox.getText().toString().toLowerCase().equals("wala");
+        boolean hindi=combobox.getText().toString().toLowerCase().equals("hindi");
+        boolean walanglaman=combobox.getText().toString().toLowerCase().equals("");
+        if(wala||hindi||walanglaman){
+            combobox.setHint("Fill up  this field to proceed.");
+            combobox.setTextColor(Color.RED);
+        }
+        else{
+            combobox.setHint(Default_hint);
+            combobox.setTextColor(Color.BLACK);
+        }
+    }
 
     public static String getImagePath() {
         return "sdcard/ModifiedCommunityBasemonitoringSystem/" + ImageName + Config.ID + ".jpg";
