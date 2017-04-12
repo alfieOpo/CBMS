@@ -79,7 +79,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="Iba pa, itala"
+                                android:hint=""
                                 android:inputType="textPersonName"
                                 android:tag="_1st_007"
                                 android:textColorHint="#05ab9a"
@@ -187,7 +187,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="Iba pa, itala"
+                                android:hint=""
                                 android:inputType="textPersonName"
                                 android:tag="_1st_016"
                                 android:textColorHint="#05ab9a"
@@ -214,7 +214,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="Iba pa, itala"
+                                android:hint=""
                                 android:inputType="textPersonName"
                                 android:tag="_1st_018"
                                 android:textColorHint="#05ab9a"
@@ -228,7 +228,7 @@
                             android:layout_alignParentTop="true"
                             android:layout_centerHorizontal="true"
                             android:text="10. Si __ ba ay nakakabasa at nakakasulat ng simpleng mensahe sa alinmang wika o dialekto?"
-                            android:textSize="16dp" />
+                            android:textSize="14dp" />
 
 
                         <android.support.design.widget.TextInputLayout
@@ -286,34 +286,19 @@
                             android:textSize="16dp" />
 
 
-                        <TextView
-                            android:id="@+id/textView51"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="11. Gaano katagal na naninirahan si ____ dito sa barangay" />
-
-                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                            android:id="@+id/cbo_1st_gaanokatagal"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:tag="_1st_022"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="14dp"
-                            app:met_floatingLabel="highlight" />
 
                         <android.support.design.widget.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
                             <EditText
-                                android:id="@+id/txt_1st_saannanirahan"
+                                android:id="@+id/txt_1st_gaanokatagal"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="12. Saan naninirahan si ___ bago lumipat dito sa barangay?"
+                                android:hint="11. Gaano katagal na naninirahan si __ dito sa barangay"
                                 android:inputType="textPersonName"
-                                android:tag="_1st_023"
+                                android:tag="_1st_022"
                                 android:textColorHint="#05ab9a"
                                 android:textSize="14dp" />
                         </android.support.design.widget.TextInputLayout>
@@ -346,50 +331,14 @@
                             android:textSize="14dp"
                             app:met_floatingLabel="highlight" />
 
-                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                            android:id="@+id/cbo_1st_baitang"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:hint="14. Anong taon at baitang ang pinag-aaralan ni ___?"
-                            android:tag="_1st_025"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="14dp"
-                            app:met_floatingLabel="highlight" />
 
-                        <android.support.design.widget.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                            <EditText
-                                android:id="@+id/txt_1st_specifycourse"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:ems="10"
-                                android:hint="Specify"
-                                android:inputType="textPersonName"
-                                android:tag="_1st_026"
-                                android:textColorHint="#05ab9a"
-                                android:textSize="14dp" />
-                        </android.support.design.widget.TextInputLayout>
-
-                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                            android:id="@+id/cbo_1st_baaynagaaral"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:hint="15. Si __ ba ay nag-aaral?"
-                            android:tag="_1st_027"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="14dp"
-                            app:met_floatingLabel="highlight" />
 
                         <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                             android:id="@+id/cbo_1st_kungnagaaral"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
-                            android:hint="16.1. Kung oo,"
+                            android:hint="14. Kung oo, si __ ba ay nag-aaral sa pribado o publikong paaralan?"
                             android:tag="_1st_028"
                             android:textColorHint="#05ab9a"
                             android:textSize="14dp"
@@ -400,18 +349,36 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
-                            android:hint="16.2. Kung hindi, ano ang dahilan?"
+                            android:hint="15. Kung hindi, ano ang dahilan?"
                             android:tag="_1st_029"
                             android:textColorHint="#05ab9a"
                             android:textSize="14dp"
                             app:met_floatingLabel="highlight" />
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_1st_ibapa_hindinagaral"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint=""
+                                android:inputType="textPersonName"
+                                android:tag=""
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+                        </android.support.design.widget.TextInputLayout>
+
 
                         <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                             android:id="@+id/cbo_1st_natapos"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
-                            android:hint="17. Ano ang pinakamataas na antas na natapos ni __?"
+                            android:hint="16. Ano ang pinakamataas na antas na natapos ni __?"
                             android:tag="_1st_030"
                             android:textColorHint="#05ab9a"
                             android:textSize="14dp"
@@ -426,7 +393,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="Specify"
+                                android:hint=""
                                 android:inputType="textPersonName"
                                 android:tag="_1st_031"
                                 android:textColorHint="#05ab9a"
@@ -438,7 +405,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
-                            android:hint="18. Anong kasanayan (skills) mayroon si ____?"
+                            android:hint="17. Anong kasanayan (skills) mayroon si ____?"
                             android:tag="_1st_032"
                             android:textColorHint="#05ab9a"
                             android:textSize="14dp"
@@ -453,7 +420,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="Iba pa, itala"
+                                android:hint=""
                                 android:inputType="textPersonName"
                                 android:tag="_1st_033"
                                 android:textColorHint="#05ab9a"
@@ -576,7 +543,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="Iba pa, itala"
+                                android:hint=""
                                 android:inputType="textPersonName"
                                 android:tag="_1st_038"
                                 android:textColorHint="#05ab9a"
@@ -590,7 +557,7 @@
                             android:layout_height="wrap_content"
                             android:layout_alignParentTop="true"
                             android:layout_centerHorizontal="true"
-                            android:text="Para sa 15 taong gulang pataas"
+                            android:text="Para sa 17 taong gulang pataas"
                             android:textSize="12dp" />
 
 
@@ -625,7 +592,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="Iba pa, itala"
+                                android:hint=""
                                 android:inputType="textPersonName"
                                 android:tag="_1st_041"
                                 android:textColorHint="#05ab9a"
@@ -675,7 +642,7 @@
                             app:met_floatingLabel="highlight" />
 
                         <TextView
-                            android:id="@+id/textView54"
+                            android:id="@+id/text_24"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="24. Noong nakaraang tatlong buwan, ano ang pangunahing hanapbuhay ni___? " />
@@ -711,6 +678,24 @@
                             android:layout_height="wrap_content">
 
                             <EditText
+                                android:id="@+id/txt_1st_other_pangunahinghanapbuhay"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint=""
+                                android:inputType="textPersonName"
+                                android:tag=""
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
                                 android:id="@+id/txt_1st_saangnegosyo"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -732,6 +717,23 @@
                             android:textColorHint="#05ab9a"
                             android:textSize="14dp"
                             app:met_floatingLabel="highlight" />
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/txt_1st_others_uringnegosyo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint=""
+                                android:inputType="textPersonName"
+                                android:tag=""
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+                        </android.support.design.widget.TextInputLayout>
 
                         <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                             android:id="@+id/cbo_1st_katayuan_trabaho"
@@ -756,7 +758,7 @@
                             app:met_floatingLabel="highlight" />
 
                         <TextView
-                            android:id="@+id/textView55"
+                            android:id="@+id/text_28"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="28. Si ___ ba ay naghanap ng trabaho o hanapbuhay noong nakaraang tatlong buwan?" />
@@ -772,7 +774,7 @@
                             app:met_floatingLabel="highlight" />
 
                         <TextView
-                            android:id="@+id/textView56"
+                            android:id="@+id/text_29"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="29. Ano ang mga isinagawang hakbang ni ___ sa paghahanap ng hanapbuhay?" />
@@ -796,7 +798,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="Iba pa, itala"
+                                android:hint=""
                                 android:inputType="textPersonName"
                                 android:tag="_1st_052"
                                 android:textColorHint="#05ab9a"
@@ -823,7 +825,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="Iba pang dahilan, itala"
+                                android:hint=""
                                 android:inputType="textPersonName"
                                 android:tag="_1st_054"
                                 android:textColorHint="#05ab9a"
@@ -842,7 +844,7 @@
                             app:met_floatingLabel="highlight" />
 
                         <TextView
-                            android:id="@+id/textView57"
+                            android:id="@+id/text_32"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="32. Kung nagkaroon ng pagkakataon na magtrabaho, handa o available ba si ___ sa pagtanggap ng trabaho noong nakaraang tatlong buwan?" />
@@ -858,7 +860,7 @@
                             app:met_floatingLabel="highlight" />
 
                         <TextView
-                            android:id="@+id/textView58"
+                            android:id="@+id/text_33"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="33. Willing ba si ___ na mag-hanapbuhay noong nakaraang tatlong buwan o sa susunod na isang buwan?" />

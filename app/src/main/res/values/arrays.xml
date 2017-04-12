@@ -10,7 +10,7 @@
     <string-array name="oo_hindi_nataposna">
         <item>Oo</item>
         <item>Hindi</item>
-        <item>Natapos na</item>
+        <item>Nakapagtapos na</item>
     </string-array>
 
     <string-array name="Barangay">
@@ -882,6 +882,7 @@
         <item>Puno</item>
         <item>Asawa</item>
         <item>Anak</item>
+        <item>Kapatid</item>
         <item>Manugang</item>
         <item>Apo</item>
         <item>Magulang</item>
@@ -915,7 +916,7 @@
     </string-array>
 
     <string-array name="_1st_wika">
-        <item>Tagalog</item>
+        <item>Filipino</item>
         <item>Cebuano</item>
         <item>Ilocano</item>
         <item>Waray</item>
@@ -961,9 +962,11 @@
         <item>2nd Year College</item>
         <item>3rd Year College</item>
         <item>4th Year College or higher</item>
+        <item>Vocational Graduate (Specify Course)</item>
         <item>College Graduate (Specify Course)</item>
         <item>Post Grad with units</item>
         <item>Post Graduate (Specify PhD/Masters Course)</item>
+
     </string-array>
 
     <string-array name="_1st_publiko_pribado">
@@ -1025,6 +1028,8 @@
         <item>Plant and machine operators and assemblers</item>
         <item>Laborers and unskilled workers</item>
         <item>Special occupations</item>
+        <item>Others (specify) ___</item>
+
     </string-array>
 
 
@@ -1046,6 +1051,9 @@
         <item>Other Community, Social and Personal Service Activities</item>
         <item>Private Households with Employed Persons</item>
         <item>Extra-territorial Organizations and Bodies</item>
+        <item>Government</item>
+        <item>Others (specify) __</item>
+
     </string-array>
 
     <string-array name="_1st_katayuansahanapbuhay">
@@ -1062,6 +1070,8 @@
         <item>Nagtatrabaho sa negosyong pag-aari ng pamilya at mayroong empleyado</item>
         <item>Nagtatrabaho ng may bayad sa negosyong pag-aari ng pamilya</item>
         <item>Nagtatrabaho ng walang bayad sa negosyong pag-ari ng pamilya</item>
+        <item>Part-Time</item>
+
     </string-array>
 
     <string-array name="_1st_hakbang">
