@@ -153,11 +153,10 @@ public class _A_Question extends Fragment implements View.OnClickListener {
                                                            } else {
 
                                                            }
-                                                       }
+
+                                  }
                                                    }
         );
-
-
         cbo_a_miyembro_dikasama.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

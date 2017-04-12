@@ -7,7 +7,11 @@ import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.ImageButton;
+
+import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
 
 
 /**
@@ -19,7 +23,8 @@ public class _P_Question extends Fragment {
 
     MainDataBaseHandler da;
     ImageButton btn_back, btn_next;
-
+    MaterialBetterSpinner cbo_converter;
+EditText txt_equals;
     public _P_Question() {
     }
 
@@ -34,7 +39,8 @@ public class _P_Question extends Fragment {
         btn_next = (ImageButton) view.findViewById(R.id.btn_next);
         this.cpar = new c_params(Config.ID, container, view);
 
-
+        cbo_converter=(MaterialBetterSpinner)view.findViewById(R.id.cbo_converter);
+        txt_equals=(EditText) view.findViewById(R.id.txt_equals);
         this.cpar.setDropdown(R.id.cbo_p_120, R.array.p_katayuan_sinasaka, "Select One");
         //this.cpar.setDropdown(R.id.cbo_p_121, R.array.p_gaanokalawak, "Select One");
         this.cpar.setEditText(R.id.txt_p_120);
@@ -49,6 +55,14 @@ public class _P_Question extends Fragment {
         this.cpar.setEditText(R.id.txt_p_122_3);
         this.cpar.setEditText(R.id.txt_p_123_4);
         this.cpar.setEditText(R.id.txt_p_123_5);
+
+
+        cbo_converter.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+            }
+        });
 
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
