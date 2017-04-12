@@ -35,7 +35,7 @@ public class _A_Question extends Fragment implements View.OnClickListener {
     c_params cpar;
     MainDataBaseHandler da;
     MaterialBetterSpinner cbo_a_miyembro_dikasama, cbo_a_miyembro_ofw, cbo_a_miyembro_solomagulang, cbo_a_miyembro_maykapansanan, cbo_a_miyembro_seniorcitizen, cbo_a_miyembro_nakapasa, cbo_a_ilan_miyembro, cbo_a_ilan_magasawa, cbo_a_miyembro_namatay;
-    String DialogText = "MAG DAG-DAG NG IBA PANG IMPORMASYON.?";
+    String DialogText = "MAGDAGDAG NG IBA PANG IMPORMASYON?";
     Button btn_myembro_ng_pamilya, btn_ofw, btn_kapamilya_na_solo_parent, btn_mga_kapamilya_na_may_kapansanan, btn_mga_kapamilya_na_senior_citizen, btn_mga_pamilya_na_nakapasa_sa_board_o_bar_exam, btn_mga_dating_kapamilya, btn_a_ilan_magasawa, btn_ibang_myembro;
     DateFormat formatDateTime = DateFormat.getDateTimeInstance();
     Calendar dateTime = Calendar.getInstance();

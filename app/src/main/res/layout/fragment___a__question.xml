@@ -180,7 +180,7 @@
                             android:layout_toLeftOf="@+id/btn_myembro_ng_pamilya"
                             android:layout_toStartOf="@+id/btn_myembro_ng_pamilya"
                             android:layout_weight="1"
-                            android:hint="Ilang Miyembro mayroon dito sa inyong pamilya?"
+                            android:hint="2 . Ilang Miyembro mayroon dito sa inyong pamilya?"
                             android:tag="D_014"
                             android:textColorHint="#05ab9a"
                             android:textSize="14dp"
@@ -453,7 +453,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
                         android:layout_centerHorizontal="true"
-                        android:text="MAG-ASAWA SA PAMILYA"
+                        android:text="I.F MAG-ASAWA SA PAMILYA"
                         android:textSize="16dp" />
 
                     <!-- 9th stated row -->

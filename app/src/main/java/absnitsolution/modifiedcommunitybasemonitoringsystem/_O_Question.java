@@ -320,7 +320,7 @@ public class _O_Question extends Fragment {
                 if (validTOview(cbo_o_106.getText().toString())) {
                     AlertDialog.Builder builder2 = new AlertDialog.Builder(getActivity());
                     builder2.setIcon(R.drawable.edit_file);
-                    builder2.setMessage("MAG DAG-DAG NG IBA PANG IMPORMASYON.?");
+                    builder2.setMessage("MAGDAGDAG NG IBA PANG IMPORMASYON?");
                     builder2.setPositiveButton("OO", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
                             LoadIntent("11", cbo_o_106, "go_1st", "o_001");
