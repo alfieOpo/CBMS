@@ -413,7 +413,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
                         android:layout_centerHorizontal="true"
-                        android:text="I.D MGA KAPAMILYA NA NAKAPASA SA BOARD O BAR EXAM"
+                        android:text="I.E MGA KAPAMILYA NA NAKAPASA SA BOARD O BAR EXAM"
                         android:textSize="16dp" />
 
                     <LinearLayout

@@ -145,10 +145,7 @@ public class _A_Question extends Fragment implements View.OnClickListener {
                                                                builder2.setMessage(DialogText);
                                                                builder2.setPositiveButton("OO", new DialogInterface.OnClickListener() {
                                                                    public void onClick(DialogInterface dialog, int id) {
-
                                                                        LoadIntent("1", cbo_a_ilan_miyembro, "ga_1st", "_1st_001");
-
-
                                                                    }
                                                                });
                                                                builder2.setNegativeButton("HINDI", new DialogInterface.OnClickListener() {
