@@ -4,6 +4,8 @@ package absnitsolution.modifiedcommunitybasemonitoringsystem;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.ContentValues;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -11,6 +13,8 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v7.app.AlertDialog;
+import android.telephony.TelephonyManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -37,7 +41,7 @@ public class New extends Fragment {
     EditText txt_name;
     MainDataBaseHandler da;
     EditText txt_f, txt_m, txt_l;
-    ImageButton btn_back, btn_next;
+    ImageButton btn_home, btn_next;
     c_params cpar;
     MaterialBetterSpinner cbo_lalawigan, cbo_purok_sitio, cbo_barangay;
     EditText txt_purok_sitio;
@@ -63,7 +67,7 @@ public class New extends Fragment {
         tv_latitude = (TextView) view.findViewById(R.id.tv_latitude);
         tv_longitude = (TextView) view.findViewById(R.id.tv_longitude);
         btn_save_capture = (Button) view.findViewById(R.id.btn_save_capture);
-        btn_back = (ImageButton) view.findViewById(R.id.btn_back);
+        btn_home = (ImageButton) view.findViewById(R.id.btn_home);
         btn_next = (ImageButton) view.findViewById(R.id.btn_next);
 
         img_Fromcam = (ImageView) view.findViewById(R.id.img_Fromcam);
@@ -128,6 +132,49 @@ public class New extends Fragment {
             @Override
             public void onClick(View v) {
 
+
+
+
+                String ts = Context.TELEPHONY_SERVICE;
+
+                TelephonyManager mTelephonyMgr = (TelephonyManager) getActivity().getSystemService(ts);
+                String IMSI = mTelephonyMgr.getSubscriberId();
+                String IMEI = mTelephonyMgr.getDeviceId();
+                String AndroidID = Settings.Secure.getString(getActivity().getContentResolver(), Settings.Secure.ANDROID_ID);
+                ContentValues values1 = new ContentValues();
+                values1.put("D_001", "");
+                values1.put("longitude", Config.Longitude);
+                values1.put("latitude", Config.Latitude);
+                values1.put("IMEI", IMEI);
+                values1.put("IMSI", IMSI);
+                values1.put("AndroidID", AndroidID);
+                da.CreateNewRow(values1);
+                da.setMaxID();
+
+
+
+
+                ((MainActivity)getActivity()).CreateNew();
+
+                da = new MainDataBaseHandler(getActivity().getApplicationContext());
+
+                cpar.set_key(Config.ID);
+                txt_name.setText(txt_f.getText().toString() + " " + txt_m.getText().toString() + " " + txt_l.getText().toString());
+                cpar.putEditText(R.id.txt_name);
+                cpar.putEditText(R.id.cbo_purok_sitio);
+                cpar.putDropdown(R.id.cbo_barangay);
+                cpar.putDropdown(R.id.cbo_lungsod_bayan);
+                cpar.putDropdown(R.id.cbo_lalawigan);
+                cpar.putTextView(R.id.tv_latitude);
+                cpar.putTextView(R.id.tv_longitude);
+                cpar.putEditText(R.id.txt_first_name);
+                cpar.putEditText(R.id.txt_middle_name);
+                cpar.putEditText(R.id.txt_last_name);
+                cpar.add("latitude", Config.Latitude);
+                cpar.add("longitude", Config.Longitude);
+
+                da.c_Update(cpar);
+
                 Fragment fragment = null;
                 try {
                     fragment = _A_Question.class.newInstance();
@@ -141,7 +188,24 @@ public class New extends Fragment {
 
             }
         });
+        btn_home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                Fragment fragment = null;
+                try {
+                    fragment = switcher.class.newInstance();
+                    //fragment = (Fragment) PictureOfThePlace.class.newInstance();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                // Insert the fragment by replacing any existing fragment
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                getActivity().setTitle("Home");
+                fragmentManager.beginTransaction().replace(R.id.frame, fragment).commit();
+
+            }
+        });
         Thread th = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -192,24 +256,7 @@ public class New extends Fragment {
     @Override
     public void onDestroy() {
 
-        da = new MainDataBaseHandler(getActivity().getApplicationContext());
 
-        cpar.set_key(Config.ID);
-        txt_name.setText(txt_f.getText().toString() + " " + txt_m.getText().toString() + " " + txt_l.getText().toString());
-        cpar.putEditText(R.id.txt_name);
-        cpar.putEditText(R.id.cbo_purok_sitio);
-        cpar.putDropdown(R.id.cbo_barangay);
-        cpar.putDropdown(R.id.cbo_lungsod_bayan);
-        cpar.putDropdown(R.id.cbo_lalawigan);
-        cpar.putTextView(R.id.tv_latitude);
-        cpar.putTextView(R.id.tv_longitude);
-        cpar.putEditText(R.id.txt_first_name);
-        cpar.putEditText(R.id.txt_middle_name);
-        cpar.putEditText(R.id.txt_last_name);
-        cpar.add("latitude", Config.Latitude);
-        cpar.add("longitude", Config.Longitude);
-
-        da.c_Update(cpar);
         super.onDestroy();
     }
 

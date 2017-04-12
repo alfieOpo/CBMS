@@ -35,7 +35,7 @@ public class Config {
     public static int ItemID = 0;
     public  static String Tagapanayam="";
     public static int NewOPen = 0;
-
+public  static boolean IsinNew=false;
 
     public  static void DisableCombo(MaterialBetterSpinner combobox,boolean value){
         combobox.setEnabled(value);

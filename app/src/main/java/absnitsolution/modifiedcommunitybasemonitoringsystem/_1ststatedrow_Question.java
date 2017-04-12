@@ -151,6 +151,7 @@ public class _1ststatedrow_Question extends Fragment {
                                                                     txt_kapanganakan.setText(NewDate);
 
 
+
                                                                     Calendar calendar = Calendar.getInstance(TimeZone.getDefault());
                                                                     int current_year = calendar.get(Calendar.DATE);
 
