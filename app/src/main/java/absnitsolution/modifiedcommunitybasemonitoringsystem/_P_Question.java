@@ -42,7 +42,7 @@ EditText txt_equals;
         cbo_converter=(MaterialBetterSpinner)view.findViewById(R.id.cbo_converter);
         txt_equals=(EditText) view.findViewById(R.id.txt_equals);
         this.cpar.setDropdown(R.id.cbo_p_120, R.array.p_katayuan_sinasaka, "Select One");
-        //this.cpar.setDropdown(R.id.cbo_p_121, R.array.p_gaanokalawak, "Select One");
+        
         this.cpar.setEditText(R.id.txt_p_120);
         this.cpar.setEditText(R.id.txt_p_121_1);
         this.cpar.setEditText(R.id.txt_p_122_1);

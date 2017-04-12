@@ -819,7 +819,9 @@
         <item>Iba pa, itala ______</item>
 
     </string-array>
+<string-array name="land_scale">
 
+</string-array>
     <string-array name="p_gaanokalawak">
         <item>Mababa sa 1 hektarya</item>
         <item>1 - 3 hektarya</item>
