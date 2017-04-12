@@ -24,6 +24,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
 
@@ -75,22 +76,19 @@ public class New extends Fragment {
         cbo_purok_sitio = (MaterialBetterSpinner) view.findViewById(R.id.cbo_purok_sitio);
 
 
+
+        String barangay=Config.usersinfo.barangay;
         this.cpar = new c_params(Config.ID, container, view);
         this.cpar.setDropdown(R.id.cbo_barangay, R.array.Barangay, Config.usersinfo.barangay);
         this.cpar.setDropdown(R.id.cbo_lungsod_bayan, R.array.lungsod_bayan, "Santa Maria");
         this.cpar.setDropdown(R.id.cbo_lalawigan, R.array.lalawigan, "Bulacan");
-        try {
-            LoadSitio(cbo_barangay.getText().toString());
-        } catch (Exception xx) {
-        }
+
         this.cpar.setTextView(R.id.tv_latitude);
         this.cpar.setTextView(R.id.tv_longitude);
         this.cpar.setEditText(R.id.txt_name);
         this.cpar.setEditText(R.id.txt_first_name);
         this.cpar.setEditText(R.id.txt_middle_name);
         this.cpar.setEditText(R.id.txt_last_name);
-
-
         cbo_barangay.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -105,12 +103,19 @@ public class New extends Fragment {
             cbo_purok_sitio.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    Config.Sitio = String.valueOf(position);
+                    Config.Sitio = String.valueOf(position+1);
                 }
             });
         }
-        LoadImage();
 
+        if(cbo_barangay.getText().toString().equals("")){
+            cbo_barangay.setText(Config.usersinfo.barangay);
+        }
+        try {
+            LoadSitio(cbo_barangay.getText().toString());
+        } catch (Exception xx) {
+        }
+        LoadImage();
         btn_save_capture.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -120,23 +125,23 @@ public class New extends Fragment {
                         Intent cameraIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
                         startActivityForResult(cameraIntent, CAMERA_REQUEST);
                     }
-
-
                 } catch (Exception xx) {
                 }
             }
         });
-
-
         btn_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
 
+                if(img_Fromcam.getDrawable() == null){
 
+                    Toast.makeText(getActivity(), "No Image Found.!", Toast.LENGTH_SHORT).show();
+                    return;
+                }
 
+if(!Config.EDIT){
                 String ts = Context.TELEPHONY_SERVICE;
-
                 TelephonyManager mTelephonyMgr = (TelephonyManager) getActivity().getSystemService(ts);
                 String IMSI = mTelephonyMgr.getSubscriberId();
                 String IMEI = mTelephonyMgr.getDeviceId();
@@ -173,7 +178,7 @@ public class New extends Fragment {
                 cpar.add("latitude", Config.Latitude);
                 cpar.add("longitude", Config.Longitude);
 
-                da.c_Update(cpar);
+                da.c_Update(cpar);}
 
                 Fragment fragment = null;
                 try {

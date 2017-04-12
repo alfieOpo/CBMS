@@ -28,26 +28,21 @@ ImageButton btn_new;
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_switcher, container, false);
         btn_new=(ImageButton)view.findViewById(R.id.btn_new);
+        Config.EDIT=false;
+        Config.ID="0";
         btn_new.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
 
 
-                Fragment fragment = null;
-                try {
-                    fragment = New.class.newInstance();
-                    //fragment = (Fragment) PictureOfThePlace.class.newInstance();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-                // Insert the fragment by replacing any existing fragment
+
+
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                 getActivity().setTitle("New");
-                fragmentManager.beginTransaction().replace(R.id.frame, fragment).commit();
+                fragmentManager.beginTransaction().replace(R.id.frame, new New()).commit();
             }
         });
         return view;
     }
-
 }

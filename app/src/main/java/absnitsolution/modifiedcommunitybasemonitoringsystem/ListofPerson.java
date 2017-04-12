@@ -34,6 +34,7 @@ public class ListofPerson extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_list, container, false);
         list_view = (ListView) view.findViewById(R.id.list_view);
+        Config.EDIT=false;
         loadListView();
 
         return view;
@@ -67,7 +68,7 @@ public class ListofPerson extends Fragment {
             builder.setPositiveButton("EDIT", new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int id) {
 
-
+                        Config.EDIT=true;
                     Fragment fragment = null;
                     try {
                         fragment = New.class.newInstance();
@@ -81,14 +82,17 @@ public class ListofPerson extends Fragment {
             });
             builder.setNegativeButton("DELETE", new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int id) {
-                    Toast.makeText(getActivity(), "DELETE", Toast.LENGTH_SHORT).show();
+
+
+
+
                     //------------------
                     AlertDialog.Builder builder2 = new AlertDialog.Builder(getActivity());
                     builder2.setIcon(R.drawable.edit_file);
                     builder2.setMessage("ARE YOU SURE YOU WANT TO DELETE \n'" + lbl_person_name.getText().toString() + "'");
                     builder2.setPositiveButton("YES", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
-                            Config.ID = lbl_id.getText().toString();
+
                             db.Delete();
                             loadListView();
                         }
@@ -100,6 +104,9 @@ public class ListofPerson extends Fragment {
                     });
                     AlertDialog dialog2 = builder2.create();
                     dialog2.show();
+
+
+
                 }
             });
             AlertDialog dialog = builder.create();

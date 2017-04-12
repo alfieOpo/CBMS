@@ -457,12 +457,8 @@ public class _A_Question extends Fragment implements View.OnClickListener {
                     } else {
                         Toast.makeText(getActivity(), "Fill up all important field.!", Toast.LENGTH_SHORT).show();
                     }
-
                 }
-
-
-
-
+                Config.EDIT=true;
             }
         });
 
