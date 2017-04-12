@@ -89,7 +89,7 @@ public class UsersDatabase extends SQLiteOpenHelper {
             Config.usersinfo.last_name = cursor.getString(cursor.getColumnIndexOrThrow(KEY_LAST_NAME));
             Config.usersinfo.barangay = cursor.getString(cursor.getColumnIndexOrThrow(KEY_BARANGAY));
             Config.usersinfo.id_number = cursor.getString(cursor.getColumnIndexOrThrow(KEY_ID_NUMBER));
-
+            Config.Tagapanayam=Config.usersinfo.first_name+" "+Config.usersinfo.middle_name+" "+Config.usersinfo.last_name;
 
             cursor.close();
         } catch (Exception xx) {

@@ -72,7 +72,7 @@ public class New extends Fragment {
 
 
         this.cpar = new c_params(Config.ID, container, view);
-        this.cpar.setDropdown(R.id.cbo_barangay, R.array.Barangay, "Select One");
+        this.cpar.setDropdown(R.id.cbo_barangay, R.array.Barangay, Config.usersinfo.barangay);
         this.cpar.setDropdown(R.id.cbo_lungsod_bayan, R.array.lungsod_bayan, "Santa Maria");
         this.cpar.setDropdown(R.id.cbo_lalawigan, R.array.lalawigan, "Bulacan");
         try {

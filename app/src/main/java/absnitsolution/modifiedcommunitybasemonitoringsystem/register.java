@@ -8,6 +8,7 @@ import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -44,16 +45,21 @@ public class register extends Fragment {
         txt_middle_name = (EditText) view.findViewById(R.id.txt_middle_name);
         txt_first_name = (EditText) view.findViewById(R.id.txt_first_name);
         cbo_barangay.setAdapter(Adapter(R.array.Barangay));
-
-
         txt_first_name.setText(Config.usersinfo.first_name);
         txt_middle_name.setText(Config.usersinfo.middle_name);
         txt_last_name.setText(Config.usersinfo.last_name);
         txt_id_number.setText(Config.usersinfo.id_number);
         cbo_barangay.setText(Config.usersinfo.barangay);
 
+        cbo_barangay.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Config.Barangay_code = getResources().getStringArray(R.array.Barangay_values)[position];
+            }
+        });
 
-        btn_save.setOnClickListener(new View.OnClickListener() {
+
+         btn_save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
              UsersDatabase UD=new UsersDatabase(getActivity());
@@ -63,7 +69,7 @@ public class register extends Fragment {
                         txt_last_name.getText().toString(),
                         txt_id_number.getText().toString(),
                         cbo_barangay.getText().toString()) );
-
+                Config.usersinfo.barangay=cbo_barangay.getText().toString();
 
                 Fragment fragment = null;
                 try {
@@ -74,7 +80,9 @@ public class register extends Fragment {
                 }
                 // Insert the fragment by replacing any existing fragment
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.frame, fragment, "A. PAGKAKAKILANLAN").commit();
+                getActivity().setTitle("List");
+                fragmentManager.beginTransaction().replace(R.id.frame, fragment).commit();
+
             }
         });
         return view;

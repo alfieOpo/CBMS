@@ -466,7 +466,10 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
         try {
 
             SQLiteDatabase db = this.getReadableDatabase();
-            db.execSQL("delete from ga_1st where M_ID in (Select _id from mcbms where (D_001 is null or D_001 = ''))");
+            try{
+            db.execSQL("delete from ga_1st where M_ID in (Select _id from mcbms where (D_001 is null or D_001 = ''))"); }catch (Exception xx) {
+                    System.out.print(xx.getMessage());
+                }
             db.execSQL("delete from ga_2nd where M_ID in (Select _id from mcbms where (D_001 is null or D_001 = ''))");
             db.execSQL("delete from ga_3rd where M_ID in (Select _id from mcbms where (D_001 is null or D_001 = ''))");
             db.execSQL("delete from ga_4th where M_ID in (Select _id from mcbms where (D_001 is null or D_001 = ''))");
@@ -479,6 +482,7 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
             db.execSQL("delete from mcbms where (D_001 is null or D_001 = '') ");
 
         } catch (Exception xx) {
+            String Error=xx.getMessage();
             System.out.print(xx.getMessage());
         }
     }

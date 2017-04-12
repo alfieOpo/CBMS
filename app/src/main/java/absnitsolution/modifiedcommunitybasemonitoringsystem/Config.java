@@ -33,7 +33,7 @@ public class Config {
     public static String Sitio = "";
     public static String Barangay_code = "";
     public static int ItemID = 0;
-
+    public  static String Tagapanayam="";
     public static int NewOPen = 0;
 
 

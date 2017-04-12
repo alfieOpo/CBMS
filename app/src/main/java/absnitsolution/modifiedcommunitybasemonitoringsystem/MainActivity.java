@@ -46,27 +46,28 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toggle.syncState();
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-    UsersDatabase UD=new UsersDatabase(getApplicationContext());
+        UsersDatabase UD=new UsersDatabase(getApplicationContext());
 
-        String User=UD.GetBaragay();
-
+        String BARANGAY=UD.GetBaragay();
+        UD. SetUserInfo();
         if (Config.NewOPen == 0) {
             ListofPerson list = new ListofPerson();
             LoadFrame(list, "List");
             Config.NewOPen = 1;
         }
-        if(User.equals("")){
+        if(BARANGAY.equals("")){
             UD.addUser();
             register register=new register();
             LoadFrame(register,"User Account");
 
         }
-        if(User.equals("0")){
+        if(BARANGAY.equals("0")){
          UD.SetUserInfo();
             register register=new register();
             LoadFrame(register,"User Account");
 
         }
+        Config.usersinfo.barangay=BARANGAY;
 /*
         if(Config.EDIT){
             New _new=new New();

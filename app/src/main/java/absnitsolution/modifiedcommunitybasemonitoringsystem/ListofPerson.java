@@ -25,7 +25,7 @@ public class ListofPerson extends Fragment {
     TextView lbl_person_name, lbl_address, lbl_date, lbl_id;
 
     public ListofPerson() {
-        // Required empty public constructor
+
     }
 
 
