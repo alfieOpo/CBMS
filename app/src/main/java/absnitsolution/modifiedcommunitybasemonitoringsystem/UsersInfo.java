@@ -3,25 +3,24 @@ package absnitsolution.modifiedcommunitybasemonitoringsystem;
 
 public class UsersInfo {
     int _id;
-    String _first_name, _middle_name, _last_name, _username, _password, _islogin;
+    String _first_name, _middle_name, _last_name, _id_number, _barangay;
 
-    public UsersInfo(int id, String first_name, String middle_name, String last_name, String password, String username, String islogin) {
+    public UsersInfo(int id, String first_name, String middle_name, String last_name, String id_number, String barangay) {
         this._id = id;
         this._first_name = first_name;
         this._middle_name = middle_name;
         this._last_name = last_name;
-        this._username = username;
-        this._password = password;
-        this._islogin = islogin;
+        this._id_number = id_number;
+        this._barangay = barangay;
+
     }
 
-    public UsersInfo(String first_name, String middle_name, String last_name, String password, String username, String islogin) {
+    public UsersInfo(String first_name, String middle_name, String last_name, String id_number, String barangay) {
         this._first_name = first_name;
         this._middle_name = middle_name;
         this._last_name = last_name;
-        this._username = username;
-        this._password = password;
-        this._islogin = islogin;
+        this._id_number = id_number;
+        this._barangay = barangay;
     }
 
     public int get_id() {
@@ -56,27 +55,19 @@ public class UsersInfo {
         this._last_name = _last_name;
     }
 
-    public String get_username() {
-        return _username;
+    public String get_barangay() {
+        return _barangay;
     }
 
-    public void set_username(String _username) {
-        this._username = _username;
+    public void set_barangay(String _barangay) {
+        this._barangay = _barangay;
     }
 
-    public String get_password() {
-        return _password;
+    public String get_id_number() {
+        return _id_number;
     }
 
-    public void set_password(String _password) {
-        this._password = _password;
-    }
-
-    public String get_islogin() {
-        return _islogin;
-    }
-
-    public void set_islogin(String _islogin) {
-        this._islogin = _islogin;
+    public void set_id_number(String _id_number) {
+        this._id_number = _id_number;
     }
 }

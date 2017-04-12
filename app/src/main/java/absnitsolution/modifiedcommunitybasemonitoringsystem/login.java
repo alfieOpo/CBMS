@@ -32,7 +32,7 @@ public class login extends Fragment {
         View view = inflater.inflate(R.layout.fragment_login, container, false);
         UD = new UsersDatabase(getActivity().getApplicationContext());
         btn_save = (Button) view.findViewById(R.id.btn_save);
-        txt_password = (EditText) view.findViewById(R.id.txt_password);
+        txt_password = (EditText) view.findViewById(R.id.txt_);
         txt_username = (EditText) view.findViewById(R.id.txt_username);
 
 

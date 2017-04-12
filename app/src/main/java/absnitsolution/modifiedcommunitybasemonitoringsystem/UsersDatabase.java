@@ -14,10 +14,8 @@ public class UsersDatabase extends SQLiteOpenHelper {
     private static final String KEY_FIRST_NAME = "first_name";
     private static final String KEY_MIDDLE_NAME = "middle_name";
     private static final String KEY_LAST_NAME = "last_name";
-    private static final String KEY_USERNAME = "username";
-    private static final String KEY_PASSWORD = "password";
-    private static final String KEY_ISLOGIN = "islogin";
-
+    private static final String KEY_ID_NUMBER = "id_number";
+    private static final String KEY_BARANGAY= "barangay";
     public UsersDatabase(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
@@ -29,10 +27,10 @@ public class UsersDatabase extends SQLiteOpenHelper {
                 KEY_FIRST_NAME + " TEXT," +
                 KEY_MIDDLE_NAME + " TEXT," +
                 KEY_LAST_NAME + " TEXT," +
-                KEY_USERNAME + " TEXT," +
-                KEY_PASSWORD + " TEXT," +
-                KEY_ISLOGIN + " TEXT" + ")";
+                KEY_ID_NUMBER + " TEXT," +
+                KEY_BARANGAY + " TEXT" + ")";
         db.execSQL(CREATE_SERVER_TABLE);
+
     }
 
     @Override
@@ -43,73 +41,60 @@ public class UsersDatabase extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    void addUser(UsersInfo users) {
+    void addUser() {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+
+        values.put(KEY_FIRST_NAME, "System");
+        values.put(KEY_MIDDLE_NAME, "Admin");
+        values.put(KEY_LAST_NAME, "Account");
+        values.put(KEY_ID_NUMBER, "0");
+        values.put(KEY_BARANGAY, "0");
+        db.insert(TABLE_SERVER, null, values);
+
+        db.close();
+    }
+    void UpdateUser(UsersInfo users) {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
         values.put(KEY_FIRST_NAME, users.get_first_name());
         values.put(KEY_MIDDLE_NAME, users.get_middle_name());
         values.put(KEY_LAST_NAME, users.get_last_name());
-        values.put(KEY_USERNAME, users.get_username());
-        values.put(KEY_PASSWORD, users.get_password());
-        values.put("islogin", users.get_islogin());
-        db.insert(TABLE_SERVER, null, values);
+        values.put(KEY_ID_NUMBER, users.get_id_number());
+        values.put(KEY_BARANGAY, users.get_barangay());
+        db.update(TABLE_SERVER,values,"", null);
 
         db.close();
     }
-
-    public boolean isRegisterd(String username, String password) {
-
-        String countQuery = "select _id  from " + TABLE_SERVER + " where username='" + username + "'  and password='" + password + "'";
+    public  String GetBaragay(){
+        String countQuery = "select  "+KEY_BARANGAY+"  from " + TABLE_SERVER ;
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery(countQuery, null);
-
-        try {
-            cursor.moveToFirst();
-
-
-            int id = cursor.getCount();
-            int asdfasdfasdf = cursor.getCount();
-            Loadinfo(id);
-            return true;
-
-        } catch (Exception xx) {
-            return false;
+        if(cursor.moveToFirst()){
+            return  cursor.getString(0);
         }
+        return "";
     }
 
-
-    public void IsLogin() {
+    public void SetUserInfo() {
         try {
-            String countQuery = "select * from " + TABLE_SERVER + " where islogin=1";
+            String countQuery = "select * from " + TABLE_SERVER ;
             SQLiteDatabase db = this.getReadableDatabase();
             Cursor cursor = db.rawQuery(countQuery, null);
             cursor.moveToFirst();
             Config.usersinfo.first_name = cursor.getString(cursor.getColumnIndexOrThrow(KEY_FIRST_NAME));
             Config.usersinfo.middle_name = cursor.getString(cursor.getColumnIndexOrThrow(KEY_MIDDLE_NAME));
             Config.usersinfo.last_name = cursor.getString(cursor.getColumnIndexOrThrow(KEY_LAST_NAME));
-            Config.usersinfo.username = cursor.getString(cursor.getColumnIndexOrThrow(KEY_USERNAME));
-            Config.usersinfo.password = cursor.getString(cursor.getColumnIndexOrThrow(KEY_PASSWORD));
-            Config.usersinfo.ISLOGIN = cursor.getString(cursor.getColumnIndexOrThrow("islogin"));
+            Config.usersinfo.barangay = cursor.getString(cursor.getColumnIndexOrThrow(KEY_BARANGAY));
+            Config.usersinfo.id_number = cursor.getString(cursor.getColumnIndexOrThrow(KEY_ID_NUMBER));
+
+
             cursor.close();
         } catch (Exception xx) {
-            Config.usersinfo.ISLOGIN = "0";
+
         }
-
-    }
-
-    private void Loadinfo(int id) {
-        String countQuery = "Update " + TABLE_SERVER + " set islogin=1 where _id=" + id;
-        SQLiteDatabase db = this.getReadableDatabase();
-        db.execSQL(countQuery);
-        IsLogin();
-    }
-
-    public void Logout() {
-
-        String countQuery = "Update " + TABLE_SERVER + " set islogin=null";
-        SQLiteDatabase db = this.getReadableDatabase();
-        db.execSQL(countQuery);
 
     }
 

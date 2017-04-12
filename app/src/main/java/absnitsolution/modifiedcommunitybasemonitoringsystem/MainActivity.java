@@ -46,8 +46,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toggle.syncState();
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+    UsersDatabase UD=new UsersDatabase(getApplicationContext());
+        if(UD.GetBaragay().equals("0")){
+            UD.addUser();
+            register register=new register();
+            LoadFrame(register,"User Account");
 
-
+        }
         if (Config.NewOPen == 0) {
             ListofPerson list = new ListofPerson();
             LoadFrame(list, "List");
@@ -202,12 +207,6 @@ else if (id == R.id.nav_register) {
             CallbackList callbackList = new CallbackList();
             LoadFrame(callbackList, "Callback");
 
-        } else if (id == R.id.nav_logout) {
-            UsersDatabase UD = new UsersDatabase(getApplicationContext());
-            UD.Logout();
-            Intent startmainactivity = new Intent(getApplicationContext(), FlashScreen.class);
-            startActivity(startmainactivity);
-            finish();
         }
         else if (id == R.id.nav_register) {
 

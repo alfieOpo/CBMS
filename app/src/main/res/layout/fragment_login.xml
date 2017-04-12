@@ -44,7 +44,7 @@
         android:layout_height="wrap_content">
 
         <EditText
-            android:id="@+id/txt_password"
+            android:id="@+id/txt_"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -59,9 +59,9 @@
         android:id="@+id/btn_save"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/txt_password"
-        android:layout_alignStart="@+id/txt_password"
-        android:layout_below="@+id/txt_password"
+        android:layout_alignEnd="@+id/txt_"
+        android:layout_alignStart="@+id/txt_"
+        android:layout_below="@+id/txt_"
         android:text="Login"
         android:textColor="#ffffff"
         android:theme="@style/MyButton" />

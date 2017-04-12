@@ -33,7 +33,7 @@ public class Config {
     public static String Sitio = "";
     public static String Barangay_code = "";
     public static int ItemID = 0;
-    public static boolean ISLOGIN = usersinfo.ISLOGIN.equals("1");
+
     public static int NewOPen = 0;
 
 
@@ -84,12 +84,12 @@ public class Config {
     }
 
     public static class usersinfo {
-        public static String username = "";
-        public static String password = "";
+        public static String barangay = "";
+        public static String id_number = "";
         public static String first_name = "";
         public static String middle_name = "";
         public static String last_name = "";
-        public static String ISLOGIN = "";
+
     }
     public static String toCurrency(double v){
         String value=DecimalFormat.getCurrencyInstance().format(v).replace("$","");

@@ -1,4 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,7 +11,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
         <!-- TODO: Update blank fragment layout -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -42,44 +44,33 @@
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/txt_username"
+                android:id="@+id/txt_id_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:layout_marginTop="40dp"
                 android:ems="10"
-                android:hint="Username"
+                android:hint="ID NUMBER"
                 android:inputType="textPersonName" />
 
-            <EditText
-                android:id="@+id/txt_password"
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/cbo_barangay"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Password"
-                android:inputType="textPersonName" />
-
-            <EditText
-                android:id="@+id/txt_confirmpassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Confirm Password"
-                android:inputType="textPersonName" />
-
-            <TextView
-                android:id="@+id/lbl_validation"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:gravity="right"
-                android:text="TextView" />
+                android:layout_alignParentLeft="true"
+                android:hint="Barangay Assignment"
+                android:tag="D_224"
+                android:textColorHint="#05ab9a"
+                android:textSize="14dp"
+                app:met_floatingLabel="highlight" />
 
             <Button
                 android:id="@+id/btn_save"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Save" />
+                android:text="Save"
+                android:textColor="#ffffff"
+                android:theme="@style/MyButton" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
