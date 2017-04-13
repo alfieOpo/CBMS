@@ -169,14 +169,14 @@
                             android:textSize="14dp" />
 
                         <EditText
-                            android:id="@+id/txt_o_97b"
+                            android:id="@+id/txt_o_96b"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="20"
                             android:ems="10"
                             android:hint=""
                             android:inputType="numberDecimal"
-                            android:tag="D_145"
+                            android:tag="D_148"
                             android:textColorHint="#05ab9a"
                             android:textSize="14dp" />
 
@@ -213,14 +213,14 @@
                             android:textSize="14dp" />
 
                         <EditText
-                            android:id="@+id/txt_o_96b"
+                            android:id="@+id/txt_o_97b"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="20"
                             android:ems="10"
                             android:hint=""
                             android:inputType="numberDecimal"
-                            android:tag="D_148"
+                            android:tag="D_145"
                             android:textColorHint="#05ab9a"
                             android:textSize="14dp" />
 
@@ -544,8 +544,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:ems="10"
+
                             android:inputType="numberDecimal"
                             android:tag="D_170"
+                            android:textAlignment="gravity"
+                            android:gravity="right"
                             android:textColorHint="#05ab9a"
                             android:textSize="14dp" />
 
@@ -570,6 +573,8 @@
                             android:inputType="numberDecimal"
                             android:tag="D_171"
                             android:textColorHint="#05ab9a"
+                            android:textAlignment="gravity"
+                            android:gravity="right"
                             android:textSize="14dp" />
 
                     </android.support.design.widget.TextInputLayout>
@@ -593,6 +598,8 @@
                             android:inputType="numberDecimal"
                             android:tag="D_172"
                             android:textColorHint="#05ab9a"
+                            android:textAlignment="gravity"
+                            android:gravity="right"
                             android:textSize="14dp" />
 
                     </android.support.design.widget.TextInputLayout>
@@ -1149,6 +1156,8 @@
                             android:inputType="numberDecimal"
                             android:tag="D_202"
                             android:textColorHint="#05ab9a"
+                            android:textAlignment="gravity"
+                            android:gravity="right"
                             android:textSize="14dp" />
 
                     </android.support.design.widget.TextInputLayout>
@@ -1170,6 +1179,8 @@
                             android:ems="10"
                             android:inputType="numberDecimal"
                             android:tag="D_203"
+                            android:textAlignment="gravity"
+                            android:gravity="right"
                             android:textColorHint="#05ab9a"
                             android:textSize="14dp" />
 
@@ -1203,6 +1214,8 @@
                             android:inputType="textPersonName"
                             android:tag="D_204"
                             android:textColorHint="#05ab9a"
+                            android:textAlignment="gravity"
+                            android:gravity="right"
                             android:textSize="14dp" />
 
                     </android.support.design.widget.TextInputLayout>
@@ -1237,6 +1250,8 @@
                             android:inputType="numberDecimal"
                             android:tag="D_206"
                             android:textColorHint="#05ab9a"
+                            android:textAlignment="gravity"
+                            android:gravity="right"
                             android:textSize="14dp" />
 
                     </android.support.design.widget.TextInputLayout>
@@ -1259,6 +1274,8 @@
                             android:inputType="numberDecimal"
                             android:tag="D_207"
                             android:textColorHint="#05ab9a"
+                            android:textAlignment="gravity"
+                            android:gravity="right"
                             android:textSize="14dp" />
 
                     </android.support.design.widget.TextInputLayout>
@@ -1281,6 +1298,8 @@
                             android:inputType="numberDecimal"
                             android:tag="D_208"
                             android:textColorHint="#05ab9a"
+                            android:textAlignment="gravity"
+                            android:gravity="right"
                             android:textSize="14dp" />
 
 

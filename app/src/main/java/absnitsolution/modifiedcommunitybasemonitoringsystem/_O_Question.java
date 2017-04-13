@@ -36,6 +36,7 @@ public class _O_Question extends Fragment {
     MaterialBetterSpinner cbo_o_106;
     Button btn_compute, btn_compute2, btn_compute3;
     ImageButton btn_back, btn_next;
+    String finaldata;
     EditText
             txt_o_95a,
             txt_o_96a,
@@ -157,12 +158,15 @@ public class _O_Question extends Fragment {
         txt_o_116b = (EditText) view.findViewById(R.id.txt_o_116b);
 
         txt_o_118b = (EditText) view.findViewById(R.id.txt_o_118b);
-        txt_o_117 = (EditText) view.findViewById(R.id.txt_o_117);
+
         try {
-            int sumof89 = da.getGA_1ST89(Config.ID);
-            int total89 = sumof89 * 12;
-            txt_o_117.setText(String.valueOf(total89));
+            da=new MainDataBaseHandler(getActivity());
+            double sumof89 = da.getGA_1ST92(Config.ID);
+            double total89 = sumof89 * 12;
+              finaldata=String.valueOf(total89);
+            txt_o_117.setText(Config.toCurrency(total89));
         } catch (Exception xx) {
+
             txt_o_117.setText("0");
         }
 
@@ -181,7 +185,7 @@ public class _O_Question extends Fragment {
                 sum.Add(txt_o_103a);
                 sum.Add(txt_o_104a);
                 double avalue = sum.getTotal();
-                txt_o_105a.setText(String.valueOf(avalue));
+                txt_o_105a.setText(Config.toCurrency(avalue));
 
                 Sum sum2 = new Sum();
                 sum2.Add(txt_o_95b);
@@ -195,14 +199,20 @@ public class _O_Question extends Fragment {
                 sum2.Add(txt_o_103b);
                 sum2.Add(txt_o_104b);
                 double bvalue = sum2.getTotal();
-                txt_o_105b.setText(String.valueOf(bvalue));
+                txt_o_105b.setText(Config.toCurrency(bvalue));
 
                 txt_o_105 = (EditText) view.findViewById(R.id.txt_o_105);
-                double _105b = Double.valueOf(txt_o_105b.getText().toString());
-                double _105a = Double.valueOf(txt_o_105a.getText().toString());
+                double _105b=0;
+                try{
+                  _105b = Double.valueOf(txt_o_105b.getText().toString().replace(",",""));
+                }catch (Exception xx){}
+                double _105a=0;
+                try{
+                  _105a = Double.valueOf(txt_o_105a.getText().toString().replace(",",""));}catch (Exception xx){}
                 double total = _105a + _105b;
+
                 try {
-                    txt_o_105.setText(String.valueOf(total));
+                    txt_o_105.setText(Config.toCurrency(total));
                 } catch (Exception xx) {
                 }
 
@@ -224,7 +234,7 @@ public class _O_Question extends Fragment {
                 sum.Add(txt_o_114a);
                 sum.Add(txt_o_115a);
                 double avalue = sum.getTotal();
-                txt_o_116a.setText(String.valueOf(avalue));
+                txt_o_116a.setText(Config.toCurrency(avalue));
 
                 Sum sum2 = new Sum();
                 sum2.Add(txt_o_107b);
@@ -238,7 +248,7 @@ public class _O_Question extends Fragment {
                 sum2.Add(txt_o_115b);
 
                 double bvalue = sum2.getTotal();
-                txt_o_116b.setText(String.valueOf(bvalue));
+                txt_o_116b.setText(Config.toCurrency(bvalue));
             }
         });
         this.cpar = new c_params(Config.ID, container, view);
@@ -354,7 +364,13 @@ public class _O_Question extends Fragment {
                 String AndroidID = Settings.Secure.getString(getActivity().getContentResolver(), Settings.Secure.ANDROID_ID);
                 MainDataBaseHandler da = new MainDataBaseHandler(getActivity());
                 Sum sum2 = new Sum();
+                double value=0;
+                try{
+                    value=Double.parseDouble(finaldata);
+                }catch (Exception xx){
 
+                }
+                txt_o_117.setText(Config.toCurrency(value));
 
                 int _106a = 0;//-
                 try {
@@ -366,7 +382,7 @@ public class _O_Question extends Fragment {
                 sum2.Add(txt_o_105a);//--
                 double bvalue = sum2.getTotal();
                 txt_o_118a = (EditText) view.findViewById(R.id.txt_o_118a);
-                txt_o_118a.setText(String.valueOf(bvalue));
+                txt_o_118a.setText(Config.toCurrency(bvalue));
 
 
                 Sum sum3 = new Sum();
@@ -381,7 +397,7 @@ public class _O_Question extends Fragment {
                 sum3.Add(txt_o_105b);//-
                 double bvalue2 = sum3.getTotal();
                 txt_o_118b = (EditText) view.findViewById(R.id.txt_o_118b);
-                txt_o_118b.setText(String.valueOf(bvalue2));
+                txt_o_118b.setText(Config.toCurrency(bvalue2));
 
                 Sum sum4 = new Sum();
                 sum4.Add(txt_o_118b);
@@ -390,7 +406,7 @@ public class _O_Question extends Fragment {
 
                 double bvalue3 = sum4.getTotal();
                 txt_o_119 = (EditText) view.findViewById(R.id.txt_o_119);
-                txt_o_119.setText(String.valueOf(bvalue3));
+                txt_o_119.setText(Config.toCurrency(bvalue3));
 
 
                 //   double a
@@ -464,8 +480,13 @@ public class _O_Question extends Fragment {
         chk.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
                 txt1.setEnabled(isChecked);
                 txt2.setEnabled(isChecked);
+                if(!isChecked){
+                    txt1.setText("");
+                    txt2.setText("");
+                }
             }
         });
     }
@@ -580,7 +601,7 @@ public class _O_Question extends Fragment {
         double total = 0;
 
         public void Add(EditText txt) {
-            list.add(txt.getText().toString());
+            list.add(txt.getText().toString().replace(",",""));
         }
 
         public void Add(int txt) {

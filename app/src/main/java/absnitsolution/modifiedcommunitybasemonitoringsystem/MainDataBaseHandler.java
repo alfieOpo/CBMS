@@ -446,13 +446,13 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
 
     }
 
-    public int getGA_1ST89(String M_ID) {
+    public double getGA_1ST92(String M_ID) {
         SQLiteDatabase db = this.getReadableDatabase();
-        String Sql = "select D_095 from mcbms where _id=" + M_ID;
+        String Sql = "select D_092 from mcbms where _id=" + M_ID;
         Cursor cursor = db.rawQuery(Sql, null);
         try {
             if (cursor.moveToFirst()) {
-                return Integer.valueOf(cursor.getString(0));
+                return Double.valueOf(cursor.getString(0).replace(",",""));
             }
         } catch (Exception xx) {
             return 0;
