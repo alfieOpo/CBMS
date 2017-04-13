@@ -34,6 +34,13 @@
 
 
                         <TextView
+                            android:id="@+id/textView77"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:text="K. MGA DATING KAPAMILYA" />
+
+                        <TextView
                             android:id="@+id/textView50"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -76,7 +83,7 @@
                                 android:layout_height="wrap_content"
                                 android:ems="10"
                                 android:hint="76 Ano ang edad ni__ noong namatay? "
-                                android:inputType="textPersonName"
+                                android:inputType="number"
                                 android:tag="_10th_003"
                                 android:textColorHint="#05ab9a"
                                 android:textSize="14dp" />
@@ -93,6 +100,13 @@
                             android:textColorHint="#05ab9a"
                             android:textSize="14dp"
                             app:met_floatingLabel="highlight" />
+
+                        <EditText
+                            android:id="@+id/txt_iba_pa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName" />
 
 
                     </LinearLayout>

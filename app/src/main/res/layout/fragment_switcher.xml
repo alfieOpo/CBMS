@@ -10,13 +10,33 @@
 
     <Button
         android:id="@+id/btn_new"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="174dp"
+        android:layout_height="163dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/add_user"
+        android:gravity="bottom|right"
+        android:text="New"
+        android:textAlignment="gravity"
+        android:textColor="#ffffff"
+        tools:layout_editor_absoluteY="67dp"
+        tools:layout_editor_absoluteX="345dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="97dp"
+        android:layout_height="99dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="58dp"
-        android:layout_marginStart="58dp"
-        android:layout_marginTop="159dp"
-        android:text="New" />
+        android:background="@drawable/list"
+        android:gravity="bottom|right"
+        android:text="LIST"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteY="463dp"
+        tools:layout_editor_absoluteX="5dp"
+        android:layout_toStartOf="@+id/btn_new"
+        android:layout_alignBottom="@+id/btn_new" />
 </RelativeLayout>

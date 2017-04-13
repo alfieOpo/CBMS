@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Toast;
@@ -27,7 +28,8 @@ public class _U_Question extends Fragment {
     ImageButton btn_back, btn_next;
     MaterialBetterSpinner cbo_7th_58;
     LinearLayout layout;
-
+MaterialBetterSpinner cbo_7th_59_1_buwan,cbo_7th_59_2_buwan,cbo_7th_59_3_buwan;
+    EditText txt_7th_61_1_bilangaraw,txt_7th_61_2_bilangaraw,txt_7th_61_3_bilangaraw;
     public _U_Question() {
         // Required empty public constructor
     }
@@ -45,15 +47,75 @@ public class _U_Question extends Fragment {
         layout = (LinearLayout) view.findViewById(R.id.layout);
         layout.setEnabled(false);
         this.cpar = new c_params(Config.ID, container, view);
-
-
-        this.cpar.setDropdown(R.id.cbo_7th_58, R.array.oo_hindi, "Select One");
-        this.cpar.setDropdown(R.id.cbo_7th_59_1_buwan, R.array.month, "Select One");
-        this.cpar.setDropdown(R.id.cbo_7th_59_2_buwan, R.array.month, "Select One");
-        this.cpar.setDropdown(R.id.cbo_7th_59_3_buwan, R.array.month, "Select One");
+        this.cpar.setDropdown(R.id.cbo_7th_58, R.array.oo_hindi, "Hindi");
+        this.cpar.setDropdown(R.id.cbo_7th_59_1_buwan, R.array.month, "N/A");
+        this.cpar.setDropdown(R.id.cbo_7th_59_2_buwan, R.array.month, "N/A");
+        this.cpar.setDropdown(R.id.cbo_7th_59_3_buwan, R.array.month, "N/A");
         this.cpar.setEditText(R.id.txt_7th_61_1_bilangaraw);
         this.cpar.setEditText(R.id.txt_7th_61_2_bilangaraw);
         this.cpar.setEditText(R.id.txt_7th_61_3_bilangaraw);
+        cbo_7th_59_1_buwan=(MaterialBetterSpinner)view.findViewById(R.id.cbo_7th_59_1_buwan) ;
+        cbo_7th_59_2_buwan=(MaterialBetterSpinner)view.findViewById(R.id.cbo_7th_59_2_buwan) ;
+        cbo_7th_59_3_buwan=(MaterialBetterSpinner)view.findViewById(R.id.cbo_7th_59_3_buwan) ;
+        txt_7th_61_1_bilangaraw=(EditText)view.findViewById(R.id.txt_7th_61_1_bilangaraw) ;
+        txt_7th_61_2_bilangaraw=(EditText)view.findViewById(R.id.txt_7th_61_2_bilangaraw) ;
+        txt_7th_61_3_bilangaraw=(EditText)view.findViewById(R.id.txt_7th_61_3_bilangaraw) ;
+        txt_7th_61_1_bilangaraw.setEnabled(txt_7th_61_1_bilangaraw.getText().toString().equals("N/A"));
+        txt_7th_61_2_bilangaraw.setEnabled(txt_7th_61_2_bilangaraw.getText().toString().equals("N/A"));
+        txt_7th_61_3_bilangaraw.setEnabled(txt_7th_61_3_bilangaraw.getText().toString().equals("N/A"));
+        if(cbo_7th_58.getText().toString().equals("Hindi")){
+
+            layout.setVisibility(View.INVISIBLE);
+        }
+        else{
+            layout.setVisibility(View.VISIBLE);
+        }
+        cbo_7th_59_1_buwan.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(position==0){
+                    txt_7th_61_1_bilangaraw.setText("");
+
+                }
+                else{
+                    txt_7th_61_1_bilangaraw.setEnabled(true);
+
+                }
+
+
+            }
+        });
+
+        cbo_7th_59_2_buwan.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                txt_7th_61_2_bilangaraw.setEnabled(!txt_7th_61_2_bilangaraw.getText().toString().equals("N/A"));
+                if(position==0){
+                    txt_7th_61_2_bilangaraw.setText("");
+
+                }
+                else{
+                    txt_7th_61_2_bilangaraw.setEnabled(true);
+
+                }
+            }
+        });
+
+        cbo_7th_59_3_buwan.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+
+                if(position==0){
+                    txt_7th_61_3_bilangaraw.setText("");
+
+                }
+                else{
+                    txt_7th_61_3_bilangaraw.setEnabled(true);
+
+                }
+            }
+        });
 
 
         btn_back.setOnClickListener(new View.OnClickListener() {

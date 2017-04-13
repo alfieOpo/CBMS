@@ -19,6 +19,12 @@
 
 
             <TextView
+                android:id="@+id/textView55"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="J. KALUSUGAN" />
+
+            <TextView
                 android:id="@+id/textView16"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -34,38 +40,89 @@
                 android:textSize="10dp"
                 app:met_floatingLabel="highlight" />
 
-            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                android:id="@+id/cbo_a_ilan_nagpagamot"
+            <LinearLayout
+                android:id="@+id/layout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_weight="1"
-                android:hint="Ilan?"
-                android:tag="D_030"
-                android:textColorHint="#05ab9a"
-                android:textSize="14dp"
-                app:met_floatingLabel="highlight" />
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView17"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="66. Sa huling pagkakasakit ng sinumang miyembro ng pamilya, saan kayo nagpagamot upang malunasan ang sakit?" />
+                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:id="@+id/cbo_a_ilan_nagpagamot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1"
+                    android:hint="Ilan?"
+                    android:tag="D_030"
+                    android:textColorHint="#05ab9a"
+                    android:textSize="14dp"
+                    app:met_floatingLabel="highlight" />
 
-            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                android:id="@+id/cbo_j_66"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:tag="D_040"
-                android:textColorHint="#05ab9a"
-                android:textSize="16dp"
-                app:met_floatingLabel="highlight" />
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="66. Sa huling pagkakasakit ng sinumang miyembro ng pamilya, saan kayo nagpagamot upang malunasan ang sakit?" />
+
+                <CheckBox
+                    android:id="@+id/chk_Public_hospital_Provincial_hospital"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Public hospital (Provincial hospital)" />
+                <CheckBox
+                    android:id="@+id/chk_Public_hospital__National"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Public hospital (National)" />
+
+                <CheckBox
+                    android:id="@+id/chk_Private_Hospital_Clinic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Private Hospital/Clinic" />
+                <CheckBox
+                    android:id="@+id/chk_Bulacan_Medical_Center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Bulacan Medical Center" />
+                <CheckBox
+                    android:id="@+id/chk_Santa_Maria_General__Hospital_RMMH"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Santa Maria General  Hospital (RMMH)" />
 
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/chk_Rural_Health_Units"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Rural Health Units" />
+                <CheckBox
+                    android:id="@+id/chk_Brgy_Health_Station_Center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Brgy. Health Station/Center" />
+                <CheckBox
+                    android:id="@+id/chk_Non_medical_non_trained_Hilot_Personnel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Non-medical/non-trained Hilot/Personnel" />
+
+                <CheckBox
+                    android:id="@+id/chk_ibapa_itala"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Iba pa, itala" />
 
                 <EditText
                     android:id="@+id/txt_j_ibapa_66"
@@ -75,26 +132,63 @@
                     android:hint="Iba pa, itala"
                     android:inputType="textPersonName"
                     android:tag="D_041"
-                    android:textColorHint="#05ab9a"
+
                     android:textSize="14dp" />
-            </android.support.design.widget.TextInputLayout>
 
 
-            <TextView
-                android:id="@+id/textView18"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="67. May miyembro ba ng pamilya na sumasailalim sa ____? " />
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="67. May miyembro ba ng pamilya na sumasailalim sa ____? " />
 
-            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                android:id="@+id/cbo_j_67"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:tag="D_042"
-                android:textColorHint="#05ab9a"
-                android:textSize="16dp"
-                app:met_floatingLabel="highlight" />
+
+
+
+                <CheckBox
+                    android:id="@+id/chk_Dialysis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Dialysis" />
+                <CheckBox
+                    android:id="@+id/chk_Chemotherapy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Chemotherapy" />
+                <CheckBox
+                    android:id="@+id/chk_HIV_Treatment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="HIV Treatment" />
+                <CheckBox
+                    android:id="@+id/chk_Pulmonary_Tubercolosis_PTB_Treatment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Pulmonary Tubercolosis (PTB) Treatment" />
+                <CheckBox
+                    android:id="@+id/chk_ibapa2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Iba pa, itala" />
+
+                <EditText
+                    android:id="@+id/txt_ibapa2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Iba pa, itala"
+                    android:inputType="textPersonName"
+                    android:tag="D_042"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"

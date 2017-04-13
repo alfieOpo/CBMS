@@ -14,16 +14,15 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        app:srcCompat="@drawable/side_nav_bar" />
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cbmsabouts" />
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="true"
-        android:text="Version 00.001" />
+        android:gravity="bottom|right"
+        android:text="Version 13.6.12.01"
+        android:textColor="#ffffff" />
+
 </RelativeLayout>
