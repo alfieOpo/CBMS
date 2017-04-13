@@ -14,5 +14,5 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="77dp"
-        android:src="@drawable/mcbms" />
+        android:src="@drawable/mcbms_mpdo" />
 </RelativeLayout>

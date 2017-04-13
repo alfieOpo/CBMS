@@ -421,14 +421,7 @@ public class _A_Question extends Fragment implements View.OnClickListener {
                 addField(cbo_a_miyembro_ofw.getText().toString());
                 addField(cbo_a_ilan_magasawa.getText().toString());
                 addField(cbo_a_ilan_miyembro.getText().toString());
-                Config.ColorTheVIEW(txt_a_tirahan,"Tirahan ng Pamilya");
-                Config.ColorTheVIEW(cbo_a_miyembro_namatay,"73. Mayroon ba kayong dating kapamilya na namatay noong nakaraang 12 buwan?");
-                Config.ColorTheVIEW(cbo_a_miyembro_nakapasa,"62. Mayroon ba kayong kapamilya na nakapasa sa board o bar exam?");
-                Config.ColorTheVIEW(cbo_a_miyembro_seniorcitizen,"54. May miyembro ba ang pamilya na may 60 taong gulang pataas?");
-                Config.ColorTheVIEW(cbo_a_miyembro_maykapansanan,"48. May miyembro ba ng pamilya na may kapansanan?");
-                Config.ColorTheVIEW(cbo_a_miyembro_solomagulang,"45. May miyembro ba ng pamilya na solong magulang na may kinakalingang anak");
-                Config.ColorTheVIEW(cbo_a_miyembro_ofw,"40. Mayroon ba kayong dating kapamilya na OFW?");
-                Config.ColorTheVIEW(cbo_a_ilan_miyembro,"Ilang Miyembro mayroon dito sa inyong pamilya?");
+
 
                 if(Config.CallbackIsCheck){
                     Fragment fragment = null;

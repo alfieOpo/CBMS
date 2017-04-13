@@ -15,13 +15,16 @@ import android.widget.Toast;
 
 import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class _M_Question extends Fragment {
 
-
+    List<String> list;
     c_params cpar;
     MaterialBetterSpinner cbo_m_82, cbo_m_83, cbo_m_84;
     MainDataBaseHandler da;
@@ -47,7 +50,7 @@ public class _M_Question extends Fragment {
         cbo_m_84 = (MaterialBetterSpinner) view.findViewById(R.id.cbo_m_84);
         txt_m_ibapa_82=(EditText)view.findViewById(R.id.txt_m_ibapa_82);
         txt_m_ibapa_84=(EditText)view.findViewById(R.id.txt_m_ibapa_84);
-        this.cpar.setDropdown(R.id.cbo_m_82, R.array.m_tubig, "Water District - Sariling Gamit");
+        this.cpar.setDropdown(R.id.cbo_m_82, R.array.m_tubig, "Select One");
         this.cpar.setDropdown(R.id.cbo_m_83, R.array.m_gaanokalayo, "Select One");
         this.cpar.setDropdown(R.id.cbo_m_84, R.array.m_uripalikuran, "Select One");
         this.cpar.setEditText(R.id.txt_m_ibapa_82);
@@ -121,6 +124,17 @@ public class _M_Question extends Fragment {
             @Override
             public void onClick(View v) {
 
+                list=new ArrayList<String>();
+                addField(cbo_m_82.getText().toString());
+                addField(cbo_m_84.getText().toString());
+                if(!Valid()){
+                    Toast.makeText(getActivity(), "Fill out all important field!", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                Config.ColorTheVIEW(cbo_m_82);
+                Config.ColorTheVIEW(cbo_m_82);
+
+
                 if (!cbo_m_82.getText().equals("Select One") || !cbo_m_82.getText().equals("") && !cbo_m_83.getText().equals("Select One") || !cbo_m_83.getText().equals("") && !cbo_m_84.getText().equals("Select One") || !cbo_m_84.getText().equals("")) {
                     Fragment fragment = null;
                     try {
@@ -153,5 +167,18 @@ public class _M_Question extends Fragment {
         this.cpar.putEditText(R.id.txt_m_ibapa_84);
         da.c_Update(cpar);
         super.onDestroy();
+    }
+    private void addField(String value) {
+        list.add(value);
+    }
+
+    private boolean Valid() {
+
+        for (String value : list) {
+            if (value.equals("Select One") || value.equals("")) {
+                return false;
+            }
+        }
+        return true;
     }
 }

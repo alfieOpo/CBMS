@@ -6,24 +6,24 @@
 
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/home"
+            android:icon="@drawable/w_home"
             android:title="Home" />
         <item
             android:id="@+id/nav_list"
-            android:icon="@drawable/list"
+            android:icon="@drawable/w_list"
             android:title="List" />
         <item
             android:id="@+id/nav_callBack"
-            android:icon="@drawable/door"
+            android:icon="@drawable/w_callback"
             android:title="Callback List" />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/w_gallery"
             android:title="Gallery" />
 
         <item
             android:id="@+id/nav_upload"
-            android:icon="@drawable/upload"
+            android:icon="@drawable/w_upload"
             android:title="Upload" />
     </group>
 
@@ -31,15 +31,15 @@
         <menu>
             <item
                 android:id="@+id/nav_settings"
-                android:icon="@drawable/settings"
+                android:icon="@drawable/w_settings"
                 android:title="Settings" />
             <item
                 android:id="@+id/nav_register"
-                android:icon="@drawable/register"
+                android:icon="@drawable/w_account"
                 android:title="User Account" />
             <item
                 android:id="@+id/nav_about_us"
-                android:icon="@drawable/question"
+                android:icon="@drawable/w_aboutus"
                 android:title="About Us" />
 
         </menu>
