@@ -4,13 +4,19 @@ package absnitsolution.modifiedcommunitybasemonitoringsystem;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.text.method.KeyListener;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.CheckBox;
 import android.widget.ImageButton;
 import android.widget.Toast;
+import android.widget.CompoundButton;
+import android.widget.LinearLayout;
 
 import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
 
@@ -33,7 +39,11 @@ public class _L_Question extends Fragment {
     //sencond row
     EditText txt_l_81_1, txt_l_81_2, txt_l_81_3, txt_l_81_4, txt_l_81_5, txt_l_81_6;
     //
-    EditText txt_l_79_1, txt_l_79_2, txt_l_79_3, txt_l_79_4, txt_l_79_5, txt_l_79_6;
+    EditText txt_l_78_6, txt_l_79_1, txt_l_79_2, txt_l_79_3, txt_l_79_4, txt_l_79_5, txt_l_79_6;
+
+    CheckBox  chk_l_78_1, chk_l_78_2, chk_l_78_3, chk_l_78_4 ,chk_l_78_5   ;
+
+    LinearLayout layout;
 
     public _L_Question() {
         // Required empty public constructor
@@ -51,7 +61,7 @@ public class _L_Question extends Fragment {
         btn_back = (ImageButton) view.findViewById(R.id.btn_back);
         btn_next = (ImageButton) view.findViewById(R.id.btn_next);
         btn_compute = (Button) view.findViewById(R.id.btn_compute);
-        cbo_l_78_1 = (MaterialBetterSpinner) view.findViewById(R.id.cbo_l_78_1);
+        cbo_l_78_1 = (MaterialBetterSpinner) view.findViewById(R.id.cbo_l_78);
 
         txt_l_79_1 = (EditText) view.findViewById(R.id.txt_l_79_1);
         txt_l_79_2 = (EditText) view.findViewById(R.id.txt_l_79_2);
@@ -74,11 +84,42 @@ public class _L_Question extends Fragment {
         txt_l_81_5 = (EditText) view.findViewById(R.id.txt_l_81_5);
         txt_l_81_6 = (EditText) view.findViewById(R.id.txt_l_81_6);
 
-        this.cpar.setDropdown(R.id.cbo_l_78_5, R.array.oo_hindi, "Select One");
-        this.cpar.setDropdown(R.id.cbo_l_78_4, R.array.oo_hindi, "Select One");
-        this.cpar.setDropdown(R.id.cbo_l_78_3, R.array.oo_hindi, "Select One");
-        this.cpar.setDropdown(R.id.cbo_l_78_2, R.array.oo_hindi, "Select One");
-        this.cpar.setDropdown(R.id.cbo_l_78_1, R.array.oo_hindi, "Select One");
+        txt_l_78_6 = (EditText) view.findViewById(R.id.txt_l_78_6);
+
+
+        //checkboxes
+        chk_l_78_1 = (CheckBox) view.findViewById(R.id.chk_l_78_1);
+        chk_l_78_2 = (CheckBox) view.findViewById(R.id.chk_l_78_2);
+        chk_l_78_3 = (CheckBox) view.findViewById(R.id.chk_l_78_3);
+        chk_l_78_4 = (CheckBox) view.findViewById(R.id.chk_l_78_4);
+        chk_l_78_5 = (CheckBox) view.findViewById(R.id.chk_l_78_5);
+
+        layout = (LinearLayout) view.findViewById(R.id.layout);
+
+
+        // disable editext
+
+
+        txt_l_79_1.setEnabled(false);
+        txt_l_79_2.setEnabled(false);
+        txt_l_79_3.setEnabled(false);
+        txt_l_79_4.setEnabled(false);
+        txt_l_79_5.setEnabled(false);
+
+        txt_l_80_1.setEnabled(false);
+        txt_l_80_2.setEnabled(false);
+        txt_l_80_3.setEnabled(false);
+        txt_l_80_4.setEnabled(false);
+        txt_l_80_5.setEnabled(false);
+
+        txt_l_81_1.setEnabled(false);
+        txt_l_81_2.setEnabled(false);
+        txt_l_81_3.setEnabled(false);
+        txt_l_81_4.setEnabled(false);
+        txt_l_81_5.setEnabled(false);
+
+        this.cpar.setDropdown(R.id.cbo_l_78, R.array.oo_hindi, "Select One");
+     
         this.cpar.setEditText(R.id.txt_l_80_1);
         this.cpar.setEditText(R.id.txt_l_81_1);
         this.cpar.setEditText(R.id.txt_l_79_1);
@@ -98,6 +139,136 @@ public class _L_Question extends Fragment {
         this.cpar.setEditText(R.id.txt_l_80_6);
         this.cpar.setEditText(R.id.txt_l_81_6);
         this.cpar.setEditText(R.id.txt_l_79_6);
+
+
+
+
+
+        cbo_l_78_1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                if (position == 1) {
+
+                    layout.setVisibility(View.INVISIBLE);
+                    cleartxt();
+
+                } else {
+                    layout.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
+
+
+          chk_l_78_1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (chk_l_78_1.isChecked())
+                {
+                    txt_l_80_1.setEnabled(true);
+                    txt_l_81_1.setEnabled(true);
+                    txt_l_79_1.setEnabled(true);
+
+                }
+                else
+                {
+                    txt_l_80_1.setEnabled(false);
+                    txt_l_81_1.setEnabled(false);
+                    txt_l_79_1.setEnabled(false);
+                }
+            }
+        });
+
+
+          chk_l_78_2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (chk_l_78_2.isChecked())
+                {
+                    txt_l_80_2.setEnabled(true);
+                    txt_l_81_2.setEnabled(true);
+                    txt_l_79_2.setEnabled(true);
+
+                }
+                else
+                {
+                    txt_l_80_2.setEnabled(false);
+                    txt_l_81_2.setEnabled(false);
+                    txt_l_79_2.setEnabled(false);
+                }
+            }
+        });
+
+
+
+          chk_l_78_3.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (chk_l_78_3.isChecked())
+                {
+                    txt_l_80_3.setEnabled(true);
+                    txt_l_81_3.setEnabled(true);
+                    txt_l_79_3.setEnabled(true);
+
+                }
+                else
+                {
+                    txt_l_80_3.setEnabled(false);
+                    txt_l_81_3.setEnabled(false);
+                    txt_l_79_3.setEnabled(false);
+                }
+            }
+        });
+
+
+          chk_l_78_4.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (chk_l_78_4.isChecked())
+                {
+                    txt_l_80_4.setEnabled(true);
+                    txt_l_81_4.setEnabled(true);
+                    txt_l_79_4.setEnabled(true);
+
+                }
+                else
+                {
+                    txt_l_80_4.setEnabled(false);
+                    txt_l_81_4.setEnabled(false);
+                    txt_l_79_4.setEnabled(false);
+                }
+            }
+        });
+
+
+
+          chk_l_78_5.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (chk_l_78_5.isChecked())
+                {
+                    txt_l_80_5.setEnabled(true);
+                    txt_l_81_5.setEnabled(true);
+                    txt_l_79_5.setEnabled(true);
+
+                }
+                else
+                {
+                    txt_l_80_5.setEnabled(false);
+                    txt_l_81_5.setEnabled(false);
+                    txt_l_79_5.setEnabled(false);
+                }
+            }
+        });
+
+
+
+
+
+
+
+
 
 
         btn_back.setOnClickListener(new View.OnClickListener() {
@@ -176,23 +347,18 @@ public class _L_Question extends Fragment {
     @Override
     public void onDestroy() {
         da = new MainDataBaseHandler(getActivity().getApplicationContext());
-        this.cpar.putDropdown(R.id.cbo_l_78_1);
         this.cpar.putEditText(R.id.txt_l_80_1);
         this.cpar.putEditText(R.id.txt_l_81_1);
         this.cpar.putEditText(R.id.txt_l_79_1);
-        this.cpar.putDropdown(R.id.cbo_l_78_2);
         this.cpar.putEditText(R.id.txt_l_80_2);
         this.cpar.putEditText(R.id.txt_l_81_2);
         this.cpar.putEditText(R.id.txt_l_79_2);
-        this.cpar.putDropdown(R.id.cbo_l_78_3);
         this.cpar.putEditText(R.id.txt_l_80_3);
         this.cpar.putEditText(R.id.txt_l_81_3);
         this.cpar.putEditText(R.id.txt_l_79_3);
-        this.cpar.putDropdown(R.id.cbo_l_78_4);
         this.cpar.putEditText(R.id.txt_l_80_4);
         this.cpar.putEditText(R.id.txt_l_81_4);
         this.cpar.putEditText(R.id.txt_l_79_4);
-        this.cpar.putDropdown(R.id.cbo_l_78_5);
         this.cpar.putEditText(R.id.txt_l_80_5);
         this.cpar.putEditText(R.id.txt_l_81_5);
         this.cpar.putEditText(R.id.txt_l_79_5);
@@ -205,9 +371,45 @@ public class _L_Question extends Fragment {
         super.onDestroy();
     }
 
+    public void cleartxt()
+    {
+        chk_l_78_1.setChecked(false);
+        chk_l_78_2.setChecked(false);
+        chk_l_78_3.setChecked(false);
+        chk_l_78_4.setChecked(false);
+        chk_l_78_5.setChecked(false);
+        txt_l_79_1.setText("");
+        txt_l_79_2.setText("");
+        txt_l_79_3.setText("");
+        txt_l_79_4.setText("");
+        txt_l_79_5.setText("");
+        txt_l_79_6.setText("");
+
+        txt_l_80_1.setText("");
+        txt_l_80_2.setText("");
+        txt_l_80_3.setText("");
+        txt_l_80_4.setText("");
+        txt_l_80_5.setText("");
+        txt_l_80_6.setText("");
+
+        txt_l_81_1.setText("");
+        txt_l_81_2.setText("");
+        txt_l_81_3.setText("");
+        txt_l_81_4.setText("");
+        txt_l_81_5.setText("");
+        txt_l_81_6.setText("");
+
+        txt_l_78_6.setText("");
+
+    }
+
+
+
+
+
     public class Sum {
         List<String> list = new ArrayList<String>();
-        double total = 0;
+        int total = 0;
 
         public void Add(EditText txt) {
             list.add(txt.getText().toString());
@@ -222,12 +424,12 @@ public class _L_Question extends Fragment {
             list.clear();
         }
 
-        public double getTotal() {
+        public int getTotal() {
 
             for (String val : list) {
-                double value = 0;
+                int value = 0;
                 try {
-                    value = Double.valueOf(val);
+                    value = Integer.valueOf(val);
                     total += value;
                 } catch (Exception xx) {
                     total += value;

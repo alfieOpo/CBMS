@@ -36,7 +36,7 @@ public class _1ststatedrow_Question extends Fragment {
 
               ;
 
-    EditText txt_1st_ibapa_miyembro, txt_1st_ibapa_relihiyon, txt_1st_ibapa_wika, txt_1st_specifycourse, txt_1st_specifynatapos, txt_1st_ibapa_kasanayan,
+    EditText txt_1st_miyembro, txt_1st_ibapa_miyembro, txt_1st_ibapa_relihiyon, txt_1st_ibapa_wika, txt_1st_specifycourse, txt_1st_specifynatapos, txt_1st_ibapa_kasanayan,
             txt_1st_pangalan_organisasyon, txt_1st_ibapa_klasengsamahan, txt_1st_ibapa_rehistrado, txt_1st_ibapa_hindinagaral,
             txt_1st_others_uringnegosyo, txt_1st_hanapbuhay, txt_1st_other_pangunahinghanapbuhay,
             txt_1st_saangnegosyo, txt_1st_ibapa_hakbang , txt_1st_ibapa_hindinaghanap;
@@ -96,9 +96,9 @@ public class _1ststatedrow_Question extends Fragment {
         txt_1st_others_uringnegosyo = (EditText) view.findViewById(R.id.txt_1st_others_uringnegosyo);
         txt_1st_ibapa_hakbang = (EditText) view.findViewById(R.id.txt_1st_ibapa_hakbang);
         txt_1st_ibapa_hindinaghanap = (EditText) view.findViewById(R.id.txt_1st_ibapa_hindinaghanap);
-
         txt_1st_hanapbuhay = (EditText) view.findViewById(R.id.txt_1st_hanapbuhay);
         txt_1st_saangnegosyo = (EditText) view.findViewById(R.id.txt_1st_saangnegosyo);
+        txt_1st_miyembro = (EditText) view.findViewById(R.id.txt_1st_miyembro);
 
         chk_1st_puno =(CheckBox)view.findViewById(R.id.chk_1st_puno);
 
@@ -133,6 +133,8 @@ public class _1ststatedrow_Question extends Fragment {
         text_29 = (TextView) view.findViewById(R.id.text_29);
         text_32 = (TextView) view.findViewById(R.id.text_32);
         text_33 = (TextView) view.findViewById(R.id.text_33);
+
+        txt_1st_miyembro.setSelectAllOnFocus(true);
 
 
 
@@ -541,7 +543,7 @@ public class _1ststatedrow_Question extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                if (position == 9 || position == 7) {
+                if (position == 10 || position == 8) {
 
                     txt_1st_ibapa_miyembro.setVisibility(View.VISIBLE);
 

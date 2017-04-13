@@ -29,539 +29,553 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="false"
                     android:layout_centerHorizontal="true"
-                    android:text="78. Noong nakaraang labing-dalawang buwan, kayo ba o sinuman sa inyong kapamilya ay naging biktima ng alin man sa mga sumusunod na krimen?"
+                    android:text="L. BIKTIMA NG KRIMEN"
                     android:textAlignment="viewStart"
                     android:textSize="16dp" />
 
 
-                <!-- 1st row -->
-                <LinearLayout
+                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:id="@+id/cbo_l_78"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:weightSum="1">
-
-                    <TextView
-                        android:layout_width="120dp"
-                        android:layout_height="match_parent"
-                        android:layout_alignParentTop="false"
-                        android:layout_centerHorizontal="true"
-                        android:layout_weight="0.16"
-                        android:text="Type of Crime"
-                        android:textAlignment="viewStart"
-                        android:textSize="12dp" />
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1"
+                    android:hint="78. Noong nakaraang labin-dalawang buwan, kayo ba o sinuman sa inyong kapamilya ay naging biktima ng alinman sa mga sumusunod na krimen?"
+                    android:tag=""
+                    android:textColorHint="#05ab9a"
+                    android:textSize="14dp"
+                    app:met_floatingLabel="highlight" />
 
 
-                    <TextView
-                        android:id="@+id/textView5"
-                        android:layout_width="109dp"
-                        android:layout_height="match_parent"
-                        android:layout_alignParentTop="false"
-                        android:layout_centerHorizontal="true"
-                        android:layout_weight="0.20"
-                        android:paddingRight="10dp"
-                        android:text="80. Ilang kapamilya, Lalaki"
-                        android:textAlignment="textStart"
-                        android:textSize="12dp" />
-
-
-                    <TextView
-                        android:layout_width="140dp"
-                        android:layout_height="match_parent"
-                        android:layout_alignParentTop="false"
-                        android:layout_centerHorizontal="true"
-                        android:layout_weight="0.11"
-                        android:text="81. Ilang kapamilya, Babae"
-                        android:textAlignment="viewStart"
-                        android:textSize="12dp" />
-
-
-                    <TextView
-                        android:layout_width="80dp"
-                        android:layout_height="match_parent"
-                        android:layout_alignParentTop="false"
-                        android:layout_centerHorizontal="true"
-                        android:layout_weight="0.21"
-                        android:text="79. Ilang kapamilya, Kabuuan"
-                        android:textAlignment="viewStart"
-                        android:textSize="12dp" />
-
-                </LinearLayout>
-
-
-                <!-- 2nd row -->
                 <LinearLayout
+                    android:id="@+id/layout"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
 
-                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                        android:id="@+id/cbo_l_78_1"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_alignParentLeft="true"
-                        android:layout_weight="1"
-                        android:hint="78.1 Pagpatay"
-                        android:tag="D_050"
-                        android:textColorHint="#05ab9a"
-                        android:textSize="14dp"
-                        app:met_floatingLabel="highlight" />
-
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <EditText
-                            android:id="@+id/txt_l_80_1"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:ems="10"
-                            android:hint=""
-                            android:inputType="number"
-                            android:tag="D_052"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="14dp" />
-                    </android.support.design.widget.TextInputLayout>
-
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <EditText
-                            android:id="@+id/txt_l_81_1"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:ems="10"
-                            android:hint=""
-                            android:inputType="number"
-                            android:tag="D_053"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="14dp" />
-                    </android.support.design.widget.TextInputLayout>
-
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <EditText
-                            android:id="@+id/txt_l_79_1"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:ems="10"
-                            android:hint=""
-                            android:inputType="number"
-                            android:tag="D_054"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="14dp" />
-                    </android.support.design.widget.TextInputLayout>
-
-                </LinearLayout>
-
-
-                <!-- 3rd row -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-
-                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                        android:id="@+id/cbo_l_78_2"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_alignParentLeft="true"
-                        android:layout_weight="1"
-                        android:hint="78.2 Pagnanakaw"
-                        android:tag="D_055"
-                        android:textColorHint="#05ab9a"
-                        android:textSize="14dp"
-                        app:met_floatingLabel="highlight" />
-
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <EditText
-                            android:id="@+id/txt_l_80_2"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:ems="10"
-                            android:hint=""
-                            android:inputType="number"
-                            android:tag="D_056"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="14dp" />
-
-                    </android.support.design.widget.TextInputLayout>
-
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <EditText
-                            android:id="@+id/txt_l_81_2"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:ems="10"
-                            android:hint=""
-                            android:inputType="number"
-                            android:tag="D_057"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="14dp" />
-                    </android.support.design.widget.TextInputLayout>
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <EditText
-                            android:id="@+id/txt_l_79_2"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:ems="10"
-                            android:hint=""
-                            android:inputType="number"
-                            android:tag="D_058"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="14dp" />
-                    </android.support.design.widget.TextInputLayout>
-
-                </LinearLayout>
-
-
-                <!-- 4th row -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-
-                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                        android:id="@+id/cbo_l_78_3"
+                    <!-- 1st row -->
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_weight="1"
-                        android:hint="78.3 Panggagahasa"
-                        android:tag="D_059"
-                        android:textColorHint="#05ab9a"
-                        android:textSize="14dp"
-                        app:met_floatingLabel="highlight" />
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="false"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="0.16"
+                            android:text="Type of Crime"
+                            android:textAlignment="viewStart"
+                            android:textSize="12dp" />
 
 
-                    <android.support.design.widget.TextInputLayout
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="109dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="false"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="0.20"
+                            android:paddingRight="10dp"
+                            android:text="80. Ilang kapamilya, Lalaki"
+                            android:textAlignment="textStart"
+                            android:textSize="12dp" />
+
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="false"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="0.11"
+                            android:text="81. Ilang kapamilya, Babae"
+                            android:textAlignment="viewStart"
+                            android:textSize="12dp" />
+
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="false"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="0.21"
+                            android:text="79. Ilang kapamilya, Kabuuan"
+                            android:textAlignment="viewStart"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+
+                    <!-- 2nd row -->
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
 
-                        <EditText
-                            android:id="@+id/txt_l_80_3"
+
+                        <CheckBox
+                            android:id="@+id/chk_l_78_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag=""
+                            android:text="78.1 Pagpatay"
+                            android:textSize="12dp" />
+
+
+                        <android.support.design.widget.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:ems="10"
-                            android:hint=""
-                            android:inputType="number"
-                            android:tag="D_060"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="14dp" />
-                    </android.support.design.widget.TextInputLayout>
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_l_80_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:hint=""
+                                android:inputType="number"
+                                android:tag="D_052"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+                        </android.support.design.widget.TextInputLayout>
 
 
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <EditText
-                            android:id="@+id/txt_l_81_3"
+                        <android.support.design.widget.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:ems="10"
-                            android:hint=""
-                            android:inputType="number"
-                            android:tag="D_061"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="14dp" />
+                            android:layout_weight="1">
 
-                    </android.support.design.widget.TextInputLayout>
+                            <EditText
+                                android:id="@+id/txt_l_81_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:hint=""
+                                android:inputType="number"
+                                android:tag="D_053"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+                        </android.support.design.widget.TextInputLayout>
 
 
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <EditText
-                            android:id="@+id/txt_l_79_3"
+                        <android.support.design.widget.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:ems="10"
-                            android:hint=""
-                            android:inputType="number"
-                            android:tag="D_062"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="14dp" />
-                    </android.support.design.widget.TextInputLayout>
+                            android:layout_weight="1">
 
-                </LinearLayout>
+                            <EditText
+                                android:id="@+id/txt_l_79_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:hint=""
+                                android:inputType="number"
+                                android:tag="D_054"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
 
 
-                <!-- 5th row -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    <!-- 3rd row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
 
 
-                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                        android:id="@+id/cbo_l_78_4"
+                        <CheckBox
+                            android:id="@+id/chk_l_78_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag=""
+                            android:text="78.2 Pagnanakaw"
+                            android:textSize="12dp" />
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_l_80_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:hint=""
+                                android:inputType="number"
+                                android:tag="D_056"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_l_81_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:hint=""
+                                android:inputType="number"
+                                android:tag="D_057"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_l_79_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:hint=""
+                                android:inputType="number"
+                                android:tag="D_058"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+
+                    <!-- 4th row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/chk_l_78_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag=""
+                            android:text="78.3 Panggagahasa"
+                            android:textSize="12dp" />
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_l_80_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:hint=""
+                                android:inputType="number"
+                                android:tag="D_060"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_l_81_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:hint=""
+                                android:inputType="number"
+                                android:tag="D_061"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_l_79_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:hint=""
+                                android:inputType="number"
+                                android:tag="D_062"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+
+                    <!-- 5th row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/chk_l_78_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag=""
+                            android:text="78.4 Pananakit"
+                            android:textSize="12dp" />
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_l_80_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:hint=""
+                                android:inputType="number"
+                                android:tag="D_064"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_l_81_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:hint=""
+                                android:inputType="number"
+                                android:tag="D_065"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_l_79_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:hint=""
+                                android:inputType="number"
+                                android:tag="D_066"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+
+                    <!-- 6th row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+
+                        <CheckBox
+                            android:id="@+id/chk_l_78_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag=""
+                            android:text="78.5 Drug-related"
+                            android:textSize="12dp" />
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20">
+
+                            <EditText
+                                android:id="@+id/txt_l_80_5"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:hint=""
+                                android:inputType="number"
+                                android:tag="D_068"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20">
+
+                            <EditText
+                                android:id="@+id/txt_l_81_5"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:hint=""
+                                android:inputType="number"
+                                android:tag="D_069"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20">
+
+                            <EditText
+                                android:id="@+id/txt_l_79_5"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:hint=""
+                                android:inputType="number"
+                                android:tag="D_070"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+
+                    <!-- 7th row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4">
+
+                            <EditText
+                                android:id="@+id/txt_l_78_6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="78.6 Iba pa, itala"
+                                android:inputType="textPersonName"
+                                android:tag="D_071"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20">
+
+                            <EditText
+                                android:id="@+id/txt_l_80_6"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:hint=""
+                                android:inputType="number"
+                                android:tag="D_073"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20">
+
+                            <EditText
+                                android:id="@+id/txt_l_81_6"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:hint=""
+                                android:inputType="number"
+                                android:tag="D_074"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20">
+
+                            <EditText
+                                android:id="@+id/txt_l_79_6"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:hint=""
+                                android:inputType="number"
+                                android:tag="D_075"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_compute"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_weight="1"
-                        android:hint="78.4 Pananakit"
-                        android:tag="D_063"
-                        android:textColorHint="#05ab9a"
-                        android:textSize="14dp"
-                        app:met_floatingLabel="highlight" />
+                        android:text="Compute"
+                        android:textColor="#ffffff"
+                        android:theme="@style/MyButton" />
 
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <EditText
-                            android:id="@+id/txt_l_80_4"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:ems="10"
-                            android:hint=""
-                            android:inputType="number"
-                            android:tag="D_064"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="14dp" />
-
-                    </android.support.design.widget.TextInputLayout>
-
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <EditText
-                            android:id="@+id/txt_l_81_4"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:ems="10"
-                            android:hint=""
-                            android:inputType="number"
-                            android:tag="D_065"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="14dp" />
-                    </android.support.design.widget.TextInputLayout>
-
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <EditText
-                            android:id="@+id/txt_l_79_4"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:ems="10"
-                            android:hint=""
-                            android:inputType="number"
-                            android:tag="D_066"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="14dp" />
-                    </android.support.design.widget.TextInputLayout>
 
                 </LinearLayout>
-
-
-                <!-- 6th row -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-
-                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                        android:id="@+id/cbo_l_78_5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_weight="4"
-                        android:hint="78.5 Drug-related"
-                        android:tag="D_067"
-                        android:textColorHint="#05ab9a"
-                        android:textSize="14dp"
-                        app:met_floatingLabel="highlight" />
-
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="20">
-
-                        <EditText
-                            android:id="@+id/txt_l_80_5"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:ems="10"
-                            android:hint=""
-                            android:inputType="number"
-                            android:tag="D_068"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="14dp" />
-
-                    </android.support.design.widget.TextInputLayout>
-
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="20">
-
-                        <EditText
-                            android:id="@+id/txt_l_81_5"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:ems="10"
-                            android:hint=""
-                            android:inputType="number"
-                            android:tag="D_069"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="14dp" />
-                    </android.support.design.widget.TextInputLayout>
-
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="20">
-
-                        <EditText
-                            android:id="@+id/txt_l_79_5"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:ems="10"
-                            android:hint=""
-                            android:inputType="number"
-                            android:tag="D_070"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="14dp" />
-                    </android.support.design.widget.TextInputLayout>
-
-                </LinearLayout>
-
-
-                <!-- 7th row -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="120dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="4">
-
-                        <EditText
-                            android:id="@+id/txt_l_78_6"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:ems="10"
-                            android:hint="78.6 Iba pa, itala"
-                            android:inputType="textPersonName"
-                            android:tag="D_071"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="14dp" />
-                    </android.support.design.widget.TextInputLayout>
-
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="120dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="20">
-
-                        <EditText
-                            android:id="@+id/txt_l_80_6"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:ems="10"
-                            android:hint=""
-                            android:inputType="number"
-                            android:tag="D_073"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="14dp" />
-
-                    </android.support.design.widget.TextInputLayout>
-
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="120dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="20">
-
-                        <EditText
-                            android:id="@+id/txt_l_81_6"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:ems="10"
-                            android:hint=""
-                            android:inputType="number"
-                            android:tag="D_074"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="14dp" />
-
-                    </android.support.design.widget.TextInputLayout>
-
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="120dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="20">
-
-                        <EditText
-                            android:id="@+id/txt_l_79_6"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:ems="10"
-                            android:hint=""
-                            android:inputType="number"
-                            android:tag="D_075"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="14dp" />
-                    </android.support.design.widget.TextInputLayout>
-
-                </LinearLayout>
-
-                <Button
-                    android:id="@+id/btn_compute"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Compute"
-                    android:textColor="#ffffff"
-                    android:theme="@style/MyButton" />
-
 
             </LinearLayout>
+
 
             <LinearLayout
                 android:id="@+id/pnl_next_and_back"
