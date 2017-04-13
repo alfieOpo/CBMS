@@ -212,7 +212,8 @@ public class _1ststatedrow_Question extends Fragment {
         txt_1st_ibapa_hakbang.setVisibility(View.INVISIBLE);
         txt_1st_ibapa_hindinaghanap.setVisibility(View.INVISIBLE);
         txt_1st_specifynatapos.setVisibility(View.INVISIBLE);
-
+        txt_1st_other_pangunahinghanapbuhay.setVisibility(View.INVISIBLE);
+        txt_1st_others_uringnegosyo.setVisibility(View.INVISIBLE);
 
 
         if (!txt_1st_ibapa_miyembro.getText().toString().equals(""))
@@ -274,7 +275,17 @@ public class _1ststatedrow_Question extends Fragment {
             txt_1st_specifynatapos.setVisibility(View.VISIBLE);
         }
         ////
+         if (!txt_1st_other_pangunahinghanapbuhay.getText().toString().equals(""))
+        {
+            txt_1st_other_pangunahinghanapbuhay.setVisibility(View.VISIBLE);
+        }
+        ////
 
+         if (!txt_1st_others_uringnegosyo.getText().toString().equals(""))
+        {
+            txt_1st_others_uringnegosyo.setVisibility(View.VISIBLE);
+        }
+        ////
 
 
         txt_kapanganakan.setOnClickListener(new View.OnClickListener() {
@@ -663,7 +674,8 @@ public class _1ststatedrow_Question extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                if (i == 5 || i == 6) {
+                if (i == 5 ) // iba pa itala
+                {
                     txt_1st_ibapa_relihiyon.setVisibility(View.VISIBLE);
                 } else {
                     txt_1st_ibapa_relihiyon.setVisibility(View.INVISIBLE);
@@ -738,7 +750,7 @@ public class _1ststatedrow_Question extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                if (i >= 6) {
+                if (i == 6) {
                     txt_1st_ibapa_kasanayan.setVisibility(View.VISIBLE);
 
                 } else {
@@ -996,15 +1008,22 @@ public class _1ststatedrow_Question extends Fragment {
                     cbo_1st_hindinaghanap.setVisibility(View.VISIBLE);
                     txt_1st_ibapa_hindinaghanap.setVisibility(View.VISIBLE);
 
+                    cbo_1st_hulingnaghanap.setVisibility(View.VISIBLE);
+
+
                 } else {
 
                     cbo_1st_hakbang.setVisibility(View.VISIBLE);
                     txt_1st_ibapa_hakbang.setVisibility(View.VISIBLE);
 
                     cbo_1st_hindinaghanap.setVisibility(View.INVISIBLE);
-                    cpar.setDropdown(R.id.cbo_1st_hulingnaghanap, R.array._1st_kailan_hulingnaghanap, "Select One");                 
+                    cpar.setDropdown(R.id.cbo_1st_hindinaghanap, R.array._1st_bakithindinaghanap, "Select One");
                     txt_1st_ibapa_hindinaghanap.setVisibility(View.INVISIBLE);
                     txt_1st_ibapa_hindinaghanap.setText("");
+
+                    cbo_1st_hulingnaghanap.setVisibility(View.INVISIBLE);
+                    cpar.setDropdown(R.id.cbo_1st_hulingnaghanap, R.array._1st_kailan_hulingnaghanap, "Select One");                 
+
                     
                 }
             }
