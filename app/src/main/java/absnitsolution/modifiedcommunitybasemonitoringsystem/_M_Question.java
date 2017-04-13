@@ -7,7 +7,10 @@ import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
@@ -23,7 +26,8 @@ public class _M_Question extends Fragment {
     MaterialBetterSpinner cbo_m_82, cbo_m_83, cbo_m_84;
     MainDataBaseHandler da;
     ImageButton btn_back, btn_next;
-
+    EditText txt_m_ibapa_82,txt_m_ibapa_84;
+    LinearLayout layout_83;
     public _M_Question() {
         // Required empty public constructor
     }
@@ -41,13 +45,64 @@ public class _M_Question extends Fragment {
         cbo_m_82 = (MaterialBetterSpinner) view.findViewById(R.id.cbo_m_82);
         cbo_m_83 = (MaterialBetterSpinner) view.findViewById(R.id.cbo_m_83);
         cbo_m_84 = (MaterialBetterSpinner) view.findViewById(R.id.cbo_m_84);
-
-        this.cpar.setDropdown(R.id.cbo_m_82, R.array.m_tubig, "Select One");
+        txt_m_ibapa_82=(EditText)view.findViewById(R.id.txt_m_ibapa_82);
+        txt_m_ibapa_84=(EditText)view.findViewById(R.id.txt_m_ibapa_84);
+        this.cpar.setDropdown(R.id.cbo_m_82, R.array.m_tubig, "Water District - Sariling Gamit");
         this.cpar.setDropdown(R.id.cbo_m_83, R.array.m_gaanokalayo, "Select One");
         this.cpar.setDropdown(R.id.cbo_m_84, R.array.m_uripalikuran, "Select One");
         this.cpar.setEditText(R.id.txt_m_ibapa_82);
         this.cpar.setEditText(R.id.txt_m_ibapa_84);
 
+        layout_83=(LinearLayout)view.findViewById(R.id.layout_83);
+
+        if(cbo_m_82.getText().toString().equals("Water District - Sariling Gamit")||cbo_m_82.getText().toString().equals("Posong De Motor - Sariling Gamit")){
+            layout_83.setVisibility(View.INVISIBLE);//hide 83
+        }
+         else{
+            layout_83.setVisibility(View.VISIBLE);
+        }
+        cbo_m_82.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(position ==4||position ==0){
+                    layout_83.setVisibility(View.INVISIBLE);//hide 83
+                    txt_m_ibapa_82.setVisibility(View.INVISIBLE);
+                    txt_m_ibapa_82.setText("");
+                }
+
+                else if(position==10){
+                    layout_83.setVisibility(View.VISIBLE);
+                    txt_m_ibapa_82.setVisibility(View.VISIBLE);
+                }
+
+                else if(position<10){
+                    layout_83.setVisibility(View.VISIBLE);
+                    txt_m_ibapa_82.setVisibility(View.INVISIBLE);
+                    txt_m_ibapa_82.setText("");
+                }
+
+                else{
+                    layout_83.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+        cbo_m_84.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+
+                if(position==5){
+                    txt_m_ibapa_84.setVisibility(View.VISIBLE);
+                }
+                else {
+                    txt_m_ibapa_84.setVisibility(View.INVISIBLE);
+                    txt_m_ibapa_84.setText("");
+                }
+
+
+            }
+        });
+//------------------------------------------------------------------------------------------------------------------------------------
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
