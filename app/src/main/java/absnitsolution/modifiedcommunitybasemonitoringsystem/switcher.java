@@ -11,6 +11,7 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ListAdapter;
 
 
@@ -20,7 +21,7 @@ import android.widget.ListAdapter;
 public class switcher extends Fragment {
 
 
-GridView gridview;
+    GridView gridview;
     public switcher() {
         // Required empty public constructor
     }
@@ -33,7 +34,7 @@ GridView gridview;
         gridview=(GridView)view.findViewById(R.id.gridview);
         Config.EDIT=false;
         Config.ID="0";
-String []name={"New","List","Callback List","Gallery","Updload","Setting","User Account","About Us"};
+        String []name={"New","List","Callback List","Gallery","Updload","Setting","User Account","About Us"};
         int [] image={R.drawable.new_logo,
                 R.drawable.list_logo,
                 R.drawable.callback_logo,
@@ -50,9 +51,7 @@ String []name={"New","List","Callback List","Gallery","Updload","Setting","User 
             @Override
             public void onClick(View v) {
 
-                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                getActivity().setTitle("New");
-                fragmentManager.beginTransaction().replace(R.id.frame, new New()).commit();
+
 
             }
         });*/
@@ -62,9 +61,40 @@ String []name={"New","List","Callback List","Gallery","Updload","Setting","User 
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             ViewGroup vg=(ViewGroup)view;
-
-
+            ImageView img=(ImageView)vg.findViewById(R.id.imageButton);
+            String name=img.getTag().toString();
+            switch (name){
+                case "New":
+                    LoadFrame(new New(),name);
+                    break;
+                case "Callback List":
+                    LoadFrame(new CallbackList(),name);
+                    break;
+                case "Gallery":
+                    LoadFrame(new Gallery(),name);
+                    break;
+                case "Updload":
+                    LoadFrame(new UploadData(),name);
+                    break;
+                case "Setting":
+                    LoadFrame(new mySettings(),name);
+                    break;
+                case "User Account":
+                    LoadFrame(new register(),name);
+                    break;
+                case "About Us":
+                    LoadFrame(new AboutUs(),name);
+                    break;
+                case "List":
+                    LoadFrame(new ListofPerson(),name);
+                    break;
+            }
 
         }
+    }
+    private  void LoadFrame(Fragment fragment,String title){
+        FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+        getActivity().setTitle(title);
+        fragmentManager.beginTransaction().replace(R.id.frame,fragment).commit();
     }
 }

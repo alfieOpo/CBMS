@@ -70,18 +70,9 @@ public class register extends Fragment {
                         txt_id_number.getText().toString(),
                         cbo_barangay.getText().toString()) );
                 Config.usersinfo.barangay=cbo_barangay.getText().toString();
-
-                Fragment fragment = null;
-                try {
-                    fragment = ListofPerson.class.newInstance();
-                    //fragment = (Fragment) PictureOfThePlace.class.newInstance();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-                // Insert the fragment by replacing any existing fragment
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                getActivity().setTitle("List");
-                fragmentManager.beginTransaction().replace(R.id.frame, fragment).commit();
+                getActivity().setTitle("Home");
+                fragmentManager.beginTransaction().replace(R.id.frame, new switcher()).commit();
 
             }
         });

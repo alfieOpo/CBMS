@@ -19,7 +19,7 @@ public class switcher_adapter extends ArrayAdapter<String> {
     private Context ctx;
     TextView lbl_topic_Tile,lbl_topic_description;
     String []Title;
-    ImageButton imageButton ;
+    ImageView imageButton ;
     int []img;
     public switcher_adapter(Context context, String[] title,int [] _img) {
         super(context,R.layout.activity_switcher_adapter, title);
@@ -30,7 +30,7 @@ public class switcher_adapter extends ArrayAdapter<String> {
     public View getView(int position, View contentView, ViewGroup parent){
         LayoutInflater layoutInflater= LayoutInflater.from(getContext());
         View CustomView=layoutInflater.inflate(R.layout.activity_switcher_adapter,parent,false);
-        imageButton=(ImageButton)CustomView.findViewById(R.id.imageButton);
+        imageButton=(ImageView)CustomView.findViewById(R.id.imageButton);
         imageButton.setTag(Title[position]);
         imageButton.setImageResource(img[position]);
         return  CustomView;

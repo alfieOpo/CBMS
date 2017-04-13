@@ -48,7 +48,7 @@ public class Config {
             txt.setHintTextColor(Color.BLACK);
         }
     }
-    public  static void ColorTheVIEW(MaterialBetterSpinner combobox,String Default_hint){
+    public  static void ColorTheVIEW(MaterialBetterSpinner combobox){
         boolean walanglaman=combobox.getText().toString().toLowerCase().equals("");
         boolean dasdas=combobox.getText().toString().toLowerCase().equals("--");
         if(walanglaman||dasdas){
