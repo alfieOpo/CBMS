@@ -7,7 +7,12 @@ import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
@@ -21,8 +26,10 @@ public class _N_Question extends Fragment {
     c_params cpar;
     ImageButton btn_back, btn_next;
     MainDataBaseHandler da;
-    MaterialBetterSpinner cbo_n_85, cbo_n_87, cbo_o_nakatirik;
-
+    MaterialBetterSpinner cbo_n_85, cbo_n_87, cbo_o_nakatirik,cbo_n_88,cbo_oo_nakatirik;
+    EditText txt_n_86,txt_n_89,txt_n_ibapa_88,txt_n_ibapa_94,txt_n_ibapa_gamit,txt_n_ibapa_85;
+    TextView textView27,textView24,textView26;
+    CheckBox chk_n_ibapa_gamit;
     public _N_Question() {
     }
 
@@ -41,19 +48,34 @@ public class _N_Question extends Fragment {
         cbo_n_85 = (MaterialBetterSpinner) view.findViewById(R.id.cbo_n_85);
         cbo_n_87 = (MaterialBetterSpinner) view.findViewById(R.id.cbo_n_87);
         cbo_o_nakatirik = (MaterialBetterSpinner) view.findViewById(R.id.cbo_o_nakatirik);
+        //-----
+        cbo_n_88= (MaterialBetterSpinner) view.findViewById(R.id.cbo_n_88);
+        txt_n_89= (EditText) view.findViewById(R.id.txt_n_89);
+        txt_n_ibapa_88= (EditText) view.findViewById(R.id.txt_n_ibapa_88);
+        textView27 =(TextView)view.findViewById(R.id.textView27);
+        textView24=(TextView)view.findViewById(R.id.textView24);
 
+        textView26 =(TextView)view.findViewById(R.id.textView26);
+        //---------------------------
+        cbo_oo_nakatirik = (MaterialBetterSpinner) view.findViewById(R.id.cbo_oo_nakatirik);
+        txt_n_ibapa_94 = (EditText) view.findViewById(R.id.txt_n_ibapa_94);
+        //-----------------
+        txt_n_ibapa_gamit= (EditText) view.findViewById(R.id.txt_n_ibapa_gamit);
+        chk_n_ibapa_gamit=(CheckBox)view.findViewById(R.id.chk_n_ibapa_gamit);
+
+        txt_n_ibapa_85= (EditText) view.findViewById(R.id.txt_n_ibapa_85);
+        txt_n_86 = (EditText) view.findViewById(R.id.txt_n_86);
         this.cpar.setDropdown(R.id.cbo_n_85, R.array.n_katayuan, "Select One");
         this.cpar.setDropdown(R.id.cbo_n_87, R.array.meron_wala, "Select One");
         this.cpar.setDropdown(R.id.cbo_n_88, R.array.n_saangaling_kuryente, "Select One");
         this.cpar.setDropdown(R.id.cbo_o_nakatirik, R.array.oo_hindi, "Select One");
         this.cpar.setDropdown(R.id.cbo_oo_nakatirik, R.array.n_kungnakatirik, "Select One");
-
-
+        if(cbo_oo_nakatirik.getText().toString().equals("Iba pa, Itala ___")){
+            txt_n_ibapa_94.setVisibility(View.INVISIBLE);
+        }
         this.cpar.setEditText(R.id.txt_n_ibapa_85);
         this.cpar.setEditText(R.id.txt_n_86);
-
         this.cpar.setEditText(R.id.txt_n_89);
-
         this.cpar.setCheckBox(R.id.chk_n_radio);
         this.cpar.setCheckBox(R.id.chk_n_telebisyon);
         this.cpar.setCheckBox(R.id.chk_n_cd);
@@ -85,9 +107,106 @@ public class _N_Question extends Fragment {
         this.cpar.setCheckBox(R.id.chk_n_92_4);
         this.cpar.setCheckBox(R.id.chk_n_92_5);
         this.cpar.setCheckBox(R.id.chk_n_92_6);
-
         this.cpar.setEditText(R.id.txt_n_ibapa_94);
 
+        cbo_n_88.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(position==5){
+                    txt_n_ibapa_88.setVisibility(View.VISIBLE);
+                }
+                else {
+                    txt_n_ibapa_88.setText("");
+                    txt_n_ibapa_88.setVisibility(View.INVISIBLE);
+                }
+            }
+        });
+        cbo_n_85.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(position==1){
+                    txt_n_86.setVisibility(View.INVISIBLE);
+                    txt_n_86.setText("");
+                    textView24.setVisibility(View.INVISIBLE);
+
+                    txt_n_ibapa_85.setVisibility(View.INVISIBLE);
+                    txt_n_ibapa_85.setText("");
+                }
+                else if(position ==7){
+                    txt_n_ibapa_85.setVisibility(View.VISIBLE);
+                }
+                else{
+                    txt_n_ibapa_85.setVisibility(View.INVISIBLE);
+                    txt_n_ibapa_85.setText("");
+
+                    textView24.setVisibility(View.VISIBLE);
+                    txt_n_86.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
+
+
+
+        cbo_n_87.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(position==1){
+                    cbo_n_88.setVisibility(View.INVISIBLE);
+                    cbo_n_88.setText("Select One");
+                    txt_n_89.setVisibility(View.INVISIBLE);
+                    txt_n_89.setText("");
+                    txt_n_ibapa_88.setVisibility(View.INVISIBLE);
+                    txt_n_ibapa_88.setText("");
+                    textView27.setVisibility(View.INVISIBLE);
+                    textView26.setVisibility(View.INVISIBLE);
+                }
+                else{
+                    textView26.setVisibility(View.VISIBLE);
+                    cbo_n_88.setVisibility(View.VISIBLE);
+                    txt_n_89.setVisibility(View.VISIBLE);
+                    txt_n_ibapa_88.setVisibility(View.VISIBLE);
+                    textView27.setVisibility(View.VISIBLE);
+                }
+
+            }
+        });
+        cbo_o_nakatirik.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(position==1){
+                    cbo_oo_nakatirik.setVisibility(View.INVISIBLE);
+                    txt_n_ibapa_94.setVisibility(View.INVISIBLE);
+                    txt_n_ibapa_94.setText("");
+                }
+                else
+                {
+                    cbo_oo_nakatirik.setVisibility(View.VISIBLE);
+                    txt_n_ibapa_94.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
+        if(chk_n_ibapa_gamit.isChecked()){
+            txt_n_ibapa_gamit.setVisibility(View.VISIBLE);
+        }
+        else{
+            txt_n_ibapa_gamit.setVisibility(View.INVISIBLE);
+            txt_n_ibapa_gamit.setText("");
+        }
+        chk_n_ibapa_gamit.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    txt_n_ibapa_gamit.setVisibility(View.VISIBLE);
+                }
+                else{
+                    txt_n_ibapa_gamit.setVisibility(View.INVISIBLE);
+                    txt_n_ibapa_gamit.setText("");
+                }
+            }
+        });
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -119,9 +238,22 @@ public class _N_Question extends Fragment {
                 } else {
                     Toast.makeText(getActivity(), "Fill up all important fields.", Toast.LENGTH_SHORT).show();
                 }
-
             }
         });
+
+        cbo_oo_nakatirik.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(position==3){
+                    txt_n_ibapa_94.setVisibility(View.VISIBLE);
+                }
+                else{
+                    txt_n_ibapa_94.setVisibility(View.INVISIBLE);
+                    txt_n_ibapa_94.setText("");
+                }
+            }
+        });
+
         return view;
 
     }
