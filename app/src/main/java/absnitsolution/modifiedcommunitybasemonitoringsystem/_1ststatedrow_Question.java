@@ -39,7 +39,7 @@ public class _1ststatedrow_Question extends Fragment {
     EditText txt_1st_miyembro, txt_1st_ibapa_miyembro, txt_1st_ibapa_relihiyon, txt_1st_ibapa_wika, txt_1st_specifycourse, txt_1st_specifynatapos, txt_1st_ibapa_kasanayan,
             txt_1st_pangalan_organisasyon, txt_1st_ibapa_klasengsamahan, txt_1st_ibapa_rehistrado, txt_1st_ibapa_hindinagaral,
             txt_1st_others_uringnegosyo, txt_1st_hanapbuhay, txt_1st_other_pangunahinghanapbuhay,
-            txt_1st_saangnegosyo, txt_1st_ibapa_hakbang , txt_1st_ibapa_hindinaghanap;
+            txt_1st_saangnegosyo, txt_1st_ibapa_hakbang , txt_1st_ibapa_hindinaghanap, txt_1st_12;
 
     TextView text_24, text_28, text_29,  text_32, text_33;
 
@@ -99,6 +99,7 @@ public class _1ststatedrow_Question extends Fragment {
         txt_1st_hanapbuhay = (EditText) view.findViewById(R.id.txt_1st_hanapbuhay);
         txt_1st_saangnegosyo = (EditText) view.findViewById(R.id.txt_1st_saangnegosyo);
         txt_1st_miyembro = (EditText) view.findViewById(R.id.txt_1st_miyembro);
+        txt_1st_12 = (EditText) view.findViewById(R.id.txt_1st_12);
 
         chk_1st_puno =(CheckBox)view.findViewById(R.id.chk_1st_puno);
 
@@ -135,6 +136,8 @@ public class _1ststatedrow_Question extends Fragment {
         text_33 = (TextView) view.findViewById(R.id.text_33);
 
         txt_1st_miyembro.setSelectAllOnFocus(true);
+
+
 
 
 
@@ -176,6 +179,103 @@ public class _1ststatedrow_Question extends Fragment {
         this.cpar.setCheckBox(R.id.chk_1st_nakakabasa);
         this.cpar.setCheckBox(R.id.chk_1st_nakakasulat);
         this.cpar.setCheckBox(R.id.chk_1st_nakakapagkwento);
+        this.cpar.setEditText(R.id.txt_1st_edad);
+        this.cpar.setEditText(R.id.txt_1st_ibapa_miyembro);
+        this.cpar.setCheckBox(R.id.chk_1st_puno);
+        this.cpar.setEditText(R.id.txt_1st_ibapa_relihiyon);
+        this.cpar.setEditText(R.id.txt_1st_ibapa_wika);
+        this.cpar.setEditText(R.id.txt_1st_12);
+        this.cpar.setEditText(R.id.txt_1st_ibapa_hindinagaral);
+        this.cpar.setEditText(R.id.txt_1st_specifynatapos);
+        this.cpar.setEditText(R.id.txt_1st_ibapa_kasanayan);
+        this.cpar.setEditText(R.id.txt_1st_pangalan_organisasyon);
+        this.cpar.setEditText(R.id.txt_1st_ibapa_klasengsamahan);
+        this.cpar.setEditText(R.id.txt_1st_ibapa_rehistrado);
+        this.cpar.setEditText(R.id.txt_1st_hanapbuhay);
+        this.cpar.setEditText(R.id.txt_1st_other_pangunahinghanapbuhay);
+        this.cpar.setEditText(R.id.txt_1st_saangnegosyo);
+        this.cpar.setEditText(R.id.txt_1st_others_uringnegosyo);
+        this.cpar.setEditText(R.id.txt_1st_ibapa_hakbang);
+        this.cpar.setEditText(R.id.txt_1st_ibapa_hindinaghanap);
+
+
+
+
+
+        txt_1st_ibapa_miyembro.setVisibility(View.INVISIBLE);
+        txt_1st_ibapa_relihiyon.setVisibility(View.INVISIBLE);
+        txt_1st_ibapa_wika.setVisibility(View.INVISIBLE);
+        txt_1st_ibapa_hindinagaral.setVisibility(View.INVISIBLE);
+        txt_1st_ibapa_kasanayan.setVisibility(View.INVISIBLE);
+        txt_1st_ibapa_klasengsamahan.setVisibility(View.INVISIBLE);
+        txt_1st_ibapa_rehistrado.setVisibility(View.INVISIBLE);
+        txt_1st_ibapa_hakbang.setVisibility(View.INVISIBLE);
+        txt_1st_ibapa_hindinaghanap.setVisibility(View.INVISIBLE);
+        txt_1st_specifynatapos.setVisibility(View.INVISIBLE);
+
+
+
+        if (!txt_1st_ibapa_miyembro.getText().toString().equals(""))
+        {
+            txt_1st_ibapa_miyembro.setVisibility(View.VISIBLE);
+        }
+        ////
+
+        if (!txt_1st_ibapa_relihiyon.getText().toString().equals(""))
+        {
+            txt_1st_ibapa_relihiyon.setVisibility(View.VISIBLE);
+        }
+        ////
+
+        if (!txt_1st_ibapa_wika.getText().toString().equals(""))
+        {
+            txt_1st_ibapa_wika.setVisibility(View.VISIBLE);
+        }
+        ////
+
+        if (!txt_1st_ibapa_hindinagaral.getText().toString().equals(""))
+        {
+            txt_1st_ibapa_hindinagaral.setVisibility(View.VISIBLE);
+        }
+        ////
+
+        if (!txt_1st_ibapa_kasanayan.getText().toString().equals(""))
+        {
+            txt_1st_ibapa_kasanayan.setVisibility(View.VISIBLE);
+        }
+        ////
+
+        if (!txt_1st_ibapa_klasengsamahan.getText().toString().equals(""))
+        {
+            txt_1st_ibapa_klasengsamahan.setVisibility(View.VISIBLE);
+        }
+        ////
+
+        if (!txt_1st_ibapa_rehistrado.getText().toString().equals(""))
+        {
+            txt_1st_ibapa_rehistrado.setVisibility(View.VISIBLE);
+        }
+        ////
+
+        if (!txt_1st_ibapa_hakbang.getText().toString().equals(""))
+        {
+            txt_1st_ibapa_hakbang.setVisibility(View.VISIBLE);
+        }
+        ////
+
+        if (!txt_1st_ibapa_hindinaghanap.getText().toString().equals(""))
+        {
+            txt_1st_ibapa_hindinaghanap.setVisibility(View.VISIBLE);
+        }
+        ////
+        
+        if (!txt_1st_specifynatapos.getText().toString().equals(""))
+        {
+            txt_1st_specifynatapos.setVisibility(View.VISIBLE);
+        }
+        ////
+
+
 
         txt_kapanganakan.setOnClickListener(new View.OnClickListener() {
                                                 @Override
@@ -245,42 +345,81 @@ public class _1ststatedrow_Question extends Fragment {
                                                                             cbo_1st_available.setVisibility(View.INVISIBLE); // 32
                                                                             cbo_1st_willing.setVisibility(View.INVISIBLE); // 33 
 
+
+                                                                                cpar.setDropdown(R.id.cbo_1st_nagaaralba, R.array.oo_hindi_nataposna, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_kungnagaaral, R.array._1st_publiko_pribado, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_kunghindinagaaral, R.array._1st_kung_hindinagaral, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_natapos, R.array._1st_baitang, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_kasanayan, R.array._1st_kasanayan, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_saannagaral_kasanayan, R.array._1st_saannagsanay, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_samahan, R.array.meron_wala, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_klasengsamahan, R.array._1st_klasengsamahan, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_botante, R.array.oo_hindi, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_saanrehistrado, R.array._1st_saanbotante, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_bumoto, R.array.oo_hindi, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_hanapbuhay, R.array.meron_wala, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_uringhanapbuhay, R.array._1st_uringhanapbuhay, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_uringnegosyo, R.array._1st_uringnegosyo, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_katayuan_trabaho, R.array._1st_katayuansahanapbuhay, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_uringmanggagawa, R.array._1st_uringmanggagawa, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_naghanap_trabaho, R.array.oo_hindi, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_hakbang, R.array._1st_hakbang, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_hindinaghanap, R.array._1st_bakithindinaghanap, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_hulingnaghanap, R.array._1st_kailan_hulingnaghanap, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_available, R.array.oo_hindi, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_willing, R.array.oo_hindi, "Select One");
+
+
+ 
+                                                                                 txt_1st_ibapa_hindinagaral         .setText("");
+                                                                                 txt_1st_ibapa_klasengsamahan       .setText("");
+                                                                                 txt_1st_hanapbuhay                 .setText("");
+                                                                                 txt_1st_ibapa_hakbang              .setText("");
+                                                                                 txt_1st_specifynatapos             .setText("");
+                                                                                 txt_1st_ibapa_rehistrado           .setText("");
+                                                                                 txt_1st_saangnegosyo               .setText("");
+                                                                                 txt_1st_other_pangunahinghanapbuhay.setText("");
+                                                                                 txt_1st_ibapa_hindinaghanap        .setText("");
+                                                                                 txt_1st_ibapa_kasanayan            .setText("");
+                                                                                 txt_1st_pangalan_organisasyon      .setText("");
+                                                                                 txt_1st_others_uringnegosyo        .setText("");
+
                                                                         }
                                                                          else //(age >= 3)
                                                                         {
                                                                             cbo_1st_nagaaralba.setVisibility(View.VISIBLE); // 13
                                                                             cbo_1st_kungnagaaral.setVisibility(View.VISIBLE); // 14
                                                                             cbo_1st_kunghindinagaaral.setVisibility(View.VISIBLE); // 15
-                                                                            txt_1st_ibapa_hindinagaral.setVisibility(View.VISIBLE); // 15
+                                                                            //txt_1st_ibapa_hindinagaral.setVisibility(View.VISIBLE); // 15
                                                                             cbo_1st_natapos.setVisibility(View.VISIBLE); // 16
-                                                                            txt_1st_specifynatapos.setVisibility(View.VISIBLE); // 16
+                                                                            //txt_1st_specifynatapos.setVisibility(View.VISIBLE); // 16
                                                                             cbo_1st_kasanayan.setVisibility(View.VISIBLE); // 17
-                                                                            txt_1st_ibapa_kasanayan.setVisibility(View.VISIBLE); // 17
+                                                                            //txt_1st_ibapa_kasanayan.setVisibility(View.VISIBLE); // 17
                                                                             cbo_1st_saannagaral_kasanayan.setVisibility(View.VISIBLE); // 18
 
                                                                             cbo_1st_samahan.setVisibility(View.VISIBLE); // 19
                                                                             txt_1st_pangalan_organisasyon.setVisibility(View.VISIBLE); // 20
                                                                             cbo_1st_klasengsamahan.setVisibility(View.VISIBLE); // 20
-                                                                            txt_1st_ibapa_klasengsamahan.setVisibility(View.VISIBLE); // 20
+                                                                            //txt_1st_ibapa_klasengsamahan.setVisibility(View.VISIBLE); // 20
 
                                                                             cbo_1st_botante.setVisibility(View.VISIBLE); // 21
                                                                             cbo_1st_saanrehistrado.setVisibility(View.VISIBLE); // 21
-                                                                            txt_1st_ibapa_rehistrado.setVisibility(View.VISIBLE); // 21
+                                                                            //txt_1st_ibapa_rehistrado.setVisibility(View.VISIBLE); // 21
                                                                             cbo_1st_bumoto.setVisibility(View.VISIBLE); // 22
                                                                             cbo_1st_hanapbuhay.setVisibility(View.VISIBLE); // 23
                                                                             txt_1st_hanapbuhay.setVisibility(View.VISIBLE); // 24
                                                                             cbo_1st_uringhanapbuhay.setVisibility(View.VISIBLE); // 24
-                                                                            txt_1st_other_pangunahinghanapbuhay.setVisibility(View.VISIBLE); // 24
+                                                                            //txt_1st_other_pangunahinghanapbuhay.setVisibility(View.VISIBLE); // 24
                                                                             txt_1st_saangnegosyo.setVisibility(View.VISIBLE);  // 25
                                                                             cbo_1st_uringnegosyo.setVisibility(View.VISIBLE); // 25
-                                                                            txt_1st_others_uringnegosyo.setVisibility(View.VISIBLE); // 25
+                                                                            //txt_1st_others_uringnegosyo.setVisibility(View.VISIBLE); // 25
                                                                             cbo_1st_katayuan_trabaho.setVisibility(View.VISIBLE);  // 26
                                                                             cbo_1st_uringmanggagawa .setVisibility(View.VISIBLE); // 27
                                                                             cbo_1st_naghanap_trabaho .setVisibility(View.VISIBLE);   // 28
                                                                             cbo_1st_hakbang.setVisibility(View.VISIBLE);   // 29
-                                                                            txt_1st_ibapa_hakbang.setVisibility(View.VISIBLE); // 29
+                                                                            //txt_1st_ibapa_hakbang.setVisibility(View.VISIBLE); // 29
                                                                             cbo_1st_hindinaghanap.setVisibility(View.VISIBLE); // 30
-                                                                            txt_1st_ibapa_hindinaghanap.setVisibility(View.VISIBLE); // 30
+                                                                            //txt_1st_ibapa_hindinaghanap.setVisibility(View.VISIBLE); // 30
                                                                             cbo_1st_hulingnaghanap.setVisibility(View.VISIBLE);  // 31
                                                                             cbo_1st_available.setVisibility(View.VISIBLE); // 32
                                                                             cbo_1st_willing.setVisibility(View.VISIBLE); // 33 
@@ -292,224 +431,189 @@ public class _1ststatedrow_Question extends Fragment {
                                                                             cbo_1st_nagaaralba.setVisibility(View.VISIBLE); // 13
                                                                             cbo_1st_kungnagaaral.setVisibility(View.VISIBLE); // 14
                                                                             cbo_1st_kunghindinagaaral.setVisibility(View.VISIBLE); // 15
-                                                                            txt_1st_ibapa_hindinagaral.setVisibility(View.VISIBLE); // 15
+                                                                            //txt_1st_ibapa_hindinagaral.setVisibility(View.VISIBLE); // 15
                                                                             cbo_1st_natapos.setVisibility(View.VISIBLE); // 16
-                                                                            txt_1st_specifynatapos.setVisibility(View.VISIBLE); // 16
+                                                                            //txt_1st_specifynatapos.setVisibility(View.VISIBLE); // 16
                                                                             cbo_1st_kasanayan.setVisibility(View.VISIBLE); // 17
-                                                                            txt_1st_ibapa_kasanayan.setVisibility(View.VISIBLE); // 17
+                                                                            //txt_1st_ibapa_kasanayan.setVisibility(View.VISIBLE); // 17
                                                                             cbo_1st_saannagaral_kasanayan.setVisibility(View.VISIBLE); // 18
 
                                                                             cbo_1st_samahan.setVisibility(View.INVISIBLE); // 19
                                                                             txt_1st_pangalan_organisasyon.setVisibility(View.INVISIBLE); // 20
                                                                             cbo_1st_klasengsamahan.setVisibility(View.INVISIBLE); // 20                                                            
-                                                                            txt_1st_ibapa_klasengsamahan.setVisibility(View.INVISIBLE); // 20
+                                                                            //txt_1st_ibapa_klasengsamahan.setVisibility(View.INVISIBLE); // 20
                                                                             cbo_1st_botante.setVisibility(View.INVISIBLE); // 21
                                                                             cbo_1st_saanrehistrado.setVisibility(View.INVISIBLE); // 21
-                                                                            txt_1st_ibapa_rehistrado.setVisibility(View.INVISIBLE); // 21
+                                                                            //txt_1st_ibapa_rehistrado.setVisibility(View.INVISIBLE); // 21
                                                                             cbo_1st_bumoto.setVisibility(View.INVISIBLE); // 22
                                                                             cbo_1st_hanapbuhay.setVisibility(View.INVISIBLE); // 23
                                                                             txt_1st_hanapbuhay.setVisibility(View.INVISIBLE); // 24
                                                                             cbo_1st_uringhanapbuhay.setVisibility(View.INVISIBLE); // 24
-                                                                            txt_1st_other_pangunahinghanapbuhay.setVisibility(View.INVISIBLE); // 24
+                                                                            //txt_1st_other_pangunahinghanapbuhay.setVisibility(View.INVISIBLE); // 24
                                                                             txt_1st_saangnegosyo.setVisibility(View.INVISIBLE);  // 25
                                                                             cbo_1st_uringnegosyo.setVisibility(View.INVISIBLE); // 25
-                                                                            txt_1st_others_uringnegosyo.setVisibility(View.INVISIBLE); // 25
+                                                                            //txt_1st_others_uringnegosyo.setVisibility(View.INVISIBLE); // 25
                                                                             cbo_1st_katayuan_trabaho.setVisibility(View.INVISIBLE);  // 26
                                                                             cbo_1st_uringmanggagawa .setVisibility(View.INVISIBLE); // 27
                                                                             cbo_1st_naghanap_trabaho .setVisibility(View.INVISIBLE);   // 28
                                                                             cbo_1st_hakbang.setVisibility(View.INVISIBLE);   // 29
-                                                                            txt_1st_ibapa_hakbang.setVisibility(View.INVISIBLE); // 29
+                                                                            //txt_1st_ibapa_hakbang.setVisibility(View.INVISIBLE); // 29
                                                                             cbo_1st_hindinaghanap.setVisibility(View.INVISIBLE); // 30
-                                                                            txt_1st_ibapa_hindinaghanap.setVisibility(View.INVISIBLE); // 30
+                                                                            //txt_1st_ibapa_hindinaghanap.setVisibility(View.INVISIBLE); // 30
                                                                             cbo_1st_hulingnaghanap.setVisibility(View.INVISIBLE);  // 31
                                                                             cbo_1st_available.setVisibility(View.INVISIBLE); // 32
                                                                             cbo_1st_willing.setVisibility(View.INVISIBLE); // 33
-                                                                        }
-                                                                     /*   if (age >= 10 && age >= 3)
-                                                                        {
-                                                                            cbo_1st_nagaaralba.setVisibility(View.INVISIBLE); // 13
-                                                                            cbo_1st_kungnagaaral.setVisibility(View.INVISIBLE); // 14
-                                                                            cbo_1st_kunghindinagaaral.setVisibility(View.INVISIBLE); // 15
-                                                                            txt_1st_ibapa_hindinagaral.setVisibility(View.INVISIBLE); // 15
-                                                                            cbo_1st_natapos.setVisibility(View.INVISIBLE); // 16
-                                                                            txt_1st_specifynatapos.setVisibility(View.INVISIBLE); // 16
-                                                                            cbo_1st_kasanayan.setVisibility(View.INVISIBLE); // 17
-                                                                            txt_1st_ibapa_kasanayan.setVisibility(View.INVISIBLE); // 17
-                                                                            cbo_1st_saannagaral_kasanayan.setVisibility(View.INVISIBLE); // 18
 
-                                                                            cbo_1st_samahan.setVisibility(View.VISIBLE); // 19
-                                                                            txt_1st_pangalan_organisasyon.setVisibility(View.VISIBLE); // 20
-                                                                            cbo_1st_klasengsamahan.setVisibility(View.VISIBLE); // 20
-                                                                            txt_1st_ibapa_klasengsamahan.setVisibility(View.VISIBLE); // 20
+                                                                                cpar.setDropdown(R.id.cbo_1st_samahan, R.array.meron_wala, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_klasengsamahan, R.array._1st_klasengsamahan, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_botante, R.array.oo_hindi, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_saanrehistrado, R.array._1st_saanbotante, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_bumoto, R.array.oo_hindi, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_hanapbuhay, R.array.meron_wala, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_uringhanapbuhay, R.array._1st_uringhanapbuhay, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_uringnegosyo, R.array._1st_uringnegosyo, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_katayuan_trabaho, R.array._1st_katayuansahanapbuhay, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_uringmanggagawa, R.array._1st_uringmanggagawa, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_naghanap_trabaho, R.array.oo_hindi, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_hakbang, R.array._1st_hakbang, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_hindinaghanap, R.array._1st_bakithindinaghanap, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_hulingnaghanap, R.array._1st_kailan_hulingnaghanap, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_available, R.array.oo_hindi, "Select One");
+                                                                                cpar.setDropdown(R.id.cbo_1st_willing, R.array.oo_hindi, "Select One");
 
-                                                                            cbo_1st_botante.setVisibility(View.VISIBLE); // 21
-                                                                            cbo_1st_saanrehistrado.setVisibility(View.VISIBLE); // 21
-                                                                            txt_1st_ibapa_rehistrado.setVisibility(View.VISIBLE); // 21
-                                                                            cbo_1st_bumoto.setVisibility(View.VISIBLE); // 22
-                                                                            cbo_1st_hanapbuhay.setVisibility(View.VISIBLE); // 23
-                                                                            txt_1st_hanapbuhay.setVisibility(View.VISIBLE); // 24
-                                                                            cbo_1st_uringhanapbuhay.setVisibility(View.VISIBLE); // 24
-                                                                            txt_1st_other_pangunahinghanapbuhay.setVisibility(View.VISIBLE); // 24
-                                                                            txt_1st_saangnegosyo.setVisibility(View.VISIBLE);  // 25
-                                                                            cbo_1st_uringnegosyo.setVisibility(View.VISIBLE); // 25
-                                                                            txt_1st_others_uringnegosyo.setVisibility(View.VISIBLE); // 25
-                                                                            cbo_1st_katayuan_trabaho.setVisibility(View.VISIBLE);  // 26
-                                                                            cbo_1st_uringmanggagawa .setVisibility(View.VISIBLE); // 27
-                                                                            cbo_1st_naghanap_trabaho .setVisibility(View.VISIBLE);   // 28
-                                                                            cbo_1st_hakbang.setVisibility(View.VISIBLE);   // 29
-                                                                            txt_1st_ibapa_hakbang.setVisibility(View.VISIBLE); // 29
-                                                                            cbo_1st_hindinaghanap.setVisibility(View.VISIBLE); // 30
-                                                                            txt_1st_ibapa_hindinaghanap.setVisibility(View.VISIBLE); // 30
-                                                                            cbo_1st_hulingnaghanap.setVisibility(View.VISIBLE);  // 31
-                                                                            cbo_1st_available.setVisibility(View.VISIBLE); // 32
-                                                                            cbo_1st_willing.setVisibility(View.VISIBLE); // 33
+
+ 
+                                                                                 txt_1st_ibapa_klasengsamahan       .setText("");
+                                                                                 txt_1st_hanapbuhay                 .setText("");
+                                                                                 txt_1st_ibapa_hakbang              .setText("");
+                                                                                 txt_1st_ibapa_rehistrado           .setText("");
+                                                                                 txt_1st_saangnegosyo               .setText("");
+                                                                                 txt_1st_other_pangunahinghanapbuhay.setText("");
+                                                                                 txt_1st_ibapa_hindinaghanap        .setText("");
+                                                                                 txt_1st_pangalan_organisasyon      .setText("");
+                                                                                 txt_1st_others_uringnegosyo        .setText("");
+
+
+
+
                                                                         }
-                                                                        */
+                                                                   
 
                                                                          if (age <  17 && age >= 15 )
                                                                         {
                                                                             cbo_1st_nagaaralba.setVisibility(View.VISIBLE); // 13
                                                                             cbo_1st_kungnagaaral.setVisibility(View.VISIBLE); // 14
                                                                             cbo_1st_kunghindinagaaral.setVisibility(View.VISIBLE); // 15
-                                                                            txt_1st_ibapa_hindinagaral.setVisibility(View.VISIBLE); // 15
+                                                                            //txt_1st_ibapa_hindinagaral.setVisibility(View.VISIBLE); // 15
                                                                             cbo_1st_natapos.setVisibility(View.VISIBLE); // 16
-                                                                            txt_1st_specifynatapos.setVisibility(View.VISIBLE); // 16
+                                                                            //txt_1st_specifynatapos.setVisibility(View.VISIBLE); // 16
                                                                             cbo_1st_kasanayan.setVisibility(View.VISIBLE); // 17
-                                                                            txt_1st_ibapa_kasanayan.setVisibility(View.VISIBLE); // 17
+                                                                            //txt_1st_ibapa_kasanayan.setVisibility(View.VISIBLE); // 17
                                                                             cbo_1st_saannagaral_kasanayan.setVisibility(View.VISIBLE); // 18
                                                                             cbo_1st_samahan.setVisibility(View.VISIBLE); // 19
                                                                             txt_1st_pangalan_organisasyon.setVisibility(View.VISIBLE); // 20
                                                                             cbo_1st_klasengsamahan.setVisibility(View.VISIBLE); // 20
-                                                                            txt_1st_ibapa_klasengsamahan.setVisibility(View.VISIBLE); // 20
+                                                                            //txt_1st_ibapa_klasengsamahan.setVisibility(View.VISIBLE); // 20
 
                                                                             cbo_1st_botante.setVisibility(View.INVISIBLE); // 21
                                                                             cbo_1st_saanrehistrado.setVisibility(View.INVISIBLE); // 21
-                                                                            txt_1st_ibapa_rehistrado.setVisibility(View.INVISIBLE); // 21
+                                                                            //txt_1st_ibapa_rehistrado.setVisibility(View.INVISIBLE); // 21
                                                                             cbo_1st_bumoto.setVisibility(View.INVISIBLE); // 22
 
                                                                             cbo_1st_hanapbuhay.setVisibility(View.VISIBLE); // 23
                                                                             txt_1st_hanapbuhay.setVisibility(View.VISIBLE); // 24
                                                                             cbo_1st_uringhanapbuhay.setVisibility(View.VISIBLE); // 24
-                                                                            txt_1st_other_pangunahinghanapbuhay.setVisibility(View.VISIBLE); // 24
+                                                                            //txt_1st_other_pangunahinghanapbuhay.setVisibility(View.VISIBLE); // 24
                                                                             txt_1st_saangnegosyo.setVisibility(View.VISIBLE);  // 25
                                                                             cbo_1st_uringnegosyo.setVisibility(View.VISIBLE); // 25
-                                                                            txt_1st_others_uringnegosyo.setVisibility(View.VISIBLE); // 25
+                                                                            //txt_1st_others_uringnegosyo.setVisibility(View.VISIBLE); // 25
                                                                             cbo_1st_katayuan_trabaho.setVisibility(View.VISIBLE);  // 26
                                                                             cbo_1st_uringmanggagawa .setVisibility(View.VISIBLE); // 27
                                                                             cbo_1st_naghanap_trabaho .setVisibility(View.VISIBLE);   // 28
                                                                             cbo_1st_hakbang.setVisibility(View.VISIBLE);   // 29
-                                                                            txt_1st_ibapa_hakbang.setVisibility(View.VISIBLE); // 29
+                                                                            //txt_1st_ibapa_hakbang.setVisibility(View.VISIBLE); // 29
                                                                             cbo_1st_hindinaghanap.setVisibility(View.VISIBLE); // 30
-                                                                            txt_1st_ibapa_hindinaghanap.setVisibility(View.VISIBLE); // 30
+                                                                            //txt_1st_ibapa_hindinaghanap.setVisibility(View.VISIBLE); // 30
                                                                             cbo_1st_hulingnaghanap.setVisibility(View.VISIBLE);  // 31
                                                                             cbo_1st_available.setVisibility(View.VISIBLE); // 32
                                                                             cbo_1st_willing.setVisibility(View.VISIBLE); // 33
+
+
+                                                                                    cpar.setDropdown(R.id.cbo_1st_botante, R.array.oo_hindi, "Select One");
+                                                                                     cpar.setDropdown(R.id.cbo_1st_saanrehistrado, R.array._1st_saanbotante, "Select One");
+                                                                                      txt_1st_ibapa_rehistrado.setText("");
+                                                                                     cpar.setDropdown(R.id.cbo_1st_bumoto, R.array.oo_hindi, "Select One");
                                                                         }
 
-                                                                        /*
-                                                                        else // if (age >= 17)
-                                                                        {
-                                                                            cbo_1st_botante.setVisibility(View.VISIBLE); // 21
-                                                                            cbo_1st_saanrehistrado.setVisibility(View.VISIBLE); // 21
-                                                                            txt_1st_ibapa_rehistrado.setVisibility(View.VISIBLE); // 21
-                                                                            cbo_1st_bumoto.setVisibility(View.VISIBLE); // 22
-
-                                                                            cbo_1st_nagaaralba.setVisibility(View.INVISIBLE); // 13
-                                                                            cbo_1st_kungnagaaral.setVisibility(View.INVISIBLE); // 14
-                                                                            cbo_1st_kunghindinagaaral.setVisibility(View.INVISIBLE); // 15
-                                                                            txt_1st_ibapa_hindinagaral.setVisibility(View.INVISIBLE); // 15
-                                                                            cbo_1st_natapos.setVisibility(View.INVISIBLE); // 16
-                                                                            txt_1st_specifynatapos.setVisibility(View.INVISIBLE); // 16
-                                                                            cbo_1st_kasanayan.setVisibility(View.INVISIBLE); // 17
-                                                                            txt_1st_ibapa_kasanayan.setVisibility(View.INVISIBLE); // 17
-                                                                            cbo_1st_saannagaral_kasanayan.setVisibility(View.INVISIBLE); // 18
-                                                                            cbo_1st_samahan.setVisibility(View.INVISIBLE); // 19                                                             
-                                                                            txt_1st_pangalan_organisasyon.setVisibility(View.INVISIBLE); // 20
-                                                                            cbo_1st_klasengsamahan.setVisibility(View.INVISIBLE); // 20
-                                                                            txt_1st_ibapa_klasengsamahan.setVisibility(View.INVISIBLE); // 20
-                                                                        }
-                                                                        */
 
                                                                          if (age <  15 && age >= 10)
                                                                         {
                                                                             cbo_1st_nagaaralba.setVisibility(View.VISIBLE); // 13
                                                                             cbo_1st_kungnagaaral.setVisibility(View.VISIBLE); // 14
                                                                             cbo_1st_kunghindinagaaral.setVisibility(View.VISIBLE); // 15
-                                                                            txt_1st_ibapa_hindinagaral.setVisibility(View.VISIBLE); // 15
+                                                                            //txt_1st_ibapa_hindinagaral.setVisibility(View.VISIBLE); // 15
                                                                             cbo_1st_natapos.setVisibility(View.VISIBLE); // 16
-                                                                            txt_1st_specifynatapos.setVisibility(View.VISIBLE); // 16
+                                                                            //txt_1st_specifynatapos.setVisibility(View.VISIBLE); // 16
                                                                             cbo_1st_kasanayan.setVisibility(View.VISIBLE); // 17
-                                                                            txt_1st_ibapa_kasanayan.setVisibility(View.VISIBLE); // 17
+                                                                            //txt_1st_ibapa_kasanayan.setVisibility(View.VISIBLE); // 17
                                                                             cbo_1st_saannagaral_kasanayan.setVisibility(View.VISIBLE); // 18
                                                                             cbo_1st_samahan.setVisibility(View.VISIBLE); // 19
                                                                             txt_1st_pangalan_organisasyon.setVisibility(View.VISIBLE); // 20
                                                                             cbo_1st_klasengsamahan.setVisibility(View.VISIBLE); // 20
-                                                                            txt_1st_ibapa_klasengsamahan.setVisibility(View.VISIBLE); // 20
+                                                                            //txt_1st_ibapa_klasengsamahan.setVisibility(View.VISIBLE); // 20
 
                                                                             cbo_1st_botante.setVisibility(View.INVISIBLE); // 21
                                                                             cbo_1st_saanrehistrado.setVisibility(View.INVISIBLE); // 21
-                                                                            txt_1st_ibapa_rehistrado.setVisibility(View.INVISIBLE); // 21
+                                                                            //txt_1st_ibapa_rehistrado.setVisibility(View.INVISIBLE); // 21
                                                                             cbo_1st_bumoto.setVisibility(View.INVISIBLE); // 22
                                                                             cbo_1st_hanapbuhay.setVisibility(View.INVISIBLE); // 23
 
                                                                             txt_1st_hanapbuhay.setVisibility(View.INVISIBLE); // 24
                                                                             cbo_1st_uringhanapbuhay.setVisibility(View.INVISIBLE); // 24
-                                                                            txt_1st_other_pangunahinghanapbuhay.setVisibility(View.INVISIBLE); // 24
+                                                                            //txt_1st_other_pangunahinghanapbuhay.setVisibility(View.INVISIBLE); // 24
                                                                             txt_1st_saangnegosyo.setVisibility(View.INVISIBLE);  // 25
                                                                             cbo_1st_uringnegosyo.setVisibility(View.INVISIBLE); // 25
-                                                                            txt_1st_others_uringnegosyo.setVisibility(View.INVISIBLE); // 25
+                                                                            //txt_1st_others_uringnegosyo.setVisibility(View.INVISIBLE); // 25
                                                                             cbo_1st_katayuan_trabaho.setVisibility(View.INVISIBLE);  // 26
                                                                             cbo_1st_uringmanggagawa .setVisibility(View.INVISIBLE); // 27
                                                                             cbo_1st_naghanap_trabaho .setVisibility(View.INVISIBLE);   // 28
                                                                             cbo_1st_hakbang.setVisibility(View.INVISIBLE);   // 29
-                                                                            txt_1st_ibapa_hakbang.setVisibility(View.INVISIBLE); // 29
+                                                                            //txt_1st_ibapa_hakbang.setVisibility(View.INVISIBLE); // 29
                                                                             cbo_1st_hindinaghanap.setVisibility(View.INVISIBLE); // 30
-                                                                            txt_1st_ibapa_hindinaghanap.setVisibility(View.INVISIBLE); // 30
+                                                                            //txt_1st_ibapa_hindinaghanap.setVisibility(View.INVISIBLE); // 30
                                                                             cbo_1st_hulingnaghanap.setVisibility(View.INVISIBLE);  // 31
                                                                             cbo_1st_available.setVisibility(View.INVISIBLE); // 32
                                                                             cbo_1st_willing.setVisibility(View.INVISIBLE); // 33
+                                             
+                                                                             cpar.setDropdown(R.id.cbo_1st_botante, R.array.oo_hindi, "Select One");
+                                                                             cpar.setDropdown(R.id.cbo_1st_saanrehistrado, R.array._1st_saanbotante, "Select One");
+                                                                             cpar.setDropdown(R.id.cbo_1st_bumoto, R.array.oo_hindi, "Select One");
+                                                                             cpar.setDropdown(R.id.cbo_1st_hanapbuhay, R.array.meron_wala, "Select One");
+                                                                             cpar.setDropdown(R.id.cbo_1st_uringhanapbuhay, R.array._1st_uringhanapbuhay, "Select One");
+                                                                             cpar.setDropdown(R.id.cbo_1st_uringnegosyo, R.array._1st_uringnegosyo, "Select One");
+                                                                             cpar.setDropdown(R.id.cbo_1st_katayuan_trabaho, R.array._1st_katayuansahanapbuhay, "Select One");
+                                                                             cpar.setDropdown(R.id.cbo_1st_uringmanggagawa, R.array._1st_uringmanggagawa, "Select One");
+                                                                             cpar.setDropdown(R.id.cbo_1st_naghanap_trabaho, R.array.oo_hindi, "Select One");
+                                                                             cpar.setDropdown(R.id.cbo_1st_hakbang, R.array._1st_hakbang, "Select One");
+                                                                             cpar.setDropdown(R.id.cbo_1st_hindinaghanap, R.array._1st_bakithindinaghanap, "Select One");
+                                                                             cpar.setDropdown(R.id.cbo_1st_hulingnaghanap, R.array._1st_kailan_hulingnaghanap, "Select One");
+                                                                             cpar.setDropdown(R.id.cbo_1st_available, R.array.oo_hindi, "Select One");
+                                                                             cpar.setDropdown(R.id.cbo_1st_willing, R.array.oo_hindi, "Select One");
+
+                                                                        
+                                                                              txt_1st_hanapbuhay                 .setText("");
+                                                                              txt_1st_ibapa_hakbang              .setText("");
+                                                                              txt_1st_ibapa_rehistrado           .setText("");
+                                                                              txt_1st_saangnegosyo               .setText("");
+                                                                              txt_1st_other_pangunahinghanapbuhay.setText("");
+                                                                              txt_1st_ibapa_hindinaghanap        .setText("");
+                                                                              txt_1st_pangalan_organisasyon      .setText("");
+                                                                              txt_1st_others_uringnegosyo        .setText("");
+
+
 
                                                                         }
-                                                                        /*
-                                                                         if (age >= 15)
-                                                                        {
-                                                                            cbo_1st_nagaaralba.setVisibility(View.INVISIBLE); // 13
-                                                                            cbo_1st_kungnagaaral.setVisibility(View.INVISIBLE); // 14
-                                                                            cbo_1st_kunghindinagaaral.setVisibility(View.INVISIBLE); // 15
-                                                                            txt_1st_ibapa_hindinagaral.setVisibility(View.INVISIBLE); // 15
-                                                                            cbo_1st_natapos.setVisibility(View.INVISIBLE); // 16
-                                                                            txt_1st_specifynatapos.setVisibility(View.INVISIBLE); // 16
-                                                                            cbo_1st_kasanayan.setVisibility(View.INVISIBLE); // 17
-                                                                            txt_1st_ibapa_kasanayan.setVisibility(View.INVISIBLE); // 17
-                                                                            cbo_1st_saannagaral_kasanayan.setVisibility(View.INVISIBLE); // 18
-                                                                            cbo_1st_samahan.setVisibility(View.INVISIBLE); // 19
-                                                                            txt_1st_pangalan_organisasyon.setVisibility(View.INVISIBLE); // 20
-                                                                            cbo_1st_klasengsamahan.setVisibility(View.INVISIBLE); // 20
-                                                                            txt_1st_ibapa_klasengsamahan.setVisibility(View.INVISIBLE); // 20
-
-                                                                            cbo_1st_botante.setVisibility(View.VISIBLE); // 21
-                                                                            cbo_1st_saanrehistrado.setVisibility(View.VISIBLE); // 21
-                                                                            txt_1st_ibapa_rehistrado.setVisibility(View.VISIBLE); // 21
-                                                                            cbo_1st_bumoto.setVisibility(View.VISIBLE); // 22
-                                                                            cbo_1st_hanapbuhay.setVisibility(View.VISIBLE); // 23
-                                                                            txt_1st_hanapbuhay.setVisibility(View.VISIBLE); // 24
-                                                                            cbo_1st_uringhanapbuhay.setVisibility(View.VISIBLE); // 24
-                                                                            txt_1st_other_pangunahinghanapbuhay.setVisibility(View.VISIBLE); // 24
-                                                                            txt_1st_saangnegosyo.setVisibility(View.VISIBLE);  // 25
-                                                                            cbo_1st_uringnegosyo.setVisibility(View.VISIBLE); // 25
-                                                                            txt_1st_others_uringnegosyo.setVisibility(View.VISIBLE); // 25
-                                                                            cbo_1st_katayuan_trabaho.setVisibility(View.VISIBLE);  // 26
-                                                                            cbo_1st_uringmanggagawa .setVisibility(View.VISIBLE); // 27
-                                                                            cbo_1st_naghanap_trabaho .setVisibility(View.VISIBLE);   // 28
-                                                                            cbo_1st_hakbang.setVisibility(View.VISIBLE);   // 29
-                                                                            txt_1st_ibapa_hakbang.setVisibility(View.VISIBLE); // 29
-                                                                            cbo_1st_hindinaghanap.setVisibility(View.VISIBLE); // 30
-                                                                            txt_1st_ibapa_hindinaghanap.setVisibility(View.VISIBLE); // 30
-                                                                            cbo_1st_hulingnaghanap.setVisibility(View.VISIBLE);  // 31
-                                                                            cbo_1st_available.setVisibility(View.VISIBLE); // 32
-                                                                            cbo_1st_willing.setVisibility(View.VISIBLE); // 33
-                                                                        }
-                                                                        */
+                                                                       
 
 
 
@@ -549,6 +653,8 @@ public class _1ststatedrow_Question extends Fragment {
 
                 } else {
                     txt_1st_ibapa_miyembro.setVisibility(View.INVISIBLE);
+                    txt_1st_ibapa_miyembro.setText("");
+
                 }
             }
         });
@@ -561,6 +667,7 @@ public class _1ststatedrow_Question extends Fragment {
                     txt_1st_ibapa_relihiyon.setVisibility(View.VISIBLE);
                 } else {
                     txt_1st_ibapa_relihiyon.setVisibility(View.INVISIBLE);
+                    txt_1st_ibapa_relihiyon.setText("");
                 }
             }
         });
@@ -573,6 +680,7 @@ public class _1ststatedrow_Question extends Fragment {
                     txt_1st_ibapa_wika.setVisibility(View.VISIBLE);
                 } else {
                     txt_1st_ibapa_wika.setVisibility(View.INVISIBLE);
+                    txt_1st_ibapa_wika.setText("");
                 }
             }
         });
@@ -583,18 +691,28 @@ public class _1ststatedrow_Question extends Fragment {
 
                 if (i == 1) // hindi
                  {
+                    cpar.setDropdown(R.id.cbo_1st_kungnagaaral, R.array._1st_publiko_pribado, "Select One");
                     cbo_1st_kungnagaaral.setVisibility(View.INVISIBLE); // 14
                     cbo_1st_kunghindinagaaral.setVisibility(View.VISIBLE); // 15
 
+
+
+
                 } else if (i == 2) // nakatapos na
                 {
+                    cpar.setDropdown(R.id.cbo_1st_kungnagaaral, R.array._1st_publiko_pribado, "Select One");
                     cbo_1st_kungnagaaral.setVisibility(View.INVISIBLE); // 14
+
+                    cpar.setDropdown(R.id.cbo_1st_kunghindinagaaral, R.array._1st_kung_hindinagaral, "Select One");
                     cbo_1st_kunghindinagaaral.setVisibility(View.INVISIBLE); // 15
+
                 }
                 else // oo
                 {                   
                     cbo_1st_kungnagaaral.setVisibility(View.VISIBLE); // 14
                     cbo_1st_kunghindinagaaral.setVisibility(View.INVISIBLE); // 15
+                    cpar.setDropdown(R.id.cbo_1st_kunghindinagaaral, R.array._1st_kung_hindinagaral, "Select One");
+
                 }
             }
         });
@@ -610,6 +728,7 @@ public class _1ststatedrow_Question extends Fragment {
 
                 } else {
                     txt_1st_specifynatapos.setVisibility(View.INVISIBLE);
+                    txt_1st_specifynatapos.setText("");
 
                 }
             }
@@ -619,12 +738,12 @@ public class _1ststatedrow_Question extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                if (i == 6) {
+                if (i >= 6) {
                     txt_1st_ibapa_kasanayan.setVisibility(View.VISIBLE);
 
                 } else {
                     txt_1st_ibapa_kasanayan.setVisibility(View.INVISIBLE);
-
+                    txt_1st_ibapa_kasanayan.setText("");
                 }
             }
         });
@@ -637,6 +756,10 @@ public class _1ststatedrow_Question extends Fragment {
                 {
                     txt_1st_pangalan_organisasyon.setVisibility(View.INVISIBLE);
                     cbo_1st_klasengsamahan.setVisibility(View.INVISIBLE);
+                    txt_1st_pangalan_organisasyon.setText("");
+                    cpar.setDropdown(R.id.cbo_1st_klasengsamahan, R.array._1st_klasengsamahan, "Select One");
+
+
                 } else {
                     txt_1st_pangalan_organisasyon.setVisibility(View.VISIBLE);
                     cbo_1st_klasengsamahan.setVisibility(View.VISIBLE);
@@ -653,6 +776,7 @@ public class _1ststatedrow_Question extends Fragment {
                     txt_1st_ibapa_klasengsamahan.setVisibility(View.VISIBLE);
                 } else {
                     txt_1st_ibapa_klasengsamahan.setVisibility(View.INVISIBLE);
+                    txt_1st_ibapa_klasengsamahan.setText("");
                 }
             }
         });
@@ -666,7 +790,12 @@ public class _1ststatedrow_Question extends Fragment {
                 {
                     cbo_1st_saanrehistrado.setVisibility(View.INVISIBLE);
                     cbo_1st_bumoto.setVisibility(View.INVISIBLE);
+                    cpar.setDropdown(R.id.cbo_1st_saanrehistrado, R.array._1st_saanbotante, "Select One");
+                    cpar.setDropdown(R.id.cbo_1st_bumoto, R.array.oo_hindi, "Select One");
+
                     txt_1st_ibapa_rehistrado.setVisibility(View.INVISIBLE);
+                    txt_1st_ibapa_rehistrado.setText("");
+
                 } else {
                     cbo_1st_saanrehistrado.setVisibility(View.VISIBLE);
                     cbo_1st_bumoto.setVisibility(View.VISIBLE);
@@ -685,6 +814,7 @@ public class _1ststatedrow_Question extends Fragment {
                     txt_1st_ibapa_rehistrado.setVisibility(View.VISIBLE);
                 } else {
                     txt_1st_ibapa_rehistrado.setVisibility(View.INVISIBLE);
+                    txt_1st_ibapa_rehistrado.setText("");
                 }
             }
         });
@@ -699,7 +829,7 @@ public class _1ststatedrow_Question extends Fragment {
 
                 } else {
                     txt_1st_ibapa_hindinagaral.setVisibility(View.INVISIBLE);
-
+                    txt_1st_ibapa_hindinagaral.setText("");
                 }
             }
         });
@@ -715,6 +845,7 @@ public class _1ststatedrow_Question extends Fragment {
 
                 } else {
                     txt_1st_other_pangunahinghanapbuhay.setVisibility(View.INVISIBLE);
+                    txt_1st_other_pangunahinghanapbuhay.setText("");
 
                 }
             }
@@ -731,6 +862,7 @@ public class _1ststatedrow_Question extends Fragment {
 
                 } else {
                     txt_1st_others_uringnegosyo.setVisibility(View.INVISIBLE);
+                    txt_1st_others_uringnegosyo.setText("");
 
                 }
             }
@@ -746,6 +878,7 @@ public class _1ststatedrow_Question extends Fragment {
 
                 } else {
                     txt_1st_ibapa_hakbang.setVisibility(View.INVISIBLE);
+                    txt_1st_ibapa_hakbang.setText("");
 
                 }
             }
@@ -762,6 +895,7 @@ public class _1ststatedrow_Question extends Fragment {
 
                 } else {
                     txt_1st_ibapa_hindinaghanap.setVisibility(View.INVISIBLE);
+                    txt_1st_ibapa_hindinaghanap.setText("");
 
                 }
             }
@@ -797,6 +931,17 @@ public class _1ststatedrow_Question extends Fragment {
                     cbo_1st_available.setVisibility(View.VISIBLE); // 32
                     text_33.setVisibility(View.VISIBLE); //33
                     cbo_1st_willing.setVisibility(View.VISIBLE); // 33
+
+                    cpar.setDropdown(R.id.cbo_1st_uringhanapbuhay, R.array._1st_uringhanapbuhay, "Select One");
+                    cpar.setDropdown(R.id.cbo_1st_uringnegosyo, R.array._1st_uringnegosyo, "Select One");
+                    cpar.setDropdown(R.id.cbo_1st_katayuan_trabaho, R.array._1st_katayuansahanapbuhay, "Select One");
+                    cpar.setDropdown(R.id.cbo_1st_uringmanggagawa, R.array._1st_uringmanggagawa, "Select One");
+
+                    txt_1st_hanapbuhay.setText("");         
+                    txt_1st_other_pangunahinghanapbuhay.setText("");
+                    txt_1st_saangnegosyo.setText("");  
+                    txt_1st_others_uringnegosyo.setText("");    
+
                 }
                 else {
                     text_24.setVisibility(View.VISIBLE); // 24
@@ -808,6 +953,7 @@ public class _1ststatedrow_Question extends Fragment {
                     txt_1st_others_uringnegosyo.setVisibility(View.VISIBLE); // 25
                     cbo_1st_katayuan_trabaho.setVisibility(View.VISIBLE); // 26
                     cbo_1st_uringmanggagawa.setVisibility(View.VISIBLE); // 27
+
                     text_28.setVisibility(View.INVISIBLE); //28
                     cbo_1st_naghanap_trabaho.setVisibility(View.INVISIBLE); // 28
                     text_29.setVisibility(View.INVISIBLE); // 29
@@ -821,9 +967,67 @@ public class _1ststatedrow_Question extends Fragment {
                     text_33.setVisibility(View.INVISIBLE); //33
                     cbo_1st_willing.setVisibility(View.INVISIBLE); // 33
 
+                    cpar.setDropdown(R.id.cbo_1st_naghanap_trabaho, R.array.oo_hindi, "Select One");
+                    cpar.setDropdown(R.id.cbo_1st_hakbang, R.array._1st_hakbang, "Select One");
+                    txt_1st_ibapa_hakbang.setText("");
+                    cpar.setDropdown(R.id.cbo_1st_hindinaghanap, R.array._1st_bakithindinaghanap, "Select One");
+                    txt_1st_ibapa_hindinaghanap.setText("");
+                    cpar.setDropdown(R.id.cbo_1st_hulingnaghanap, R.array._1st_kailan_hulingnaghanap, "Select One");                 
+                    cpar.setDropdown(R.id.cbo_1st_available, R.array.oo_hindi, "Select One");             
+                    cpar.setDropdown(R.id.cbo_1st_willing, R.array.oo_hindi, "Select One");
+
+
+
                 }
             }
         });
+
+        cbo_1st_naghanap_trabaho.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                if (i == 1) // hindi
+                 {
+                    cbo_1st_hakbang.setVisibility(View.INVISIBLE);
+                    cpar.setDropdown(R.id.cbo_1st_hakbang, R.array._1st_hakbang, "Select One");
+                    txt_1st_ibapa_hakbang.setVisibility(View.INVISIBLE);
+                    txt_1st_ibapa_hakbang.setText("");
+
+                    cbo_1st_hindinaghanap.setVisibility(View.VISIBLE);
+                    txt_1st_ibapa_hindinaghanap.setVisibility(View.VISIBLE);
+
+                } else {
+
+                    cbo_1st_hakbang.setVisibility(View.VISIBLE);
+                    txt_1st_ibapa_hakbang.setVisibility(View.VISIBLE);
+
+                    cbo_1st_hindinaghanap.setVisibility(View.INVISIBLE);
+                    cpar.setDropdown(R.id.cbo_1st_hulingnaghanap, R.array._1st_kailan_hulingnaghanap, "Select One");                 
+                    txt_1st_ibapa_hindinaghanap.setVisibility(View.INVISIBLE);
+                    txt_1st_ibapa_hindinaghanap.setText("");
+                    
+                }
+            }
+        });
+
+
+        cbo_1st_kunghindinagaaral.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                if (i == 3 ) // iba pa 
+                {
+                    txt_1st_ibapa_hindinagaral.setVisibility(View.VISIBLE);
+
+                } else {
+                    txt_1st_ibapa_hindinagaral.setVisibility(View.INVISIBLE);
+                    txt_1st_ibapa_hindinagaral.setText("");
+
+                }
+            }
+        });
+
+
 
 
 
@@ -865,6 +1069,7 @@ public class _1ststatedrow_Question extends Fragment {
         this.cpar.putEditText(R.id.txt_1st_ibapa_klasengsamahan);
         this.cpar.putDropdown(R.id.cbo_1st_botante);
         this.cpar.putDropdown(R.id.cbo_1st_saanrehistrado);
+
         this.cpar.putEditText(R.id.txt_1st_ibapa_rehistrado);
         this.cpar.putDropdown(R.id.cbo_1st_bumoto);
         this.cpar.putDropdown(R.id.cbo_1st_hanapbuhay);
@@ -882,6 +1087,15 @@ public class _1ststatedrow_Question extends Fragment {
         this.cpar.putDropdown(R.id.cbo_1st_hulingnaghanap);
         this.cpar.putDropdown(R.id.cbo_1st_available);
         this.cpar.putDropdown(R.id.cbo_1st_willing);
+        this.cpar.putCheckBox(R.id.chk_1st_puno);
+        this.cpar.putEditText(R.id.txt_1st_12);
+        this.cpar.putEditText(R.id.txt_1st_ibapa_hindinagaral);
+        this.cpar.putEditText(R.id.txt_1st_other_pangunahinghanapbuhay);
+        this.cpar.putEditText(R.id.txt_1st_others_uringnegosyo);
+
+
+
+
         this.cpar.set_key(this._key);
         da.c_Update(this.cpar, "ga_1st");
         super.onDestroy();
