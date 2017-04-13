@@ -461,6 +461,21 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
 
     }
 
+    public boolean _120OO(String M_ID) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        String Sql = "select D_220 from mcbms where _id=" + M_ID;
+        Cursor cursor = db.rawQuery(Sql, null);
+        try {
+            if (cursor.moveToFirst()) {
+                return cursor.getString(0).equals("Oo");
+            }
+        } catch (Exception xx) {
+            return false;
+        }
+        return false;
+
+    }
+
 
     public void DeleteUnUseDData() {
         try {

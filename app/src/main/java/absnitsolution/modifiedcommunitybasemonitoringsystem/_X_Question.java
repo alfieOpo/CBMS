@@ -7,7 +7,15 @@ import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
+
+import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
 
 
 /**
@@ -19,7 +27,10 @@ public class _X_Question extends Fragment {
 
     MainDataBaseHandler da;
     ImageButton btn_back, btn_next;
-
+    LinearLayout layout;
+    MaterialBetterSpinner cbo_x_127,cbo_x_128;
+    EditText txt_x_127_1,txt_x_127_2,txt_x_126_8,txt_x_132_16,txt_x_130_3;
+    CheckBox chk_x_126_8,chk_x_132_16,chk_x_130_3;
     public _X_Question() {
     }
 
@@ -31,16 +42,33 @@ public class _X_Question extends Fragment {
         View view = inflater.inflate(R.layout.fragment___x__question, container, false);
         btn_back = (ImageButton) view.findViewById(R.id.btn_back);
         btn_next = (ImageButton) view.findViewById(R.id.btn_next);
-
+        layout=(LinearLayout)view.findViewById(R.id.layout);
+        cbo_x_127=(MaterialBetterSpinner)view.findViewById(R.id.cbo_x_127);
+        cbo_x_128=(MaterialBetterSpinner)view.findViewById(R.id.cbo_x_128);
+        chk_x_132_16=(CheckBox)view.findViewById(R.id.chk_x_132_16);
+        chk_x_126_8=(CheckBox)view.findViewById(R.id.chk_x_126_8);
+        chk_x_130_3=(CheckBox)view.findViewById(R.id.chk_x_130_3);
+        txt_x_127_1=(EditText)view.findViewById(R.id.txt_x_127_1);
+        txt_x_127_2=(EditText)view.findViewById(R.id.txt_x_127_2);
+        txt_x_126_8=(EditText)view.findViewById(R.id.txt_x_126_8);
+        txt_x_132_16=(EditText)view.findViewById(R.id.txt_x_132_16);
+        txt_x_130_3=(EditText)view.findViewById(R.id.txt_x_130_3);
+        da=new MainDataBaseHandler(getActivity());
+        if(da._120OO(Config.ID)){
+            layout.setVisibility(View.INVISIBLE);
+        }
+        else {
+            layout.setVisibility(View.VISIBLE);
+        }
         this.cpar = new c_params(Config.ID, container, view);
 
 
         this.cpar.setDropdown(R.id.cbo_x_124, R.array.x_ilantaon_nagsasaka, "Select One");
         this.cpar.setDropdown(R.id.cbo_x_125, R.array.x_kumpara, "Select One");
-        this.cpar.setDropdown(R.id.cbo_x_127, R.array.oo_hindi, "Select One");
+        this.cpar.setDropdown(R.id.cbo_x_127, R.array.oo_hindi, "Hindi");
         this.cpar.setDropdown(R.id.cbo_x_128, R.array.x_128, "Select One");
-        this.cpar.setDropdown(R.id.cbo_x_129_1, R.array.oo_hindi, "Select One");
-        this.cpar.setDropdown(R.id.cbo_x_129_2, R.array.oo_hindi, "Select One");
+        this.cpar.setDropdown(R.id.cbo_x_129_1, R.array.oo_hindi, "Hindi");
+        this.cpar.setDropdown(R.id.cbo_x_129_2, R.array.oo_hindi, "Hindi");
         this.cpar.setCheckBox(R.id.chk_x_126_1);
         this.cpar.setCheckBox(R.id.chk_x_126_2);
         this.cpar.setCheckBox(R.id.chk_x_126_3);
@@ -96,7 +124,89 @@ public class _X_Question extends Fragment {
         this.cpar.setCheckBox(R.id.chk_x_132_16);
         this.cpar.setEditText(R.id.txt_x_132_16);
 
+        cbo_x_127.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                switch (position){
+                    case 0:
+                        cbo_x_128.setText("Hindi");
+                        cbo_x_128.setVisibility(View.INVISIBLE);
+                        txt_x_127_1.setVisibility(View.VISIBLE);
+                        txt_x_127_2.setVisibility(View.VISIBLE);
+                        break;
+                    case 1:
+                        txt_x_127_1.setText("");
+                        txt_x_127_2.setText("");
+                        txt_x_127_1.setVisibility(View.INVISIBLE);
+                        txt_x_127_2.setVisibility(View.INVISIBLE);
+                        cbo_x_128.setVisibility(View.VISIBLE);
+                        break;
+                }
+            }
+        });
 
+        if(chk_x_126_8.isChecked()){
+            txt_x_126_8.setVisibility(View.VISIBLE);
+        }
+        else{
+            txt_x_126_8.setText("");
+            txt_x_126_8.setVisibility(View.INVISIBLE);
+        }
+        chk_x_126_8.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    txt_x_126_8.setVisibility( View.VISIBLE);
+                    txt_x_126_8.setText("");
+                }
+                else{
+                    txt_x_126_8.setVisibility( View.INVISIBLE);
+                }
+            }
+        });
+        if(chk_x_130_3.isChecked()){
+            txt_x_130_3.setVisibility(View.VISIBLE);
+        }
+        else{
+            txt_x_130_3.setVisibility(View.INVISIBLE);
+            txt_x_130_3.setText("");
+        }
+        chk_x_130_3.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    txt_x_130_3.setVisibility(View.VISIBLE);
+                }
+                else{
+                    txt_x_130_3.setVisibility(View.INVISIBLE);
+                    txt_x_130_3.setText("");
+                }
+            }
+        });
+
+        if(chk_x_132_16.isChecked()){
+            txt_x_132_16.setVisibility(View.VISIBLE);
+        }
+        else{
+            txt_x_132_16.setText("");
+            txt_x_132_16.setVisibility(View.INVISIBLE);
+        }
+        chk_x_132_16.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+                if(isChecked){
+                    txt_x_132_16.setVisibility(View.VISIBLE);
+                }
+                else{
+                    txt_x_132_16.setText("");
+                    txt_x_132_16.setVisibility(View.INVISIBLE);
+                }
+
+            }
+        });
+
+///------------------------------------------------------------
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
