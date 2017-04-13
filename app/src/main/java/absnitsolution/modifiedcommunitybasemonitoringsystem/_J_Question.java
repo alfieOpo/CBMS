@@ -8,8 +8,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
@@ -24,10 +27,10 @@ public class _J_Question extends Fragment {
     c_params cpar;
     ImageButton btn_back, btn_next;
     MaterialBetterSpinner cbo_a_miyembro_nagpagamot, cbo_a_ilan_nagpagamot, cbo_j_66, cbo_j_67;
-    EditText txt_j_ibapa_66;
+    EditText txt_j_ibapa_66,txt_ibapa2;
     MainDataBaseHandler da;
-
-
+CheckBox chk_ibapa_itala,chk_ibapa2;
+LinearLayout layout;
     public _J_Question() {
         // Required empty public constructor
     }
@@ -43,35 +46,79 @@ public class _J_Question extends Fragment {
         btn_next = (ImageButton) view.findViewById(R.id.btn_next);
         cbo_a_miyembro_nagpagamot = (MaterialBetterSpinner) view.findViewById(R.id.cbo_a_miyembro_nagpagamot);
         cbo_a_ilan_nagpagamot = (MaterialBetterSpinner) view.findViewById(R.id.cbo_a_ilan_nagpagamot);
-        cbo_j_66 = (MaterialBetterSpinner) view.findViewById(R.id.cbo_j_66);
-        cbo_j_67 = (MaterialBetterSpinner) view.findViewById(R.id.cbo_j_67);
+        chk_ibapa_itala = (CheckBox) view.findViewById(R.id.chk_ibapa_itala);
+        chk_ibapa2 = (CheckBox) view.findViewById(R.id.chk_ibapa2);
         txt_j_ibapa_66 = (EditText) view.findViewById(R.id.txt_j_ibapa_66);
-
+        txt_ibapa2 = (EditText) view.findViewById(R.id.txt_ibapa2);
+        layout = (LinearLayout) view.findViewById(R.id.layout);
 
         cbo_a_miyembro_nagpagamot = (MaterialBetterSpinner) view.findViewById(R.id.cbo_a_miyembro_nagpagamot);
         this.cpar = new c_params(Config.ID, container, view);
-        this.cpar.setDropdown(R.id.cbo_j_66, R.array.j_saan_nagpagamot, "Select One");
-        this.cpar.setDropdown(R.id.cbo_j_67, R.array.j_sumasailalim, "Select One");
-        this.cpar.setDropdown(R.id.cbo_a_miyembro_nagpagamot, R.array.meron_wala, "Select One");
-        this.cpar.setDropdown(R.id.cbo_a_ilan_nagpagamot, R.array.ilan, "Select One");
-        this.cpar.setEditText(R.id.txt_j_ibapa_66);
+
+        this.cpar.setDropdown(R.id.cbo_a_miyembro_nagpagamot, R.array.meron_wala, "Wala");
+
+        if(chk_ibapa_itala.isChecked()){
+            txt_j_ibapa_66.setVisibility(View.VISIBLE);
+        }
+        else{
+            txt_j_ibapa_66.setText("");
+            txt_j_ibapa_66.setVisibility(View.INVISIBLE);}
+        if(chk_ibapa2.isChecked()){
+            txt_ibapa2.setVisibility(View.VISIBLE);
+        }
+        else{
+            txt_ibapa2.setText("");
+            txt_ibapa2.setVisibility(View.INVISIBLE);}
+
+        if(cbo_a_miyembro_nagpagamot.getText().toString().equals("Wala")){
+
+            layout.setVisibility(View.INVISIBLE);
+        } else {
+            layout.setVisibility(View.VISIBLE);
+        }
 
         cbo_a_miyembro_nagpagamot.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 1) {
-                    cbo_a_ilan_nagpagamot.setVisibility(View.INVISIBLE);
-                    cbo_j_66.setVisibility(View.INVISIBLE);
-                    txt_j_ibapa_66.setVisibility(View.INVISIBLE);
-                    cbo_j_67.setVisibility(View.INVISIBLE);
+                    layout.setVisibility(View.INVISIBLE);
                 } else {
-                    cbo_a_ilan_nagpagamot.setVisibility(View.VISIBLE);
-                    cbo_j_66.setVisibility(View.VISIBLE);
-                    txt_j_ibapa_66.setVisibility(View.VISIBLE);
-                    cbo_j_67.setVisibility(View.VISIBLE);
+                    layout.setVisibility(View.VISIBLE);
                 }
             }
         });
+
+
+        chk_ibapa_itala.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    txt_j_ibapa_66.setVisibility(View.VISIBLE);
+                }
+                else{
+                    txt_j_ibapa_66.setText("");
+                    txt_j_ibapa_66.setVisibility(View.INVISIBLE);}
+            }
+        });
+        chk_ibapa2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    txt_ibapa2.setVisibility(View.VISIBLE);
+                }
+                else{
+                    txt_ibapa2.setText("");
+                    txt_ibapa2.setVisibility(View.INVISIBLE);}
+            }
+        });
+
+        this.cpar.setDropdown(R.id.cbo_a_ilan_nagpagamot, R.array.ilan, "Select One");
+        this.cpar.setEditText(R.id.txt_j_ibapa_66);
+
+
+
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -111,8 +158,7 @@ public class _J_Question extends Fragment {
     @Override
     public void onDestroy() {
         da = new MainDataBaseHandler(getActivity().getApplication());
-        this.cpar.putDropdown(R.id.cbo_j_66);
-        this.cpar.putDropdown(R.id.cbo_j_67);
+
         this.cpar.putEditText(R.id.txt_j_ibapa_66);
         this.cpar.putDropdown(R.id.cbo_a_miyembro_nagpagamot);
         this.cpar.putDropdown(R.id.cbo_a_ilan_nagpagamot);
