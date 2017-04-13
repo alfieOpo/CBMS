@@ -296,7 +296,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="11. Gaano katagal na naninirahan si __ dito sa barangay"
+                                android:hint="11. Gaano katagal na naninirahan si __ dito sa barangay (taon)"
                                 android:inputType="number"
                                 android:tag="_1st_022"
                                 android:textColorHint="#05ab9a"
