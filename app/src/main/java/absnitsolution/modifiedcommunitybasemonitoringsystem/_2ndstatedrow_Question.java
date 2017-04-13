@@ -54,9 +54,7 @@ public class _2ndstatedrow_Question extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if(position>5){
-
                     txt_2nd_ibapa_relasyon.setVisibility(View.VISIBLE);
-
 
                 }
                 else{
