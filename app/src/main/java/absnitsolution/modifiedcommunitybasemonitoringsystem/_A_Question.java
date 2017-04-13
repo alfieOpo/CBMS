@@ -445,15 +445,9 @@ public class _A_Question extends Fragment implements View.OnClickListener {
                 }
                 else{
                     if (Valid()) {
-                        Fragment fragment = null;
-                        try {
-                            fragment = _U_Question.class.newInstance();
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
-                        // Insert the fragment by replacing any existing fragment
+
                         FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                        fragmentManager.beginTransaction().replace(R.id.frame, fragment, "I-E. DALAS NG PAGKAIN").commit();
+                        fragmentManager.beginTransaction().replace(R.id.frame, new _U_Question() ).commit();
                     } else {
                         Toast.makeText(getActivity(), "Fill out all important field!", Toast.LENGTH_SHORT).show();
                     }
