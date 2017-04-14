@@ -707,7 +707,7 @@ public class _1ststatedrow_Question extends Fragment {
                     cbo_1st_kungnagaaral.setVisibility(View.INVISIBLE); // 14
                     
                     cbo_1st_kunghindinagaaral.setVisibility(View.VISIBLE); // 15
-                    txt_1st_ibapa_hindinagaral.setVisibility(View.VISIBLE);
+                    txt_1st_ibapa_hindinagaral.setVisibility(View.INVISIBLE);
 
 
                 } else if (i == 2) // nakatapos na
