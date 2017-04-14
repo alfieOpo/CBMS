@@ -19,6 +19,7 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
 
@@ -222,6 +223,7 @@ public class _V_Question extends Fragment {
         IbaPangItala(R.id.cbo_v_150_15 ,R.id.txt_v_ibapa_150_15);
         IbaPangItala(R.id.cbo_v_150_16 ,R.id.txt_v_ibapa_150_16);
         IbaPangItala(R.id.cbo_v_150_17 ,R.id.txt_v_ibapa_150_17);
+        IbaPangItala(R.id.cbo_v_152_17 ,R.id.txt_v_152_17);
 
         ShowIFchecked(R.id.chk_v_149_1,R.id.cbo_v_173_1_1,R.id.cbo_v_150_1,R.id.cbo_v_152_1, R.id.txt_v_151_1,R.id.txt_v_153_1,R.id.txt_v_154_1);
         ShowIFchecked(R.id.chk_v_149_2,R.id.cbo_v_173_2_1,R.id.cbo_v_150_2,R.id.cbo_v_152_2, R.id.txt_v_151_2,R.id.txt_v_153_2,R.id.txt_v_154_2);
@@ -230,10 +232,10 @@ public class _V_Question extends Fragment {
         ShowIFchecked(R.id.chk_v_149_5,R.id.cbo_v_173_5_1,R.id.cbo_v_150_5,R.id.cbo_v_152_5, R.id.txt_v_151_5,R.id.txt_v_153_5,R.id.txt_v_154_5);
 
 
-        ShowIFchecked(R.id.chk_v_149_6,R.id.cbo_v_150_5,R.id.cbo_v_152_5, R.id.txt_v_151_5,R.id.txt_v_153_5,R.id.txt_v_154_5);
-        ShowIFchecked(R.id.chk_v_149_7,R.id.cbo_v_150_5,R.id.cbo_v_152_5, R.id.txt_v_151_5,R.id.txt_v_153_5,R.id.txt_v_154_5);
-        ShowIFchecked(R.id.chk_v_149_8,R.id.cbo_v_150_5,R.id.cbo_v_152_5, R.id.txt_v_151_5,R.id.txt_v_153_5,R.id.txt_v_154_5);
-        ShowIFchecked(R.id.chk_v_149_9,R.id.cbo_v_150_5,R.id.cbo_v_152_5, R.id.txt_v_151_5,R.id.txt_v_153_5,R.id.txt_v_154_5);
+        ShowIFchecked(R.id.chk_v_149_6,R.id.cbo_v_150_6,R.id.cbo_v_152_6, R.id.txt_v_151_6,R.id.txt_v_153_6,R.id.txt_v_154_6);
+        ShowIFchecked(R.id.chk_v_149_7,R.id.cbo_v_150_7,R.id.cbo_v_152_7, R.id.txt_v_151_7,R.id.txt_v_153_7,R.id.txt_v_154_7);
+        ShowIFchecked(R.id.chk_v_149_8,R.id.cbo_v_150_8,R.id.cbo_v_152_8, R.id.txt_v_151_8,R.id.txt_v_153_8,R.id.txt_v_154_8);
+        ShowIFchecked(R.id.chk_v_149_9,R.id.cbo_v_150_9,R.id.cbo_v_152_9, R.id.txt_v_151_9,R.id.txt_v_153_9,R.id.txt_v_154_9);
         ShowIFchecked(R.id.chk_v_149_10,R.id.cbo_v_150_10,R.id.cbo_v_152_10, R.id.txt_v_151_10,R.id.txt_v_153_10,R.id.txt_v_154_10);
         ShowIFchecked(R.id.chk_v_149_11,R.id.cbo_v_150_11,R.id.cbo_v_152_11, R.id.txt_v_151_11,R.id.txt_v_153_11,R.id.txt_v_154_11);
         ShowIFchecked(R.id.chk_v_149_12,R.id.cbo_v_150_12,R.id.cbo_v_152_12, R.id.txt_v_151_12,R.id.txt_v_153_12,R.id.txt_v_154_12);
@@ -244,25 +246,7 @@ public class _V_Question extends Fragment {
         ShowIFchecked(R.id.chk_v_149_17,R.id.cbo_v_150_17,R.id.cbo_v_152_17, R.id.txt_v_151_17,R.id.txt_v_153_17);
 
 
-        if(chk_v_149_17.isChecked()){
-            txt_v_149_17.setVisibility(View.VISIBLE);
-        }
-        else{
-            txt_v_149_17.setVisibility(View.INVISIBLE);
-            txt_v_149_17.setText("");
-        }
-        chk_v_149_17.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if(isChecked){
-                    txt_v_149_17.setVisibility(View.VISIBLE);
-                }
-                else{
-                    txt_v_149_17.setVisibility(View.INVISIBLE);
-                    txt_v_149_17.setText("");
-                }
-            }
-        });
+
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -508,6 +492,38 @@ public class _V_Question extends Fragment {
     }
 
 
+    private  void  IbaPa17LoadAlert(){
+        final EditText txt;
+        AlertDialog.Builder alert = new AlertDialog.Builder(getActivity());
+        LinearLayout layout = new LinearLayout(getActivity());
+        alert.setTitle("149.17. Iba pang programa, itala");
+        layout.setOrientation(LinearLayout.VERTICAL);
+          txt=new EditText(getActivity());
+        layout.addView(txt);
+        alert.setView(layout);
+        alert.setPositiveButton("SAVE", new DialogInterface.OnClickListener() {
+
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Load17Text(txt.getText().toString());
+
+                dialog.cancel();
+            }
+        });
+
+        alert.show();
+    }
+
+private  void Load17Text(String txt){
+    TextView    lbl_150_17=(TextView)view.findViewById(R.id.lbl_150_17);
+    TextView lbl_152_17=(TextView)view.findViewById(R.id.lbl_152_17);
+    EditText txt_v_149_17=(EditText)view.findViewById(R.id.txt_v_149_17);
+
+    lbl_150_17.setText(txt);
+    lbl_152_17.setText(txt);
+    txt_v_149_17.setText(txt);
+
+}
     @Override
     public void onDestroy() {
         da = new MainDataBaseHandler(getActivity().getApplicationContext());
@@ -824,6 +840,9 @@ public class _V_Question extends Fragment {
     private void ShowIFchecked(int chk,int dropdown2 ,int dropdown3 , int _txt1, int _txt2) {
 
 
+
+
+
         final CheckBox check = (CheckBox) view.findViewById(chk);
 
         final EditText txt1 = (EditText) view.findViewById(_txt1);
@@ -844,13 +863,15 @@ public class _V_Question extends Fragment {
 
             drop2.setVisibility(View.VISIBLE);
             drop3.setVisibility(View.VISIBLE);
+            txt_v_149_17.setVisibility(View.VISIBLE);
         }
         else{
             txt1.setVisibility(View.INVISIBLE);
             txt1.setText("");
             txt2.setVisibility(View.INVISIBLE);
             txt2.setText("");
-
+            txt_v_149_17.setVisibility(View.INVISIBLE);
+            txt_v_149_17.setText("");
 
             drop2.setVisibility(View.INVISIBLE);
             drop2.setText("N/A");
@@ -860,20 +881,30 @@ public class _V_Question extends Fragment {
         check.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+
+
                 if(isChecked){
                     txt1.setVisibility(View.VISIBLE);
                     txt2.setVisibility(View.VISIBLE);
-
+                    txt_v_149_17.setVisibility(View.VISIBLE);
 
                     drop2.setVisibility(View.VISIBLE);
                     drop3.setVisibility(View.VISIBLE);
+
+
+
+                    if(check.getTag().toString().equals("D_467")){
+                        ///IbaPa17LoadAlert();
+                    }
                 }
                 else{
                     txt1.setVisibility(View.INVISIBLE);
                     txt1.setText("");
                     txt2.setVisibility(View.INVISIBLE);
                     txt2.setText("");
-
+                    txt_v_149_17.setVisibility(View.INVISIBLE);
+                    txt_v_149_17.setText("");
                     drop2.setVisibility(View.INVISIBLE);
                     drop2.setText("N/A");
                     drop3.setVisibility(View.INVISIBLE);

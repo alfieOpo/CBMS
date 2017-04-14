@@ -75,7 +75,8 @@ public class Config {
     }
 
     public static String PersonCode() {
-        return Config.Barangay_code + "-" + zeroPad(Config.Sitio, "00") + "-" + zeroPad(Config.ID, "0000");
+     //   return Config.Barangay_code + "-" + zeroPad(Config.Sitio, "00") + "-" + zeroPad(Config.ID, "0000");
+        return  zeroPad(Config.ID, "0000");
     }
 
     public static class usersinfo {

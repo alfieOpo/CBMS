@@ -42,6 +42,16 @@ MaterialBetterSpinner cbo_6th_mayseniorid;
         this.cpar.setEditText(R.id.txt_6th_saannagagamitangid);
         this.cpar.setDropdown(R.id.cbo_6th_mayphilhealth, R.array.meron_wala, "Select One");
         txt_pangalan_ng_senior_citizen.setSelectAllOnFocus(true);
+
+
+
+        if(cbo_6th_mayseniorid.getText().toString().equals("Iba pa, itala")){
+            txt_6th_saannagagamitangid.setVisibility(View.VISIBLE);
+        }
+        else{
+            txt_6th_saannagagamitangid.setText("");
+            txt_6th_saannagagamitangid.setVisibility(View.INVISIBLE);
+        }
         cbo_6th_mayseniorid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

@@ -44,10 +44,19 @@ public class _3rdstatedrow_Question extends Fragment {
         this.cpar.setEditText(R.id.txt_3rd_hanapbuhay);
 
         txt_3rd_pangalan.setSelectAllOnFocus(true);
+
+
+        if(cbo_3rd_relasyon.getText().toString().equals("Iba pang hindi kamag-anak, itala")){
+            txt_iba_pa.setVisibility(View.VISIBLE);
+        }
+        else{
+            txt_iba_pa.setText("");
+            txt_iba_pa.setVisibility(View.INVISIBLE);
+        }
         cbo_3rd_relasyon.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if(position == 7||position == 9){
+                if(position == 8||position == 10){
 
                     txt_iba_pa.setVisibility(View.VISIBLE);
                 }

@@ -40,8 +40,17 @@ public class _4thstatedrow_Question extends Fragment {
         this.cpar.setEditText(R.id.txt_4th_ibapa_dahilan);
         txt_4th_pangalan=(EditText)view.findViewById(R.id.txt_4th_pangalan);
         txt_4th_ibapa_dahilan=(EditText)view.findViewById(R.id.txt_4th_ibapa_dahilan);
-        cbo_4th_dahilan   =(MaterialBetterSpinner)view.findViewById(R.id.cbo_4th_dahilan);
+        cbo_4th_dahilan =(MaterialBetterSpinner)view.findViewById(R.id.cbo_4th_dahilan);
         txt_4th_pangalan.setSelectAllOnFocus(true);
+
+
+        if(cbo_4th_dahilan.getText().toString().equals("Iba pa, Itala")){
+            txt_4th_ibapa_dahilan.setVisibility(View.VISIBLE);
+        }
+        else{
+            txt_4th_ibapa_dahilan.setText("");
+            txt_4th_ibapa_dahilan.setVisibility(View.INVISIBLE);
+        }
         cbo_4th_dahilan.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

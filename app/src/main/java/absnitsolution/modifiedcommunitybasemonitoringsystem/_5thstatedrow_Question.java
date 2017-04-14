@@ -74,6 +74,15 @@ public class _5thstatedrow_Question extends Fragment {
         this.cpar.setDropdown(R.id.cbo_5th_saangalingtulong, R.array._5th_saangaling_tulong, "Select One");
         this.cpar.setEditText(R.id.txt_5th_ibapa_saangaling);
 
+
+        if(chk_ibapa.isChecked()){
+            txt_5th_ibapa_kapansanan.setVisibility(View.VISIBLE);
+        }
+        else{
+            txt_5th_ibapa_kapansanan.setText("");
+            txt_5th_ibapa_kapansanan.setVisibility(View.INVISIBLE);
+        }
+
         chk_ibapa.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -88,6 +97,17 @@ public class _5thstatedrow_Question extends Fragment {
 
             }
         });
+
+
+        if(cbo_5th_saangalingtulong.getText().toString().equals("Iba pa, itala")){
+            txt_5th_ibapa_saangaling.setVisibility(View.VISIBLE);
+        }
+        else{
+            txt_5th_ibapa_saangaling.setText("");
+            txt_5th_ibapa_saangaling.setVisibility(View.INVISIBLE);
+        }
+
+
         cbo_5th_saangalingtulong.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -100,7 +120,13 @@ public class _5thstatedrow_Question extends Fragment {
                 }
             }
         });
-
+        if(cbo_5th_sanhi_kapansanan.getText().toString().equals("Iba pa, itala")){
+            txt_iba_itala.setVisibility(View.VISIBLE);
+        }
+        else{
+            txt_iba_itala.setText("");
+            txt_iba_itala.setVisibility(View.INVISIBLE);
+        }
         cbo_5th_sanhi_kapansanan.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
