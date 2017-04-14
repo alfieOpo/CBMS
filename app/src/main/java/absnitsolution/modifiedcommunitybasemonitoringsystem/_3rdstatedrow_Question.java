@@ -47,7 +47,7 @@ public class _3rdstatedrow_Question extends Fragment {
 
 
 
-        if(cbo_3rd_relasyon.getText().toString().equals("Iba pang hindi kamag-anak, itala")){
+        if(cbo_3rd_relasyon.getText().toString().equals("Iba pang hindi kamag-anak, itala")||cbo_3rd_relasyon.getText().toString().equals("Iba pang kamag-anak, itala")){
             txt_iba_pa.setVisibility(View.VISIBLE);
         }
         else{
