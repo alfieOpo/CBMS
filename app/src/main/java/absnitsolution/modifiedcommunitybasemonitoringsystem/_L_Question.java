@@ -367,6 +367,10 @@ public class _L_Question extends Fragment {
         this.cpar.putEditText(R.id.txt_l_80_6);
         this.cpar.putEditText(R.id.txt_l_81_6);
         this.cpar.putEditText(R.id.txt_l_79_6);
+        this.cpar.putDropdown(R.id.cbo_l_78);
+
+
+        
         da.c_Update(cpar);
         super.onDestroy();
     }
