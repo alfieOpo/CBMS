@@ -1570,6 +1570,7 @@
                         android:layout_height="wrap_content"
                         android:text="152.17."
                         />
+
                     <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                         android:id="@+id/cbo_v_152_17"
                         android:layout_width="match_parent"
@@ -1587,16 +1588,6 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1">
 
-                        <EditText
-                            android:id="@+id/txt_v_152_17"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:ems="10"
-                            android:hint="152.17. Iba pang programa, itala"
-                            android:inputType="textPersonName"
-                            android:tag="D_520"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="12sp" />
                     </android.support.design.widget.TextInputLayout>
 
                     <TextView

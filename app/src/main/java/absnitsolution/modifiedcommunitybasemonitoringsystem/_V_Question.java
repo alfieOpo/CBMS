@@ -145,6 +145,7 @@ public class _V_Question extends Fragment {
 
 
         this.cpar.setEditText(R.id.txt_v_151_1);
+        this.cpar.setEditText(R.id.txt_v_ibapa_150_1);
         this.cpar.setEditText(R.id.txt_v_151_2);
         this.cpar.setEditText(R.id.txt_v_151_3);
         this.cpar.setEditText(R.id.txt_v_151_4);
@@ -162,8 +163,6 @@ public class _V_Question extends Fragment {
         this.cpar.setEditText(R.id.txt_v_151_16);
         this.cpar.setEditText(R.id.txt_v_151_17);
 
-
-        this.cpar.setEditText(R.id.txt_v_152_17);
 
         this.cpar.setEditText(R.id.txt_v_153_1);
         this.cpar.setEditText(R.id.txt_v_153_2);
@@ -223,7 +222,7 @@ public class _V_Question extends Fragment {
         IbaPangItala(R.id.cbo_v_150_15 ,R.id.txt_v_ibapa_150_15);
         IbaPangItala(R.id.cbo_v_150_16 ,R.id.txt_v_ibapa_150_16);
         IbaPangItala(R.id.cbo_v_150_17 ,R.id.txt_v_ibapa_150_17);
-        IbaPangItala(R.id.cbo_v_152_17 ,R.id.txt_v_152_17);
+
 
         ShowIFchecked(R.id.chk_v_149_1,R.id.cbo_v_173_1_1,R.id.cbo_v_150_1,R.id.cbo_v_152_1, R.id.txt_v_151_1,R.id.txt_v_153_1,R.id.txt_v_154_1);
         ShowIFchecked(R.id.chk_v_149_2,R.id.cbo_v_173_2_1,R.id.cbo_v_150_2,R.id.cbo_v_152_2, R.id.txt_v_151_2,R.id.txt_v_153_2,R.id.txt_v_154_2);
@@ -532,7 +531,7 @@ private  void Load17Text(String txt){
         this.cpar.putDropdown(R.id.cbo_v_148_day);
         this.cpar.putDropdown(R.id.cbo_v_148_year);
         // this.cpar.putCheckBox(R.id.chk_v_149);
-
+        this.cpar.setEditText(R.id.txt_v_ibapa_150_1);
         this.cpar.putCheckBox(R.id.chk_v_149_1);
         this.cpar.putDropdown(R.id.cbo_v_173_1_1);
         this.cpar.putCheckBox(R.id.chk_v_149_2);
@@ -606,7 +605,7 @@ private  void Load17Text(String txt){
         this.cpar.putDropdown(R.id.cbo_v_152_14);
         this.cpar.putDropdown(R.id.cbo_v_152_15);
         this.cpar.putDropdown(R.id.cbo_v_152_16);
-        this.cpar.putEditText(R.id.txt_v_152_17);
+
         this.cpar.putDropdown(R.id.cbo_v_152_17);
         this.cpar.putEditText(R.id.txt_v_153_1);
         this.cpar.putEditText(R.id.txt_v_153_2);

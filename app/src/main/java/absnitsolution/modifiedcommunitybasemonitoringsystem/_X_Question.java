@@ -66,7 +66,7 @@ public class _X_Question extends Fragment {
         this.cpar.setDropdown(R.id.cbo_x_124, R.array.x_ilantaon_nagsasaka, "Select One");
         this.cpar.setDropdown(R.id.cbo_x_125, R.array.x_kumpara, "Select One");
         this.cpar.setDropdown(R.id.cbo_x_127, R.array.oo_hindi, "Hindi");
-        this.cpar.setDropdown(R.id.cbo_x_128, R.array.x_128, "Select One");
+        this.cpar.setDropdown(R.id.cbo_x_128, R.array.x_128, "Ang dating binhi ay mataas ang halaga");
         this.cpar.setDropdown(R.id.cbo_x_129_1, R.array.oo_hindi, "Hindi");
         this.cpar.setDropdown(R.id.cbo_x_129_2, R.array.oo_hindi, "Hindi");
         this.cpar.setCheckBox(R.id.chk_x_126_1);
@@ -78,6 +78,7 @@ public class _X_Question extends Fragment {
         this.cpar.setCheckBox(R.id.chk_x_126_7);
         this.cpar.setCheckBox(R.id.chk_x_126_8);
         this.cpar.setEditText(R.id.txt_x_126_8);
+        this.cpar.setEditText(R.id.txt_x_ibapa_131_16);
         this.cpar.setEditText(R.id.txt_x_127_1);
         this.cpar.setEditText(R.id.txt_x_127_2);
         this.cpar.setCheckBox(R.id.chk_x_130_1);
@@ -256,6 +257,7 @@ public class _X_Question extends Fragment {
         this.cpar.putDropdown(R.id.cbo_x_127);
         this.cpar.putEditText(R.id.txt_x_127_1);
         this.cpar.putEditText(R.id.txt_x_127_2);
+        this.cpar.putEditText(R.id.txt_x_ibapa_131_16);
         this.cpar.putDropdown(R.id.cbo_x_128);
         this.cpar.putDropdown(R.id.cbo_x_129_1);
         this.cpar.putDropdown(R.id.cbo_x_129_2);

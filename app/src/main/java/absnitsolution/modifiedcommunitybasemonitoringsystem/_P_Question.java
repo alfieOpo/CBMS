@@ -57,8 +57,13 @@ public class _P_Question extends Fragment {
         this.cpar.setEditText(R.id.txt_equals);
         this.cpar.setEditText(R.id.txt_p_121_1);
         this.cpar.setEditText(R.id.txt_p_123_1);
+        this.cpar.setEditText(R.id.txt_p_123_2);
+        this.cpar.setEditText(R.id.txt_p_123_3);
+        this.cpar.setEditText(R.id.txt_p_ibapa_123_5);
         this.cpar.setEditText(R.id.txt_p_123_4);
         this.cpar.setEditText(R.id.txt_p_123_5);
+        txt_equals.setEnabled(false);
+
         cbo_converter.setOnItemClickListener(new AdapterView.OnItemClickListener()  {
             @RequiresApi(api = Build.VERSION_CODES.N)
             @Override
@@ -72,12 +77,12 @@ public class _P_Question extends Fragment {
 
                 }
                 if(position==0){
-                    txt_equals.setText(Config.toCurrency(mainvalue));
+                    txt_equals.setText(Config.toCurrency(mainvalue).replace(".00",""));
                 }
 
                 else if(position ==1){
                     double value=(mainvalue * 10000);
-                    txt_equals.setText(Config.toCurrency(value));
+                    txt_equals.setText(Config.toCurrency(value).replace(".00",""));
                 }
             }
         });
@@ -93,7 +98,18 @@ public class _P_Question extends Fragment {
                 }
             }
         });
+        if(cbo_p_120.getText().toString().equals("Iba pa, itala")){
 
+
+            txt_p_120.setVisibility(View.VISIBLE);
+
+        }
+        else{
+
+
+            txt_p_120.setVisibility(View.INVISIBLE);
+            txt_p_120.setText("");
+        }
         cbo_p_120.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -147,10 +163,13 @@ public class _P_Question extends Fragment {
         this.cpar.putEditText(R.id.txt_p_120);
         this.cpar.putEditText(R.id.txt_p_121_1);
         this.cpar.putEditText(R.id.txt_p_123_1);
+        this.cpar.putEditText(R.id.txt_p_123_3);
         this.cpar.putEditText(R.id.txt_p_123_4);
         this.cpar.putEditText(R.id.txt_p_123_5);
+        this.cpar.putEditText(R.id.txt_p_ibapa_123_5);
         this.cpar.putDropdown(R.id.cbo_converter);
         this.cpar.putEditText(R.id.txt_equals);
+        this.cpar.putEditText(R.id.txt_p_123_2);
         da.c_Update(cpar);
         super.onDestroy();
     }

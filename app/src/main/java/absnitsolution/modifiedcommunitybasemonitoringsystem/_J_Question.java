@@ -55,7 +55,7 @@ LinearLayout layout;
         cbo_a_miyembro_nagpagamot = (MaterialBetterSpinner) view.findViewById(R.id.cbo_a_miyembro_nagpagamot);
         this.cpar = new c_params(Config.ID, container, view);
 
-        this.cpar.setDropdown(R.id.cbo_a_miyembro_nagpagamot, R.array.meron_wala, "Wala");
+        this.cpar.setDropdown(R.id.cbo_a_miyembro_nagpagamot, R.array.meron_wala, "Mayroon");
 
         if(chk_ibapa_itala.isChecked()){
             txt_j_ibapa_66.setVisibility(View.VISIBLE);
@@ -112,9 +112,11 @@ LinearLayout layout;
             }
         });
 
-        this.cpar.setDropdown(R.id.cbo_a_ilan_nagpagamot, R.array.ilan, "Select One");
+        this.cpar.setDropdown(R.id.cbo_a_ilan_nagpagamot, R.array.ilan, "");
         this.cpar.setEditText(R.id.txt_j_ibapa_66);
+        this.cpar.setEditText(R.id.txt_ibapa2);
         this.cpar.setCheckBox(R.id.chk_Brgy_Health_Station_Center);
+        this.cpar.setCheckBox(R.id.chk_Public_hospital_Provincial_hospital);
         this.cpar.setCheckBox(R.id.chk_Public_hospital__National);
         this.cpar.setCheckBox(R.id.chk_Private_Hospital_Clinic);
         this.cpar.setCheckBox(R.id.chk_Bulacan_Medical_Center);
@@ -170,7 +172,7 @@ LinearLayout layout;
     @Override
     public void onDestroy() {
         da = new MainDataBaseHandler(getActivity().getApplication());
-
+        this.cpar.putEditText(R.id.txt_ibapa2);
         this.cpar.putEditText(R.id.txt_j_ibapa_66);
         this.cpar.putDropdown(R.id.cbo_a_miyembro_nagpagamot);
         this.cpar.putDropdown(R.id.cbo_a_ilan_nagpagamot);
@@ -186,6 +188,7 @@ LinearLayout layout;
         this.cpar.putCheckBox(R.id.chk_Dialysis);
         this.cpar.putCheckBox(R.id.chk_Chemotherapy);
         this.cpar.putCheckBox(R.id.chk_HIV_Treatment);
+        this.cpar.putCheckBox(R.id.chk_Public_hospital_Provincial_hospital);
         this.cpar.putCheckBox(R.id.chk_Pulmonary_Tubercolosis_PTB_Treatment);
         this.cpar.putCheckBox(R.id.chk_ibapa2);
         da.c_Update(cpar);

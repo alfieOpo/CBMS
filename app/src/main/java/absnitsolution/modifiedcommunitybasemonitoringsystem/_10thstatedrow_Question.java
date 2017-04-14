@@ -19,7 +19,7 @@ public class _10thstatedrow_Question extends Fragment {
     c_params cpar;
     String _key = "";
     MainDataBaseHandler da;
-    EditText txt_iba_pa;
+    EditText txt_iba_pa,txt_10th_74;
     MaterialBetterSpinner cbo_10th_77;
     public _10thstatedrow_Question() {
         // Required empty public constructor
@@ -37,7 +37,7 @@ public class _10thstatedrow_Question extends Fragment {
         this.cpar.set_key(this._key);
         this.cpar.setEditText(R.id.txt_10th_74);
         this.cpar.setEditText(R.id.txt_10th_76);
-
+        txt_10th_74=(EditText)view.findViewById(R.id.txt_10th_74);
         cbo_10th_77=(MaterialBetterSpinner)view.findViewById(R.id.cbo_10th_77);
         txt_iba_pa=(EditText)view.findViewById(R.id.txt_iba_pa);
 
@@ -63,7 +63,7 @@ this.cpar.setEditText(R.id.txt_iba_pa);
                 }
             }
         });
-
+        txt_10th_74.setSelectAllOnFocus(true);
         return view;
 
     }

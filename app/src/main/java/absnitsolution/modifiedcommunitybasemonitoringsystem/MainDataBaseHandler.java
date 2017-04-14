@@ -108,6 +108,7 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
             System.out.print(i);
             db.close();
         } catch (Exception xx) {
+            String da=xx.getMessage();
         }
     }
 
@@ -309,18 +310,19 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursor = db.rawQuery(query, null);
-
-        if (cursor != null) {
-            cursor.moveToFirst();
-        }
-        String data = cursor.getString(0);
-        try {
-            if (data.equals(null)) {
+        String data="0";
+        if ( cursor.moveToFirst()) {
+            data   = cursor.getString(0);
+            try {
+                if (data.equals(null)) {
+                    data = "0";
+                }
+            } catch (Exception xx) {
                 data = "0";
             }
-        } catch (Exception xx) {
-            data = "0";
         }
+
+
         return data;
     }
 
@@ -1241,6 +1243,10 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
                 "_5th_024 TEXT," +
                 "_5th_025 TEXT," +
                 "_5th_026 TEXT," +
+                "_5th_027 TEXT," +
+                "_5th_028 TEXT," +
+                "_5th_029 TEXT," +
+                "_5th_030 TEXT," +
                 "IMEI TEXT," +
                 "IMSI TEXT," +
                 "AndroidID TEXT," +
@@ -1304,6 +1310,7 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
                 "_10th_002 TEXT," +
                 "_10th_003 TEXT," +
                 "_10th_004 TEXT," +
+                "_10th_005 TEXT," +
                 "IMEI TEXT," +
                 "IMSI TEXT," +
                 "AndroidID TEXT," +

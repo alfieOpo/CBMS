@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ImageButton;
 import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
 import android.widget.CheckBox;
@@ -15,12 +16,15 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.CompoundButton;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class _R_Question extends Fragment {
-
+    View view;
     c_params cpar;
     ImageButton btn_back, btn_next;
     MainDataBaseHandler da;
@@ -37,7 +41,7 @@ public class _R_Question extends Fragment {
     EditText txt_r_135_3, txt_r_137_6, txt_r_139_8,
              txt_r_138_1, txt_r_138_2, txt_r_138_3, txt_r_138_4, txt_r_138_5, 
              txt_r_138_6, txt_r_ibapa_138_6, txt_r_138_7;
-
+Button btn_compute;
     public _R_Question() {
     }
 
@@ -46,7 +50,7 @@ public class _R_Question extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment___r__question, container, false);
+          view = inflater.inflate(R.layout.fragment___r__question, container, false);
         btn_back = (ImageButton) view.findViewById(R.id.btn_back);
         btn_next = (ImageButton) view.findViewById(R.id.btn_next);
 
@@ -339,6 +343,24 @@ public class _R_Question extends Fragment {
                 fragmentManager.beginTransaction().replace(R.id.frame, fragment, "T. PAMAMAHALA SA BASURA").commit();
             }
         });
+
+        btn_compute=(Button)view.findViewById(R.id.btn_compute);
+        btn_compute.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Sum sum=new Sum();
+                sum.Add(txt_r_138_1);
+                sum.Add(txt_r_138_2);
+                sum.Add(txt_r_138_3);
+                sum.Add(txt_r_138_4);
+                sum.Add(txt_r_138_5);
+                sum.Add(txt_r_ibapa_138_6);
+                txt_r_138_7=(EditText)view.findViewById(R.id.txt_r_138_7);
+                double total= sum.getTotal();
+                txt_r_138_7.setText(Config.toCurrency(total).replace(".00",""));
+
+            }
+        });
         return view;
 
     }
@@ -385,6 +407,8 @@ public class _R_Question extends Fragment {
 
     @Override
     public void onDestroy() {
+
+
         da = new MainDataBaseHandler(getActivity().getApplicationContext());
 
         this.cpar.putCheckBox(R.id.chk_r_135_1);
@@ -418,9 +442,38 @@ public class _R_Question extends Fragment {
         this.cpar.putDropdown(R.id.cbo_r_135);
         this.cpar.putCheckBox(R.id.chk_r_137_5);
         this.cpar.putEditText(R.id.txt_r_ibapa_138_6);
-
         da.c_Update(cpar);
         super.onDestroy();
+
+
+    }
+
+    public class Sum {
+        List<String> list = new ArrayList<String>();
+        double total = 0;
+
+        public void Add(EditText txt) {
+            list.add(txt.getText().toString().replace(",",""));
+        }
+
+        public void Add(int txt) {
+            list.add(String.valueOf(txt));
+        }
+
+        public double getTotal() {
+
+            for (String val : list) {
+                double value = 0;
+                try {
+                    value = Double.valueOf(val);
+                    total += value;
+                } catch (Exception xx) {
+                    total += value;
+                }
+            }
+
+            return total;
+        }
     }
 }
 

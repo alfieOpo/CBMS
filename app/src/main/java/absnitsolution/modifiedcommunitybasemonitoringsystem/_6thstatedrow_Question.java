@@ -38,15 +38,15 @@ MaterialBetterSpinner cbo_6th_mayseniorid;
         txt_pangalan_ng_senior_citizen=(EditText)view.findViewById(R.id.txt_pangalan_ng_senior_citizen);
         this.cpar.set_table("ga_6th");
         this.cpar.set_key(this._key);
-        this.cpar.setDropdown(R.id.cbo_6th_mayseniorid, R.array.meron_wala, "Select One");
+        this.cpar.setDropdown(R.id.cbo_6th_mayseniorid, R.array.meron_wala, "Mayroon");
         this.cpar.setEditText(R.id.txt_6th_saannagagamitangid);
         this.cpar.setEditText(R.id.txt_pangalan_ng_senior_citizen);
-        this.cpar.setDropdown(R.id.cbo_6th_mayphilhealth, R.array.meron_wala, "Select One");
+        this.cpar.setDropdown(R.id.cbo_6th_mayphilhealth, R.array.meron_wala, "Mayroon");
         txt_pangalan_ng_senior_citizen.setSelectAllOnFocus(true);
 
 
 
-        if(cbo_6th_mayseniorid.getText().toString().equals("Iba pa, itala")){
+        if(cbo_6th_mayseniorid.getText().toString().equals("Mayroon")){
             txt_6th_saannagagamitangid.setVisibility(View.VISIBLE);
         }
         else{

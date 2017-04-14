@@ -116,10 +116,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:ems="10"
-                            android:hint="Iba pa, itala"
                             android:inputType="textPersonName"
                             android:tag="D_273"
-                            android:textColorHint="#05ab9a"
                             android:textSize="12sp" />
 
 
@@ -397,13 +395,21 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
+                                android:gravity="bottom|right"
                                 android:hint="138.7 Kabuuang dami"
                                 android:inputType="number"
                                 android:tag="D_288"
+                                android:textAlignment="gravity"
                                 android:textColorHint="#05ab9a"
                                 android:textSize="12sp" />
                         </android.support.design.widget.TextInputLayout>
 
+
+                        <Button
+                            android:id="@+id/btn_compute"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Compute" />
 
                         <TextView
                             android:id="@+id/textView11"
