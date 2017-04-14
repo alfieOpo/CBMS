@@ -83,6 +83,15 @@ public class _T_Question extends Fragment {
         this.cpar.setCheckBox(R.id.chk_t_146_5);
         this.cpar.setCheckBox(R.id.chk_t_146_6);
         this.cpar.setEditText(R.id.txt_t_146_6);
+        this.cpar.setEditText(R.id.txt_w_155_1);
+        this.cpar.setEditText(R.id.txt_w_155_2);
+        this.cpar.setEditText(R.id.txt_w_155_3);
+        this.cpar.setEditText(R.id.txt_w_155_4);
+        this.cpar.setEditText(R.id.txt_w_155_6);
+        this.cpar.setEditText(R.id.txt_w_155_7);
+        this.cpar.setEditText(R.id.txt_w_ibapa_157);
+
+
 
         txt_w_155_1.setVisibility(View.INVISIBLE);
         txt_w_155_2.setVisibility(View.INVISIBLE);
@@ -379,6 +388,16 @@ public class _T_Question extends Fragment {
         this.cpar.putEditText(R.id.txt_t_146_6);
         this.cpar.putDropdown(R.id.cbo_w_156);
         this.cpar.putDropdown(R.id.cbo_w_157);
+        this.cpar.putEditText(R.id.txt_w_155_1);
+        this.cpar.putEditText(R.id.txt_w_155_2);
+        this.cpar.putEditText(R.id.txt_w_155_3);
+        this.cpar.putEditText(R.id.txt_w_155_4);
+        this.cpar.putEditText(R.id.txt_w_155_6);
+        this.cpar.putEditText(R.id.txt_w_155_7);
+        this.cpar.putEditText(R.id.txt_w_ibapa_157);
+
+
+
         da.c_Update(cpar);
         super.onDestroy();
     }

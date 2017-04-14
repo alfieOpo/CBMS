@@ -71,6 +71,7 @@ public class _Q_Question extends Fragment {
         this.cpar.setEditText(R.id.txt_q_134_5);
         this.cpar.setEditText(R.id.txt_q_134_5_1);
         this.cpar.setEditText(R.id.txt_q_134_5_2);
+        this.cpar.setEditText(R.id.txt_q_ibapa_133_9);
 
 
         cbo_q_133.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -154,6 +155,7 @@ public class _Q_Question extends Fragment {
         this.cpar.putEditText(R.id.txt_q_134_5_1);
         this.cpar.putEditText(R.id.txt_q_134_5_2);
         this.cpar.putDropdown(R.id.cbo_q_133);
+        this.cpar.putEditText(R.id.txt_q_ibapa_133_9);
 
         da.c_Update(cpar);
         super.onDestroy();

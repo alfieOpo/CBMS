@@ -135,7 +135,7 @@ public class _1ststatedrow_Question extends Fragment {
         text_32 = (TextView) view.findViewById(R.id.text_32);
         text_33 = (TextView) view.findViewById(R.id.text_33);
 
-        txt_1st_miyembro.setSelectAllOnFocus(true);
+     //   txt_1st_miyembro.setSelectAllOnFocus(true);
 
 
 
@@ -1111,8 +1111,6 @@ public class _1ststatedrow_Question extends Fragment {
         this.cpar.putEditText(R.id.txt_1st_ibapa_hindinagaral);
         this.cpar.putEditText(R.id.txt_1st_other_pangunahinghanapbuhay);
         this.cpar.putEditText(R.id.txt_1st_others_uringnegosyo);
-
-
 
 
         this.cpar.set_key(this._key);

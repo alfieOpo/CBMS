@@ -124,6 +124,8 @@ public class _R_Question extends Fragment {
         this.cpar.setCheckBox(R.id.chk_r_139_7);
         this.cpar.setCheckBox(R.id.chk_r_139_8);
         this.cpar.setEditText(R.id.txt_r_139_8);
+        this.cpar.setCheckBox(R.id.chk_r_137_5);
+        this.cpar.setEditText(R.id.txt_r_ibapa_138_6);
 
         txt_r_138_1.setEnabled(false);
         txt_r_138_2.setEnabled(false);
@@ -414,6 +416,8 @@ public class _R_Question extends Fragment {
         this.cpar.putCheckBox(R.id.chk_r_139_8);
         this.cpar.putEditText(R.id.txt_r_139_8);
         this.cpar.putDropdown(R.id.cbo_r_135);
+        this.cpar.putCheckBox(R.id.chk_r_137_5);
+        this.cpar.putEditText(R.id.txt_r_ibapa_138_6);
 
         da.c_Update(cpar);
         super.onDestroy();
