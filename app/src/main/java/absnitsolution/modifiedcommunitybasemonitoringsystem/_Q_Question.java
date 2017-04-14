@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
 import android.widget.LinearLayout;
@@ -24,6 +25,12 @@ public class _Q_Question extends Fragment {
     MaterialBetterSpinner cbo_q_133;
     LinearLayout layout;
 
+    EditText txt_q_134_1_1, txt_q_134_1_2, txt_q_134_2_1, txt_q_134_2_2, txt_q_134_3_1,txt_q_134_3_2,
+        txt_q_134_4_1 ,txt_q_134_4_2 ,txt_q_134_5 ,txt_q_134_5_1 ,txt_q_134_5_2 ,txt_q_133_1, txt_q_133_1_1,
+        txt_q_133_2  , txt_q_133_3 ,txt_q_133_3_1 ,txt_q_133_3_2 ,txt_q_133_3_3 ,txt_q_133_4 ,txt_q_133_4_1,
+        txt_q_133_4_2 ,txt_q_133_5 ,txt_q_133_5_1 ,txt_q_133_5_2 ,txt_q_133_6 ,txt_q_133_7, txt_q_133_8,
+        txt_q_133_9  , txt_q_ibapa_133_9;
+
     public _Q_Question() {
     }
 
@@ -39,6 +46,37 @@ public class _Q_Question extends Fragment {
 
         cbo_q_133 = (MaterialBetterSpinner) view.findViewById(R.id.cbo_q_133);
         layout = (LinearLayout) view.findViewById(R.id.layout);
+
+        txt_q_134_1_1     = (EditText) view.findViewById(R.id.txt_q_134_1_1  );
+        txt_q_134_1_2     = (EditText) view.findViewById(R.id.txt_q_134_1_2    );
+        txt_q_134_2_1     = (EditText) view.findViewById(R.id.txt_q_134_2_1    );
+        txt_q_134_2_2     = (EditText) view.findViewById(R.id.txt_q_134_2_2    );
+        txt_q_134_3_1     = (EditText) view.findViewById(R.id.txt_q_134_3_1    );
+        txt_q_134_3_2     = (EditText) view.findViewById(R.id.txt_q_134_3_2    );
+        txt_q_134_4_1     = (EditText) view.findViewById(R.id.txt_q_134_4_1    );
+        txt_q_134_4_2     = (EditText) view.findViewById(R.id.txt_q_134_4_2    );
+        txt_q_134_5       = (EditText) view.findViewById(R.id.txt_q_134_5      );
+        txt_q_134_5_1     = (EditText) view.findViewById(R.id.txt_q_134_5_1    );
+        txt_q_134_5_2     = (EditText) view.findViewById(R.id.txt_q_134_5_2    );
+        txt_q_133_1       = (EditText) view.findViewById(R.id.txt_q_133_1      );
+        txt_q_133_1_1     = (EditText) view.findViewById(R.id.txt_q_133_1_1    );
+        txt_q_133_2       = (EditText) view.findViewById(R.id.txt_q_133_2      );
+        txt_q_133_3       = (EditText) view.findViewById(R.id.txt_q_133_3      );
+        txt_q_133_3_1     = (EditText) view.findViewById(R.id.txt_q_133_3_1    );
+        txt_q_133_3_2     = (EditText) view.findViewById(R.id.txt_q_133_3_2    );
+        txt_q_133_3_3     = (EditText) view.findViewById(R.id.txt_q_133_3_3    );
+        txt_q_133_4       = (EditText) view.findViewById(R.id.txt_q_133_4      );
+        txt_q_133_4_1     = (EditText) view.findViewById(R.id.txt_q_133_4_1    );
+        txt_q_133_4_2     = (EditText) view.findViewById(R.id.txt_q_133_4_2    );
+        txt_q_133_5       = (EditText) view.findViewById(R.id.txt_q_133_5      );
+        txt_q_133_5_1     = (EditText) view.findViewById(R.id.txt_q_133_5_1    );
+        txt_q_133_5_2     = (EditText) view.findViewById(R.id.txt_q_133_5_2    );
+        txt_q_133_6       = (EditText) view.findViewById(R.id.txt_q_133_6      );
+        txt_q_133_7       = (EditText) view.findViewById(R.id.txt_q_133_7      );
+        txt_q_133_8       = (EditText) view.findViewById(R.id.txt_q_133_8      );
+        txt_q_133_9       = (EditText) view.findViewById(R.id.txt_q_133_9      );
+        txt_q_ibapa_133_9 = (EditText) view.findViewById(R.id.txt_q_ibapa_133_9);
+
 
         this.cpar = new c_params(Config.ID, container, view);
 
@@ -120,6 +158,49 @@ public class _Q_Question extends Fragment {
         return view;
 
     }
+
+    private void cleartxt()
+    {
+
+        txt_q_134_1_1.setText("");
+        txt_q_134_1_2.setText("");
+        txt_q_134_2_1.setText("");
+        txt_q_134_2_2.setText("");
+        txt_q_134_3_1.setText("");
+        txt_q_134_3_2.setText("");
+        txt_q_134_4_1.setText("");
+        txt_q_134_4_2.setText("");
+        txt_q_134_5.setText("");
+        txt_q_134_5_1.setText("");
+        txt_q_134_5_2.setText("");
+        txt_q_133_1.setText("");
+        txt_q_133_1_1.setText("");
+        txt_q_133_2.setText("");
+        txt_q_133_3.setText("");
+        txt_q_133_3_1.setText("");
+        txt_q_133_3_2.setText("");
+        txt_q_133_3_3.setText("");
+        txt_q_133_4.setText("");
+        txt_q_133_4_1.setText("");
+        txt_q_133_4_2.setText("");
+        txt_q_133_5.setText("");
+        txt_q_133_5_1.setText("");
+        txt_q_133_5_2.setText("");
+        txt_q_133_6.setText("");
+        txt_q_133_7.setText("");
+        txt_q_133_8.setText("");
+        txt_q_133_9.setText("");
+        txt_q_ibapa_133_9.setText("");
+
+
+
+
+    }
+
+
+
+
+
 
     @Override
     public void onDestroy() {
