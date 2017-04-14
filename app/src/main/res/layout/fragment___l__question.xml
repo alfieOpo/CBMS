@@ -41,7 +41,7 @@
                     android:layout_alignParentLeft="true"
                     android:layout_weight="1"
                     android:hint="78. Noong nakaraang labin-dalawang buwan, kayo ba o sinuman sa inyong kapamilya ay naging biktima ng alinman sa mga sumusunod na krimen?"
-                    android:tag=""
+                    android:tag="D_076"
                     android:textColorHint="#05ab9a"
                     android:textSize="14dp"
                     app:met_floatingLabel="highlight" />

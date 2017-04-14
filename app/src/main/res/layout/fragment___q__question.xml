@@ -1,5 +1,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -26,308 +27,347 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
-
                     <TextView
-
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
                         android:layout_centerHorizontal="true"
-                        android:text="133. (118) Noong nakaraang labing-dalawang buwan, ano ang mga inalagaang hayop para pagkakitaan?"
+                        android:text="R. PAGHAHAYUPAN"
                         android:textSize="16dp" />
 
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_q_133"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="1">
+                        android:layout_alignParentLeft="true"
+                        android:layout_weight="1"
+                        android:hint="133. Kayo ba ay nag-hahayupan?"
+                        android:tag="D_239"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
 
-                        <EditText
-                            android:id="@+id/txt_q_133_1"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:ems="10"
-                            android:hint="133.1   Patabaing Baboy (Ilan)"
-                            android:inputType="number"
-                            android:tag="D_240"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="12sp" />
-                    </android.support.design.widget.TextInputLayout>
-
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <EditText
-                            android:id="@+id/txt_q_133_1_1"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:ems="10"
-                            android:hint="133.1.1   Inahing Baboy (Ilan)"
-                            android:inputType="number"
-                            android:tag="D_241"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="12sp" />
-                    </android.support.design.widget.TextInputLayout>
-
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <EditText
-                            android:id="@+id/txt_q_133_2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:ems="10"
-                            android:hint="133.2   Kambing (Ilan)"
-                            android:inputType="number"
-                            android:tag="D_242"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="12sp" />
-                    </android.support.design.widget.TextInputLayout>
-
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <EditText
-                            android:id="@+id/txt_q_133_3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:ems="10"
-                            android:hint="133.3   Kalabaw (Ilan)"
-                            android:inputType="number"
-                            android:tag="D_243"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="12sp" />
-                    </android.support.design.widget.TextInputLayout>
-
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <EditText
-                            android:id="@+id/txt_q_133_3_1"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:ems="10"
-                            android:hint="133.3.1 Karne (Ilan)"
-                            android:inputType="number"
-                            android:tag="D_244"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="12sp" />
-                    </android.support.design.widget.TextInputLayout>
-
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <EditText
-                            android:id="@+id/txt_q_133_3_2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:ems="10"
-                            android:hint="133.3.2 Gatasan (Ilan)"
-                            android:inputType="number"
-                            android:tag="D_245"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="12sp" />
-                    </android.support.design.widget.TextInputLayout>
-
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <EditText
-                            android:id="@+id/txt_q_133_3_3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:ems="10"
-                            android:hint="133.3.3 Pangsaka (Ilan)"
-                            android:inputType="number"
-                            android:tag="D_246"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="12sp" />
-                    </android.support.design.widget.TextInputLayout>
-
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <EditText
-                            android:id="@+id/txt_q_133_4"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:ems="10"
-                            android:hint="133.4 Baka (Ilan)"
-                            android:inputType="number"
-                            android:tag="D_247"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="12sp" />
-                    </android.support.design.widget.TextInputLayout>
-
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <EditText
-                            android:id="@+id/txt_q_133_4_1"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:ems="10"
-                            android:hint="133.4.1 Karne (Ilan)"
-                            android:inputType="number"
-                            android:tag="D_248"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="12sp" />
-                    </android.support.design.widget.TextInputLayout>
-
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <EditText
-                            android:id="@+id/txt_q_133_4_2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:ems="10"
-                            android:hint="133.4.2 Gatasan (Ilan)"
-                            android:inputType="number"
-                            android:tag="D_249"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="12sp" />
-                    </android.support.design.widget.TextInputLayout>
-
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <EditText
-                            android:id="@+id/txt_q_133_5"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:ems="10"
-                            android:hint="133.5 Manok (Ilan)"
-                            android:inputType="number"
-                            android:tag="D_250"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="12sp" />
-                    </android.support.design.widget.TextInputLayout>
-
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <EditText
-                            android:id="@+id/txt_q_133_5_1"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:ems="10"
-                            android:hint="133.5.1 Layer (Ilan)"
-                            android:inputType="number"
-                            android:tag="D_251"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="12sp" />
-                    </android.support.design.widget.TextInputLayout>
-
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <EditText
-                            android:id="@+id/txt_q_133_5_2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:ems="10"
-                            android:hint="133.5.2 Broiler (Ilan)"
-                            android:inputType="number"
-                            android:tag="D_252"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="12sp" />
-                    </android.support.design.widget.TextInputLayout>
-
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <EditText
-                            android:id="@+id/txt_q_133_6"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:ems="10"
-                            android:hint="133.6 Pugo (Ilan)"
-                            android:inputType="number"
-                            android:tag="D_253"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="12sp" />
-                    </android.support.design.widget.TextInputLayout>
-
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <EditText
-                            android:id="@+id/txt_q_133_7"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:ems="10"
-                            android:hint="133.7 Itik/Bibe  (Ilan)"
-                            android:inputType="number"
-                            android:tag="D_254"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="12sp" />
-                    </android.support.design.widget.TextInputLayout>
-
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <EditText
-                            android:id="@+id/txt_q_133_8"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:ems="10"
-                            android:hint="133.8 Tupa (Ilan)"
-                            android:inputType="number"
-                            android:tag="D_255"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="12sp" />
-                    </android.support.design.widget.TextInputLayout>
 
                     <LinearLayout
+                        android:id="@+id/layout"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:id="@+id/text_o_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="134. Gaano ang karaniwang dami ng produksyon mula sa pag-aalaga ng hayop?"
+                                    android:textSize="16dp" />
+
+
+                                <!-- 1st row -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_alignParentTop="false"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_weight="1"
+                                        android:text="134.1 Buhay na hayop (bilang)"
+                                        android:textAlignment="viewStart"
+                                        android:textSize="12dp" />
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+
+                                        <EditText
+                                            android:id="@+id/txt_q_134_1_1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:ems="10"
+                                            android:hint="154.1.1 Uri  "
+                                            android:inputType="textPersonName"
+                                            android:tag="D_257"
+                                            android:textColorHint="#05ab9a"
+                                            android:textSize="14dp" />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+
+                                        <EditText
+                                            android:id="@+id/txt_q_134_1_2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:ems="10"
+                                            android:hint="134.1.2 Dami "
+                                            android:inputType="number"
+                                            android:tag="D_258"
+                                            android:textColorHint="#05ab9a"
+                                            android:textSize="14dp" />
+                                    </android.support.design.widget.TextInputLayout>
+
+
+                                </LinearLayout>
+
+
+                                <!-- 2nd row -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_alignParentTop="false"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_weight="1"
+                                        android:text="134.2 Karne (timbang kilograms)"
+                                        android:textAlignment="viewStart"
+                                        android:textSize="12dp" />
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+
+                                        <EditText
+                                            android:id="@+id/txt_q_134_2_1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:ems="10"
+                                            android:hint="134.2.1 Uri  "
+                                            android:inputType="textPersonName"
+                                            android:tag="D_259"
+                                            android:textColorHint="#05ab9a"
+                                            android:textSize="14dp" />
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+
+                                        <EditText
+                                            android:id="@+id/txt_q_134_2_2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:ems="10"
+                                            android:hint="134.2.2 Dami "
+                                            android:inputType="number"
+                                            android:tag="D_260"
+                                            android:textColorHint="#05ab9a"
+                                            android:textSize="14dp" />
+                                    </android.support.design.widget.TextInputLayout>
+
+
+                                </LinearLayout>
+
+
+                                <!-- 3rd row -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/text_w_1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_alignParentTop="false"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_weight="1"
+                                        android:text="134.3 Gatas (litro)  "
+                                        android:textAlignment="viewStart"
+                                        android:textSize="12dp" />
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+
+                                        <EditText
+                                            android:id="@+id/txt_q_134_3_1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:ems="10"
+                                            android:hint="134.3.1 Uri  "
+                                            android:inputType="textPersonName"
+                                            android:tag="D_261"
+                                            android:textColorHint="#05ab9a"
+                                            android:textSize="14dp" />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+
+                                        <EditText
+                                            android:id="@+id/txt_q_134_3_2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:ems="10"
+                                            android:hint="134.3.2 Dami   "
+                                            android:inputType="number"
+                                            android:tag="D_262"
+                                            android:textColorHint="#05ab9a"
+                                            android:textSize="14dp" />
+                                    </android.support.design.widget.TextInputLayout>
+
+
+                                </LinearLayout>
+
+
+                                <!-- 4th row -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_alignParentTop="false"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_weight="1"
+                                        android:text="134.4 Itlog (bilang)"
+                                        android:textAlignment="viewStart"
+                                        android:textSize="12dp" />
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+
+                                        <EditText
+                                            android:id="@+id/txt_q_134_4_1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:ems="10"
+                                            android:hint="134.4.1 Uri  "
+                                            android:inputType="textPersonName"
+                                            android:tag="D_263"
+                                            android:textColorHint="#05ab9a"
+                                            android:textSize="14dp" />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+
+                                        <EditText
+                                            android:id="@+id/txt_q_134_4_2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:ems="10"
+                                            android:hint="134.4.2 Dami "
+                                            android:inputType="number"
+                                            android:tag="D_264"
+                                            android:textColorHint="#05ab9a"
+                                            android:textSize="14dp" />
+                                    </android.support.design.widget.TextInputLayout>
+
+
+                                </LinearLayout>
+
+
+                                <!-- 4th row -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="200dp"
+                                        android:layout_height="match_parent">
+
+                                        <EditText
+                                            android:id="@+id/txt_q_134_5"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:ems="10"
+                                            android:hint="134.5 Iba pa, itala "
+                                            android:inputType="textPersonName"
+                                            android:tag="D_265"
+                                            android:textColorHint="#05ab9a"
+                                            android:textSize="12dp" />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+
+                                        <EditText
+                                            android:id="@+id/txt_q_134_5_1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:ems="10"
+                                            android:hint="134.5.1 Uri  "
+                                            android:inputType="textPersonName"
+                                            android:tag="D_266"
+                                            android:textColorHint="#05ab9a"
+                                            android:textSize="14dp" />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+
+                                        <EditText
+                                            android:id="@+id/txt_q_134_5_2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:ems="10"
+                                            android:hint="134.5.2 Dami "
+                                            android:inputType="number"
+                                            android:tag="D_267"
+                                            android:textColorHint="#05ab9a"
+                                            android:textSize="14dp" />
+                                    </android.support.design.widget.TextInputLayout>
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="Noong nakaraang labing-dalawang buwan, ano ang mga inalagaang hayop para pagkakitaan?"
+                            android:textSize="16dp" />
+
 
                         <android.support.design.widget.TextInputLayout
                             android:layout_width="match_parent"
@@ -335,132 +375,53 @@
                             android:layout_weight="1">
 
                             <EditText
-                                android:id="@+id/txt_q_133_9"
+                                android:id="@+id/txt_q_133_1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="133.9 Iba pang hayop, itala"
-                                android:inputType="textPersonName"
-                                android:tag="D_256"
+                                android:hint="133.1   Patabaing Baboy (Ilan)"
+                                android:inputType="number"
+                                android:tag="D_240"
                                 android:textColorHint="#05ab9a"
                                 android:textSize="12sp" />
                         </android.support.design.widget.TextInputLayout>
 
+
                         <android.support.design.widget.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1">
 
                             <EditText
-                                android:id="@+id/txt_q_ibapa_133_9"
+                                android:id="@+id/txt_q_133_1_1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="133.9 Ilan"
-                                android:inputType="textPersonName"
-                                android:tag="D_268"
+                                android:hint="133.1.1   Inahing Baboy (Ilan)"
+                                android:inputType="number"
+                                android:tag="D_241"
                                 android:textColorHint="#05ab9a"
                                 android:textSize="12sp" />
                         </android.support.design.widget.TextInputLayout>
 
 
-                    </LinearLayout>
-
-
-                </LinearLayout>
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-
-                    <TextView
-                        android:id="@+id/text_o_1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentTop="true"
-                        android:layout_centerHorizontal="true"
-                        android:text="134. Gaano ang karaniwang dami ng produksyon mula sa pag-aalaga ng hayop?"
-                        android:textSize="16dp" />
-
-
-                    <!-- 1st row -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_alignParentTop="false"
-                            android:layout_centerHorizontal="true"
-                            android:layout_weight="1"
-                            android:text="134.1 Buhay na hayop (bilang)"
-                            android:textAlignment="viewStart"
-                            android:textSize="12dp" />
-
                         <android.support.design.widget.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1">
 
                             <EditText
-                                android:id="@+id/txt_q_134_1_1"
+                                android:id="@+id/txt_q_133_2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="154.1.1 Uri  "
-                                android:inputType="textPersonName"
-                                android:tag="D_257"
-                                android:textColorHint="#05ab9a"
-                                android:textSize="14dp" />
-                        </android.support.design.widget.TextInputLayout>
-
-                        <android.support.design.widget.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1">
-
-                            <EditText
-                                android:id="@+id/txt_q_134_1_2"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:ems="10"
-                                android:hint="134.1.2 Dami "
+                                android:hint="133.2   Kambing (Ilan)"
                                 android:inputType="number"
-                                android:tag="D_258"
+                                android:tag="D_242"
                                 android:textColorHint="#05ab9a"
-                                android:textSize="14dp" />
+                                android:textSize="12sp" />
                         </android.support.design.widget.TextInputLayout>
 
-
-                    </LinearLayout>
-
-
-                    <!-- 2nd row -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_alignParentTop="false"
-                            android:layout_centerHorizontal="true"
-                            android:layout_weight="1"
-                            android:text="134.2 Karne (timbang kilograms)"
-                            android:textAlignment="viewStart"
-                            android:textSize="12dp" />
 
                         <android.support.design.widget.TextInputLayout
                             android:layout_width="match_parent"
@@ -468,55 +429,17 @@
                             android:layout_weight="1">
 
                             <EditText
-                                android:id="@+id/txt_q_134_2_1"
+                                android:id="@+id/txt_q_133_3"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="134.2.1 Uri  "
-                                android:inputType="textPersonName"
-                                android:tag="D_259"
-                                android:textColorHint="#05ab9a"
-                                android:textSize="14dp" />
-
-                        </android.support.design.widget.TextInputLayout>
-
-                        <android.support.design.widget.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1">
-
-                            <EditText
-                                android:id="@+id/txt_q_134_2_2"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:ems="10"
-                                android:hint="134.2.2 Dami "
+                                android:hint="133.3   Kalabaw (Ilan)"
                                 android:inputType="number"
-                                android:tag="D_260"
+                                android:tag="D_243"
                                 android:textColorHint="#05ab9a"
-                                android:textSize="14dp" />
+                                android:textSize="12sp" />
                         </android.support.design.widget.TextInputLayout>
 
-
-                    </LinearLayout>
-
-
-                    <!-- 3rd row -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/text_w_1"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_alignParentTop="false"
-                            android:layout_centerHorizontal="true"
-                            android:layout_weight="1"
-                            android:text="134.3 Gatas (litro)  "
-                            android:textAlignment="viewStart"
-                            android:textSize="12dp" />
 
                         <android.support.design.widget.TextInputLayout
                             android:layout_width="match_parent"
@@ -524,53 +447,17 @@
                             android:layout_weight="1">
 
                             <EditText
-                                android:id="@+id/txt_q_134_3_1"
+                                android:id="@+id/txt_q_133_3_1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="134.3.1 Uri  "
-                                android:inputType="textPersonName"
-                                android:tag="D_261"
-                                android:textColorHint="#05ab9a"
-                                android:textSize="14dp" />
-                        </android.support.design.widget.TextInputLayout>
-
-                        <android.support.design.widget.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1">
-
-                            <EditText
-                                android:id="@+id/txt_q_134_3_2"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:ems="10"
-                                android:hint="134.3.2 Dami   "
+                                android:hint="133.3.1 Karne (Ilan)"
                                 android:inputType="number"
-                                android:tag="D_262"
+                                android:tag="D_244"
                                 android:textColorHint="#05ab9a"
-                                android:textSize="14dp" />
+                                android:textSize="12sp" />
                         </android.support.design.widget.TextInputLayout>
 
-
-                    </LinearLayout>
-
-
-                    <!-- 4th row -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_alignParentTop="false"
-                            android:layout_centerHorizontal="true"
-                            android:layout_weight="1"
-                            android:text="134.4 Itlog (bilang)"
-                            android:textAlignment="viewStart"
-                            android:textSize="12dp" />
 
                         <android.support.design.widget.TextInputLayout
                             android:layout_width="match_parent"
@@ -578,59 +465,17 @@
                             android:layout_weight="1">
 
                             <EditText
-                                android:id="@+id/txt_q_134_4_1"
+                                android:id="@+id/txt_q_133_3_2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="134.4.1 Uri  "
-                                android:inputType="textPersonName"
-                                android:tag="D_263"
-                                android:textColorHint="#05ab9a"
-                                android:textSize="14dp" />
-                        </android.support.design.widget.TextInputLayout>
-
-                        <android.support.design.widget.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1">
-
-                            <EditText
-                                android:id="@+id/txt_q_134_4_2"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:ems="10"
-                                android:hint="134.4.2 Dami "
+                                android:hint="133.3.2 Gatasan (Ilan)"
                                 android:inputType="number"
-                                android:tag="D_264"
+                                android:tag="D_245"
                                 android:textColorHint="#05ab9a"
-                                android:textSize="14dp" />
+                                android:textSize="12sp" />
                         </android.support.design.widget.TextInputLayout>
 
-
-                    </LinearLayout>
-
-
-                    <!-- 4th row -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <android.support.design.widget.TextInputLayout
-                            android:layout_width="200dp"
-                            android:layout_height="match_parent">
-
-                            <EditText
-                                android:id="@+id/txt_q_134_5"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:ems="10"
-                                android:hint="134.5 Iba pa, itala "
-                                android:inputType="textPersonName"
-                                android:tag="D_265"
-                                android:textColorHint="#05ab9a"
-                                android:textSize="12dp" />
-                        </android.support.design.widget.TextInputLayout>
 
                         <android.support.design.widget.TextInputLayout
                             android:layout_width="match_parent"
@@ -638,37 +483,222 @@
                             android:layout_weight="1">
 
                             <EditText
-                                android:id="@+id/txt_q_134_5_1"
+                                android:id="@+id/txt_q_133_3_3"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="134.5.1 Uri  "
-                                android:inputType="textPersonName"
-                                android:tag="D_266"
-                                android:textColorHint="#05ab9a"
-                                android:textSize="14dp" />
-                        </android.support.design.widget.TextInputLayout>
-
-                        <android.support.design.widget.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1">
-
-                            <EditText
-                                android:id="@+id/txt_q_134_5_2"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:ems="10"
-                                android:hint="134.5.2 Dami "
+                                android:hint="133.3.3 Pangsaka (Ilan)"
                                 android:inputType="number"
-                                android:tag="D_267"
+                                android:tag="D_246"
                                 android:textColorHint="#05ab9a"
-                                android:textSize="14dp" />
+                                android:textSize="12sp" />
                         </android.support.design.widget.TextInputLayout>
 
 
-                    </LinearLayout>
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
 
+                            <EditText
+                                android:id="@+id/txt_q_133_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="133.4 Baka (Ilan)"
+                                android:inputType="number"
+                                android:tag="D_247"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_q_133_4_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="133.4.1 Karne (Ilan)"
+                                android:inputType="number"
+                                android:tag="D_248"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_q_133_4_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="133.4.2 Gatasan (Ilan)"
+                                android:inputType="number"
+                                android:tag="D_249"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_q_133_5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="133.5 Manok (Ilan)"
+                                android:inputType="number"
+                                android:tag="D_250"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_q_133_5_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="133.5.1 Layer (Ilan)"
+                                android:inputType="number"
+                                android:tag="D_251"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_q_133_5_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="133.5.2 Broiler (Ilan)"
+                                android:inputType="number"
+                                android:tag="D_252"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_q_133_6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="133.6 Pugo (Ilan)"
+                                android:inputType="number"
+                                android:tag="D_253"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_q_133_7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="133.7 Itik/Bibe  (Ilan)"
+                                android:inputType="number"
+                                android:tag="D_254"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_q_133_8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="133.8 Tupa (Ilan)"
+                                android:inputType="number"
+                                android:tag="D_255"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <EditText
+                                    android:id="@+id/txt_q_133_9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:hint="133.9 Iba pang hayop, itala"
+                                    android:inputType="textPersonName"
+                                    android:tag="D_256"
+                                    android:textColorHint="#05ab9a"
+                                    android:textSize="12sp" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <EditText
+                                    android:id="@+id/txt_q_ibapa_133_9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:hint="133.9 Ilan"
+                                    android:inputType="textPersonName"
+                                    android:tag="D_268"
+                                    android:textColorHint="#05ab9a"
+                                    android:textSize="12sp" />
+                            </android.support.design.widget.TextInputLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
