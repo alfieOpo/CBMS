@@ -446,18 +446,33 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
 
     }
 
-    public int getGA_1ST89(String M_ID) {
+    public double getGA_1ST92(String M_ID) {
         SQLiteDatabase db = this.getReadableDatabase();
-        String Sql = "select D_095 from mcbms where _id=" + M_ID;
+        String Sql = "select D_092 from mcbms where _id=" + M_ID;
         Cursor cursor = db.rawQuery(Sql, null);
         try {
             if (cursor.moveToFirst()) {
-                return Integer.valueOf(cursor.getString(0));
+                return Double.valueOf(cursor.getString(0).replace(",",""));
             }
         } catch (Exception xx) {
             return 0;
         }
         return 0;
+
+    }
+
+    public boolean _120OO(String M_ID) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        String Sql = "select D_220 from mcbms where _id=" + M_ID;
+        Cursor cursor = db.rawQuery(Sql, null);
+        try {
+            if (cursor.moveToFirst()) {
+                return cursor.getString(0).equals("Oo");
+            }
+        } catch (Exception xx) {
+            return false;
+        }
+        return false;
 
     }
 

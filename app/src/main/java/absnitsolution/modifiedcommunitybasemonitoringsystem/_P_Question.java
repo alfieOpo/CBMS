@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 
 import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
 
@@ -26,8 +27,9 @@ public class _P_Question extends Fragment {
 
     MainDataBaseHandler da;
     ImageButton btn_back, btn_next;
-    MaterialBetterSpinner cbo_converter;
-EditText txt_equals,txt_p_121;
+    MaterialBetterSpinner cbo_converter,cbo_nag_sasaka,cbo_p_120;
+    EditText txt_equals,txt_p_121,txt_p_120;
+    LinearLayout layout;
     public _P_Question() {
     }
 
@@ -41,12 +43,16 @@ EditText txt_equals,txt_p_121;
         btn_back = (ImageButton) view.findViewById(R.id.btn_back);
         btn_next = (ImageButton) view.findViewById(R.id.btn_next);
         this.cpar = new c_params(Config.ID, container, view);
-
+        layout=(LinearLayout)view.findViewById(R.id.layout);
         cbo_converter=(MaterialBetterSpinner)view.findViewById(R.id.cbo_converter);
+        cbo_nag_sasaka=(MaterialBetterSpinner)view.findViewById(R.id.cbo_nag_sasaka);
+        cbo_p_120=(MaterialBetterSpinner)view.findViewById(R.id.cbo_p_120);
         txt_equals=(EditText) view.findViewById(R.id.txt_equals);
         txt_p_121=(EditText) view.findViewById(R.id.txt_p_121);
+        txt_p_120=(EditText) view.findViewById(R.id.txt_p_120);
         this.cpar.setDropdown(R.id.cbo_p_120, R.array.p_katayuan_sinasaka, "N/A");
         this.cpar.setDropdown(R.id.cbo_converter, R.array.area, "square meter");
+        this.cpar.setDropdown(R.id.cbo_nag_sasaka, R.array.oo_hindi, "Select One");
         this.cpar.setEditText(R.id.txt_p_120);
         this.cpar.setEditText(R.id.txt_equals);
         this.cpar.setEditText(R.id.txt_p_121_1);
@@ -72,6 +78,32 @@ EditText txt_equals,txt_p_121;
                 else if(position ==1){
                     double value=(mainvalue * 10000);
                     txt_equals.setText(Config.toCurrency(value));
+                }
+            }
+        });
+
+        cbo_nag_sasaka.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(position==1){
+                    layout.setVisibility(View.INVISIBLE);
+                }
+                else {
+                    layout.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
+        cbo_p_120.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(position==5){
+                    txt_p_120.setVisibility(View.VISIBLE);
+
+                }
+                else{
+                    txt_p_120.setVisibility(View.INVISIBLE);
+                    txt_p_120.setText("");
                 }
             }
         });

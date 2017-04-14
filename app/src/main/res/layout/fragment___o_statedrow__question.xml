@@ -46,6 +46,7 @@
                                 android:inputType="textPersonName"
                                 android:tag="o_001"
                                 android:textColorHint="#05ab9a"
+
                                 android:textSize="14dp" />
                         </android.support.design.widget.TextInputLayout>
 
@@ -62,6 +63,8 @@
                                 android:hint="(106a) Sa sweldo"
                                 android:inputType="numberDecimal"
                                 android:tag="o_002"
+                                android:textAlignment="gravity"
+                                android:gravity="right"
                                 android:textColorHint="#05ab9a"
                                 android:textSize="14dp" />
                         </android.support.design.widget.TextInputLayout>
@@ -77,8 +80,10 @@
                                 android:layout_height="wrap_content"
                                 android:ems="10"
                                 android:hint="(106b) Sa bagay"
-                                android:inputType="textPersonName"
+                                android:inputType="numberDecimal"
                                 android:tag="o_003"
+                                android:textAlignment="gravity"
+                                android:gravity="right"
                                 android:textColorHint="#05ab9a"
                                 android:textSize="14dp" />
                         </android.support.design.widget.TextInputLayout>

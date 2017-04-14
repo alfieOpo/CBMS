@@ -62,7 +62,7 @@ public class _N_Question extends Fragment {
         //-----------------
         txt_n_ibapa_gamit= (EditText) view.findViewById(R.id.txt_n_ibapa_gamit);
         chk_n_ibapa_gamit=(CheckBox)view.findViewById(R.id.chk_n_ibapa_gamit);
-
+        //-----------------------------------
         txt_n_ibapa_85= (EditText) view.findViewById(R.id.txt_n_ibapa_85);
         txt_n_86 = (EditText) view.findViewById(R.id.txt_n_86);
         this.cpar.setDropdown(R.id.cbo_n_85, R.array.n_katayuan, "Select One");
@@ -108,6 +108,28 @@ public class _N_Question extends Fragment {
         this.cpar.setCheckBox(R.id.chk_n_92_5);
         this.cpar.setCheckBox(R.id.chk_n_92_6);
         this.cpar.setEditText(R.id.txt_n_ibapa_94);
+
+        if(!txt_n_86.getText().toString().equals("")){
+            try{
+
+                double value=Double.parseDouble(txt_n_86.getText().toString());
+                txt_n_86.setText(Config.toCurrency(value));
+
+            }catch (Exception xx){
+
+            }
+        }
+        if(!txt_n_89.getText().toString().equals("")){
+            try{
+
+                double value=Double.parseDouble(txt_n_89.getText().toString());
+                txt_n_89.setText(Config.toCurrency(value));
+
+            }catch (Exception xx){
+
+            }
+        }
+
 
         cbo_n_88.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

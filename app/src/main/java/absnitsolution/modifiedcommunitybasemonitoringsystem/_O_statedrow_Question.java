@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 
 
 /**
@@ -15,6 +16,7 @@ import android.widget.ArrayAdapter;
 public class _O_statedrow_Question extends Fragment {
     c_params cpar;
     String _key = "";
+    EditText txt_o_b_pangalan,txt_o_b_106a,txt_o_b_106b;
     MainDataBaseHandler da;
 
     public _O_statedrow_Question() {
@@ -34,7 +36,28 @@ public class _O_statedrow_Question extends Fragment {
         this.cpar.setEditText(R.id.txt_o_b_pangalan);
         this.cpar.setEditText(R.id.txt_o_b_106a);
         this.cpar.setEditText(R.id.txt_o_b_106b);
+        txt_o_b_pangalan=(EditText)view.findViewById(R.id.txt_o_b_pangalan);
+        txt_o_b_106a=(EditText)view.findViewById(R.id.txt_o_b_106a);
+        txt_o_b_106b=(EditText)view.findViewById(R.id.txt_o_b_106b);
+        txt_o_b_pangalan.setSelectAllOnFocus(true);
 
+        if(!txt_o_b_106a.getText().toString().equals("")){
+            try{
+                double value=Double.valueOf(txt_o_b_106a.getText().toString());
+                txt_o_b_106a.setText(Config.toCurrency(value));
+            }catch (Exception xx)
+            {
+            }
+        }
+
+        if(!txt_o_b_106b.getText().toString().equals("")){
+            try{
+                double value=Double.valueOf(txt_o_b_106b.getText().toString());
+                txt_o_b_106b.setText(Config.toCurrency(value));
+            }catch (Exception xx)
+            {
+            }
+        }
 
         return view;
 
