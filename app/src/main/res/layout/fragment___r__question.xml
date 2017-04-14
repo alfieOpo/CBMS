@@ -221,7 +221,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="Iba pa, itala"
+                                android:hint=""
                                 android:inputType="textPersonName"
                                 android:tag="D_281"
                                 android:textColorHint="#05ab9a"
@@ -265,7 +265,7 @@
                                 android:layout_height="wrap_content"
                                 android:ems="10"
                                 android:hint="138.1 Tilapia  "
-                                android:inputType="textPersonName"
+                                android:inputType="number"
                                 android:tag="D_282"
                                 android:textColorHint="#05ab9a"
                                 android:textSize="12sp" />
@@ -283,7 +283,7 @@
                                 android:layout_height="wrap_content"
                                 android:ems="10"
                                 android:hint="138.2 Hito  "
-                                android:inputType="textPersonName"
+                                android:inputType="number"
                                 android:tag="D_283"
                                 android:textColorHint="#05ab9a"
                                 android:textSize="12sp" />
@@ -301,7 +301,7 @@
                                 android:layout_height="wrap_content"
                                 android:ems="10"
                                 android:hint="138.3 Bulig/Dalag  "
-                                android:inputType="textPersonName"
+                                android:inputType="number"
                                 android:tag="D_284"
                                 android:textColorHint="#05ab9a"
                                 android:textSize="12sp" />
@@ -319,7 +319,7 @@
                                 android:layout_height="wrap_content"
                                 android:ems="10"
                                 android:hint="138.4 Karpa "
-                                android:inputType="textPersonName"
+                                android:inputType="number"
                                 android:tag="D_285"
                                 android:textColorHint="#05ab9a"
                                 android:textSize="12sp" />
@@ -337,7 +337,7 @@
                                 android:layout_height="wrap_content"
                                 android:ems="10"
                                 android:hint="138.5 Pangasius  "
-                                android:inputType="textPersonName"
+                                android:inputType="number"
                                 android:tag="D_286"
                                 android:textColorHint="#05ab9a"
                                 android:textSize="12sp" />
@@ -379,7 +379,7 @@
                                     android:layout_height="wrap_content"
                                     android:ems="10"
                                     android:hint="138.6 Kilograms"
-                                    android:inputType="textPersonName"
+                                    android:inputType="number"
                                     android:tag="D_298"
                                     android:textColorHint="#05ab9a"
                                     android:textSize="12sp" />
@@ -399,7 +399,7 @@
                                 android:layout_height="wrap_content"
                                 android:ems="10"
                                 android:hint="138.7 Kabuuang dami"
-                                android:inputType="textPersonName"
+                                android:inputType="number"
                                 android:tag="D_288"
                                 android:textColorHint="#05ab9a"
                                 android:textSize="12sp" />
@@ -511,7 +511,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="Iba pa, itala"
+                                android:hint=""
                                 android:inputType="textPersonName"
                                 android:tag="D_297"
                                 android:textColorHint="#05ab9a"
