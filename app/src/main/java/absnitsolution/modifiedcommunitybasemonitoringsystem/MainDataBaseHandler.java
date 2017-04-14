@@ -1150,6 +1150,7 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
                 "_1st_071 TEXT," +
                 "_1st_072 TEXT," +
                 "_1st_073 TEXT," +
+                "_1st_074 TEXT," +
                 "IMEI TEXT," +
                 "IMSI TEXT," +
                 "AndroidID TEXT," +
@@ -1183,6 +1184,7 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
                 "_3rd_001 TEXT," +
                 "_3rd_002 TEXT," +
                 "_3rd_003 TEXT," +
+                "_3rd_004 TEXT," +
                 "_3rd_004 TEXT," +
                 "IMEI TEXT," +
                 "IMSI TEXT," +
