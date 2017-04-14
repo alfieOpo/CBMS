@@ -262,7 +262,7 @@ public class _O_Question extends Fragment {
         this.cpar.setCheckBox(R.id.chk_o_108);
         this.cpar.setCheckBox(R.id.chk_o_107);
 
-        this.cpar.setDropdown(R.id.cbo_o_106, R.array.ilan_wala, "Select One");
+        this.cpar.setDropdown(R.id.cbo_o_106, R.array.ilan_wala, "Wala");
         this.cpar.setCheckBox(R.id.chk_o_104);
         this.cpar.setCheckBox(R.id.chk_o_103);
         this.cpar.setCheckBox(R.id.chk_o_102);

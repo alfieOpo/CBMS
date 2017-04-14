@@ -588,7 +588,7 @@ public class _A_Question extends Fragment implements View.OnClickListener {
     private boolean Valid() {
 
         for (String value : list) {
-            if (value.equals("Select One") || value.equals("")) {
+            if (value.equals("N/A") || value.equals("")) {
                 return false;
             }
         }

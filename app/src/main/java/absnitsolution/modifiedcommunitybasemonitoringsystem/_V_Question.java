@@ -12,12 +12,15 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+
+import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
 
 
 /**
@@ -27,7 +30,7 @@ public class _V_Question extends Fragment {
 
 
     c_params cpar;
-
+    View view;
     MainDataBaseHandler da;
     ImageButton btn_back, btn_next;
     Button btn_philhealt_para_sa_mahirap,
@@ -54,7 +57,7 @@ public class _V_Question extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment___v__question, container, false);
+        view = inflater.inflate(R.layout.fragment___v__question, container, false);
 
         btn_back = (ImageButton) view.findViewById(R.id.btn_back);
         btn_next = (ImageButton) view.findViewById(R.id.btn_next);
@@ -63,54 +66,54 @@ public class _V_Question extends Fragment {
         this.cpar = new c_params(Config.ID, container, view);
 
 
-        this.cpar.setDropdown(R.id.cbo_v_147, R.array.oo_hindi, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_148_month, R.array.month, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_148_day, R.array.day, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_148_year, R.array.year, "Select One");
+        this.cpar.setDropdown(R.id.cbo_v_147, R.array.oo_hindi, "Hindi");
+        this.cpar.setDropdown(R.id.cbo_v_148_month, R.array.month, "N/A");
+        this.cpar.setDropdown(R.id.cbo_v_148_day, R.array.day, "N/A");
+        this.cpar.setDropdown(R.id.cbo_v_148_year, R.array.year, "N/A");
 
-        this.cpar.setDropdown(R.id.cbo_v_173_1_1, R.array.oo_hindi, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_173_2_1, R.array.oo_hindi, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_173_3_1, R.array.oo_hindi, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_173_4_1, R.array.oo_hindi, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_173_5_1, R.array.oo_hindi, "Select One");
+        this.cpar.setDropdown(R.id.cbo_v_173_1_1, R.array.oo_hindi, "Hindi");
+        this.cpar.setDropdown(R.id.cbo_v_173_2_1, R.array.oo_hindi, "Hindi");
+        this.cpar.setDropdown(R.id.cbo_v_173_3_1, R.array.oo_hindi, "Hindi");
+        this.cpar.setDropdown(R.id.cbo_v_173_4_1, R.array.oo_hindi, "Hindi");
+        this.cpar.setDropdown(R.id.cbo_v_173_5_1, R.array.oo_hindi, "Hindi");
 
-        this.cpar.setDropdown(R.id.cbo_v_150_1, R.array.v_privateorg, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_150_2, R.array.v_privateorg, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_150_3, R.array.v_privateorg, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_150_4, R.array.v_privateorg, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_150_5, R.array.v_privateorg, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_150_6, R.array.v_privateorg, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_150_7, R.array.v_privateorg, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_150_8, R.array.v_privateorg, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_150_9, R.array.v_privateorg, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_150_10, R.array.v_privateorg, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_150_11, R.array.v_privateorg, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_150_12, R.array.v_privateorg, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_150_13, R.array.v_privateorg, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_150_14, R.array.v_privateorg, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_150_15, R.array.v_privateorg, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_150_16, R.array.v_privateorg, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_150_17, R.array.v_privateorg, "Select One");
+        this.cpar.setDropdown(R.id.cbo_v_150_1, R.array.v_privateorg, "N/A");
+        this.cpar.setDropdown(R.id.cbo_v_150_2, R.array.v_privateorg, "N/A");
+        this.cpar.setDropdown(R.id.cbo_v_150_3, R.array.v_privateorg, "N/A");
+        this.cpar.setDropdown(R.id.cbo_v_150_4, R.array.v_privateorg, "N/A");
+        this.cpar.setDropdown(R.id.cbo_v_150_5, R.array.v_privateorg, "N/A");
+        this.cpar.setDropdown(R.id.cbo_v_150_6, R.array.v_privateorg, "N/A");
+        this.cpar.setDropdown(R.id.cbo_v_150_7, R.array.v_privateorg, "N/A");
+        this.cpar.setDropdown(R.id.cbo_v_150_8, R.array.v_privateorg, "N/A");
+        this.cpar.setDropdown(R.id.cbo_v_150_9, R.array.v_privateorg, "N/A");
+        this.cpar.setDropdown(R.id.cbo_v_150_10, R.array.v_privateorg, "N/A");
+        this.cpar.setDropdown(R.id.cbo_v_150_11, R.array.v_privateorg,"N/A");
+        this.cpar.setDropdown(R.id.cbo_v_150_12, R.array.v_privateorg,"N/A");
+        this.cpar.setDropdown(R.id.cbo_v_150_13, R.array.v_privateorg,"N/A");
+        this.cpar.setDropdown(R.id.cbo_v_150_14, R.array.v_privateorg,"N/A");
+        this.cpar.setDropdown(R.id.cbo_v_150_15, R.array.v_privateorg,"N/A");
+        this.cpar.setDropdown(R.id.cbo_v_150_16, R.array.v_privateorg,"N/A");
+        this.cpar.setDropdown(R.id.cbo_v_150_17, R.array.v_privateorg,"N/A");
 
-        this.cpar.setDropdown(R.id.cbo_v_152_1, R.array.v_epekto, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_152_2, R.array.v_epekto, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_152_3, R.array.v_epekto, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_152_4, R.array.v_epekto, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_152_5, R.array.v_epekto, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_152_6, R.array.v_epekto, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_152_7, R.array.v_epekto, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_152_8, R.array.v_epekto, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_152_9, R.array.v_epekto, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_152_10, R.array.v_epekto, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_152_11, R.array.v_epekto, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_152_12, R.array.v_epekto, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_152_13, R.array.v_epekto, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_152_14, R.array.v_epekto, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_152_15, R.array.v_epekto, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_152_16, R.array.v_epekto, "Select One");
-        this.cpar.setDropdown(R.id.cbo_v_152_17, R.array.v_epekto, "Select One");
+        this.cpar.setDropdown(R.id.cbo_v_152_1, R.array.v_epekto, "N/A");
+        this.cpar.setDropdown(R.id.cbo_v_152_2, R.array.v_epekto, "N/A");
+        this.cpar.setDropdown(R.id.cbo_v_152_3, R.array.v_epekto, "N/A");
+        this.cpar.setDropdown(R.id.cbo_v_152_4, R.array.v_epekto, "N/A");
+        this.cpar.setDropdown(R.id.cbo_v_152_5, R.array.v_epekto, "N/A");
+        this.cpar.setDropdown(R.id.cbo_v_152_6, R.array.v_epekto, "N/A");
+        this.cpar.setDropdown(R.id.cbo_v_152_7, R.array.v_epekto, "N/A");
+        this.cpar.setDropdown(R.id.cbo_v_152_8, R.array.v_epekto, "N/A");
+        this.cpar.setDropdown(R.id.cbo_v_152_9, R.array.v_epekto, "N/A");
+        this.cpar.setDropdown(R.id.cbo_v_152_10, R.array.v_epekto, "N/A");
+        this.cpar.setDropdown(R.id.cbo_v_152_11, R.array.v_epekto, "N/A");
+        this.cpar.setDropdown(R.id.cbo_v_152_12, R.array.v_epekto, "N/A");
+        this.cpar.setDropdown(R.id.cbo_v_152_13, R.array.v_epekto, "N/A");
+        this.cpar.setDropdown(R.id.cbo_v_152_14, R.array.v_epekto, "N/A");
+        this.cpar.setDropdown(R.id.cbo_v_152_15, R.array.v_epekto, "N/A");
+        this.cpar.setDropdown(R.id.cbo_v_152_16, R.array.v_epekto, "N/A");
+        this.cpar.setDropdown(R.id.cbo_v_152_17, R.array.v_epekto, "N/A");
         //  this.cpar.setCheckBox(R.id.chk_v_149);
-        this.cpar.setEditText(R.id.txt_v_149);
+
         this.cpar.setCheckBox(R.id.chk_v_149_1);
 
         this.cpar.setCheckBox(R.id.chk_v_149_2);
@@ -191,6 +194,32 @@ public class _V_Question extends Fragment {
         this.cpar.setEditText(R.id.txt_v_154_14);
         this.cpar.setEditText(R.id.txt_v_154_15);
         this.cpar.setEditText(R.id.txt_v_154_16);
+
+        checkBoxEnabled(R.id.chk_v_149_1 ,R.id.cbo_v_173_1_1);
+        checkBoxEnabled(R.id.chk_v_149_2 ,R.id.cbo_v_173_2_1);
+        checkBoxEnabled(R.id.chk_v_149_3 ,R.id.cbo_v_173_3_1);
+        checkBoxEnabled(R.id.chk_v_149_4 ,R.id.cbo_v_173_4_1);
+        checkBoxEnabled(R.id.chk_v_149_5 ,R.id.cbo_v_173_5_1);
+
+        IbaPangItala(R.id.cbo_v_150_1 ,R.id.txt_v_ibapa_150_1);
+        IbaPangItala(R.id.cbo_v_150_2 ,R.id.txt_v_ibapa_150_2);
+        IbaPangItala(R.id.cbo_v_150_3 ,R.id.txt_v_ibapa_150_3);
+        IbaPangItala(R.id.cbo_v_150_4 ,R.id.txt_v_ibapa_150_4);
+        IbaPangItala(R.id.cbo_v_150_5 ,R.id.txt_v_ibapa_150_5);
+        IbaPangItala(R.id.cbo_v_150_6 ,R.id.txt_v_ibapa_150_6);
+        IbaPangItala(R.id.cbo_v_150_7 ,R.id.txt_v_ibapa_150_7);
+        IbaPangItala(R.id.cbo_v_150_8 ,R.id.txt_v_ibapa_150_8);
+        IbaPangItala(R.id.cbo_v_150_9 ,R.id.txt_v_ibapa_150_9);
+        IbaPangItala(R.id.cbo_v_150_10 ,R.id.txt_v_ibapa_150_10);
+
+        IbaPangItala(R.id.cbo_v_150_11 ,R.id.txt_v_ibapa_150_11);
+        IbaPangItala(R.id.cbo_v_150_12 ,R.id.txt_v_ibapa_150_12);
+        IbaPangItala(R.id.cbo_v_150_13 ,R.id.txt_v_ibapa_150_13);
+        IbaPangItala(R.id.cbo_v_150_14 ,R.id.txt_v_ibapa_150_14);
+        IbaPangItala(R.id.cbo_v_150_15 ,R.id.txt_v_ibapa_150_15);
+        IbaPangItala(R.id.cbo_v_150_16 ,R.id.txt_v_ibapa_150_16);
+        IbaPangItala(R.id.cbo_v_150_17 ,R.id.txt_v_150_17);
+
 
 
         btn_back.setOnClickListener(new View.OnClickListener() {
@@ -451,7 +480,7 @@ public class _V_Question extends Fragment {
         this.cpar.putDropdown(R.id.cbo_v_148_day);
         this.cpar.putDropdown(R.id.cbo_v_148_year);
         // this.cpar.putCheckBox(R.id.chk_v_149);
-        this.cpar.putEditText(R.id.txt_v_149);
+
         this.cpar.putCheckBox(R.id.chk_v_149_1);
         this.cpar.putDropdown(R.id.cbo_v_173_1_1);
         this.cpar.putCheckBox(R.id.chk_v_149_2);
@@ -565,7 +594,59 @@ public class _V_Question extends Fragment {
         da.c_Update(cpar);
         super.onDestroy();
     }
+    private void checkBoxEnabled(int _chk , int _txt2) {
+        final CheckBox chk = (CheckBox) view.findViewById(_chk);
+
+        final MaterialBetterSpinner cbobox = (MaterialBetterSpinner) view.findViewById(_txt2);
+        Boolean bool = chk.isChecked();
+        if(chk.isChecked()){
+            cbobox.setVisibility(View.VISIBLE);
+        }
+        else{
+            cbobox.setVisibility(View.INVISIBLE);
+        }
+
+        chk.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
 
+                if(isChecked){
+                    cbobox.setVisibility(View.VISIBLE);
+                }
+                else{
+                    cbobox.setVisibility(View.INVISIBLE);
+                    cbobox.setText("Oo");
+                }
+            }
+        });
+    }
+
+    private void IbaPangItala(int dropdown , int _txt2) {
+        final MaterialBetterSpinner box = (MaterialBetterSpinner) view.findViewById(dropdown);
+
+        final EditText txt = (EditText) view.findViewById(_txt2);
+        if(box.getText().toString().equals("Iba pa, itala")||box.getText().toString().equals("150.17. Iba pang programa, itala")){
+            txt.setVisibility(View.VISIBLE);
+        }
+        else{
+            txt.setVisibility(View.INVISIBLE);
+            txt.setText("");
+        }
+        box.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(position==7){
+                    txt.setVisibility(View.VISIBLE);
+                }
+                else{
+                    txt.setVisibility(View.INVISIBLE);
+                    txt.setText("");
+                }
+            }
+        });
+
+
+    }
 }
 

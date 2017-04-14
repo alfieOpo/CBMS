@@ -25,8 +25,16 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="10dp">
 
+
+                    <TextView
+                        android:id="@+id/textView79"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:text="V. PROGRAMA" />
 
                     <TextView
                         android:id="@+id/textView46"
@@ -103,25 +111,6 @@
                         android:layout_centerHorizontal="true"
                         android:text="149. Noong nakaraang labing-dalawang buwan, mayroon bang miyembro ng pamilya na nakibahagi o nakatanggap ng mga sumusunod na programa?"
                         android:textSize="16dp" />
-
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <EditText
-                            android:id="@+id/txt_v_149"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:ems="10"
-                            android:hint="Ilagay ang pangalan"
-                            android:inputType="textPersonName"
-                            android:tag="D_445"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="12sp" />
-
-                    </android.support.design.widget.TextInputLayout>
 
 
                     <CheckBox
@@ -413,7 +402,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:ems="10"
-                            android:hint="Iba pa, itala"
                             android:inputType="textPersonName"
                             android:tag="D_556"
                             android:textColorHint="#05ab9a"
@@ -442,7 +430,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:ems="10"
-                            android:hint="Iba pa, itala"
                             android:inputType="textPersonName"
                             android:tag="D_557"
                             android:textColorHint="#05ab9a"
@@ -477,7 +464,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:ems="10"
-                            android:hint="Iba pa, itala"
+
                             android:inputType="textPersonName"
                             android:tag="D_558"
                             android:textColorHint="#05ab9a"
@@ -512,7 +499,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:ems="10"
-                            android:hint="Iba pa, itala"
+
                             android:inputType="textPersonName"
                             android:tag="D_559"
                             android:textColorHint="#05ab9a"
@@ -548,7 +535,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:ems="10"
-                            android:hint="Iba pa, itala"
+
                             android:inputType="textPersonName"
                             android:tag="D_560"
                             android:textColorHint="#05ab9a"
@@ -578,7 +565,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:ems="10"
-                            android:hint="Iba pa, itala"
+
                             android:inputType="textPersonName"
                             android:tag="D_561"
                             android:textColorHint="#05ab9a"
@@ -607,7 +594,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:ems="10"
-                            android:hint="Iba pa, itala"
+
                             android:inputType="textPersonName"
                             android:tag="D_562"
                             android:textColorHint="#05ab9a"
@@ -637,7 +624,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:ems="10"
-                            android:hint="Iba pa, itala"
+
                             android:inputType="textPersonName"
                             android:tag="D_563"
                             android:textColorHint="#05ab9a"
@@ -667,7 +654,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:ems="10"
-                            android:hint="Iba pa, itala"
+
                             android:inputType="textPersonName"
                             android:tag="D_564"
                             android:textColorHint="#05ab9a"
@@ -697,7 +684,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:ems="10"
-                            android:hint="Iba pa, itala"
+
                             android:inputType="textPersonName"
                             android:tag="D_565"
                             android:textColorHint="#05ab9a"
@@ -726,7 +713,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:ems="10"
-                            android:hint="Iba pa, itala"
+
                             android:inputType="textPersonName"
                             android:tag="D_566"
                             android:textColorHint="#05ab9a"
@@ -755,7 +742,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:ems="10"
-                            android:hint="Iba pa, itala"
+
                             android:inputType="textPersonName"
                             android:tag="D_567"
                             android:textColorHint="#05ab9a"
@@ -785,7 +772,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:ems="10"
-                            android:hint="Iba pa, itala"
+
                             android:inputType="textPersonName"
                             android:tag="D_568"
                             android:textColorHint="#05ab9a"
@@ -815,7 +802,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:ems="10"
-                            android:hint="Iba pa, itala"
+
                             android:inputType="textPersonName"
                             android:tag="D_569"
                             android:textColorHint="#05ab9a"
@@ -845,7 +832,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:ems="10"
-                            android:hint="Iba pa, itala"
+
                             android:inputType="textPersonName"
                             android:tag="D_570"
                             android:textColorHint="#05ab9a"
@@ -875,7 +862,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:ems="10"
-                            android:hint="Iba pa, itala"
                             android:inputType="textPersonName"
                             android:tag="D_571"
                             android:textColorHint="#05ab9a"
@@ -893,7 +879,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:ems="10"
-                            android:hint="150.17. Iba pang programa, itala"
                             android:inputType="textPersonName"
                             android:tag="D_485"
                             android:textColorHint="#05ab9a"
@@ -922,7 +907,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:ems="10"
-                            android:hint="Iba pa, itala"
+
                             android:inputType="textPersonName"
                             android:tag="D_572"
                             android:textColorHint="#05ab9a"
