@@ -4,8 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context="absnitsolution.modifiedcommunitybasemonitoringsystem._V_Question">
+
+    <TextView
+        android:id="@+id/textView79"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:text="V. PROGRAMA" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -28,13 +35,6 @@
                     android:orientation="vertical"
                     android:padding="10dp">
 
-
-                    <TextView
-                        android:id="@+id/textView79"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingBottom="5dp"
-                        android:text="V. PROGRAMA" />
 
                     <TextView
                         android:id="@+id/textView46"
@@ -363,7 +363,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:ems="10"
-                            android:hint="Iba pang programa, itala"
                             android:inputType="textPersonName"
                             android:tag="D_468"
                             android:textColorHint="#05ab9a"
@@ -373,6 +372,7 @@
 
                     <TextView
 
+                        android:id="@+id/textView80"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
@@ -409,12 +409,17 @@
                     </android.support.design.widget.TextInputLayout>
 
 
+                    <TextView
+                        android:id="@+id/textView81"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="150.2. Programa na nagbibigay tulong medikal at pangkalusugan (Health assistance) " />
+
                     <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                         android:id="@+id/cbo_v_150_2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
-                        android:hint="150.2. Programa na nagbibigay tulong medikal at pangkalusugan (Health assistance) "
                         android:tag="D_470"
                         android:textColorHint="#05ab9a"
                         android:textSize="14dp"
@@ -543,12 +548,17 @@
                     </android.support.design.widget.TextInputLayout>
 
 
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="150.6. Programa na nagbibigay ng murang pabahay (Housing program)" />
+
                     <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                         android:id="@+id/cbo_v_150_6"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
-                        android:hint="150.6. Programa na nagbibigay ng murang pabahay (Housing program)"
                         android:tag="D_474"
                         android:textColorHint="#05ab9a"
                         android:textSize="14dp"
@@ -572,12 +582,20 @@
                             android:textSize="12sp" />
                     </android.support.design.widget.TextInputLayout>
 
+
+
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="150.7. Programa na nagpapautang o nagpapahiram ng puhunan (Credit program)" />
+
                     <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                         android:id="@+id/cbo_v_150_7"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
-                        android:hint="150.7. Programa na nagpapautang o nagpapahiram ng puhunan (Credit program)"
                         android:tag="D_475"
                         android:textColorHint="#05ab9a"
                         android:textSize="14dp"
@@ -602,12 +620,17 @@
                     </android.support.design.widget.TextInputLayout>
 
 
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="150.8. Pantawid Pamilyang Pilipino Program (4Ps)" />
+
                     <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                         android:id="@+id/cbo_v_150_8"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
-                        android:hint="150.8. Pantawid Pamilyang Pilipino Program (4Ps)"
                         android:tag="D_476"
                         android:textColorHint="#05ab9a"
                         android:textSize="14dp"
@@ -632,12 +655,17 @@
                     </android.support.design.widget.TextInputLayout>
 
 
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="150.9. Agrarian Reform Community Development Program (ARCDP)" />
+
                     <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                         android:id="@+id/cbo_v_150_9"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
-                        android:hint="150.9. Agrarian Reform Community Development Program (ARCDP)"
                         android:tag="D_477"
                         android:textColorHint="#05ab9a"
                         android:textSize="14dp"
@@ -662,12 +690,17 @@
                     </android.support.design.widget.TextInputLayout>
 
 
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="150.10. Training for Work Scholarship Program (TWSP)"/>
                     <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                         android:id="@+id/cbo_v_150_10"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
-                        android:hint="150.10. Training for Work Scholarship Program (TWSP)"
                         android:tag="D_478"
                         android:textColorHint="#05ab9a"
                         android:textSize="14dp"
@@ -691,13 +724,16 @@
                             android:textSize="12sp" />
                     </android.support.design.widget.TextInputLayout>
 
+                    <TextView
 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="150.11. Community - Based Employment Program (CBEP)"/>
                     <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                         android:id="@+id/cbo_v_150_11"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
-                        android:hint="150.11. Community - Based Employment Program (CBEP)"
                         android:tag="D_479"
                         android:textColorHint="#05ab9a"
                         android:textSize="14dp"
@@ -720,13 +756,16 @@
                             android:textSize="12sp" />
                     </android.support.design.widget.TextInputLayout>
 
+                    <TextView
 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="150.12. Philhealth – OFW"/>
                     <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                         android:id="@+id/cbo_v_150_12"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
-                        android:hint="150.12. Philhealth – OFW"
                         android:tag="D_480"
                         android:textColorHint="#05ab9a"
                         android:textSize="14dp"
@@ -749,7 +788,11 @@
                             android:textSize="12sp" />
                     </android.support.design.widget.TextInputLayout>
 
+                    <TextView
 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="150.13. Philhealth – Employed" />
                     <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                         android:id="@+id/cbo_v_150_13"
                         android:layout_width="match_parent"
@@ -779,13 +822,16 @@
                             android:textSize="12sp" />
                     </android.support.design.widget.TextInputLayout>
 
+                    <TextView
 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="150.14. Philhealth – Individually paying" />
                     <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                         android:id="@+id/cbo_v_150_14"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
-                        android:hint="150.14. Philhealth – Individually paying"
                         android:tag="D_482"
                         android:textColorHint="#05ab9a"
                         android:textSize="14dp"
@@ -809,13 +855,17 @@
                             android:textSize="12sp" />
                     </android.support.design.widget.TextInputLayout>
 
+                    <TextView
 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="150.15 Philhealth – Sponsored" />
                     <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                         android:id="@+id/cbo_v_150_15"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
-                        android:hint="150.15 Philhealth – Sponsored"
+
                         android:tag="D_483"
                         android:textColorHint="#05ab9a"
                         android:textSize="14dp"
@@ -839,13 +889,16 @@
                             android:textSize="12sp" />
                     </android.support.design.widget.TextInputLayout>
 
+                    <TextView
 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="150.16. Philhealth - Lifetime  "/>
                     <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                         android:id="@+id/cbo_v_150_16"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
-                        android:hint="150.16. Philhealth - Lifetime  "
                         android:tag="D_484"
                         android:textColorHint="#05ab9a"
                         android:textSize="14dp"
@@ -874,24 +927,19 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1">
 
-                        <EditText
-                            android:id="@+id/txt_v_150_17"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:ems="10"
-                            android:inputType="textPersonName"
-                            android:tag="D_485"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="12sp" />
                     </android.support.design.widget.TextInputLayout>
+                    <TextView
 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="150.17."/>
 
                     <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                         android:id="@+id/cbo_v_150_17"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
-                        android:hint="150.17."
+
                         android:tag="D_486"
                         android:textColorHint="#05ab9a"
                         android:textSize="14dp"
@@ -1250,26 +1298,36 @@
                         android:layout_centerHorizontal="true"
                         android:text="152. Paano mo iuuri ang epekto sa inyong pamilya?"
                         android:textSize="16dp" />
+                    <TextView
 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="152.1. Philhealth para sa mahihirap "
+                        />
 
                     <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                         android:id="@+id/cbo_v_152_1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
-                        android:hint="152.1. Philhealth para sa mahihirap "
+
                         android:tag="D_504"
                         android:textColorHint="#05ab9a"
                         android:textSize="14dp"
                         app:met_floatingLabel="highlight" />
+                    <TextView
 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="152.2. Programa na nagbibigay tulong medikal at pangkalusugan (Health assistance)"
+                        />
 
                     <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                         android:id="@+id/cbo_v_152_2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
-                        android:hint="152.2. Programa na nagbibigay tulong medikal at pangkalusugan (Health assistance)"
+
                         android:tag="D_505"
                         android:textColorHint="#05ab9a"
                         android:textSize="14dp"
@@ -1292,7 +1350,7 @@
                         app:met_floatingLabel="highlight" />
 
                     <TextView
-                        android:id="@+id/textView43"
+
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="152.4. Programa na nagbibigay ng tulong sa pagpapaaral (Education / scholarship program)" />
@@ -1324,134 +1382,197 @@
                         android:textSize="14dp"
                         app:met_floatingLabel="highlight" />
 
+                    <TextView
 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="152.6. Programa na nagbibigay ng murang pabahay (Housing program)" />
                     <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                         android:id="@+id/cbo_v_152_6"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
-                        android:hint="152.6. Programa na nagbibigay ng murang pabahay (Housing program)"
+
                         android:tag="D_509"
                         android:textColorHint="#05ab9a"
                         android:textSize="14dp"
                         app:met_floatingLabel="highlight" />
+                    <TextView
 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="152.7. Programa na nagpapautang o nagpapahiram ng puhunan (Credit program)" />
 
                     <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                         android:id="@+id/cbo_v_152_7"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
-                        android:hint="152.7. Programa na nagpapautang o nagpapahiram ng puhunan (Credit program)"
+
                         android:tag="D_510"
                         android:textColorHint="#05ab9a"
                         android:textSize="14dp"
                         app:met_floatingLabel="highlight" />
 
+                    <TextView
 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="152.8. Pantawid Pamilyang Pilipino Program (4Ps)" />
                     <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                         android:id="@+id/cbo_v_152_8"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
-                        android:hint="152.8. Pantawid Pamilyang Pilipino Program (4Ps)"
+
                         android:tag="D_511"
                         android:textColorHint="#05ab9a"
                         android:textSize="14dp"
                         app:met_floatingLabel="highlight" />
 
+                    <TextView
 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="152.9. Agrarian Reform Community Development Program (ARCDP)" />
                     <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                         android:id="@+id/cbo_v_152_9"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
-                        android:hint="152.9. Agrarian Reform Community Development Program (ARCDP)"
+
                         android:tag="D_512"
                         android:textColorHint="#05ab9a"
                         android:textSize="14dp"
                         app:met_floatingLabel="highlight" />
 
+                    <TextView
 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="152.10. Training for Work Scholarship Program (TWSP)" />
                     <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                         android:id="@+id/cbo_v_152_10"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
-                        android:hint="152.10. Training for Work Scholarship Program (TWSP)"
+
                         android:tag="D_513"
                         android:textColorHint="#05ab9a"
                         android:textSize="14dp"
                         app:met_floatingLabel="highlight" />
 
+                    <TextView
 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="152.11. Community - Based Employment Program (CBEP)" />
                     <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                         android:id="@+id/cbo_v_152_11"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
-                        android:hint="152.11. Community - Based Employment Program (CBEP)"
+
                         android:tag="D_514"
                         android:textColorHint="#05ab9a"
                         android:textSize="14dp"
                         app:met_floatingLabel="highlight" />
 
+                    <TextView
 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="152.12. Philhealth – OFW" />
                     <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                         android:id="@+id/cbo_v_152_12"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
-                        android:hint="152.12. Philhealth – OFW"
+
                         android:tag="D_515"
                         android:textColorHint="#05ab9a"
                         android:textSize="14dp"
                         app:met_floatingLabel="highlight" />
 
+                    <TextView
 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="152.13. Philhealth – Employed" />
                     <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                         android:id="@+id/cbo_v_152_13"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
-                        android:hint="152.13. Philhealth – Employed"
+
                         android:tag="D_516"
                         android:textColorHint="#05ab9a"
                         android:textSize="14dp"
                         app:met_floatingLabel="highlight" />
 
+                    <TextView
 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="152.14. Philhealth – Individually paying" />
                     <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                         android:id="@+id/cbo_v_152_14"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
-                        android:hint="152.14. Philhealth – Individually paying"
+
                         android:tag="D_517"
                         android:textColorHint="#05ab9a"
                         android:textSize="14dp"
                         app:met_floatingLabel="highlight" />
 
+                    <TextView
 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="152.15 Philhealth – Sponsored"
+                        />
                     <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                         android:id="@+id/cbo_v_152_15"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
-                        android:hint="152.15 Philhealth – Sponsored"
+
                         android:tag="D_518"
                         android:textColorHint="#05ab9a"
                         android:textSize="14dp"
                         app:met_floatingLabel="highlight" />
 
+                    <TextView
 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="152.16. Philhealth - Lifetime "
+                        />
                     <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                         android:id="@+id/cbo_v_152_16"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
-                        android:hint="152.16. Philhealth - Lifetime  "
+
                         android:tag="D_519"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="152.17."
+                        />
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_v_152_17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+
+                        android:tag="D_521"
                         android:textColorHint="#05ab9a"
                         android:textSize="14dp"
                         app:met_floatingLabel="highlight" />
@@ -1473,19 +1594,6 @@
                             android:textColorHint="#05ab9a"
                             android:textSize="12sp" />
                     </android.support.design.widget.TextInputLayout>
-
-
-                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                        android:id="@+id/cbo_v_152_17"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:hint="152.17."
-                        android:tag="D_521"
-                        android:textColorHint="#05ab9a"
-                        android:textSize="14dp"
-                        app:met_floatingLabel="highlight" />
-
 
                     <TextView
 

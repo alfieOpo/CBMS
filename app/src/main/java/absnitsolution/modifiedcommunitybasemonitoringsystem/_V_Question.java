@@ -33,6 +33,7 @@ public class _V_Question extends Fragment {
     View view;
     MainDataBaseHandler da;
     ImageButton btn_back, btn_next;
+    CheckBox chk_v_149_17;
     Button btn_philhealt_para_sa_mahirap,
             btn_heilt_assistance,
             btn_suplemental_feeding,
@@ -49,6 +50,7 @@ public class _V_Question extends Fragment {
             btn_Employed,
             btn_Sponsored,
             btn_Lifetime;
+    EditText txt_v_149_17;
 
     public _V_Question() {
     }
@@ -61,7 +63,8 @@ public class _V_Question extends Fragment {
 
         btn_back = (ImageButton) view.findViewById(R.id.btn_back);
         btn_next = (ImageButton) view.findViewById(R.id.btn_next);
-
+        chk_v_149_17= (CheckBox) view.findViewById(R.id.chk_v_149_17);
+        txt_v_149_17= (EditText) view.findViewById(R.id.txt_v_149_17);
 
         this.cpar = new c_params(Config.ID, container, view);
 
@@ -138,7 +141,7 @@ public class _V_Question extends Fragment {
         this.cpar.setCheckBox(R.id.chk_v_149_17);
         this.cpar.setEditText(R.id.txt_v_149_17);
 
-        this.cpar.setEditText(R.id.txt_v_150_17);
+
 
         this.cpar.setEditText(R.id.txt_v_151_1);
         this.cpar.setEditText(R.id.txt_v_151_2);
@@ -218,10 +221,48 @@ public class _V_Question extends Fragment {
         IbaPangItala(R.id.cbo_v_150_14 ,R.id.txt_v_ibapa_150_14);
         IbaPangItala(R.id.cbo_v_150_15 ,R.id.txt_v_ibapa_150_15);
         IbaPangItala(R.id.cbo_v_150_16 ,R.id.txt_v_ibapa_150_16);
-        IbaPangItala(R.id.cbo_v_150_17 ,R.id.txt_v_150_17);
+        IbaPangItala(R.id.cbo_v_150_17 ,R.id.txt_v_ibapa_150_17);
+
+        ShowIFchecked(R.id.chk_v_149_1,R.id.cbo_v_173_1_1,R.id.cbo_v_150_1,R.id.cbo_v_152_1, R.id.txt_v_151_1,R.id.txt_v_153_1,R.id.txt_v_154_1);
+        ShowIFchecked(R.id.chk_v_149_2,R.id.cbo_v_173_2_1,R.id.cbo_v_150_2,R.id.cbo_v_152_2, R.id.txt_v_151_2,R.id.txt_v_153_2,R.id.txt_v_154_2);
+        ShowIFchecked(R.id.chk_v_149_3,R.id.cbo_v_173_3_1,R.id.cbo_v_150_3,R.id.cbo_v_152_3, R.id.txt_v_151_3,R.id.txt_v_153_3,R.id.txt_v_154_3);
+        ShowIFchecked(R.id.chk_v_149_4,R.id.cbo_v_173_4_1,R.id.cbo_v_150_4,R.id.cbo_v_152_4, R.id.txt_v_151_4,R.id.txt_v_153_4,R.id.txt_v_154_4);
+        ShowIFchecked(R.id.chk_v_149_5,R.id.cbo_v_173_5_1,R.id.cbo_v_150_5,R.id.cbo_v_152_5, R.id.txt_v_151_5,R.id.txt_v_153_5,R.id.txt_v_154_5);
 
 
+        ShowIFchecked(R.id.chk_v_149_6,R.id.cbo_v_150_5,R.id.cbo_v_152_5, R.id.txt_v_151_5,R.id.txt_v_153_5,R.id.txt_v_154_5);
+        ShowIFchecked(R.id.chk_v_149_7,R.id.cbo_v_150_5,R.id.cbo_v_152_5, R.id.txt_v_151_5,R.id.txt_v_153_5,R.id.txt_v_154_5);
+        ShowIFchecked(R.id.chk_v_149_8,R.id.cbo_v_150_5,R.id.cbo_v_152_5, R.id.txt_v_151_5,R.id.txt_v_153_5,R.id.txt_v_154_5);
+        ShowIFchecked(R.id.chk_v_149_9,R.id.cbo_v_150_5,R.id.cbo_v_152_5, R.id.txt_v_151_5,R.id.txt_v_153_5,R.id.txt_v_154_5);
+        ShowIFchecked(R.id.chk_v_149_10,R.id.cbo_v_150_10,R.id.cbo_v_152_10, R.id.txt_v_151_10,R.id.txt_v_153_10,R.id.txt_v_154_10);
+        ShowIFchecked(R.id.chk_v_149_11,R.id.cbo_v_150_11,R.id.cbo_v_152_11, R.id.txt_v_151_11,R.id.txt_v_153_11,R.id.txt_v_154_11);
+        ShowIFchecked(R.id.chk_v_149_12,R.id.cbo_v_150_12,R.id.cbo_v_152_12, R.id.txt_v_151_12,R.id.txt_v_153_12,R.id.txt_v_154_12);
+        ShowIFchecked(R.id.chk_v_149_13,R.id.cbo_v_150_13,R.id.cbo_v_152_13, R.id.txt_v_151_13,R.id.txt_v_153_13,R.id.txt_v_154_13);
+        ShowIFchecked(R.id.chk_v_149_14,R.id.cbo_v_150_14,R.id.cbo_v_152_14, R.id.txt_v_151_14,R.id.txt_v_153_14,R.id.txt_v_154_14);
+        ShowIFchecked(R.id.chk_v_149_15,R.id.cbo_v_150_15,R.id.cbo_v_152_15, R.id.txt_v_151_15,R.id.txt_v_153_15,R.id.txt_v_154_15);
+        ShowIFchecked(R.id.chk_v_149_16,R.id.cbo_v_150_16,R.id.cbo_v_152_16, R.id.txt_v_151_16,R.id.txt_v_153_16,R.id.txt_v_154_16);
+        ShowIFchecked(R.id.chk_v_149_17,R.id.cbo_v_150_17,R.id.cbo_v_152_17, R.id.txt_v_151_17,R.id.txt_v_153_17);
 
+
+        if(chk_v_149_17.isChecked()){
+            txt_v_149_17.setVisibility(View.VISIBLE);
+        }
+        else{
+            txt_v_149_17.setVisibility(View.INVISIBLE);
+            txt_v_149_17.setText("");
+        }
+        chk_v_149_17.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    txt_v_149_17.setVisibility(View.VISIBLE);
+                }
+                else{
+                    txt_v_149_17.setVisibility(View.INVISIBLE);
+                    txt_v_149_17.setText("");
+                }
+            }
+        });
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -337,7 +378,6 @@ public class _V_Question extends Fragment {
             }
         });
 
-
         final EditText txt_v_154_14 = (EditText) view.findViewById(R.id.txt_v_154_14);
         btn_Individually_paying = (Button) view.findViewById(R.id.btn_Individually_paying);
         btn_Individually_paying.setOnClickListener(new View.OnClickListener() {
@@ -347,7 +387,6 @@ public class _V_Question extends Fragment {
             }
         });
 
-
         final EditText txt_v_154_10 = (EditText) view.findViewById(R.id.txt_v_154_10);
         btn_TWSP = (Button) view.findViewById(R.id.btn_TWSP);
         btn_TWSP.setOnClickListener(new View.OnClickListener() {
@@ -356,7 +395,6 @@ public class _V_Question extends Fragment {
                 showAlert(btn_TWSP.getTag().toString(), txt_v_154_10);
             }
         });
-
 
         final EditText txt_v_154_11 = (EditText) view.findViewById(R.id.txt_v_154_11);
         btn_CBEP = (Button) view.findViewById(R.id.btn_CBEP);
@@ -447,8 +485,6 @@ public class _V_Question extends Fragment {
                         da.UpdateGridData(_MainField, chk.getTag().toString(), Config.ID, ischeck);
                     }
                 });
-
-
                 chkboxholder.addView(chk);
                 cursor.moveToNext();
             } catch (Exception xx) {
@@ -520,7 +556,6 @@ public class _V_Question extends Fragment {
         this.cpar.putDropdown(R.id.cbo_v_150_14);
         this.cpar.putDropdown(R.id.cbo_v_150_15);
         this.cpar.putDropdown(R.id.cbo_v_150_16);
-        this.cpar.putEditText(R.id.txt_v_150_17);
         this.cpar.putDropdown(R.id.cbo_v_150_17);
         this.cpar.putEditText(R.id.txt_v_151_1);
         this.cpar.putEditText(R.id.txt_v_151_2);
@@ -646,6 +681,206 @@ public class _V_Question extends Fragment {
             }
         });
 
+
+    }
+
+
+
+
+    private void ShowIFchecked(int chk,int dropdown1,int dropdown2 ,int dropdown3 , int _txt1, int _txt2, int _txt3) {
+
+
+        final CheckBox check = (CheckBox) view.findViewById(chk);
+
+        final EditText txt1 = (EditText) view.findViewById(_txt1);
+        final EditText txt2 = (EditText) view.findViewById(_txt2);
+        final EditText txt3 = (EditText) view.findViewById(_txt3);
+
+
+        final MaterialBetterSpinner drop1 = (MaterialBetterSpinner) view.findViewById(dropdown1);
+        final MaterialBetterSpinner drop2 = (MaterialBetterSpinner) view.findViewById(dropdown2);
+        final MaterialBetterSpinner drop3 = (MaterialBetterSpinner) view.findViewById(dropdown3);
+
+
+
+        if(check.isChecked()){
+            txt1.setVisibility(View.VISIBLE);
+            txt2.setVisibility(View.VISIBLE);
+            txt3.setVisibility(View.VISIBLE);
+            drop1.setVisibility(View.VISIBLE);
+            drop2.setVisibility(View.VISIBLE);
+            drop3.setVisibility(View.VISIBLE);
+        }
+        else{
+            txt1.setVisibility(View.INVISIBLE);
+            txt1.setText("");
+            txt2.setVisibility(View.INVISIBLE);
+            txt2.setText("");
+            txt3.setVisibility(View.INVISIBLE);
+            txt3.setText("");
+            drop1.setVisibility(View.INVISIBLE);
+            drop1.setText("N/A");
+            drop2.setVisibility(View.INVISIBLE);
+            drop2.setText("N/A");
+            drop3.setVisibility(View.INVISIBLE);
+            drop3.setText("N/A");
+        }
+        check.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    txt1.setVisibility(View.VISIBLE);
+                    txt2.setVisibility(View.VISIBLE);
+                    txt3.setVisibility(View.VISIBLE);
+                    drop1.setVisibility(View.VISIBLE);
+                    drop2.setVisibility(View.VISIBLE);
+                    drop3.setVisibility(View.VISIBLE);
+                }
+                else{
+                    txt1.setVisibility(View.INVISIBLE);
+                    txt1.setText("");
+                    txt2.setVisibility(View.INVISIBLE);
+                    txt2.setText("");
+                    txt3.setVisibility(View.INVISIBLE);
+                    txt3.setText("");
+                    drop1.setVisibility(View.INVISIBLE);
+                    drop1.setText("N/A");
+                    drop2.setVisibility(View.INVISIBLE);
+                    drop2.setText("N/A");
+                    drop3.setVisibility(View.INVISIBLE);
+                    drop3.setText("N/A");
+                }
+            }
+        });
+
+    }
+
+    private void ShowIFchecked(int chk,int dropdown2 ,int dropdown3 , int _txt1, int _txt2, int _txt3) {
+
+
+        final CheckBox check = (CheckBox) view.findViewById(chk);
+
+        final EditText txt1 = (EditText) view.findViewById(_txt1);
+        final EditText txt2 = (EditText) view.findViewById(_txt2);
+        final EditText txt3 = (EditText) view.findViewById(_txt3);
+
+
+
+        final MaterialBetterSpinner drop2 = (MaterialBetterSpinner) view.findViewById(dropdown2);
+        final MaterialBetterSpinner drop3 = (MaterialBetterSpinner) view.findViewById(dropdown3);
+
+
+
+        if(check.isChecked()){
+            txt1.setVisibility(View.VISIBLE);
+            txt2.setVisibility(View.VISIBLE);
+            txt3.setVisibility(View.VISIBLE);
+
+            drop2.setVisibility(View.VISIBLE);
+            drop3.setVisibility(View.VISIBLE);
+        }
+        else{
+            txt1.setVisibility(View.INVISIBLE);
+            txt1.setText("");
+            txt2.setVisibility(View.INVISIBLE);
+            txt2.setText("");
+            txt3.setVisibility(View.INVISIBLE);
+            txt3.setText("");
+
+            drop2.setVisibility(View.INVISIBLE);
+            drop2.setText("N/A");
+            drop3.setVisibility(View.INVISIBLE);
+            drop3.setText("N/A");
+        }
+        check.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    txt1.setVisibility(View.VISIBLE);
+                    txt2.setVisibility(View.VISIBLE);
+                    txt3.setVisibility(View.VISIBLE);
+
+                    drop2.setVisibility(View.VISIBLE);
+                    drop3.setVisibility(View.VISIBLE);
+                }
+                else{
+                    txt1.setVisibility(View.INVISIBLE);
+                    txt1.setText("");
+                    txt2.setVisibility(View.INVISIBLE);
+                    txt2.setText("");
+                    txt3.setVisibility(View.INVISIBLE);
+                    txt3.setText("");
+
+                    drop2.setVisibility(View.INVISIBLE);
+                    drop2.setText("N/A");
+                    drop3.setVisibility(View.INVISIBLE);
+                    drop3.setText("N/A");
+                }
+            }
+        });
+
+    }
+
+    private void ShowIFchecked(int chk,int dropdown2 ,int dropdown3 , int _txt1, int _txt2) {
+
+
+        final CheckBox check = (CheckBox) view.findViewById(chk);
+
+        final EditText txt1 = (EditText) view.findViewById(_txt1);
+        final EditText txt2 = (EditText) view.findViewById(_txt2);
+
+
+
+
+        final MaterialBetterSpinner drop2 = (MaterialBetterSpinner) view.findViewById(dropdown2);
+        final MaterialBetterSpinner drop3 = (MaterialBetterSpinner) view.findViewById(dropdown3);
+
+
+
+        if(check.isChecked()){
+            txt1.setVisibility(View.VISIBLE);
+            txt2.setVisibility(View.VISIBLE);
+
+
+            drop2.setVisibility(View.VISIBLE);
+            drop3.setVisibility(View.VISIBLE);
+        }
+        else{
+            txt1.setVisibility(View.INVISIBLE);
+            txt1.setText("");
+            txt2.setVisibility(View.INVISIBLE);
+            txt2.setText("");
+
+
+            drop2.setVisibility(View.INVISIBLE);
+            drop2.setText("N/A");
+            drop3.setVisibility(View.INVISIBLE);
+            drop3.setText("N/A");
+        }
+        check.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    txt1.setVisibility(View.VISIBLE);
+                    txt2.setVisibility(View.VISIBLE);
+
+
+                    drop2.setVisibility(View.VISIBLE);
+                    drop3.setVisibility(View.VISIBLE);
+                }
+                else{
+                    txt1.setVisibility(View.INVISIBLE);
+                    txt1.setText("");
+                    txt2.setVisibility(View.INVISIBLE);
+                    txt2.setText("");
+
+                    drop2.setVisibility(View.INVISIBLE);
+                    drop2.setText("N/A");
+                    drop3.setVisibility(View.INVISIBLE);
+                    drop3.setText("N/A");
+                }
+            }
+        });
 
     }
 }
