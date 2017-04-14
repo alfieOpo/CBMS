@@ -50,6 +50,15 @@ public class _2ndstatedrow_Question extends Fragment {
         this.cpar.setEditText(R.id.txt_2nd_ibapa_dahilan);
 
         txt_2nd_pangalan.setSelectAllOnFocus(true);
+        if(cbo_2nd_relasyon.getText().toString().equals("Iba pang kamag-anak, itala")){
+            txt_2nd_ibapa_relasyon.setVisibility(View.VISIBLE);
+        }
+        else{
+            txt_2nd_ibapa_relasyon.setText("");
+            txt_2nd_ibapa_relasyon.setVisibility(View.INVISIBLE);
+        }
+
+
         cbo_2nd_relasyon.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -64,6 +73,14 @@ public class _2ndstatedrow_Question extends Fragment {
             }
         });
 
+
+        if(cbo_2nd_dahilan_wala.getText().toString().equals("Iba pa, itala")){
+            txt_2nd_ibapa_dahilan.setVisibility(View.VISIBLE);
+        }
+        else{
+            txt_2nd_ibapa_dahilan.setText("");
+            txt_2nd_ibapa_dahilan.setVisibility(View.INVISIBLE);
+        }
 
 
         cbo_2nd_dahilan_wala.setOnItemClickListener(new AdapterView.OnItemClickListener() {

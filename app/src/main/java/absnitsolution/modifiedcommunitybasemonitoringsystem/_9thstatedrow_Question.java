@@ -83,6 +83,8 @@ EditText txt_9th_69,txt_9th_71_9;
                 }
             }
         });
+
+
         if(!chk_9th_71_9.isChecked()){
             txt_9th_71_9.setText("");
             txt_9th_71_9.setVisibility(View.INVISIBLE);

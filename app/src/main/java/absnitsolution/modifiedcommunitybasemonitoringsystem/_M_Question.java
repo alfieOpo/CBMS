@@ -60,10 +60,17 @@ public class _M_Question extends Fragment {
 
         if(cbo_m_82.getText().toString().equals("Water District - Sariling Gamit")||cbo_m_82.getText().toString().equals("Posong De Motor - Sariling Gamit")){
             layout_83.setVisibility(View.INVISIBLE);//hide 83
+            txt_m_ibapa_82.setVisibility(View.VISIBLE);
         }
          else{
             layout_83.setVisibility(View.VISIBLE);
+            txt_m_ibapa_82.setText("");
+            txt_m_ibapa_82.setVisibility(View.INVISIBLE);
         }
+
+
+
+
         cbo_m_82.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -89,6 +96,17 @@ public class _M_Question extends Fragment {
                 }
             }
         });
+
+
+        if(cbo_m_84.getText().toString().equals("Iba pa, itala")){
+
+            txt_m_ibapa_84.setVisibility(View.VISIBLE);
+        }
+        else{
+            layout_83.setVisibility(View.VISIBLE);
+            txt_m_ibapa_84.setText("");
+            txt_m_ibapa_84.setVisibility(View.INVISIBLE);
+        }
         cbo_m_84.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

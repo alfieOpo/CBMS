@@ -379,7 +379,11 @@
                         android:layout_centerHorizontal="true"
                         android:text="150.  Sino ang namahala ng programang ito?"
                         android:textSize="16dp" />
+                    <TextView
 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="150.1. Philhealth para sa mahihirap  " />
 
                     <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                         android:id="@+id/cbo_v_150_1"
@@ -929,7 +933,7 @@
 
                     </android.support.design.widget.TextInputLayout>
                     <TextView
-
+                        android:id="@+id/lbl_150_17"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="150.17."/>
@@ -1561,7 +1565,7 @@
                         app:met_floatingLabel="highlight" />
 
                     <TextView
-
+                        android:id="@+id/lbl_152_17"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="152.17."

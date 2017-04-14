@@ -77,6 +77,7 @@ public class ListofPerson extends Fragment {
                     }
                     // Insert the fragment by replacing any existing fragment
                     FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                    getActivity().setTitle("MCBMS - MUNICIPALITY OF SANTA MARIA,BULACAN ");
                     fragmentManager.beginTransaction().replace(R.id.frame, fragment, "A. PAGKAKAKILANLAN").commit();
                 }
             });

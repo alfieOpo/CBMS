@@ -43,7 +43,7 @@ public class _10thstatedrow_Question extends Fragment {
 
         this.cpar.setDropdown(R.id.cbo_a_10th_75, R.array._1st_kasarian, "Select One");
         this.cpar.setDropdown(R.id.cbo_10th_77, R.array._10th_sanhingpagkamatay, "Select One");
-
+this.cpar.setEditText(R.id.txt_iba_pa);
         if(cbo_10th_77.getText().toString().equals("Iba pa, itala")){
             txt_iba_pa.setVisibility(View.VISIBLE);
         }
@@ -76,6 +76,7 @@ public class _10thstatedrow_Question extends Fragment {
         this.cpar.putDropdown(R.id.cbo_a_10th_75);
         this.cpar.putEditText(R.id.txt_10th_76);
         this.cpar.putDropdown(R.id.cbo_10th_77);
+        this.cpar.putEditText(R.id.txt_iba_pa);
         this.cpar.set_key(this._key);
         da.c_Update(this.cpar, "ga_10th");
         super.onDestroy();

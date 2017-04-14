@@ -4,8 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context="absnitsolution.modifiedcommunitybasemonitoringsystem._N_Question">
+
+    <TextView
+
+        android:id="@+id/textView43"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:text="N. TIRAHAN" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -33,12 +41,6 @@
                         android:layout_height="match_parent"
                         android:orientation="vertical">
 
-                        <TextView
-
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="N. TIRAHAN"
-                            android:paddingBottom="5dp"/>
                         <TextView
                             android:id="@+id/textView23"
                             android:layout_width="match_parent"
@@ -402,7 +404,6 @@
 
 
                     </LinearLayout>
-
 
 
                 </android.support.v7.widget.CardView>
