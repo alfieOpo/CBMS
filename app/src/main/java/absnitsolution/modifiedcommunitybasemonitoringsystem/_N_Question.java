@@ -65,13 +65,14 @@ public class _N_Question extends Fragment {
         //-----------------------------------
         txt_n_ibapa_85= (EditText) view.findViewById(R.id.txt_n_ibapa_85);
         txt_n_86 = (EditText) view.findViewById(R.id.txt_n_86);
-        this.cpar.setDropdown(R.id.cbo_n_85, R.array.n_katayuan, "Select One");
-        this.cpar.setDropdown(R.id.cbo_n_87, R.array.meron_wala, "Select One");
-        this.cpar.setDropdown(R.id.cbo_n_88, R.array.n_saangaling_kuryente, "Select One");
-        this.cpar.setDropdown(R.id.cbo_o_nakatirik, R.array.oo_hindi, "Select One");
-        this.cpar.setDropdown(R.id.cbo_oo_nakatirik, R.array.n_kungnakatirik, "Select One");
+        this.cpar.setDropdown(R.id.cbo_n_85, R.array.n_katayuan, "Pag-aari ang bahay at lupa");
+        this.cpar.setDropdown(R.id.cbo_n_87, R.array.meron_wala, "Mayroon");
+        this.cpar.setDropdown(R.id.cbo_n_88, R.array.n_saangaling_kuryente, "Meralco - Sarili");
+        this.cpar.setDropdown(R.id.cbo_o_nakatirik, R.array.oo_hindi, "Oo");
+        this.cpar.setDropdown(R.id.cbo_oo_nakatirik, R.array.n_kungnakatirik, "Binabahang lugar");
         if(cbo_oo_nakatirik.getText().toString().equals("Iba pa, Itala ___")){
             txt_n_ibapa_94.setVisibility(View.INVISIBLE);
+            txt_n_ibapa_94.setText("");
         }
         this.cpar.setEditText(R.id.txt_n_ibapa_85);
         this.cpar.setEditText(R.id.txt_n_86);
@@ -130,7 +131,15 @@ public class _N_Question extends Fragment {
             }
         }
 
+        if(cbo_n_88.getText().toString().equals("Iba pa, itala")){
 
+            txt_n_ibapa_88.setVisibility(View.VISIBLE);
+        }
+        else{
+
+            txt_n_ibapa_88.setText("");
+            txt_n_ibapa_88.setVisibility(View.INVISIBLE);
+        }
         cbo_n_88.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -143,6 +152,22 @@ public class _N_Question extends Fragment {
                 }
             }
         });
+
+
+
+        if(cbo_n_85.getText().toString().equals("Iba pa, (itala)")){
+
+            txt_n_ibapa_85.setVisibility(View.VISIBLE);
+            txt_n_86.setVisibility(View.VISIBLE);
+        }
+        else{
+
+            txt_n_ibapa_85.setText("");
+            txt_n_ibapa_85.setVisibility(View.INVISIBLE);
+            txt_n_86.setVisibility(View.INVISIBLE);
+            txt_n_86.setText("");
+        }
+
         cbo_n_85.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -193,6 +218,21 @@ public class _N_Question extends Fragment {
 
             }
         });
+
+
+
+
+        if(cbo_o_nakatirik.getText().toString().equals("Oo")){
+
+            cbo_oo_nakatirik.setVisibility(View.INVISIBLE);
+            txt_n_ibapa_94.setVisibility(View.INVISIBLE);
+            txt_n_ibapa_94.setText("");
+        }
+        else{
+
+            cbo_oo_nakatirik.setVisibility(View.VISIBLE);
+            txt_n_ibapa_94.setVisibility(View.VISIBLE);
+        }
         cbo_o_nakatirik.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

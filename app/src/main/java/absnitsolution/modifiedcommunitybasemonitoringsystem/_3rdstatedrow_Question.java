@@ -42,8 +42,9 @@ public class _3rdstatedrow_Question extends Fragment {
         this.cpar.setDropdown(R.id.cbo_3rd_relasyon, R.array._1st_relasyon, "Select One");
         this.cpar.setEditText(R.id.txt_3rd_saangbansa);
         this.cpar.setEditText(R.id.txt_3rd_hanapbuhay);
-
+        this.cpar.setEditText(R.id.txt_iba_pa);
         txt_3rd_pangalan.setSelectAllOnFocus(true);
+
 
 
         if(cbo_3rd_relasyon.getText().toString().equals("Iba pang hindi kamag-anak, itala")){
@@ -77,6 +78,7 @@ public class _3rdstatedrow_Question extends Fragment {
         this.cpar.putDropdown(R.id.cbo_3rd_relasyon);
         this.cpar.putEditText(R.id.txt_3rd_saangbansa);
         this.cpar.putEditText(R.id.txt_3rd_hanapbuhay);
+        this.cpar.putEditText(R.id.txt_iba_pa);
         this.cpar.set_key(this._key);
         da.c_Update(this.cpar, "ga_3rd");
         super.onDestroy();

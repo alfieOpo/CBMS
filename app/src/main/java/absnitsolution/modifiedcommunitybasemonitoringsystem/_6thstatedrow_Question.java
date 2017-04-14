@@ -40,6 +40,7 @@ MaterialBetterSpinner cbo_6th_mayseniorid;
         this.cpar.set_key(this._key);
         this.cpar.setDropdown(R.id.cbo_6th_mayseniorid, R.array.meron_wala, "Select One");
         this.cpar.setEditText(R.id.txt_6th_saannagagamitangid);
+        this.cpar.setEditText(R.id.txt_pangalan_ng_senior_citizen);
         this.cpar.setDropdown(R.id.cbo_6th_mayphilhealth, R.array.meron_wala, "Select One");
         txt_pangalan_ng_senior_citizen.setSelectAllOnFocus(true);
 
@@ -78,6 +79,7 @@ MaterialBetterSpinner cbo_6th_mayseniorid;
         this.cpar.putDropdown(R.id.cbo_6th_mayseniorid);
         this.cpar.putEditText(R.id.txt_6th_saannagagamitangid);
         this.cpar.putDropdown(R.id.cbo_6th_mayphilhealth);
+        this.cpar.putEditText(R.id.txt_pangalan_ng_senior_citizen);
         this.cpar.set_key(this._key);
         da.c_Update(this.cpar, "ga_6th");
         super.onDestroy();

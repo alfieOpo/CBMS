@@ -59,6 +59,7 @@ public class _5thstatedrow_Question extends Fragment {
         this.cpar.setCheckBox(R.id.chk_5th_nohands);
         this.cpar.setCheckBox(R.id.chk_5th_oneleg);
         this.cpar.setCheckBox(R.id.chk_5th_nolegs);
+        this.cpar.setCheckBox(R.id.chk_ibapa);
         this.cpar.setCheckBox(R.id.chk_5th_mildcelebralpalsy);
         this.cpar.setCheckBox(R.id.chk_5th_severecelebralpalsy);
         this.cpar.setCheckBox(R.id.chk_5th_regularlyintellectuallyimpaired);
@@ -69,6 +70,7 @@ public class _5thstatedrow_Question extends Fragment {
         this.cpar.setCheckBox(R.id.chk_5th_harelip);
         this.cpar.setCheckBox(R.id.chk_5th_clubfoot);
         this.cpar.setEditText(R.id.txt_5th_ibapa_kapansanan);
+        this.cpar.setEditText(R.id.txt_iba_itala);
         this.cpar.setDropdown(R.id.cbo_5th_sanhi_kapansanan, R.array._5th_sanhi_kapansanan, "Select One");
         this.cpar.setEditText(R.id.txt_5th_tulongnatanggap);
         this.cpar.setDropdown(R.id.cbo_5th_saangalingtulong, R.array._5th_saangaling_tulong, "Select One");
@@ -158,6 +160,7 @@ public class _5thstatedrow_Question extends Fragment {
         this.cpar.putCheckBox(R.id.chk_5th_nohands);
         this.cpar.putCheckBox(R.id.chk_5th_oneleg);
         this.cpar.putCheckBox(R.id.chk_5th_nolegs);
+        this.cpar.putCheckBox(R.id.chk_ibapa);
         this.cpar.putCheckBox(R.id.chk_5th_mildcelebralpalsy);
         this.cpar.putCheckBox(R.id.chk_5th_severecelebralpalsy);
         this.cpar.putCheckBox(R.id.chk_5th_regularlyintellectuallyimpaired);
@@ -170,6 +173,7 @@ public class _5thstatedrow_Question extends Fragment {
         this.cpar.putEditText(R.id.txt_5th_ibapa_kapansanan);
         this.cpar.putDropdown(R.id.cbo_5th_sanhi_kapansanan);
         this.cpar.putEditText(R.id.txt_5th_tulongnatanggap);
+        this.cpar.putEditText(R.id.txt_iba_itala);
         this.cpar.putDropdown(R.id.cbo_5th_saangalingtulong);
         this.cpar.putEditText(R.id.txt_5th_ibapa_saangaling);
         this.cpar.set_key(this._key);

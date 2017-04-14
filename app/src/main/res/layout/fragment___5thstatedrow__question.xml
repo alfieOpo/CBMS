@@ -4,8 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context="absnitsolution.modifiedcommunitybasemonitoringsystem._5thstatedrow_Question">
+
+    <TextView
+        android:id="@+id/textView73"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="I.B MGA KAPAMILYA NA MAY KAPANSANAN" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -31,13 +38,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/textView73"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="I.B MGA KAPAMILYA NA MAY KAPANSANAN" />
 
                         <android.support.design.widget.TextInputLayout
                             android:layout_width="match_parent"
@@ -306,6 +306,7 @@
                                 <CheckBox
                                     android:id="@+id/chk_ibapa"
                                     android:layout_width="match_parent"
+                                    android:tag="_5th_027"
                                     android:layout_height="wrap_content"
                                     android:text="Iba pa, Itala" />
 
@@ -349,7 +350,8 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:ems="10"
-                            android:inputType="textPersonName" />
+                            android:inputType="textPersonName"
+                            android:tag="_5th_029" />
 
                         <TextView
                             android:id="@+id/textView59"

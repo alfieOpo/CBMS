@@ -114,8 +114,20 @@ LinearLayout layout;
 
         this.cpar.setDropdown(R.id.cbo_a_ilan_nagpagamot, R.array.ilan, "Select One");
         this.cpar.setEditText(R.id.txt_j_ibapa_66);
-
-
+        this.cpar.setCheckBox(R.id.chk_Brgy_Health_Station_Center);
+        this.cpar.setCheckBox(R.id.chk_Public_hospital__National);
+        this.cpar.setCheckBox(R.id.chk_Private_Hospital_Clinic);
+        this.cpar.setCheckBox(R.id.chk_Bulacan_Medical_Center);
+        this.cpar.setCheckBox(R.id.chk_Santa_Maria_General__Hospital_RMMH);
+        this.cpar.setCheckBox(R.id.chk_Rural_Health_Units);
+        this.cpar.setCheckBox(R.id.chk_Brgy_Health_Station_Center);
+        this.cpar.setCheckBox(R.id.chk_Non_medical_non_trained_Hilot_Personnel);
+        this.cpar.setCheckBox(R.id.chk_ibapa_itala);
+        this.cpar.setCheckBox(R.id.chk_Dialysis);
+        this.cpar.setCheckBox(R.id.chk_Chemotherapy);
+        this.cpar.setCheckBox(R.id.chk_HIV_Treatment);
+        this.cpar.setCheckBox(R.id.chk_Pulmonary_Tubercolosis_PTB_Treatment);
+        this.cpar.setCheckBox(R.id.chk_ibapa2);
 
 
 //-----------------------------------------------------------------------------------------------------------------------------------------------
@@ -162,7 +174,20 @@ LinearLayout layout;
         this.cpar.putEditText(R.id.txt_j_ibapa_66);
         this.cpar.putDropdown(R.id.cbo_a_miyembro_nagpagamot);
         this.cpar.putDropdown(R.id.cbo_a_ilan_nagpagamot);
-
+        this.cpar.putCheckBox(R.id.chk_Brgy_Health_Station_Center);
+        this.cpar.putCheckBox(R.id.chk_Public_hospital__National);
+        this.cpar.putCheckBox(R.id.chk_Private_Hospital_Clinic);
+        this.cpar.putCheckBox(R.id.chk_Bulacan_Medical_Center);
+        this.cpar.putCheckBox(R.id.chk_Santa_Maria_General__Hospital_RMMH);
+        this.cpar.putCheckBox(R.id.chk_Rural_Health_Units);
+        this.cpar.putCheckBox(R.id.chk_Brgy_Health_Station_Center);
+        this.cpar.putCheckBox(R.id.chk_Non_medical_non_trained_Hilot_Personnel);
+        this.cpar.putCheckBox(R.id.chk_ibapa_itala);
+        this.cpar.putCheckBox(R.id.chk_Dialysis);
+        this.cpar.putCheckBox(R.id.chk_Chemotherapy);
+        this.cpar.putCheckBox(R.id.chk_HIV_Treatment);
+        this.cpar.putCheckBox(R.id.chk_Pulmonary_Tubercolosis_PTB_Treatment);
+        this.cpar.putCheckBox(R.id.chk_ibapa2);
         da.c_Update(cpar);
         super.onDestroy();
     }

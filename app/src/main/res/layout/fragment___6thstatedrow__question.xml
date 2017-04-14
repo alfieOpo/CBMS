@@ -47,7 +47,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="Pangalan ng Senior Citizen"
+                                android:hint="54. Ano ang kanyang pangalan"
                                 android:inputType="textPersonName"
                                 android:tag="_6th_001"
                                 android:textColorHint="#05ab9a"
