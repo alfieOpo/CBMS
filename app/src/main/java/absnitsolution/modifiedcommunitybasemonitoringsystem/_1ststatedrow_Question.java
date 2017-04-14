@@ -135,7 +135,7 @@ public class _1ststatedrow_Question extends Fragment {
         text_32 = (TextView) view.findViewById(R.id.text_32);
         text_33 = (TextView) view.findViewById(R.id.text_33);
 
-     //   txt_1st_miyembro.setSelectAllOnFocus(true);
+        txt_1st_miyembro.setSelectAllOnFocus(true);
 
 
 
@@ -705,9 +705,9 @@ public class _1ststatedrow_Question extends Fragment {
                  {
                     cpar.setDropdown(R.id.cbo_1st_kungnagaaral, R.array._1st_publiko_pribado, "Select One");
                     cbo_1st_kungnagaaral.setVisibility(View.INVISIBLE); // 14
+                    
                     cbo_1st_kunghindinagaaral.setVisibility(View.VISIBLE); // 15
-
-
+                    txt_1st_ibapa_hindinagaral.setVisibility(View.VISIBLE);
 
 
                 } else if (i == 2) // nakatapos na
@@ -718,6 +718,8 @@ public class _1ststatedrow_Question extends Fragment {
                     cpar.setDropdown(R.id.cbo_1st_kunghindinagaaral, R.array._1st_kung_hindinagaral, "Select One");
                     cbo_1st_kunghindinagaaral.setVisibility(View.INVISIBLE); // 15
 
+                    txt_1st_ibapa_hindinagaral.setVisibility(View.INVISIBLE);
+                    txt_1st_ibapa_hindinagaral.setText("");
                 }
                 else // oo
                 {                   
@@ -725,6 +727,8 @@ public class _1ststatedrow_Question extends Fragment {
                     cbo_1st_kunghindinagaaral.setVisibility(View.INVISIBLE); // 15
                     cpar.setDropdown(R.id.cbo_1st_kunghindinagaaral, R.array._1st_kung_hindinagaral, "Select One");
 
+                    txt_1st_ibapa_hindinagaral.setVisibility(View.INVISIBLE);
+                    txt_1st_ibapa_hindinagaral.setText("");
                 }
             }
         });
