@@ -4,8 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    tools:context="absnitsolution.modifiedcommunitybasemonitoringsystem._M_Question">
+    android:orientation="vertical"
+    tools:context="absnitsolution.modifiedcommunitybasemonitoringsystem._Q_Question">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="R. PAGHAHAYUPAN"
+                        android:textSize="16dp" />
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -26,14 +36,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentTop="true"
-                        android:layout_centerHorizontal="true"
-                        android:text="R. PAGHAHAYUPAN"
-                        android:textSize="16dp" />
 
 
                     <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
@@ -104,7 +106,7 @@
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
                                             android:ems="10"
-                                            android:hint="154.1.1 Uri  "
+                                            android:hint="134.1.1 Uri  "
                                             android:inputType="textPersonName"
                                             android:tag="D_257"
                                             android:textColorHint="#05ab9a"
@@ -689,7 +691,7 @@
                                     android:layout_height="wrap_content"
                                     android:ems="10"
                                     android:hint="133.9 Ilan"
-                                    android:inputType="textPersonName"
+                                    android:inputType="number"
                                     android:tag="D_268"
                                     android:textColorHint="#05ab9a"
                                     android:textSize="12sp" />

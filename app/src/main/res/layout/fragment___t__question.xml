@@ -4,34 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context="absnitsolution.modifiedcommunitybasemonitoringsystem._T_Question">
+
+
+    <TextView
+        android:id="@+id/textView78"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:text="U. MGA KALAMIDAD"
+        android:textSize="16sp" />
+
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
 
-                <android.support.v7.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    card_view:cardCornerRadius="4dp"
-                    card_view:contentPadding="10dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/textView47"
@@ -49,6 +49,29 @@
                             android:textSize="14dp"
                             app:met_floatingLabel="highlight" />
 
+        </LinearLayout>
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    card_view:cardCornerRadius="4dp"
+                    card_view:contentPadding="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/layout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
 
                         <TextView
                             android:id="@+id/text_o_1"
@@ -56,7 +79,7 @@
                             android:layout_height="wrap_content"
                             android:layout_alignParentTop="true"
                             android:layout_centerHorizontal="true"
-                            android:text="146. Ano ang mga kalamidad na sumalanta sa inyong pamilya? "
+                            android:text="146. Ano ang mga kalamidad na sumalanta sa inyong pamilya? (Ilagay kung ilang beses)"
                             android:textSize="16dp" />
 
 
@@ -226,7 +249,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="Iba pa, itala"
+                                android:hint=""
                                 android:inputType="textPersonName"
                                 android:tag="D_337"
                                 android:textColorHint="#05ab9a"
@@ -269,6 +292,7 @@
                     card_view:contentPadding="10dp">
 
                     <LinearLayout
+                        android:id="@+id/layout2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical">
@@ -307,7 +331,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="Iba pa, itala"
+                                android:hint=""
                                 android:inputType="textPersonName"
                                 android:tag="D_356"
                                 android:textColorHint="#05ab9a"

@@ -42,7 +42,7 @@ public class _Q_Question extends Fragment {
 
         this.cpar = new c_params(Config.ID, container, view);
 
-        this.cpar.setDropdown(R.id.cbo_q_133, R.array.oo_hindi, "Select One");
+        this.cpar.setDropdown(R.id.cbo_q_133, R.array.oo_hindi, "Oo");
         this.cpar.setEditText(R.id.txt_q_133_1);
         this.cpar.setEditText(R.id.txt_q_133_1_1);
         this.cpar.setEditText(R.id.txt_q_133_2);
@@ -122,6 +122,9 @@ public class _Q_Question extends Fragment {
 
     @Override
     public void onDestroy() {
+
+        da = new MainDataBaseHandler(getActivity().getApplicationContext());
+
         this.cpar.putEditText(R.id.txt_q_133_1);
         this.cpar.putEditText(R.id.txt_q_133_1_1);
         this.cpar.putEditText(R.id.txt_q_133_2);
@@ -152,7 +155,7 @@ public class _Q_Question extends Fragment {
         this.cpar.putEditText(R.id.txt_q_134_5_2);
         this.cpar.putDropdown(R.id.cbo_q_133);
 
-        
+        da.c_Update(cpar);
         super.onDestroy();
     }
 }

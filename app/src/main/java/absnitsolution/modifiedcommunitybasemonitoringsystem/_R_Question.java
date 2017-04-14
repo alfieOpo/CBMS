@@ -95,8 +95,8 @@ public class _R_Question extends Fragment {
 
         this.cpar = new c_params(Config.ID, container, view);
 
-        this.cpar.setDropdown(R.id.cbo_r_136, R.array.p_gaanokalawak, "Select One");
-        this.cpar.setDropdown(R.id.cbo_r_135, R.array.oo_hindi, "Select One");
+        this.cpar.setDropdown(R.id.cbo_r_136, R.array.p_gaanokalawak, "Mababa sa 1 hektarya");
+        this.cpar.setDropdown(R.id.cbo_r_135, R.array.oo_hindi, "Oo");
         this.cpar.setCheckBox(R.id.chk_r_135_1);
         this.cpar.setCheckBox(R.id.chk_r_135_2);
         this.cpar.setCheckBox(R.id.chk_r_135_3);

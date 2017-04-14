@@ -118,7 +118,7 @@ public class _L_Question extends Fragment {
         txt_l_81_4.setEnabled(false);
         txt_l_81_5.setEnabled(false);
 
-        this.cpar.setDropdown(R.id.cbo_l_78, R.array.oo_hindi, "Select One");
+        this.cpar.setDropdown(R.id.cbo_l_78, R.array.oo_hindi, "Oo");
      
         this.cpar.setEditText(R.id.txt_l_80_1);
         this.cpar.setEditText(R.id.txt_l_81_1);
@@ -139,6 +139,12 @@ public class _L_Question extends Fragment {
         this.cpar.setEditText(R.id.txt_l_80_6);
         this.cpar.setEditText(R.id.txt_l_81_6);
         this.cpar.setEditText(R.id.txt_l_79_6);
+
+        this.cpar.setCheckBox(R.id.chk_l_78_1);
+        this.cpar.setCheckBox(R.id.chk_l_78_2);
+        this.cpar.setCheckBox(R.id.chk_l_78_3);
+        this.cpar.setCheckBox(R.id.chk_l_78_4);
+        this.cpar.setCheckBox(R.id.chk_l_78_5);
 
 
 
@@ -369,6 +375,11 @@ public class _L_Question extends Fragment {
         this.cpar.putEditText(R.id.txt_l_79_6);
         this.cpar.putDropdown(R.id.cbo_l_78);
 
+        this.cpar.putCheckBox(R.id.chk_l_78_1);
+        this.cpar.putCheckBox(R.id.chk_l_78_2);
+        this.cpar.putCheckBox(R.id.chk_l_78_3);
+        this.cpar.putCheckBox(R.id.chk_l_78_4);
+        this.cpar.putCheckBox(R.id.chk_l_78_5);
 
         
         da.c_Update(cpar);

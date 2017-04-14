@@ -4,8 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context="absnitsolution.modifiedcommunitybasemonitoringsystem._S_Question">
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="T. PAMAMAHALA SA BASURA"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16dp" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -34,14 +43,14 @@
                         android:orientation="vertical">
 
 
+
                         <TextView
                             android:id="@+id/textView11"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:hint="141. Ano ang pamamaraan/sistema sa pamamahala sa basura ang ginagawa ng pamilya? "
                             android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textSize="16dp" />
-
+                            android:textSize="14dp" />
 
                         <CheckBox
                             android:id="@+id/chk_s_141_1"
@@ -114,7 +123,7 @@
                             android:layout_centerHorizontal="true"
                             android:checked="false"
                             android:tag="D_316"
-                            android:text="7. Hukay naw walang takip"
+                            android:text="7. Hukay na walang takip"
                             android:textSize="14dp" />
 
 
@@ -139,7 +148,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="Iba pa, itala"
+                                android:hint=""
                                 android:inputType="textPersonName"
                                 android:tag="D_318"
                                 android:textColorHint="#05ab9a"
@@ -192,7 +201,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="Iba pa, itala"
+                                android:hint=""
                                 android:inputType="textPersonName"
                                 android:tag="D_327"
                                 android:textColorHint="#05ab9a"
@@ -274,7 +283,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="Iba pa, itala"
+                                android:hint=""
                                 android:inputType="textPersonName"
                                 android:tag="D_325"
                                 android:textColorHint="#05ab9a"
@@ -304,7 +313,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="Iba pa, itala"
+                                android:hint=""
                                 android:inputType="textPersonName"
                                 android:tag="D_328"
                                 android:textColorHint="#05ab9a"
