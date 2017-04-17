@@ -23,6 +23,7 @@ import android.widget.Toast;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -35,34 +36,11 @@ public class UploadData extends Fragment {
     View view;
     TextView lbl_internetmessage;
     private ProgressDialog pd;
-
+    String connectionUrl = "jdbc:jtds:sqlserver://192.168.1.170:1433;DatabaseName=stamariamcbms";
     public UploadData() {
         // Required empty public constructor
     }
 
-    public static boolean hasActiveInternetConnection(Context contex, TextView txt) {
-        if (isNetworkAvailable(contex)) {
-            try {
-                HttpURLConnection urlc = (HttpURLConnection) (new URL("http://google.com/generate_204").openConnection());
-                urlc.setRequestProperty("User-Agent", "Test");
-                urlc.setRequestProperty("Connection", "close");
-                urlc.setConnectTimeout(1500);
-                urlc.connect();
-                txt.setVisibility(View.INVISIBLE);
-                return (urlc.getResponseCode() == 204 && urlc.getContentLength() == 0);
-            } catch (IOException e) {
-                txt.setVisibility(View.VISIBLE);
-                Log.e("INTERNET ERROR ", "Error checking internet connection", e);
-                txt.setText("Error checking internet connection");
-                Toast.makeText(contex, e.getMessage(), Toast.LENGTH_LONG).show();
-            }
-        } else {
-            txt.setVisibility(View.VISIBLE);
-            txt.setText("No network available!");
-            Log.d("INTERNET ERROR ", "No network available!");
-        }
-        return false;
-    }
 
     private static boolean isNetworkAvailable(Context contex) {
         ConnectivityManager connectivityManager = (ConnectivityManager) contex.getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -77,7 +55,9 @@ public class UploadData extends Fragment {
         lbl_internetmessage = (TextView) view.findViewById(R.id.lbl_internetmessage);
 
         //  if(hasActiveInternetConnection(getActivity().getApplicationContext(), lbl_internetmessage)){
-
+if(isURLReachable(getActivity())){
+    connectionUrl = "jdbc:jtds:sqlserver://http://120.29.121.34:1433;DatabaseName=stamariamcbms";
+}
 
         Reset();
         btn_upload.setOnClickListener(new View.OnClickListener() {
@@ -95,7 +75,7 @@ public class UploadData extends Fragment {
                             StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
                             StrictMode.setThreadPolicy(policy);
                             // Create a variable for the connection string.
-                            String connectionUrl = "jdbc:jtds:sqlserver://192.168.1.170:1433;DatabaseName=stamariamcbms";
+
                             // Declare the JDBC objects.
                             ProgressBar pm = (ProgressBar) view.findViewById(R.id.pb_main);
 
@@ -172,11 +152,18 @@ public class UploadData extends Fragment {
                             //
                         } catch (Exception ie) {
                             ie.printStackTrace();
+                            String error =ie.getMessage();
+                            String error4 =ie.getMessage();
+                            String error2 =ie.getMessage();
                         } finally {
 
                             if (con != null) try {
                                 con.close();
                             } catch (Exception e) {
+                            String error =e.getMessage();
+                                String error4 =e.getMessage();
+                                String error2 =e.getMessage();
+                                String error3 =e.getMessage();
                             }
                         }
                         Reset();
@@ -296,7 +283,10 @@ public class UploadData extends Fragment {
             //ResultSet rss = stmt.executeQuery();
 
         } catch (Exception ex) {
-
+            String error =ex.getMessage();
+            String error4 =ex.getMessage();
+            String error2 =ex.getMessage();
+Log.i("ALFIE",ex.getMessage());
         }
 
     }
@@ -337,7 +327,6 @@ public class UploadData extends Fragment {
 
                     stmt = con.prepareStatement(sql);
 
-                    String AndroidID = Settings.Secure.getString(getActivity().getContentResolver(), Settings.Secure.ANDROID_ID);
                     for (int i = 0; i < cs.getColumnCount(); i++) {
 
                         if (i == 1 || i == 2) {
@@ -353,8 +342,37 @@ public class UploadData extends Fragment {
                 }
             }
         } catch (Exception ex) {
+            String error =ex.getMessage();
+            String error4 =ex.getMessage();
+            String error2 =ex.getMessage();
             String a = ex.getMessage();
             Log.i("ALFIE", ex.getMessage());
         }
+    }
+    static public boolean isURLReachable(Context context) {
+        ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo netInfo = cm.getActiveNetworkInfo();
+        if (netInfo != null && netInfo.isConnected()) {
+            try {
+                URL url = new URL("http://http://120.29.121.34");   // Change to "http://google.com" for www  test.
+                HttpURLConnection urlc = (HttpURLConnection) url.openConnection();
+                urlc.setConnectTimeout(10 * 1000);          // 10 s.
+                urlc.connect();
+                if (urlc.getResponseCode() == 200) {        // 200 = "OK" code (http connection is fine).
+                    Log.wtf("Connection", "Success !");
+                    return true;
+                } else {
+                    return false;
+                }
+            } catch (MalformedURLException e1) {
+                return false;
+            } catch (IOException e) {
+                String error =e.getMessage();
+                String error4 =e.getMessage();
+                String error2 =e.getMessage();
+                return false;
+            }
+        }
+        return false;
     }
 }

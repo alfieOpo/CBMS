@@ -508,34 +508,34 @@ public class _A_Question extends Fragment implements View.OnClickListener {
                 if (validTOview(cbo_a_ilan_miyembro.getText().toString())) {
                     LoadIntent("1", cbo_a_ilan_miyembro, "ga_1st", "_1st_001");
                 } else {
-                    Toast.makeText(getActivity(), "No Data Found to View.", Toast.LENGTH_SHORT).show();
+
                 }
                 break;
             case R.id.btn_ibang_myembro:
                 if (validTOview(cbo_a_miyembro_dikasama.getText().toString())) {
                     LoadIntent("2", cbo_a_miyembro_dikasama, "ga_2nd", "_2nd_001");
                 } else {
-                    Toast.makeText(getActivity(), "No Data Found to View.", Toast.LENGTH_SHORT).show();
+
                 }
             case R.id.btn_ofw:
                 if (validTOview(cbo_a_miyembro_ofw.getText().toString())) {
                     LoadIntent("3", cbo_a_miyembro_ofw, "ga_3rd", "_3rd_001");
                 } else {
-                    Toast.makeText(getActivity(), "No Data Found to View.", Toast.LENGTH_SHORT).show();
+
                 }
                 break;
             case R.id.btn_kapamilya_na_solo_parent:
                 if (validTOview(cbo_a_miyembro_solomagulang.getText().toString())) {
                     LoadIntent("4", cbo_a_miyembro_solomagulang, "ga_4th", "_4th_001");
                 } else {
-                    Toast.makeText(getActivity(), "No Data Found to View.", Toast.LENGTH_SHORT).show();
+
                 }
                 break;
             case R.id.btn_mga_kapamilya_na_may_kapansanan:
                 if (validTOview(cbo_a_miyembro_maykapansanan.getText().toString())) {
                     LoadIntent("5", cbo_a_miyembro_maykapansanan, "ga_5th", "_5th_001");
                 } else {
-                    Toast.makeText(getActivity(), "No Data Found to View.", Toast.LENGTH_SHORT).show();
+
                 }
                 break;
             case R.id.btn_mga_kapamilya_na_senior_citizen:
@@ -549,7 +549,7 @@ public class _A_Question extends Fragment implements View.OnClickListener {
                 if (validTOview(cbo_a_miyembro_nakapasa.getText().toString())) {
                     LoadIntent("8", cbo_a_miyembro_nakapasa, "ga_8th", "_8th_001");
                 } else {
-                    Toast.makeText(getActivity(), "No Data Found to View.", Toast.LENGTH_SHORT).show();
+
                 }
                 break;
             case R.id.btn_a_ilan_magasawa:
@@ -563,7 +563,7 @@ public class _A_Question extends Fragment implements View.OnClickListener {
                 if (validTOview(cbo_a_miyembro_namatay.getText().toString())) {
                     LoadIntent("10", cbo_a_miyembro_namatay, "ga_10th", "_10th_001");
                 } else {
-                    Toast.makeText(getActivity(), "No Data Found to View.", Toast.LENGTH_SHORT).show();
+
                 }
                 break;
 

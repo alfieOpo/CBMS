@@ -63,7 +63,7 @@ public class New extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_new, container, false);
         Config.CallbackIsCheck = false;
-
+getActivity().setTitle("MCBMS - MUNICIPALITY OF SANTA MARIA,BULACAN");
         txt_f = (EditText) view.findViewById(R.id.txt_first_name);
         txt_m = (EditText) view.findViewById(R.id.txt_middle_name);
         txt_l = (EditText) view.findViewById(R.id.txt_last_name);
