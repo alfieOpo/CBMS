@@ -29,7 +29,7 @@ public class _Q_Question extends Fragment {
         txt_q_134_4_1 ,txt_q_134_4_2 ,txt_q_134_5 ,txt_q_134_5_1 ,txt_q_134_5_2 ,txt_q_133_1, txt_q_133_1_1,
         txt_q_133_2  , txt_q_133_3 ,txt_q_133_3_1 ,txt_q_133_3_2 ,txt_q_133_3_3 ,txt_q_133_4 ,txt_q_133_4_1,
         txt_q_133_4_2 ,txt_q_133_5 ,txt_q_133_5_1 ,txt_q_133_5_2 ,txt_q_133_6 ,txt_q_133_7, txt_q_133_8,
-        txt_q_133_9  , txt_q_ibapa_133_9;
+        txt_q_133_9  , txt_q_ibapa_133_9 ;
 
     public _Q_Question() {
     }
@@ -196,9 +196,6 @@ public class _Q_Question extends Fragment {
 
 
     }
-
-
-
 
 
 
