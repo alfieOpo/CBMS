@@ -47,7 +47,7 @@ MaterialBetterSpinner cbo_7th_59_1_buwan,cbo_7th_59_2_buwan,cbo_7th_59_3_buwan;
         layout = (LinearLayout) view.findViewById(R.id.layout);
         layout.setEnabled(false);
         this.cpar = new c_params(Config.ID, container, view);
-        this.cpar.setDropdown(R.id.cbo_7th_58, R.array.oo_hindi, "Hindi");
+        this.cpar.setDropdown(R.id.cbo_7th_58, R.array.oo_hindi, "Oo");
         this.cpar.setDropdown(R.id.cbo_7th_59_1_buwan, R.array.month, "N/A");
         this.cpar.setDropdown(R.id.cbo_7th_59_2_buwan, R.array.month, "N/A");
         this.cpar.setDropdown(R.id.cbo_7th_59_3_buwan, R.array.month, "N/A");

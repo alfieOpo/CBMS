@@ -50,22 +50,21 @@ public class _M_Question extends Fragment {
         cbo_m_84 = (MaterialBetterSpinner) view.findViewById(R.id.cbo_m_84);
         txt_m_ibapa_82=(EditText)view.findViewById(R.id.txt_m_ibapa_82);
         txt_m_ibapa_84=(EditText)view.findViewById(R.id.txt_m_ibapa_84);
-        this.cpar.setDropdown(R.id.cbo_m_82, R.array.m_tubig, "Select One");
-        this.cpar.setDropdown(R.id.cbo_m_83, R.array.m_gaanokalayo, "Select One");
-        this.cpar.setDropdown(R.id.cbo_m_84, R.array.m_uripalikuran, "Select One");
+        this.cpar.setDropdown(R.id.cbo_m_82, R.array.m_tubig, "Water District - Sariling Gamit");
+        this.cpar.setDropdown(R.id.cbo_m_83, R.array.m_gaanokalayo, "Sa loob lang ng pamamahay/bakuran");
+        this.cpar.setDropdown(R.id.cbo_m_84, R.array.m_uripalikuran, "Water sealed flush to sewerage system/ septic tank - sariling gamit");
         this.cpar.setEditText(R.id.txt_m_ibapa_82);
         this.cpar.setEditText(R.id.txt_m_ibapa_84);
-
         layout_83=(LinearLayout)view.findViewById(R.id.layout_83);
-
         if(cbo_m_82.getText().toString().equals("Water District - Sariling Gamit")||cbo_m_82.getText().toString().equals("Posong De Motor - Sariling Gamit")){
-            layout_83.setVisibility(View.INVISIBLE);//hide 83
-            txt_m_ibapa_82.setVisibility(View.VISIBLE);
+            layout_83.setVisibility(View.INVISIBLE);
+            txt_m_ibapa_82.setVisibility(View.INVISIBLE);
+            txt_m_ibapa_82.setText("");
         }
          else{
             layout_83.setVisibility(View.VISIBLE);
-            txt_m_ibapa_82.setText("");
-            txt_m_ibapa_82.setVisibility(View.INVISIBLE);
+
+            txt_m_ibapa_82.setVisibility(View.VISIBLE);
         }
 
 

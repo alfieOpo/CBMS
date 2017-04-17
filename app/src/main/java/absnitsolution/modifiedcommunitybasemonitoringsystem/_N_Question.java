@@ -75,6 +75,7 @@ public class _N_Question extends Fragment {
             txt_n_ibapa_94.setText("");
         }
         this.cpar.setEditText(R.id.txt_n_ibapa_85);
+        this.cpar.setEditText(R.id.txt_n_ibapa_88);
         this.cpar.setEditText(R.id.txt_n_86);
         this.cpar.setEditText(R.id.txt_n_89);
         this.cpar.setCheckBox(R.id.chk_n_radio);
@@ -164,8 +165,7 @@ public class _N_Question extends Fragment {
 
             txt_n_ibapa_85.setText("");
             txt_n_ibapa_85.setVisibility(View.INVISIBLE);
-            txt_n_86.setVisibility(View.INVISIBLE);
-            txt_n_86.setText("");
+
         }
 
         cbo_n_85.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -224,14 +224,15 @@ public class _N_Question extends Fragment {
 
         if(cbo_o_nakatirik.getText().toString().equals("Oo")){
 
-            cbo_oo_nakatirik.setVisibility(View.INVISIBLE);
-            txt_n_ibapa_94.setVisibility(View.INVISIBLE);
-            txt_n_ibapa_94.setText("");
+            cbo_oo_nakatirik.setVisibility(View.VISIBLE);
+            txt_n_ibapa_94.setVisibility(View.VISIBLE);
+
         }
         else{
 
-            cbo_oo_nakatirik.setVisibility(View.VISIBLE);
-            txt_n_ibapa_94.setVisibility(View.VISIBLE);
+            cbo_oo_nakatirik.setVisibility(View.INVISIBLE);
+            txt_n_ibapa_94.setVisibility(View.INVISIBLE);
+            txt_n_ibapa_94.setText("");
         }
         cbo_o_nakatirik.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -326,6 +327,7 @@ public class _N_Question extends Fragment {
         this.cpar.putDropdown(R.id.cbo_n_85);
         this.cpar.putEditText(R.id.txt_n_ibapa_85);
         this.cpar.putEditText(R.id.txt_n_86);
+        this.cpar.putEditText(R.id.txt_n_ibapa_88);
         this.cpar.putDropdown(R.id.cbo_n_87);
         this.cpar.putDropdown(R.id.cbo_n_88);
         this.cpar.putEditText(R.id.txt_n_89);

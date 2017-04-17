@@ -85,7 +85,6 @@ public class Config {
         public static String first_name = "";
         public static String middle_name = "";
         public static String last_name = "";
-
     }
     public static String toCurrency(double v){
         String value=DecimalFormat.getCurrencyInstance().format(v).replace("$","");

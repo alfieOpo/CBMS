@@ -106,8 +106,7 @@ public class _O_Question extends Fragment {
         btn_compute2 = (Button) view.findViewById(R.id.btn_compute2);
         btn_compute3 = (Button) view.findViewById(R.id.btn_compute3);
         txt_o_97b = (EditText) view.findViewById(R.id.txt_o_97b);
-        txt_o_97b = (EditText) view.findViewById(R.id.txt_o_97b);
-        txt_o_97b = (EditText) view.findViewById(R.id.txt_o_97b);
+
         txt_o_95a = (EditText) view.findViewById(R.id.txt_o_95a);
         txt_o_96a = (EditText) view.findViewById(R.id.txt_o_96a);
         txt_o_97a = (EditText) view.findViewById(R.id.txt_o_97a);
@@ -279,6 +278,7 @@ public class _O_Question extends Fragment {
         this.cpar.setEditText(R.id.txt_o_96a);
         this.cpar.setEditText(R.id.txt_o_96b);
         this.cpar.setEditText(R.id.txt_o_97a);
+        this.cpar.setEditText(R.id.txt_o_97b);
         this.cpar.setEditText(R.id.txt_o_96b);
         this.cpar.setEditText(R.id.txt_o_98a);
         this.cpar.setEditText(R.id.txt_o_98b);
@@ -291,6 +291,7 @@ public class _O_Question extends Fragment {
         this.cpar.setEditText(R.id.txt_o_102a);
         this.cpar.setEditText(R.id.txt_o_102b);
         this.cpar.setEditText(R.id.txt_o_103a);
+        this.cpar.setEditText(R.id.txt_o_103b);
         this.cpar.setEditText(R.id.txt_o_104b);
         this.cpar.setEditText(R.id.txt_o_104a);
         this.cpar.setEditText(R.id.txt_o_104b);
@@ -501,6 +502,7 @@ public class _O_Question extends Fragment {
         this.cpar.putEditText(R.id.txt_o_96a);
         this.cpar.putEditText(R.id.txt_o_96b);
         this.cpar.putCheckBox(R.id.chk_o_97);
+        this.cpar.putEditText(R.id.txt_o_97b);
         this.cpar.putEditText(R.id.txt_o_97a);
         this.cpar.putEditText(R.id.txt_o_96b);
         this.cpar.putCheckBox(R.id.chk_o_98);
@@ -520,6 +522,7 @@ public class _O_Question extends Fragment {
         this.cpar.putEditText(R.id.txt_o_102b);
         this.cpar.putCheckBox(R.id.chk_o_103);
         this.cpar.putEditText(R.id.txt_o_103a);
+        this.cpar.putEditText(R.id.txt_o_103b);
         this.cpar.putEditText(R.id.txt_o_104b);
         this.cpar.putCheckBox(R.id.chk_o_104);
         this.cpar.putEditText(R.id.txt_o_104a);

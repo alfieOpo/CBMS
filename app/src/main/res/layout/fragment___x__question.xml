@@ -204,6 +204,12 @@
                                 app:met_floatingLabel="highlight" />
 
 
+                            <TextView
+                                android:id="@+id/textView82"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Kung Oo," />
+
                             <android.support.design.widget.TextInputLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content">
@@ -244,7 +250,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentLeft="true"
-                                android:hint="128."
+                                android:hint="128. Kung Hindi,"
                                 android:tag="D_374"
                                 android:textColorHint="#05ab9a"
                                 android:textSize="14dp"

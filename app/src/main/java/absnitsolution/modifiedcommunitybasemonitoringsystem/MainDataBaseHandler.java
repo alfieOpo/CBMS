@@ -108,6 +108,7 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
             System.out.print(i);
             db.close();
         } catch (Exception xx) {
+            String da=xx.getMessage();
         }
     }
 
@@ -309,18 +310,19 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursor = db.rawQuery(query, null);
-
-        if (cursor != null) {
-            cursor.moveToFirst();
-        }
-        String data = cursor.getString(0);
-        try {
-            if (data.equals(null)) {
+        String data="0";
+        if ( cursor.moveToFirst()) {
+            data   = cursor.getString(0);
+            try {
+                if (data.equals(null)) {
+                    data = "0";
+                }
+            } catch (Exception xx) {
                 data = "0";
             }
-        } catch (Exception xx) {
-            data = "0";
         }
+
+
         return data;
     }
 
@@ -1067,6 +1069,27 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
                 "D_558 TEXT default('')," +
                 "D_559 TEXT default('')," +
                 "D_560 TEXT default('')," +
+                "D_561 TEXT default('')," +
+                "D_562 TEXT default('')," +
+                "D_563 TEXT default('')," +
+                "D_564 TEXT default('')," +
+                "D_565 TEXT default('')," +
+                "D_566 TEXT default('')," +
+                "D_567 TEXT default('')," +
+                "D_568 TEXT default('')," +
+                "D_569 TEXT default('')," +
+                "D_570 TEXT default('')," +
+                "D_571 TEXT default('')," +
+                "D_572 TEXT default('')," +
+                "D_573 TEXT default('')," +
+                "D_574 TEXT default('')," +
+                "D_575 TEXT default('')," +
+                "D_576 TEXT default('')," +
+                "D_577 TEXT default('')," +
+                "D_578 TEXT default('')," +
+                "D_579 TEXT default('')," +
+                "D_580 TEXT default('')," +
+                "c TEXT default('')," +
                 "IMEI TEXT," +
                 "IMSI TEXT," +
                 "AndroidID TEXT)";
@@ -1241,6 +1264,10 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
                 "_5th_024 TEXT," +
                 "_5th_025 TEXT," +
                 "_5th_026 TEXT," +
+                "_5th_027 TEXT," +
+                "_5th_028 TEXT," +
+                "_5th_029 TEXT," +
+                "_5th_030 TEXT," +
                 "IMEI TEXT," +
                 "IMSI TEXT," +
                 "AndroidID TEXT," +
@@ -1304,6 +1331,7 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
                 "_10th_002 TEXT," +
                 "_10th_003 TEXT," +
                 "_10th_004 TEXT," +
+                "_10th_005 TEXT," +
                 "IMEI TEXT," +
                 "IMSI TEXT," +
                 "AndroidID TEXT," +
