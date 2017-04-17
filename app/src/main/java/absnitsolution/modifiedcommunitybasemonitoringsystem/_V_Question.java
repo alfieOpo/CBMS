@@ -214,7 +214,22 @@ public class _V_Question extends Fragment {
         IbaPangItala(R.id.cbo_v_150_8 ,R.id.txt_v_ibapa_150_8);
         IbaPangItala(R.id.cbo_v_150_9 ,R.id.txt_v_ibapa_150_9);
         IbaPangItala(R.id.cbo_v_150_10 ,R.id.txt_v_ibapa_150_10);
-
+        this.cpar.setEditText(R.id.txt_v_ibapa_150_2);
+        this.cpar.setEditText(R.id.txt_v_ibapa_150_3);
+        this.cpar.setEditText(R.id.txt_v_ibapa_150_4);
+        this.cpar.setEditText(R.id.txt_v_ibapa_150_5);
+        this.cpar.setEditText(R.id.txt_v_ibapa_150_6);
+        this.cpar.setEditText(R.id.txt_v_ibapa_150_7);
+        this.cpar.setEditText(R.id.txt_v_ibapa_150_8);
+        this.cpar.setEditText(R.id.txt_v_ibapa_150_9);
+        this.cpar.setEditText(R.id.txt_v_ibapa_150_10);
+        this.cpar.setEditText(R.id.txt_v_ibapa_150_11);
+        this.cpar.setEditText(R.id.txt_v_ibapa_150_12);
+        this.cpar.setEditText(R.id.txt_v_ibapa_150_13);
+        this.cpar.setEditText(R.id.txt_v_ibapa_150_14);
+        this.cpar.setEditText(R.id.txt_v_ibapa_150_15);
+        this.cpar.setEditText(R.id.txt_v_ibapa_150_16);
+        this.cpar.setEditText(R.id.txt_v_ibapa_150_17);
         IbaPangItala(R.id.cbo_v_150_11 ,R.id.txt_v_ibapa_150_11);
         IbaPangItala(R.id.cbo_v_150_12 ,R.id.txt_v_ibapa_150_12);
         IbaPangItala(R.id.cbo_v_150_13 ,R.id.txt_v_ibapa_150_13);
@@ -531,7 +546,7 @@ private  void Load17Text(String txt){
         this.cpar.putDropdown(R.id.cbo_v_148_day);
         this.cpar.putDropdown(R.id.cbo_v_148_year);
         // this.cpar.putCheckBox(R.id.chk_v_149);
-        this.cpar.setEditText(R.id.txt_v_ibapa_150_1);
+        this.cpar.putEditText(R.id.txt_v_ibapa_150_1);
         this.cpar.putCheckBox(R.id.chk_v_149_1);
         this.cpar.putDropdown(R.id.cbo_v_173_1_1);
         this.cpar.putCheckBox(R.id.chk_v_149_2);
@@ -605,7 +620,22 @@ private  void Load17Text(String txt){
         this.cpar.putDropdown(R.id.cbo_v_152_14);
         this.cpar.putDropdown(R.id.cbo_v_152_15);
         this.cpar.putDropdown(R.id.cbo_v_152_16);
-
+        this.cpar.putEditText(R.id.txt_v_ibapa_150_2);
+        this.cpar.putEditText(R.id.txt_v_ibapa_150_3);
+        this.cpar.putEditText(R.id.txt_v_ibapa_150_4);
+        this.cpar.putEditText(R.id.txt_v_ibapa_150_5);
+        this.cpar.putEditText(R.id.txt_v_ibapa_150_6);
+        this.cpar.putEditText(R.id.txt_v_ibapa_150_7);
+        this.cpar.putEditText(R.id.txt_v_ibapa_150_8);
+        this.cpar.putEditText(R.id.txt_v_ibapa_150_9);
+        this.cpar.putEditText(R.id.txt_v_ibapa_150_10);
+        this.cpar.putEditText(R.id.txt_v_ibapa_150_11);
+        this.cpar.putEditText(R.id.txt_v_ibapa_150_12);
+        this.cpar.putEditText(R.id.txt_v_ibapa_150_13);
+        this.cpar.putEditText(R.id.txt_v_ibapa_150_14);
+        this.cpar.putEditText(R.id.txt_v_ibapa_150_15);
+        this.cpar.putEditText(R.id.txt_v_ibapa_150_16);
+        this.cpar.putEditText(R.id.txt_v_ibapa_150_17);
         this.cpar.putDropdown(R.id.cbo_v_152_17);
         this.cpar.putEditText(R.id.txt_v_153_1);
         this.cpar.putEditText(R.id.txt_v_153_2);

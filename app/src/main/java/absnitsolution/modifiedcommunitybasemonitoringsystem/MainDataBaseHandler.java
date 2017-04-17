@@ -1069,6 +1069,27 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
                 "D_558 TEXT default('')," +
                 "D_559 TEXT default('')," +
                 "D_560 TEXT default('')," +
+                "D_561 TEXT default('')," +
+                "D_562 TEXT default('')," +
+                "D_563 TEXT default('')," +
+                "D_564 TEXT default('')," +
+                "D_565 TEXT default('')," +
+                "D_566 TEXT default('')," +
+                "D_567 TEXT default('')," +
+                "D_568 TEXT default('')," +
+                "D_569 TEXT default('')," +
+                "D_570 TEXT default('')," +
+                "D_571 TEXT default('')," +
+                "D_572 TEXT default('')," +
+                "D_573 TEXT default('')," +
+                "D_574 TEXT default('')," +
+                "D_575 TEXT default('')," +
+                "D_576 TEXT default('')," +
+                "D_577 TEXT default('')," +
+                "D_578 TEXT default('')," +
+                "D_579 TEXT default('')," +
+                "D_580 TEXT default('')," +
+                "c TEXT default('')," +
                 "IMEI TEXT," +
                 "IMSI TEXT," +
                 "AndroidID TEXT)";

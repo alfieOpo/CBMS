@@ -97,6 +97,8 @@ public class Upload extends AppCompatActivity {
 
                             db = new MainDataBaseHandler(Upload.this);
                             Class.forName("net.sourceforge.jtds.jdbc.Driver");
+
+
                             con = DriverManager.getConnection(connectionUrl, "sa", "abc123!@#");
                             pm.setProgress(1);
                             setMainText("1");
