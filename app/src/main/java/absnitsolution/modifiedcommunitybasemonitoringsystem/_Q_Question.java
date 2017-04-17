@@ -199,9 +199,6 @@ public class _Q_Question extends Fragment {
 
 
 
-
-
-
     @Override
     public void onDestroy() {
 
