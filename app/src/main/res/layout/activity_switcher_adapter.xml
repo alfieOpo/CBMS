@@ -22,7 +22,7 @@
                 android:id="@+id/imageButton"
                 android:layout_width="match_parent"
                 android:layout_height="225dp"
-                android:scaleType="fitXY"
+                android:scaleType="fitCenter"
                 app:srcCompat="@drawable/new_logo"
                 tools:layout_editor_absoluteX="126dp"
                 tools:layout_editor_absoluteY="89dp" />
