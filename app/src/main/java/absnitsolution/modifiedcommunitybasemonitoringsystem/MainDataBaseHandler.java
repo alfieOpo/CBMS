@@ -1214,7 +1214,7 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
                 "_3rd_002 TEXT," +
                 "_3rd_003 TEXT," +
                 "_3rd_004 TEXT," +
-                "_3rd_005 TEXT," +
+                    "_3rd_005 TEXT," +
                 "IMEI TEXT," +
                 "IMSI TEXT," +
                 "AndroidID TEXT," +
@@ -1288,9 +1288,7 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
                 "M_ID INT )";
         return CREATE_MCBMS_TABLE;
     }
-
     private String GA_8TH() {
-
         String CREATE_MCBMS_TABLE = "CREATE TABLE " + TABLE_GA_8TH + "( _id INTEGER PRIMARY KEY AUTOINCREMENT," +
                 "_8th_001 TEXT," +
                 "_8th_002 TEXT," +
@@ -1302,7 +1300,6 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
     }
 
     private String GA_9TH() {
-
         String CREATE_MCBMS_TABLE = "CREATE TABLE " + TABLE_GA_9TH + "( _id INTEGER PRIMARY KEY AUTOINCREMENT," +
                 "_9th_001 TEXT," +
                 "_9th_002 TEXT," +
