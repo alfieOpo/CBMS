@@ -9,7 +9,6 @@
 
 
                         <TextView
-                            android:id="@+id/textView11"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:hint="S. PANGINGISDA"
@@ -134,7 +133,6 @@
 
 
                         <TextView
-                            android:id="@+id/textView11"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:hint="137. Noong nakaraang labing-dalawang buwan, anu-ano ang mga nahuling isda o iba pang yamang-tubig? "
@@ -412,7 +410,6 @@
                             android:text="Compute" />
 
                         <TextView
-                            android:id="@+id/textView11"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:hint="139. Kayo ba o sinuman miyembro ng pamilya ay gumagamit ng mga sumusunod na kagamitan?"

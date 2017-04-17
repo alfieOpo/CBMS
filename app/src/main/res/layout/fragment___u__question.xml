@@ -25,7 +25,6 @@
 
 
                 <TextView
-                    android:id="@+id/text_w_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
@@ -35,7 +34,6 @@
                     android:textSize="16dp" />
 
                 <TextView
-                    android:id="@+id/textView51"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="58 Mula Enero 2016 hangang sa kasalukuyan, nangyari ba kahit isang beses na nakaranas ang pamilya ng gutom at walang makain?" />
@@ -57,7 +55,6 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/text_w_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
@@ -73,7 +70,6 @@
 
 
                         <TextView
-                            android:id="@+id/text_w_1"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_alignParentTop="false"
@@ -84,7 +80,6 @@
                             android:textSize="12dp" />
 
                         <TextView
-                            android:id="@+id/text_w_1"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_alignParentTop="false"
