@@ -97,7 +97,10 @@ public class PictureOfThePlace extends Fragment {
         btn_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+if(Config.CallbackIsCheck){
+    FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+    fragmentManager.beginTransaction().replace(R.id.frame, new New()).commit();
+}
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                 fragmentManager.beginTransaction().replace(R.id.frame, new switcher()).commit();
             }

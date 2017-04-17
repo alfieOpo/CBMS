@@ -38,6 +38,7 @@ public class CallbackList extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_callback_list, container, false);
         mainlistcallback = (ListView) view.findViewById(R.id.mainlistcallback);
+
         loadListView();
         return view;
     }
@@ -69,6 +70,7 @@ public class CallbackList extends Fragment {
             Config.ID = cursor.getString(cursor.getColumnIndexOrThrow("_id"));
             builder.setPositiveButton("EDIT", new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int id) {
+                    Config.EDIT=true;
                     Fragment fragment = null;
                     try {
                         fragment = New.class.newInstance();

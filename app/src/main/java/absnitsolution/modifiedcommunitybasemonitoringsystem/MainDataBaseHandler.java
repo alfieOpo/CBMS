@@ -1089,7 +1089,7 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
                 "D_578 TEXT default('')," +
                 "D_579 TEXT default('')," +
                 "D_580 TEXT default('')," +
-                "c TEXT default('')," +
+
                 "IMEI TEXT," +
                 "IMSI TEXT," +
                 "AndroidID TEXT)";
