@@ -7,6 +7,7 @@ import android.database.Cursor;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.os.NetworkOnMainThreadException;
 import android.os.StrictMode;
 import android.provider.Settings;
 import android.support.v4.app.Fragment;
@@ -23,8 +24,10 @@ import android.widget.Toast;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
+import java.net.InetAddress;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.UnknownHostException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -36,6 +39,7 @@ public class UploadData extends Fragment {
     View view;
     TextView lbl_internetmessage;
     private ProgressDialog pd;
+    InetAddress in;
     String connectionUrl = "jdbc:jtds:sqlserver://192.168.1.170:1433;DatabaseName=stamariamcbms";
     public UploadData() {
         // Required empty public constructor
@@ -55,9 +59,23 @@ public class UploadData extends Fragment {
         lbl_internetmessage = (TextView) view.findViewById(R.id.lbl_internetmessage);
 
         //  if(hasActiveInternetConnection(getActivity().getApplicationContext(), lbl_internetmessage)){
-if(isURLReachable(getActivity())){
-    connectionUrl = "jdbc:jtds:sqlserver://http://120.29.121.34:1433;DatabaseName=stamariamcbms";
-}
+
+
+        try {
+            if (InetAddress.getByAddress("173.194.35.133".getBytes()).isReachable(1000)==true)
+            {
+                //Boolean variable named network
+                connectionUrl = "jdbc:jtds:sqlserver://http://120.29.121.34:1433;DatabaseName=stamariamcbms";
+            }
+            else
+            {
+
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
 
         Reset();
         btn_upload.setOnClickListener(new View.OnClickListener() {

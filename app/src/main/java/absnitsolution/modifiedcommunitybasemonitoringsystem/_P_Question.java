@@ -141,15 +141,24 @@ public class _P_Question extends Fragment {
         btn_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Fragment fragment = null;
-                try {
-                    fragment = _X_Question.class.newInstance();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
+
+
+                da = new MainDataBaseHandler(getActivity().getApplicationContext());
+                cpar.putDropdown(R.id.cbo_p_120);
+                cpar.putEditText(R.id.txt_p_120);
+                cpar.putEditText(R.id.txt_p_121_1);
+                cpar.putEditText(R.id.txt_p_123_1);
+                cpar.putEditText(R.id.txt_p_123_3);
+                cpar.putEditText(R.id.txt_p_123_4);
+                cpar.putEditText(R.id.txt_p_123_5);
+                cpar.putEditText(R.id.txt_p_ibapa_123_5);
+                cpar.putDropdown(R.id.cbo_converter);
+                cpar.putEditText(R.id.txt_equals);
+                cpar.putEditText(R.id.txt_p_123_2);
+                cpar.putDropdown(R.id.cbo_nag_sasaka);
                 // Insert the fragment by replacing any existing fragment
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.frame, fragment, "Q. CROP FARMING/PAGSASAKA").commit();
+                fragmentManager.beginTransaction().replace(R.id.frame,new  _X_Question(), "Q. CROP FARMING/PAGSASAKA").commit();
             }
         });
         return view;
@@ -158,18 +167,7 @@ public class _P_Question extends Fragment {
 
     @Override
     public void onDestroy() {
-        da = new MainDataBaseHandler(getActivity().getApplicationContext());
-        this.cpar.putDropdown(R.id.cbo_p_120);
-        this.cpar.putEditText(R.id.txt_p_120);
-        this.cpar.putEditText(R.id.txt_p_121_1);
-        this.cpar.putEditText(R.id.txt_p_123_1);
-        this.cpar.putEditText(R.id.txt_p_123_3);
-        this.cpar.putEditText(R.id.txt_p_123_4);
-        this.cpar.putEditText(R.id.txt_p_123_5);
-        this.cpar.putEditText(R.id.txt_p_ibapa_123_5);
-        this.cpar.putDropdown(R.id.cbo_converter);
-        this.cpar.putEditText(R.id.txt_equals);
-        this.cpar.putEditText(R.id.txt_p_123_2);
+
         da.c_Update(cpar);
         super.onDestroy();
     }

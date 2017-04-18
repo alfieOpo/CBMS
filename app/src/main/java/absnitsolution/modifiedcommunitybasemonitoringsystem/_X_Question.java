@@ -62,7 +62,7 @@ public class _X_Question extends Fragment {
             layout.setVisibility(View.VISIBLE);
         }
         else {
-            layout.setVisibility(View.GONE);
+            layout.setVisibility(View.INVISIBLE);
         }
         this.cpar = new c_params(Config.ID, container, view);
 
