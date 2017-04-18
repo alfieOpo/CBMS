@@ -286,6 +286,33 @@ public class _1ststatedrow_Question extends Fragment {
             txt_1st_others_uringnegosyo.setVisibility(View.VISIBLE);
         }
         ////
+        /*
+        /// hiding txt from combox box array
+        if (cbo_1st_relasyon.getText().toString().equals("Iba pang kamag-anak, itala") || cbo_1st_relasyon.getText().toString().equals("Iba pang hindi kamag-anak, itala"))
+        {
+            txt_1st_ibapa_miyembro.setVisibility(View.VISIBLE);
+        }
+        else
+        {
+              txt_1st_ibapa_miyembro.setVisibility(View.INVISIBLE);
+              txt_1st_ibapa_miyembro.setText("");
+        }
+
+
+        if (cbo_1st_relihiyon.getText().toString().equals("Iba pa, itala")) // iba pa itala
+        {
+            txt_1st_ibapa_relihiyon.setVisibility(View.VISIBLE);
+        }
+        else
+        {
+            txt_1st_ibapa_relihiyon.setVisibility(View.INVISIBLE);
+            txt_1st_ibapa_relihiyon.setText("");
+        }
+       */
+        
+
+
+
 
 
         txt_kapanganakan.setOnClickListener(new View.OnClickListener() {
@@ -642,15 +669,14 @@ public class _1ststatedrow_Question extends Fragment {
 
         chk_1st_puno.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if (chk_1st_puno.isChecked())
+            public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+
+                cpar.setDropdown(R.id.cbo_1st_relasyon, R.array._1st_relasyon, "Puno");
+                if (isChecked)
                 {
                     cbo_1st_relasyon.setText("Puno");
                 }
-                else
-                {
-                    cpar.setDropdown(R.id.cbo_1st_relasyon, R.array._1st_relasyon, "Select One");
-                }
+
             }
         });
 
@@ -760,6 +786,13 @@ public class _1ststatedrow_Question extends Fragment {
                 } else {
                     txt_1st_ibapa_kasanayan.setVisibility(View.INVISIBLE);
                     txt_1st_ibapa_kasanayan.setText("");
+                }
+
+                if (i == 7){
+                    cbo_1st_saannagaral_kasanayan.setVisibility(View.INVISIBLE);
+                    cpar.setDropdown(R.id.cbo_1st_saannagaral_kasanayan, R.array._1st_saannagsanay, "Select One");
+                } else {
+                    cbo_1st_saannagaral_kasanayan.setVisibility(View.VISIBLE);
                 }
             }
         });

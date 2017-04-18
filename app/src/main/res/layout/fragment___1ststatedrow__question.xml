@@ -861,7 +861,7 @@
                             android:layout_height="wrap_content"
                             android:layout_alignParentTop="true"
                             android:layout_centerHorizontal="true"
-                            android:text="27. Anong uri/klaseng mang-gagawa si ___?"
+                            android:text="27. Anong uri/klaseng manggagawa si ___?"
                             android:textSize="12dp" />
                             
                         <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
@@ -897,7 +897,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
-                            android:text="29. Ano ang mga isinagawang hakbang ni ___ sa paghahanap ng hanapbuhay?" />
+                            android:text="29. Ano ang mga isinagawang hakbang ni ___ sa paghahanap ng trabaho?" />
 
                         <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                             android:id="@+id/cbo_1st_hakbang"
@@ -931,7 +931,7 @@
                             android:layout_height="wrap_content"
                             android:layout_alignParentTop="true"
                             android:layout_centerHorizontal="true"
-                            android:text="30. Bakit hindi naghanap si ___ ng hanapbuhay? "
+                            android:text="30. Bakit hindi naghanap si ___ ng trabaho? "
                             android:textSize="12dp" />
 
                         <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
@@ -968,7 +968,7 @@
                             android:layout_height="wrap_content"
                             android:layout_alignParentTop="true"
                             android:layout_centerHorizontal="true"
-                            android:text="31. Kailan huling naghanap ng hanapbuhay si ___ ?"
+                            android:text="31. Kailan huling naghanap ng trabaho si ___ ?"
                             android:textSize="12dp" />
                             
                         <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
@@ -1004,7 +1004,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
-                            android:text="33. Willing ba si ___ na mag-hanapbuhay noong nakaraang tatlong buwan o sa susunod na isang buwan?" />
+                            android:text="33. Willing ba si ___ na maghanapbuhay noong nakaraang tatlong buwan o sa susunod na isang buwan?" />
 
                         <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                             android:id="@+id/cbo_1st_willing"

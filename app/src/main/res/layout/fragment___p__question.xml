@@ -52,7 +52,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
-                            android:tag="D_036"
+                            android:tag="D_236"
                             android:textColorHint="#05ab9a"
                             android:textSize="14dp"
                             card_view:met_floatingLabel="highlight" />
@@ -161,7 +161,7 @@
                                 android:layout_alignParentTop="false"
                                 android:layout_centerHorizontal="true"
 
-                                android:text="123.Gaano kadami ang inaani noong huling anihan?"
+                                android:text="123.Gaano kadami ang inani noong huling anihan?"
                                 android:textSize="14dp" />
 
                             <android.support.design.widget.TextInputLayout
