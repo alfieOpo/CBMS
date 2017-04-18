@@ -29,7 +29,8 @@ public class _Q_Question extends Fragment {
         txt_q_134_4_1 ,txt_q_134_4_2 ,txt_q_134_5 ,txt_q_134_5_1 ,txt_q_134_5_2 ,txt_q_133_1, txt_q_133_1_1,
         txt_q_133_2  , txt_q_133_3 ,txt_q_133_3_1 ,txt_q_133_3_2 ,txt_q_133_3_3 ,txt_q_133_4 ,txt_q_133_4_1,
         txt_q_133_4_2 ,txt_q_133_5 ,txt_q_133_5_1 ,txt_q_133_5_2 ,txt_q_133_6 ,txt_q_133_7, txt_q_133_8,
-        txt_q_133_9  , txt_q_ibapa_133_9 ;
+        txt_q_133_9  , txt_q_ibapa_133_9, txt_q_134_1_3, txt_q_134_1_4, txt_q_134_1_5, txt_q_134_1_6,
+        txt_q_134_1_7, txt_q_134_1_8, txt_q_133_1_2 ;
 
     public _Q_Question() {
     }
@@ -77,6 +78,14 @@ public class _Q_Question extends Fragment {
         txt_q_133_9       = (EditText) view.findViewById(R.id.txt_q_133_9      );
         txt_q_ibapa_133_9 = (EditText) view.findViewById(R.id.txt_q_ibapa_133_9);
 
+        txt_q_134_1_3 = (EditText) view.findViewById(R.id.txt_q_134_1_3);
+        txt_q_134_1_4 = (EditText) view.findViewById(R.id.txt_q_134_1_4);
+        txt_q_134_1_5 = (EditText) view.findViewById(R.id.txt_q_134_1_5);
+        txt_q_134_1_6 = (EditText) view.findViewById(R.id.txt_q_134_1_6);
+        txt_q_134_1_7 = (EditText) view.findViewById(R.id.txt_q_134_1_7);
+        txt_q_134_1_8 = (EditText) view.findViewById(R.id.txt_q_134_1_8);
+        txt_q_133_1_2 = (EditText) view.findViewById(R.id.txt_q_133_1_2);
+
 
         this.cpar = new c_params(Config.ID, container, view);
 
@@ -111,6 +120,24 @@ public class _Q_Question extends Fragment {
         this.cpar.setEditText(R.id.txt_q_134_5_2);
         this.cpar.setEditText(R.id.txt_q_ibapa_133_9);
 
+        this.cpar.setEditText(R.id.txt_q_134_1_3);
+        this.cpar.setEditText(R.id.txt_q_134_1_4);
+        this.cpar.setEditText(R.id.txt_q_134_1_5);
+        this.cpar.setEditText(R.id.txt_q_134_1_6);
+        this.cpar.setEditText(R.id.txt_q_134_1_7);
+        this.cpar.setEditText(R.id.txt_q_134_1_8);
+        this.cpar.setEditText(R.id.txt_q_133_1_2);
+
+            if (cbo_q_133.getText().toString().equals("Hindi") ) // hindi
+                {
+                    layout.setVisibility(View.INVISIBLE);
+                    cleartxt();
+                } else {
+                    layout.setVisibility(View.VISIBLE);
+                }
+
+
+
 
         cbo_q_133.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -119,6 +146,7 @@ public class _Q_Question extends Fragment {
                 if (i == 1 ) // hindi
                 {
                     layout.setVisibility(View.INVISIBLE);
+                    cleartxt();
                 } else {
                     layout.setVisibility(View.VISIBLE);
                 }
@@ -192,6 +220,14 @@ public class _Q_Question extends Fragment {
         txt_q_133_9.setText("");
         txt_q_ibapa_133_9.setText("");
 
+        txt_q_134_1_3.setText("");
+        txt_q_134_1_4.setText("");
+        txt_q_134_1_5.setText("");
+        txt_q_134_1_6.setText("");
+        txt_q_134_1_7.setText("");
+        txt_q_134_1_8.setText("");
+        txt_q_133_1_2.setText("");
+
 
 
 
@@ -234,6 +270,13 @@ public class _Q_Question extends Fragment {
         this.cpar.putEditText(R.id.txt_q_134_5_2);
         this.cpar.putDropdown(R.id.cbo_q_133);
         this.cpar.putEditText(R.id.txt_q_ibapa_133_9);
+        this.cpar.putEditText(R.id.txt_q_134_1_3);
+        this.cpar.putEditText(R.id.txt_q_134_1_4);
+        this.cpar.putEditText(R.id.txt_q_134_1_5);
+        this.cpar.putEditText(R.id.txt_q_134_1_6);
+        this.cpar.putEditText(R.id.txt_q_134_1_7);
+        this.cpar.putEditText(R.id.txt_q_134_1_8);
+        this.cpar.putEditText(R.id.txt_q_133_1_2);
 
         da.c_Update(cpar);
         super.onDestroy();

@@ -787,6 +787,13 @@ public class _1ststatedrow_Question extends Fragment {
                     txt_1st_ibapa_kasanayan.setVisibility(View.INVISIBLE);
                     txt_1st_ibapa_kasanayan.setText("");
                 }
+
+                if (i == 7){
+                    cbo_1st_saannagaral_kasanayan.setVisibility(View.INVISIBLE);
+                    cpar.setDropdown(R.id.cbo_1st_saannagaral_kasanayan, R.array._1st_saannagsanay, "Select One");
+                } else {
+                    cbo_1st_saannagaral_kasanayan.setVisibility(View.VISIBLE);
+                }
             }
         });
 

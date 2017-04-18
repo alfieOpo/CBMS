@@ -56,7 +56,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:ems="10"
-                            android:hint="Numero ng Bahay (House No.,Blk No.,Lot No.,St.)"
+                            android:hint="Numero ng Bahay (House No., Street, Blk No., Lot No.)"
                             android:inputType="textPersonName"
                             android:tag="D_007"
                             android:textColorHint="#05ab9a"

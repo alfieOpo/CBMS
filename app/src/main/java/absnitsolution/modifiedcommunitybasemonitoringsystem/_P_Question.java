@@ -64,6 +64,15 @@ public class _P_Question extends Fragment {
         this.cpar.setEditText(R.id.txt_p_123_5);
         txt_equals.setEnabled(false);
 
+        if(cbo_nag_sasaka.getText().toString().equals("Hindi")){
+                    layout.setVisibility(View.INVISIBLE);
+                }
+                else {
+                    layout.setVisibility(View.VISIBLE);
+                }
+
+
+
         cbo_converter.setOnItemClickListener(new AdapterView.OnItemClickListener()  {
             @RequiresApi(api = Build.VERSION_CODES.N)
             @Override
@@ -170,6 +179,8 @@ public class _P_Question extends Fragment {
         this.cpar.putDropdown(R.id.cbo_converter);
         this.cpar.putEditText(R.id.txt_equals);
         this.cpar.putEditText(R.id.txt_p_123_2);
+        this.cpar.putDropdown(R.id.cbo_nag_sasaka);
+
         da.c_Update(cpar);
         super.onDestroy();
     }

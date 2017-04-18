@@ -148,6 +148,15 @@ public class _L_Question extends Fragment {
 
 
 
+                if (cbo_l_78_1.getText().toString().equals("Hindi")) {
+
+                    layout.setVisibility(View.INVISIBLE);
+                    cleartxt();
+
+                } else {
+                    layout.setVisibility(View.VISIBLE);
+                }
+
 
 
         cbo_l_78_1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
