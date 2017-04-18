@@ -53,8 +53,7 @@ public class _X_Question extends Fragment {
         chk_x_132_16=(CheckBox)view.findViewById(R.id.chk_x_132_16);
         chk_x_126_8=(CheckBox)view.findViewById(R.id.chk_x_126_8);
         chk_x_130_3=(CheckBox)view.findViewById(R.id.chk_x_130_3);
-        txt_x_127_1=(EditText)view.findViewById(R.id.txt_x_127_1);
-        txt_x_127_2=(EditText)view.findViewById(R.id.txt_x_127_2);
+
         txt_x_126_8=(EditText)view.findViewById(R.id.txt_x_126_8);
         txt_x_132_16=(EditText)view.findViewById(R.id.txt_x_132_16);
         txt_x_130_3=(EditText)view.findViewById(R.id.txt_x_130_3);
@@ -85,8 +84,8 @@ public class _X_Question extends Fragment {
         this.cpar.setCheckBox(R.id.chk_x_126_8);
         this.cpar.setEditText(R.id.txt_x_126_8);
         this.cpar.setEditText(R.id.txt_x_ibapa_131_16);
-        this.cpar.setEditText(R.id.txt_x_127_1);
-        this.cpar.setEditText(R.id.txt_x_127_2);
+
+
         this.cpar.setCheckBox(R.id.chk_x_130_1);
         this.cpar.setCheckBox(R.id.chk_x_130_2);
         this.cpar.setCheckBox(R.id.chk_x_130_3);
@@ -303,8 +302,7 @@ public class _X_Question extends Fragment {
         this.cpar.putCheckBox(R.id.chk_x_126_8);
         this.cpar.putEditText(R.id.txt_x_126_8);
         this.cpar.putDropdown(R.id.cbo_x_127);
-        this.cpar.putEditText(R.id.txt_x_127_1);
-        this.cpar.putEditText(R.id.txt_x_127_2);
+
         this.cpar.putEditText(R.id.txt_x_ibapa_131_16);
         this.cpar.putDropdown(R.id.cbo_x_128);
         this.cpar.putDropdown(R.id.cbo_x_129_1);

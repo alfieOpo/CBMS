@@ -36,7 +36,7 @@
         <item>Sta. Clara</item>
         <item>Sta. Cruz</item>
         <item>Silangan</item>
-        <item>Santo Tomas</item>
+        <item>Sto. Tomas</item>
         <item>Tumana</item>
     </string-array>
 
@@ -177,7 +177,7 @@
         <item>Lote</item>
         <item>Kayrumit I</item>
         <item>Kayrumit II</item>
-        <item>Kay Kanlong</item>
+        <item>Kaykanlong</item>
         <item>Libis</item>
         <item>Pintong Bato</item>
         <item>Bato</item>
@@ -308,7 +308,7 @@
         <item>Kay Palong</item>
         <item>Central/Looban</item>
         <item>Sampaguitahan</item>
-        <item>C.DeJesus</item>
+        <item>C. De Jesus</item>
         <item>Hulo</item>
         <item>Pasong Kasay</item>
         <item>C.R. De Jesus</item>
@@ -336,18 +336,17 @@
 
     </string-array>
     <string-array name="Sta_Cruz">
-        <item>Tindalo</item>
-        <item>Kamagong</item>
-        <item>Narra</item>
-        <item>Yakal</item>
-        <item>Molave</item>
-        <item>St.Claire Ville Subd.</item>
-        <item>Glendale Residences</item>
-        <item>ElPueblo De SantaMaria</item>
-        <item>Ignacio/Mahogany</item>
-        <item>By-pass(Going to Bagbaguin)</item>
-        <item>By-pass(Going to Guyong)</item>
-
+        <item>Gulod</item>
+        <item>Luwasan</item>
+        <item>Sulucan</item>
+        <item>Centro</item>
+        <item>Sonoma</item>
+        <item>Housing Project</item>
+        <item>Eskwelahan</item>
+        <item>Pag-asa</item>
+        <item>Bukid</item>
+        <item>Maligaya</item>
+        <item>Village</item>
     </string-array>
     <string-array name="Silangan">
         <item>Santos</item>
@@ -369,7 +368,7 @@
     </string-array>
     <string-array name="Tumana">
         <item>Pechay</item>
-        <item>UpoSt.</item>
+        <item>Upo St.</item>
         <item>Pipino St.</item>
         <item>Ampalaya St.</item>
         <item>Melon St.</item>
@@ -382,7 +381,7 @@
         <item>Bataw St.</item>
         <item>Sitaw St.</item>
         <item>Labanos St.</item>
-        <item>Pakwan St.Petsay St.</item>
+        <item>Pakwan St.</item>
         <item>Sigarilyas St.</item>
 
     </string-array>

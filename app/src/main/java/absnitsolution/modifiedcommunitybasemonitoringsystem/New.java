@@ -296,6 +296,7 @@ public class New extends Fragment {
 
     private void LoadSitio(String barangayname) {
         try {
+
             switch (barangayname) {
                 case "Bagbaguin":
                     cpar.setDropdown(R.id.cbo_purok_sitio, R.array.Bagbaguin, "Select One");
@@ -354,16 +355,16 @@ public class New extends Fragment {
                 case "San Vicente":
                     cpar.setDropdown(R.id.cbo_purok_sitio, R.array.San_Vicente, "Select One");
                     break;
-                case "Sta Clara":
+                case "Sta. Clara":
                     cpar.setDropdown(R.id.cbo_purok_sitio, R.array.Sta_Clara, "Select One");
                     break;
-                case "Sta Cruz":
+                case "Sta. Cruz":
                     cpar.setDropdown(R.id.cbo_purok_sitio, R.array.Sta_Cruz, "Select One");
                     break;
                 case "Silangan":
                     cpar.setDropdown(R.id.cbo_purok_sitio, R.array.Silangan, "Select One");
                     break;
-                case "Sto Tomas":
+                case "Sto. Tomas":
                     cpar.setDropdown(R.id.cbo_purok_sitio, R.array.Sto_Tomas, "Select One");
                     break;
                 case "Tumana":
