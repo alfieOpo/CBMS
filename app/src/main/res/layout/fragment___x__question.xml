@@ -55,12 +55,17 @@
                         android:tag="D_360" />
 
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="125. Kumpara nung nakaraang 3 taon, ang ani mo ay ___?" />
+
                     <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                         android:id="@+id/cbo_x_125"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
-                        android:hint="125. Kumpara nung nakaraang 3 taon, ang ani mo ay ___?"
+                        android:hint=""
                         android:tag="D_361"
                         android:textColorHint="#05ab9a"
                         android:textSize="14dp"
@@ -199,13 +204,18 @@
                         android:textSize="14dp"
                         app:met_floatingLabel="highlight" />
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="128.  Nagpalit po ba kayo ng binhi?" />
+
 
                     <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                         android:id="@+id/cbo_127_1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
-                        android:hint="128.  Nagpalit po ba kayo ng binhi?"
+                        android:hint=""
                         android:tag="D_372"
                         android:textColorHint="#05ab9a"
                         android:textSize="14dp"
