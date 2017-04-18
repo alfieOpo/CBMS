@@ -7,6 +7,13 @@
     android:orientation="vertical"
     tools:context="absnitsolution.modifiedcommunitybasemonitoringsystem._P_Question">
 
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:text="P. AGRIKULTURA" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -17,271 +24,250 @@
             android:orientation="vertical"
             android:paddingBottom="55dp">
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:orientation="vertical">
 
-                <android.support.v7.widget.CardView
+
+                <TextView
+                    android:id="@+id/textView57"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="120. Kayo po ba ay nagsasaka?" />
+
+                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:id="@+id/cbo_nag_sasaka"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:tag="D_236"
+                    android:textColorHint="#05ab9a"
+                    android:textSize="14dp"
+                    card_view:met_floatingLabel="highlight" />
+
+                <LinearLayout
+                    android:id="@+id/layout"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    card_view:cardCornerRadius="4dp"
-                    card_view:contentPadding="10dp">
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView38"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="120.1. Ano ang katayuan ninyo sa lupang inyong sinasaka?" />
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_p_120"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:tag="D_220"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_p_120"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:tag="D_221"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_p_121"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="121. Gaano kalawak ang lupang sinasaka?"
+                            android:inputType="number"
+                            android:tag="D_222"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cbo_converter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:tag="D_224"
+                        android:textColorHint="#05ab9a"
+                        android:textSize="14dp"
+                        app:met_floatingLabel="highlight" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="">
+
+                        <EditText
+                            android:id="@+id/txt_equals"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="bottom|right"
+                            android:tag="D_225"
+                            android:textAlignment="gravity" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_p_121_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="122 Saan ang lupang sinasaka? "
+                            android:inputType="textPersonName"
+                            android:tag="D_223"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+
+                        android:id="@+id/textView58"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="false"
+                        android:layout_centerHorizontal="true"
+
+                        android:text="123.Gaano kadami ang inani noong huling anihan?"
+                        android:textSize="14dp" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_p_123_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="123.1 Palay"
+                            android:inputType="textWebPassword|number"
+                            android:tag="D_229"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_p_123_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="123.2 Corn"
+                            android:inputType="number"
+                            android:tag="D_230"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_p_123_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="123.3 Coconut"
+                            android:inputType="number"
+                            android:tag="D_231"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_p_123_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="123.4 Gulay"
+                            android:inputType="number"
+                            android:tag="D_232"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14sp" />
+                    </android.support.design.widget.TextInputLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
 
-                        <TextView
-                            android:id="@+id/textView22"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:paddingBottom="5dp"
-                            android:text="P. AGRIKULTURA" />
-
-                        <TextView
-                            android:id="@+id/textView57"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="120. Kayo po ba ay nagsasaka?" />
-
-                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                            android:id="@+id/cbo_nag_sasaka"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:tag="D_236"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="14dp"
-                            card_view:met_floatingLabel="highlight" />
-
-                        <LinearLayout
-                            android:id="@+id/layout"
+                        <android.support.design.widget.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:orientation="vertical">
+                            android:layout_weight="1">
 
-                            <TextView
-                                android:id="@+id/textView38"
+                            <EditText
+                                android:id="@+id/txt_p_123_5"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="120.1. Ano ang katayuan ninyo sa lupang inyong sinasaka?" />
-
-                            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                                android:id="@+id/cbo_p_120"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentLeft="true"
-                                android:tag="D_220"
+                                android:ems="10"
+                                android:hint="123.5 Iba pa, itala"
+                                android:inputType="textPersonName"
+                                android:tag="D_233"
                                 android:textColorHint="#05ab9a"
-                                android:textSize="14dp"
-                                app:met_floatingLabel="highlight" />
+                                android:textSize="14sp" />
+                        </android.support.design.widget.TextInputLayout>
 
-                            <android.support.design.widget.TextInputLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1">
 
-                                <EditText
-                                    android:id="@+id/txt_p_120"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:ems="10"
-                                    android:inputType="textPersonName"
-                                    android:tag="D_221"
-                                    android:textColorHint="#05ab9a"
-                                    android:textSize="14sp" />
-                            </android.support.design.widget.TextInputLayout>
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
 
-                            <android.support.design.widget.TextInputLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1">
-
-                                <EditText
-                                    android:id="@+id/txt_p_121"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:ems="10"
-                                    android:hint="121. Gaano kalawak ang lupang sinasaka?"
-                                    android:inputType="number"
-                                    android:tag="D_222"
-                                    android:textColorHint="#05ab9a"
-                                    android:textSize="14sp" />
-                            </android.support.design.widget.TextInputLayout>
-
-                            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                                android:id="@+id/cbo_converter"
+                            <EditText
+                                android:id="@+id/txt_p_ibapa_123_5"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentLeft="true"
-                                android:tag="D_224"
+                                android:ems="10"
+                                android:hint="123.5 Dami"
+                                android:inputType="number"
+                                android:tag="D_235"
                                 android:textColorHint="#05ab9a"
-                                android:textSize="14dp"
-                                app:met_floatingLabel="highlight" />
-
-                            <android.support.design.widget.TextInputLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:hint="">
-
-                                <EditText
-                                    android:id="@+id/txt_equals"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:gravity="bottom|right"
-                                    android:tag="D_225"
-                                    android:textAlignment="gravity" />
-                            </android.support.design.widget.TextInputLayout>
-
-                            <android.support.design.widget.TextInputLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1">
-
-                                <EditText
-                                    android:id="@+id/txt_p_121_1"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:ems="10"
-                                    android:hint="122 Saan ang lupang sinasaka? "
-                                    android:inputType="textPersonName"
-                                    android:tag="D_223"
-                                    android:textColorHint="#05ab9a"
-                                    android:textSize="14sp" />
-                            </android.support.design.widget.TextInputLayout>
-
-                            <TextView
-
-                                android:id="@+id/textView58"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentTop="false"
-                                android:layout_centerHorizontal="true"
-
-                                android:text="123.Gaano kadami ang inani noong huling anihan?"
-                                android:textSize="14dp" />
-
-                            <android.support.design.widget.TextInputLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1">
-
-                                <EditText
-                                    android:id="@+id/txt_p_123_1"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:ems="10"
-                                    android:hint="123.1 Palay"
-                                    android:inputType="textWebPassword|number"
-                                    android:tag="D_229"
-                                    android:textColorHint="#05ab9a"
-                                    android:textSize="14sp" />
-                            </android.support.design.widget.TextInputLayout>
-
-                            <android.support.design.widget.TextInputLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1">
-
-                                <EditText
-                                    android:id="@+id/txt_p_123_2"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:ems="10"
-                                    android:hint="123.2 Corn"
-                                    android:inputType="number"
-                                    android:tag="D_230"
-                                    android:textColorHint="#05ab9a"
-                                    android:textSize="14sp" />
-                            </android.support.design.widget.TextInputLayout>
-
-                            <android.support.design.widget.TextInputLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1">
-
-                                <EditText
-                                    android:id="@+id/txt_p_123_3"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:ems="10"
-                                    android:hint="123.3 Coconut"
-                                    android:inputType="number"
-                                    android:tag="D_231"
-                                    android:textColorHint="#05ab9a"
-                                    android:textSize="14sp" />
-                            </android.support.design.widget.TextInputLayout>
-
-                            <android.support.design.widget.TextInputLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1">
-
-                                <EditText
-                                    android:id="@+id/txt_p_123_4"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:ems="10"
-                                    android:hint="123.4 Gulay"
-                                    android:inputType="number"
-                                    android:tag="D_232"
-                                    android:textColorHint="#05ab9a"
-                                    android:textSize="14sp" />
-                            </android.support.design.widget.TextInputLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="horizontal">
-
-
-                                <android.support.design.widget.TextInputLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1">
-
-                                    <EditText
-                                        android:id="@+id/txt_p_123_5"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:ems="10"
-                                        android:hint="123.5 Iba pa, itala"
-                                        android:inputType="textPersonName"
-                                        android:tag="D_233"
-                                        android:textColorHint="#05ab9a"
-                                        android:textSize="14sp" />
-                                </android.support.design.widget.TextInputLayout>
-
-
-                                <android.support.design.widget.TextInputLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1">
-
-                                    <EditText
-                                        android:id="@+id/txt_p_ibapa_123_5"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:ems="10"
-                                        android:hint="123.5 Dami"
-                                        android:inputType="number"
-                                        android:tag="D_235"
-                                        android:textColorHint="#05ab9a"
-                                        android:textSize="14sp" />
-                                </android.support.design.widget.TextInputLayout>
-
-                            </LinearLayout>
-                        </LinearLayout>
-
+                                android:textSize="14sp" />
+                        </android.support.design.widget.TextInputLayout>
 
                     </LinearLayout>
+                </LinearLayout>
 
 
-                </android.support.v7.widget.CardView>
-            </RelativeLayout>
+            </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/pnl_next_and_back"

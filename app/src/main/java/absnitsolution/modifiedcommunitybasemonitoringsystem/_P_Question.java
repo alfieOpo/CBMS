@@ -51,7 +51,7 @@ public class _P_Question extends Fragment {
         txt_p_121=(EditText) view.findViewById(R.id.txt_p_121);
         txt_p_120=(EditText) view.findViewById(R.id.txt_p_120);
         this.cpar.setDropdown(R.id.cbo_p_120, R.array.p_katayuan_sinasaka, "N/A");
-        this.cpar.setDropdown(R.id.cbo_converter, R.array.area, "square meter");
+        this.cpar.setDropdown(R.id.cbo_converter, R.array.area, "Select One");
         this.cpar.setDropdown(R.id.cbo_nag_sasaka, R.array.oo_hindi, "Oo");
         this.cpar.setEditText(R.id.txt_p_120);
         this.cpar.setEditText(R.id.txt_equals);
@@ -77,12 +77,12 @@ public class _P_Question extends Fragment {
 
                 }
                 if(position==0){
-                    txt_equals.setText(Config.toCurrency(mainvalue).replace(".00",""));
+                    txt_equals.setText(Config.toCurrency(mainvalue).replace(".00","")+" sq.m");
                 }
 
                 else if(position ==1){
                     double value=(mainvalue * 10000);
-                    txt_equals.setText(Config.toCurrency(value).replace(".00",""));
+                    txt_equals.setText(Config.toCurrency(value).replace(".00","")+" sq.m");
                 }
             }
         });
