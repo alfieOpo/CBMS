@@ -28,20 +28,9 @@ public class _X_Question extends Fragment {
     MainDataBaseHandler da;
     ImageButton btn_back, btn_next;
     LinearLayout layout,layout130;
-    MaterialBetterSpinner cbo_x_127,cbo_x_128,cbo_127_1,cbo_x_129_1,cbo_x_129_2, cbo_x_125      ;
-
-
-
-    EditText txt_x_127_1,txt_x_127_2,txt_x_126_8,txt_x_130_3, txt_x_124, txt_x_131_1, txt_x_131_2,  txt_x_131_3,
-            txt_x_131_4, txt_x_131_5, txt_x_131_6, txt_x_131_7, txt_x_131_8,  txt_x_131_9, txt_x_131_10, txt_x_131_11, txt_x_131_12,
-            txt_x_131_13, txt_x_131_14, txt_x_131_15, txt_x_131_15_1, txt_x_131_15_2,  txt_x_131_15_3, txt_x_131_16, txt_x_ibapa_131_16, txt_x_132_16;
-
-
-
-    CheckBox chk_x_126_8,chk_x_132_16,chk_x_130_3, chk_x_126_1, chk_x_126_2, chk_x_126_3, chk_x_126_4, chk_x_126_5,  chk_x_126_6, chk_x_126_7, chk_x_130_1, chk_x_130_2,
-            chk_x_132_1, chk_x_132_2, chk_x_132_3,  chk_x_132_4, chk_x_132_5, chk_x_132_6, chk_x_132_7, chk_x_132_8, chk_x_132_9, chk_x_132_10, chk_x_132_11, chk_x_132_12,
-            chk_x_132_13, chk_x_132_14, chk_x_132_15, chk_x_132_15_1, chk_x_132_15_2, chk_x_132_15_3;
-
+    MaterialBetterSpinner cbo_x_127,cbo_x_128,cbo_127_1,cbo_x_129_1,cbo_x_129_2;
+    EditText txt_x_127_1,txt_x_127_2,txt_x_126_8,txt_x_132_16,txt_x_130_3;
+    CheckBox chk_x_126_8,chk_x_132_16,chk_x_130_3;
     boolean falseall=false;
     public _X_Question() {
     }
@@ -59,8 +48,8 @@ public class _X_Question extends Fragment {
         cbo_x_127=(MaterialBetterSpinner)view.findViewById(R.id.cbo_x_127);
         cbo_127_1=(MaterialBetterSpinner)view.findViewById(R.id.cbo_127_1);
         cbo_x_128=(MaterialBetterSpinner)view.findViewById(R.id.cbo_x_128);
-        cbo_x_129_1=(MaterialBetterSpinner)view.findViewById(R.id.cbo_x_129_1);
-        cbo_x_129_2=(MaterialBetterSpinner)view.findViewById(R.id.cbo_x_129_2);
+        cbo_x_129_1=(MaterialBetterSpinner)view.findViewById(R.id.cbo_x_128);
+        cbo_x_129_2=(MaterialBetterSpinner)view.findViewById(R.id.cbo_x_128);
         chk_x_132_16=(CheckBox)view.findViewById(R.id.chk_x_132_16);
         chk_x_126_8=(CheckBox)view.findViewById(R.id.chk_x_126_8);
         chk_x_130_3=(CheckBox)view.findViewById(R.id.chk_x_130_3);
@@ -68,193 +57,12 @@ public class _X_Question extends Fragment {
         txt_x_126_8=(EditText)view.findViewById(R.id.txt_x_126_8);
         txt_x_132_16=(EditText)view.findViewById(R.id.txt_x_132_16);
         txt_x_130_3=(EditText)view.findViewById(R.id.txt_x_130_3);
-
-        txt_x_124      =(EditText)view.findViewById(R.id.txt_x_124);
-        cbo_x_125       =(MaterialBetterSpinner)view.findViewById(R.id.cbo_x_125);
-        chk_x_126_1     =(CheckBox)view.findViewById(R.id.chk_x_126_1);
-        chk_x_126_2     =(CheckBox)view.findViewById(R.id.chk_x_126_2);
-        chk_x_126_3     =(CheckBox)view.findViewById(R.id.chk_x_126_3);
-        chk_x_126_4     =(CheckBox)view.findViewById(R.id.chk_x_126_4);
-        chk_x_126_5     =(CheckBox)view.findViewById(R.id.chk_x_126_5);
-        chk_x_126_6     =(CheckBox)view.findViewById(R.id.chk_x_126_6);
-        chk_x_126_7     =(CheckBox)view.findViewById(R.id.chk_x_126_7);
-        chk_x_130_1     =(CheckBox)view.findViewById(R.id.chk_x_130_1);
-        chk_x_130_2     =(CheckBox)view.findViewById(R.id.chk_x_130_2);
-
-        txt_x_131_1              =(EditText)view.findViewById(R.id.txt_x_131_1       );
-        txt_x_131_2             =(EditText)view.findViewById(R.id.txt_x_131_2       );
-        txt_x_131_3             =(EditText)view.findViewById(R.id.txt_x_131_3       );
-        txt_x_131_4             =(EditText)view.findViewById(R.id.txt_x_131_4       );
-        txt_x_131_5             =(EditText)view.findViewById(R.id.txt_x_131_5       );
-        txt_x_131_6             =(EditText)view.findViewById(R.id.txt_x_131_6       );
-        txt_x_131_7             =(EditText)view.findViewById(R.id.txt_x_131_7       );
-        txt_x_131_8             =(EditText)view.findViewById(R.id.txt_x_131_8       );
-        txt_x_131_9             =(EditText)view.findViewById(R.id.txt_x_131_9       );
-        txt_x_131_10            =(EditText)view.findViewById(R.id.txt_x_131_10      );
-        txt_x_131_11            =(EditText)view.findViewById(R.id.txt_x_131_11      );
-        txt_x_131_12            =(EditText)view.findViewById(R.id.txt_x_131_12      );
-        txt_x_131_13            =(EditText)view.findViewById(R.id.txt_x_131_13      );
-        txt_x_131_14            =(EditText)view.findViewById(R.id.txt_x_131_14      );
-        txt_x_131_15            =(EditText)view.findViewById(R.id.txt_x_131_15      );
-        txt_x_131_15_1          =(EditText)view.findViewById(R.id.txt_x_131_15_1    );
-        txt_x_131_15_2          =(EditText)view.findViewById(R.id.txt_x_131_15_2    );
-        txt_x_131_15_3          =(EditText)view.findViewById(R.id.txt_x_131_15_3    );
-        txt_x_131_16            =(EditText)view.findViewById(R.id.txt_x_131_16      );
-        txt_x_ibapa_131_16      =(EditText)view.findViewById(R.id.txt_x_ibapa_131_16);
-
-        chk_x_132_1            =(CheckBox)view.findViewById(R.id.chk_x_132_1   );
-        chk_x_132_2            =(CheckBox)view.findViewById(R.id.chk_x_132_2   );
-        chk_x_132_3            =(CheckBox)view.findViewById(R.id.chk_x_132_3   );
-        chk_x_132_4            =(CheckBox)view.findViewById(R.id.chk_x_132_4   );
-        chk_x_132_5            =(CheckBox)view.findViewById(R.id.chk_x_132_5   );
-        chk_x_132_6            =(CheckBox)view.findViewById(R.id.chk_x_132_6   );
-        chk_x_132_7            =(CheckBox)view.findViewById(R.id.chk_x_132_7   );
-        chk_x_132_8            =(CheckBox)view.findViewById(R.id.chk_x_132_8   );
-        chk_x_132_9            =(CheckBox)view.findViewById(R.id.chk_x_132_9   );
-        chk_x_132_10           =(CheckBox)view.findViewById(R.id.chk_x_132_10  );
-        chk_x_132_11           =(CheckBox)view.findViewById(R.id.chk_x_132_11  );
-        chk_x_132_12           =(CheckBox)view.findViewById(R.id.chk_x_132_12  );
-        chk_x_132_13           =(CheckBox)view.findViewById(R.id.chk_x_132_13  );
-        chk_x_132_14           =(CheckBox)view.findViewById(R.id.chk_x_132_14  );
-        chk_x_132_15           =(CheckBox)view.findViewById(R.id.chk_x_132_15  );
-        chk_x_132_15_1         =(CheckBox)view.findViewById(R.id.chk_x_132_15_1);
-        chk_x_132_15_2         =(CheckBox)view.findViewById(R.id.chk_x_132_15_2);
-        chk_x_132_15_3         =(CheckBox)view.findViewById(R.id.chk_x_132_15_3);
-
         da=new MainDataBaseHandler(getActivity());
         if(da._120OO(Config.ID)){
-                    txt_x_124               .setVisibility(View.VISIBLE);
-            cbo_x_125               .setVisibility(View.VISIBLE);
-            chk_x_126_1             .setVisibility(View.VISIBLE);
-            chk_x_126_2             .setVisibility(View.VISIBLE);
-            chk_x_126_3             .setVisibility(View.VISIBLE);
-            chk_x_126_4             .setVisibility(View.VISIBLE);
-            chk_x_126_5             .setVisibility(View.VISIBLE);
-            chk_x_126_6             .setVisibility(View.VISIBLE);
-            chk_x_126_7             .setVisibility(View.VISIBLE);
-            chk_x_126_8             .setVisibility(View.VISIBLE);
-            txt_x_126_8             .setVisibility(View.VISIBLE);
-            cbo_x_127               .setVisibility(View.VISIBLE);
-            cbo_127_1               .setVisibility(View.VISIBLE);
-            cbo_x_128               .setVisibility(View.VISIBLE);
-            cbo_x_129_1             .setVisibility(View.VISIBLE);
-            cbo_x_129_2             .setVisibility(View.VISIBLE);
-            chk_x_130_1             .setVisibility(View.VISIBLE);
-            chk_x_130_2             .setVisibility(View.VISIBLE);
-            chk_x_130_3             .setVisibility(View.VISIBLE);
-            txt_x_130_3             .setVisibility(View.VISIBLE);
-            txt_x_131_1             .setVisibility(View.VISIBLE);
-            txt_x_131_2             .setVisibility(View.VISIBLE);
-            txt_x_131_3             .setVisibility(View.VISIBLE);
-            txt_x_131_4             .setVisibility(View.VISIBLE);
-            txt_x_131_5             .setVisibility(View.VISIBLE);
-            txt_x_131_6             .setVisibility(View.VISIBLE);
-            txt_x_131_7             .setVisibility(View.VISIBLE);
-            txt_x_131_8             .setVisibility(View.VISIBLE);
-            txt_x_131_9             .setVisibility(View.VISIBLE);
-            txt_x_131_10            .setVisibility(View.VISIBLE);
-            txt_x_131_11            .setVisibility(View.VISIBLE);
-            txt_x_131_12            .setVisibility(View.VISIBLE);
-            txt_x_131_13            .setVisibility(View.VISIBLE);
-            txt_x_131_14            .setVisibility(View.VISIBLE);
-            txt_x_131_15            .setVisibility(View.VISIBLE);
-            txt_x_131_15_1          .setVisibility(View.VISIBLE);
-            txt_x_131_15_2          .setVisibility(View.VISIBLE);
-            txt_x_131_15_3          .setVisibility(View.VISIBLE);
-            txt_x_131_16            .setVisibility(View.VISIBLE);
-            txt_x_ibapa_131_16      .setVisibility(View.VISIBLE);
-            chk_x_132_1             .setVisibility(View.VISIBLE);
-            chk_x_132_2             .setVisibility(View.VISIBLE);
-            chk_x_132_3             .setVisibility(View.VISIBLE);
-            chk_x_132_4             .setVisibility(View.VISIBLE);
-            chk_x_132_5             .setVisibility(View.VISIBLE);
-            chk_x_132_6             .setVisibility(View.VISIBLE);
-            chk_x_132_7             .setVisibility(View.VISIBLE);
-            chk_x_132_8             .setVisibility(View.VISIBLE);
-            chk_x_132_9             .setVisibility(View.VISIBLE);
-            chk_x_132_10            .setVisibility(View.VISIBLE);
-            chk_x_132_11            .setVisibility(View.VISIBLE);
-            chk_x_132_12            .setVisibility(View.VISIBLE);
-            chk_x_132_13            .setVisibility(View.VISIBLE);
-            chk_x_132_14            .setVisibility(View.VISIBLE);
-            chk_x_132_15            .setVisibility(View.VISIBLE);
-            chk_x_132_15_1          .setVisibility(View.VISIBLE);
-            chk_x_132_15_2          .setVisibility(View.VISIBLE);
-            chk_x_132_15_3          .setVisibility(View.VISIBLE);
-            chk_x_132_16            .setVisibility(View.VISIBLE);
-            txt_x_132_16            .setVisibility(View.VISIBLE);
-
-
-
-
-
-
-
-
+            layout.setVisibility(View.VISIBLE);
         }
         else {
-          
-                    txt_x_124               .setVisibility(View.INVISIBLE);
-            cbo_x_125               .setVisibility(View.INVISIBLE);
-            chk_x_126_1             .setVisibility(View.INVISIBLE);
-            chk_x_126_2             .setVisibility(View.INVISIBLE);
-            chk_x_126_3             .setVisibility(View.INVISIBLE);
-            chk_x_126_4             .setVisibility(View.INVISIBLE);
-            chk_x_126_5             .setVisibility(View.INVISIBLE);
-            chk_x_126_6             .setVisibility(View.INVISIBLE);
-            chk_x_126_7             .setVisibility(View.INVISIBLE);
-            chk_x_126_8             .setVisibility(View.INVISIBLE);
-            txt_x_126_8             .setVisibility(View.INVISIBLE);
-            cbo_x_127               .setVisibility(View.INVISIBLE);
-            cbo_127_1               .setVisibility(View.INVISIBLE);
-            cbo_x_128               .setVisibility(View.INVISIBLE);
-            cbo_x_129_1             .setVisibility(View.INVISIBLE);
-            cbo_x_129_2             .setVisibility(View.INVISIBLE);
-            chk_x_130_1             .setVisibility(View.INVISIBLE);
-            chk_x_130_2             .setVisibility(View.INVISIBLE);
-            chk_x_130_3             .setVisibility(View.INVISIBLE);
-            txt_x_130_3             .setVisibility(View.INVISIBLE);
-            txt_x_131_1             .setVisibility(View.INVISIBLE);
-            txt_x_131_2             .setVisibility(View.INVISIBLE);
-            txt_x_131_3             .setVisibility(View.INVISIBLE);
-            txt_x_131_4             .setVisibility(View.INVISIBLE);
-            txt_x_131_5             .setVisibility(View.INVISIBLE);
-            txt_x_131_6             .setVisibility(View.INVISIBLE);
-            txt_x_131_7             .setVisibility(View.INVISIBLE);
-            txt_x_131_8             .setVisibility(View.INVISIBLE);
-            txt_x_131_9             .setVisibility(View.INVISIBLE);
-            txt_x_131_10            .setVisibility(View.INVISIBLE);
-            txt_x_131_11            .setVisibility(View.INVISIBLE);
-            txt_x_131_12            .setVisibility(View.INVISIBLE);
-            txt_x_131_13            .setVisibility(View.INVISIBLE);
-            txt_x_131_14            .setVisibility(View.INVISIBLE);
-            txt_x_131_15            .setVisibility(View.INVISIBLE);
-            txt_x_131_15_1          .setVisibility(View.INVISIBLE);
-            txt_x_131_15_2          .setVisibility(View.INVISIBLE);
-            txt_x_131_15_3          .setVisibility(View.INVISIBLE);
-            txt_x_131_16            .setVisibility(View.INVISIBLE);
-            txt_x_ibapa_131_16      .setVisibility(View.INVISIBLE);
-            chk_x_132_1             .setVisibility(View.INVISIBLE);
-            chk_x_132_2             .setVisibility(View.INVISIBLE);
-            chk_x_132_3             .setVisibility(View.INVISIBLE);
-            chk_x_132_4             .setVisibility(View.INVISIBLE);
-            chk_x_132_5             .setVisibility(View.INVISIBLE);
-            chk_x_132_6             .setVisibility(View.INVISIBLE);
-            chk_x_132_7             .setVisibility(View.INVISIBLE);
-            chk_x_132_8             .setVisibility(View.INVISIBLE);
-            chk_x_132_9             .setVisibility(View.INVISIBLE);
-            chk_x_132_10            .setVisibility(View.INVISIBLE);
-            chk_x_132_11            .setVisibility(View.INVISIBLE);
-            chk_x_132_12            .setVisibility(View.INVISIBLE);
-            chk_x_132_13            .setVisibility(View.INVISIBLE);
-            chk_x_132_14            .setVisibility(View.INVISIBLE);
-            chk_x_132_15            .setVisibility(View.INVISIBLE);
-            chk_x_132_15_1          .setVisibility(View.INVISIBLE);
-            chk_x_132_15_2          .setVisibility(View.INVISIBLE);
-            chk_x_132_15_3          .setVisibility(View.INVISIBLE);
-            chk_x_132_16            .setVisibility(View.INVISIBLE);
-            txt_x_132_16            .setVisibility(View.INVISIBLE);
-
+            layout.setVisibility(View.INVISIBLE);
         }
         this.cpar = new c_params(Config.ID, container, view);
 
