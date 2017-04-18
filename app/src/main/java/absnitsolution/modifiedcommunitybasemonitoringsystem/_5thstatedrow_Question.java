@@ -113,7 +113,7 @@ public class _5thstatedrow_Question extends Fragment {
         cbo_5th_saangalingtulong.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if(position==5){
+                if(position==6){
                     txt_5th_ibapa_saangaling.setVisibility( View.VISIBLE);
                 }
                 else{
