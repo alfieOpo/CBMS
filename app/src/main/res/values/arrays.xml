@@ -821,6 +821,7 @@
 
     </string-array>
 <string-array name="area">
+    <item>Select One</item>
     <item>square meter</item>
     <item>hectare</item>
 </string-array>

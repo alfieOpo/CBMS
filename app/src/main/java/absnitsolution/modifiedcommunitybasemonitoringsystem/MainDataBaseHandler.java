@@ -1418,6 +1418,19 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
         db.execSQL("delete from go_1st where M_ID in (Select _id from mcbms where D_034 <> 1)");
         db.execSQL("delete from mcbms where D_034 <> 1");
     }
-
+    public void DeleteAll(String M_ID) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL("delete from ga_1st where M_ID ="+M_ID);
+        db.execSQL("delete from ga_2nd where M_ID  ="+M_ID);
+        db.execSQL("delete from ga_3rd where M_ID  ="+M_ID);
+        db.execSQL("delete from ga_4th where M_ID ="+M_ID);
+        db.execSQL("delete from ga_5th where M_ID ="+M_ID);
+        db.execSQL("delete from ga_6th where M_ID  ="+M_ID);
+        db.execSQL("delete from ga_8th where M_ID  ="+M_ID);
+        db.execSQL("delete from ga_9th where M_ID  ="+M_ID);
+        db.execSQL("delete from ga_10th where M_ID  ="+M_ID);
+        db.execSQL("delete from go_1st where M_ID  ="+M_ID);
+        db.execSQL("delete from mcbms where _id="+M_ID);
+    }
 
 }

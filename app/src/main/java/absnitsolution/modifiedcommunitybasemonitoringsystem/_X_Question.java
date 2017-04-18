@@ -50,8 +50,8 @@ public class _X_Question extends Fragment {
         cbo_127_1=(MaterialBetterSpinner)view.findViewById(R.id.cbo_127_1);
         layout126=(LinearLayout)view.findViewById(R.id.layout126);
         cbo_x_128=(MaterialBetterSpinner)view.findViewById(R.id.cbo_x_128);
-        cbo_x_129_1=(MaterialBetterSpinner)view.findViewById(R.id.cbo_x_128);
-        cbo_x_129_2=(MaterialBetterSpinner)view.findViewById(R.id.cbo_x_128);
+        cbo_x_129_1=(MaterialBetterSpinner)view.findViewById(R.id.cbo_x_129_1);
+        cbo_x_129_2=(MaterialBetterSpinner)view.findViewById(R.id.cbo_x_129_2);
         chk_x_132_16=(CheckBox)view.findViewById(R.id.chk_x_132_16);
         chk_x_126_8=(CheckBox)view.findViewById(R.id.chk_x_126_8);
         chk_x_130_3=(CheckBox)view.findViewById(R.id.chk_x_130_3);
@@ -63,9 +63,11 @@ public class _X_Question extends Fragment {
         layout130=(LinearLayout)view.findViewById(R.id.layout130);
         layout131=(LinearLayout)view.findViewById(R.id.layout131);
         layout132=(LinearLayout)view.findViewById(R.id.layout132);
+
         da=new MainDataBaseHandler(getActivity());
         if(da._120OO(Config.ID)){
-
+            cbo_x_128.setVisibility(View.VISIBLE);
+            cbo_x_127.setVisibility(View.VISIBLE);
             cbo_x_129_1.setVisibility(View.VISIBLE);
             cbo_x_129_2.setVisibility(View.VISIBLE);
             cbo_127_1.setVisibility(View.VISIBLE);
@@ -75,9 +77,10 @@ public class _X_Question extends Fragment {
             layout126.setVisibility(View.VISIBLE);
             layout131.setVisibility(View.VISIBLE);
             layout132.setVisibility(View.VISIBLE);
-
         }
         else {
+            cbo_x_128.setVisibility(View.INVISIBLE);
+            cbo_x_127.setVisibility(View.INVISIBLE);
             cbo_x_129_1.setVisibility(View.INVISIBLE);
             cbo_x_129_2.setVisibility(View.INVISIBLE);
             cbo_127_1.setVisibility(View.INVISIBLE);
@@ -87,11 +90,8 @@ public class _X_Question extends Fragment {
             layout126.setVisibility(View.INVISIBLE);
             layout131.setVisibility(View.INVISIBLE);
             layout132.setVisibility(View.INVISIBLE);
-
         }
         this.cpar = new c_params(Config.ID, container, view);
-
-
         this.cpar.setEditText(R.id.txt_x_124);
         this.cpar.setDropdown(R.id.cbo_x_125, R.array.x_kumpara, "");
         this.cpar.setDropdown(R.id.cbo_127_1, R.array.oo_hindi, "Hindi");
@@ -109,8 +109,6 @@ public class _X_Question extends Fragment {
         this.cpar.setCheckBox(R.id.chk_x_126_8);
         this.cpar.setEditText(R.id.txt_x_126_8);
         this.cpar.setEditText(R.id.txt_x_ibapa_131_16);
-
-
         this.cpar.setCheckBox(R.id.chk_x_130_1);
         this.cpar.setCheckBox(R.id.chk_x_130_2);
         this.cpar.setCheckBox(R.id.chk_x_130_3);
@@ -165,7 +163,7 @@ public class _X_Question extends Fragment {
                         cbo_x_128.setVisibility(View.VISIBLE);
                         break;
                     case 1:
-                        cbo_x_128.setText("Hindi");
+                        
                         cbo_x_128.setVisibility(View.INVISIBLE);
                         break;
                 }
