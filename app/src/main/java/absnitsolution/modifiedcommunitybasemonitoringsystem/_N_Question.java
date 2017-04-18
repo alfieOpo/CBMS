@@ -12,6 +12,7 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,6 +31,8 @@ public class _N_Question extends Fragment {
     EditText txt_n_86,txt_n_89,txt_n_ibapa_88,txt_n_ibapa_94,txt_n_ibapa_gamit,txt_n_ibapa_85;
     TextView textView27,textView24,textView26;
     CheckBox chk_n_ibapa_gamit;
+    LinearLayout layout90;
+    View view;
     public _N_Question() {
     }
 
@@ -38,7 +41,7 @@ public class _N_Question extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment___n__question, container, false);
+          view = inflater.inflate(R.layout.fragment___n__question, container, false);
 
 
         this.cpar = new c_params(Config.ID, container, view);
@@ -54,7 +57,7 @@ public class _N_Question extends Fragment {
         txt_n_ibapa_88= (EditText) view.findViewById(R.id.txt_n_ibapa_88);
         textView27 =(TextView)view.findViewById(R.id.textView27);
         textView24=(TextView)view.findViewById(R.id.textView24);
-
+        layout90=(LinearLayout)view.findViewById(R.id.layout90);
         textView26 =(TextView)view.findViewById(R.id.textView26);
         //---------------------------
         cbo_oo_nakatirik = (MaterialBetterSpinner) view.findViewById(R.id.cbo_oo_nakatirik);
@@ -207,6 +210,28 @@ public class _N_Question extends Fragment {
                     txt_n_ibapa_88.setText("");
                     textView27.setVisibility(View.INVISIBLE);
                     textView26.setVisibility(View.INVISIBLE);
+
+                    layout90.setVisibility(View.INVISIBLE);
+
+                    Clearthis(R.id.chk_n_radio);
+                    Clearthis(R.id.chk_n_telebisyon);
+                    Clearthis(R.id.chk_n_cd);
+                    Clearthis(R.id.chk_n_stereo);
+                    Clearthis(R.id.chk_n_karaoke);
+                    Clearthis(R.id.chk_n_refrigerator);
+                    Clearthis(R.id.chk_n_electricfan);
+                    Clearthis(R.id.chk_n_electriciron);
+                    Clearthis(R.id.chk_n_lpg);
+                    Clearthis(R.id.chk_n_washing);
+                    Clearthis(R.id.chk_n_microwave);
+                    Clearthis(R.id.chk_n_computer);
+                    Clearthis(R.id.chk_n_mobilephone);
+                    Clearthis(R.id.chk_n_landline);
+                    Clearthis(R.id.chk_n_aircon);
+                    Clearthis(R.id.chk_n_sewing);
+                    Clearthis(R.id.chk_n_car);
+                    Clearthis(R.id.chk_n_ibapa_gamit);
+                    Clearthis(R.id.txt_n_ibapa_gamit);
                 }
                 else{
                     textView26.setVisibility(View.VISIBLE);
@@ -214,6 +239,12 @@ public class _N_Question extends Fragment {
                     txt_n_89.setVisibility(View.VISIBLE);
                     txt_n_ibapa_88.setVisibility(View.VISIBLE);
                     textView27.setVisibility(View.VISIBLE);
+                    layout90.setVisibility(View.VISIBLE);
+
+
+
+
+
                 }
 
             }
@@ -367,5 +398,13 @@ public class _N_Question extends Fragment {
         this.cpar.putEditText(R.id.txt_n_ibapa_94);
         da.c_Update(cpar);
         super.onDestroy();
+    }
+
+    public void Clearthis(int R){
+
+
+        try{CheckBox box=(CheckBox)view.findViewById(R); box.setChecked(false);}catch (Exception xx){}
+        try{EditText text=(EditText)view.findViewById(R); text.setText("");}catch (Exception xx){}
+
     }
 }

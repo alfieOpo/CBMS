@@ -63,7 +63,7 @@ public class New extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_new, container, false);
         Config.CallbackIsCheck = false;
-getActivity().setTitle("MCBMS - MUNICIPALITY OF SANTA MARIA,BULACAN");
+        getActivity().setTitle("MCBMS - MUNICIPALITY OF SANTA MARIA,BULACAN");
         txt_f = (EditText) view.findViewById(R.id.txt_first_name);
         txt_m = (EditText) view.findViewById(R.id.txt_middle_name);
         txt_l = (EditText) view.findViewById(R.id.txt_last_name);
@@ -136,8 +136,8 @@ getActivity().setTitle("MCBMS - MUNICIPALITY OF SANTA MARIA,BULACAN");
         btn_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-list=new ArrayList<String>();
-addField(txt_f.getText().toString());
+                list=new ArrayList<String>();
+                addField(txt_f.getText().toString());
                 addField(txt_l.getText().toString());
                 addField(cbo_purok_sitio.getText().toString());
                 if(!Valid()){
@@ -178,7 +178,7 @@ addField(txt_f.getText().toString());
                     da.CreateImageRow(values);
 
 
-                     ((MainActivity)getActivity()).CreateNew();
+                    ((MainActivity)getActivity()).CreateNew();
 
                 }
 
@@ -203,7 +203,7 @@ addField(txt_f.getText().toString());
                     BitmapDrawable drawable = (BitmapDrawable) img_Fromcam.getDrawable();
                     Bitmap bitmap = drawable.getBitmap();
                     ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                    bitmap.compress(Bitmap.CompressFormat.JPEG, 20, stream);
+                    bitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream);
                     byte[] byteArray = stream.toByteArray();
 
                     String AndroidID = Settings.Secure.getString(getActivity().getContentResolver(), Settings.Secure.ANDROID_ID);

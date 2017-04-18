@@ -209,13 +209,41 @@
                         </android.support.design.widget.TextInputLayout>
 
 
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/cbo_r_144"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:hint="143. Gaano kadalas ang pagkokolekta ng basura? "
+                            android:tag="D_326"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp"
+                            app:met_floatingLabel="highlight" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_s_ibapa_144"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint=""
+                                android:inputType="textPersonName"
+                                android:tag="D_328"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
+
                         <TextView
                             android:id="@+id/text_o_1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_alignParentTop="true"
                             android:layout_centerHorizontal="true"
-                            android:text="143. Saan itinatapon ang mga mapanganib na basura tulad ng bumbilya, fluorescent lamp, mga baterya, lata ng pintura, thinner at bote ng gamot?"
+                            android:text="144. Saan itinatapon ang mga mapanganib na basura tulad ng bumbilya, fluorescent lamp, mga baterya, lata ng pintura, thinner at bote ng gamot?"
                             android:textSize="14dp" />
 
                         <CheckBox
@@ -286,36 +314,6 @@
                                 android:hint=""
                                 android:inputType="textPersonName"
                                 android:tag="D_325"
-                                android:textColorHint="#05ab9a"
-                                android:textSize="12sp" />
-                        </android.support.design.widget.TextInputLayout>
-
-
-                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                            android:id="@+id/cbo_r_144"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:hint="144. Gaano kadalas ang pagkokolekta ng basura? "
-                            android:tag="D_326"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="14dp"
-                            app:met_floatingLabel="highlight" />
-
-
-                        <android.support.design.widget.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1">
-
-                            <EditText
-                                android:id="@+id/txt_s_ibapa_144"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:ems="10"
-                                android:hint=""
-                                android:inputType="textPersonName"
-                                android:tag="D_328"
                                 android:textColorHint="#05ab9a"
                                 android:textSize="12sp" />
                         </android.support.design.widget.TextInputLayout>

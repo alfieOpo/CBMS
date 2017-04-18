@@ -23,7 +23,7 @@ import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
  */
 public class _P_Question extends Fragment {
 
-    c_params cpar;
+     c_params cpar;
 
     MainDataBaseHandler da;
     ImageButton btn_back, btn_next;
@@ -77,16 +77,21 @@ public class _P_Question extends Fragment {
 
                 }
                 if(position==0){
-                    txt_equals.setText(Config.toCurrency(mainvalue).replace(".00",""));
+                    txt_equals.setText(Config.toCurrency(mainvalue).replace(".00","")+" sq.m.");
                 }
 
                 else if(position ==1){
                     double value=(mainvalue * 10000);
-                    txt_equals.setText(Config.toCurrency(value).replace(".00",""));
+                    txt_equals.setText(Config.toCurrency(value).replace(".00","")+" sq.m.");
                 }
             }
         });
-
+if(cbo_nag_sasaka.getText().toString().equals("Hindi")){
+    layout.setVisibility(View.INVISIBLE);
+}
+else {
+    layout.setVisibility(View.VISIBLE);
+}
         cbo_nag_sasaka.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -141,15 +146,23 @@ public class _P_Question extends Fragment {
         btn_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Fragment fragment = null;
-                try {
-                    fragment = _X_Question.class.newInstance();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-                // Insert the fragment by replacing any existing fragment
+                da = new MainDataBaseHandler(getActivity().getApplicationContext());
+                cpar.putDropdown(R.id.cbo_p_120);
+                cpar.putDropdown(R.id.cbo_nag_sasaka);
+                cpar.putEditText(R.id.txt_p_120);
+                cpar.putEditText(R.id.txt_p_121_1);
+                cpar.putEditText(R.id.txt_p_123_1);
+                cpar.putEditText(R.id.txt_p_123_3);
+                cpar.putEditText(R.id.txt_p_123_4);
+                cpar.putEditText(R.id.txt_p_123_5);
+                cpar.putEditText(R.id.txt_p_ibapa_123_5);
+                cpar.putDropdown(R.id.cbo_converter);
+                cpar.putEditText(R.id.txt_equals);
+                cpar.putEditText(R.id.txt_p_123_2);
+                da.c_Update(cpar);
+
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.frame, fragment, "Q. CROP FARMING/PAGSASAKA").commit();
+                fragmentManager.beginTransaction().replace(R.id.frame, new _X_Question(), "Q. CROP FARMING/PAGSASAKA").commit();
             }
         });
         return view;
@@ -158,19 +171,7 @@ public class _P_Question extends Fragment {
 
     @Override
     public void onDestroy() {
-        da = new MainDataBaseHandler(getActivity().getApplicationContext());
-        this.cpar.putDropdown(R.id.cbo_p_120);
-        this.cpar.putEditText(R.id.txt_p_120);
-        this.cpar.putEditText(R.id.txt_p_121_1);
-        this.cpar.putEditText(R.id.txt_p_123_1);
-        this.cpar.putEditText(R.id.txt_p_123_3);
-        this.cpar.putEditText(R.id.txt_p_123_4);
-        this.cpar.putEditText(R.id.txt_p_123_5);
-        this.cpar.putEditText(R.id.txt_p_ibapa_123_5);
-        this.cpar.putDropdown(R.id.cbo_converter);
-        this.cpar.putEditText(R.id.txt_equals);
-        this.cpar.putEditText(R.id.txt_p_123_2);
-        da.c_Update(cpar);
+
         super.onDestroy();
     }
 }

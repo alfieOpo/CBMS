@@ -465,10 +465,12 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
 
     public boolean _120OO(String M_ID) {
         SQLiteDatabase db = this.getReadableDatabase();
-        String Sql = "select D_220 from mcbms where _id=" + M_ID;
+        String Sql = "select D_036 from mcbms where _id=" + M_ID;
         Cursor cursor = db.rawQuery(Sql, null);
         try {
             if (cursor.moveToFirst()) {
+               String sagot=cursor.getString(0);
+                String sago1t=cursor.getString(0);
                 return cursor.getString(0).equals("Oo");
             }
         } catch (Exception xx) {

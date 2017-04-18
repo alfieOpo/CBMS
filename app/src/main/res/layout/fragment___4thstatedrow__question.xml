@@ -48,7 +48,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="46. Ano ang pangalan ng kapamilya ng solo perent?"
+                                android:hint="Ano ang pangalan ng kapamilya ng solo parent?"
                                 android:inputType="textPersonName"
                                 android:tag="_4th_001"
                                 android:textColorHint="#05ab9a"

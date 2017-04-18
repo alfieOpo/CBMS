@@ -357,7 +357,7 @@ Button btn_compute;
                 sum.Add(txt_r_ibapa_138_6);
                 txt_r_138_7=(EditText)view.findViewById(R.id.txt_r_138_7);
                 double total= sum.getTotal();
-                txt_r_138_7.setText(Config.toCurrency(total).replace(".00",""));
+                txt_r_138_7.setText(Config.toCurrency(total).replace(".00","")+" kg ");
 
             }
         });

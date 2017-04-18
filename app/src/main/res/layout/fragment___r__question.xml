@@ -32,11 +32,10 @@
                         android:orientation="vertical">
 
 
-
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:hint="135. Ang uri ba ng gawaing pangkabuhayan niyo ay nagmula sa pangingisda o panghuhuli ng isda at iba pang yamang tubig?"
+                            android:hint="135. Ang uri ba ng gawaing pangkabuhayan ninyo ay nagmula sa pangingisda o panghuhuli ng isda at iba pang yamang tubig?"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textSize="12dp" />
 

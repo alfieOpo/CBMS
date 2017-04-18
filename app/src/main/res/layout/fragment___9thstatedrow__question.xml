@@ -60,7 +60,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
-                            android:hint="70. Gumagamit ba sina ___ ng pamamaraan ng magplano ng pamilya? "
+                            android:hint="70. Gumagamit ba sina ___ ng pamamaraan ng pagpaplano ng pamilya? "
                             android:tag="_9th_002"
                             android:textColorHint="#05ab9a"
                             android:textSize="10dp"

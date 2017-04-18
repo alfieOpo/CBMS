@@ -27,10 +27,11 @@ public class _X_Question extends Fragment {
 
     MainDataBaseHandler da;
     ImageButton btn_back, btn_next;
-    LinearLayout layout;
-    MaterialBetterSpinner cbo_x_127,cbo_x_128;
+    LinearLayout layout,layout130;
+    MaterialBetterSpinner cbo_x_127,cbo_x_128,cbo_127_1,cbo_x_129_1,cbo_x_129_2;
     EditText txt_x_127_1,txt_x_127_2,txt_x_126_8,txt_x_132_16,txt_x_130_3;
     CheckBox chk_x_126_8,chk_x_132_16,chk_x_130_3;
+    boolean falseall=false;
     public _X_Question() {
     }
 
@@ -42,9 +43,13 @@ public class _X_Question extends Fragment {
         View view = inflater.inflate(R.layout.fragment___x__question, container, false);
         btn_back = (ImageButton) view.findViewById(R.id.btn_back);
         btn_next = (ImageButton) view.findViewById(R.id.btn_next);
+        layout130=(LinearLayout)view.findViewById(R.id.layout130);
         layout=(LinearLayout)view.findViewById(R.id.layout);
         cbo_x_127=(MaterialBetterSpinner)view.findViewById(R.id.cbo_x_127);
+        cbo_127_1=(MaterialBetterSpinner)view.findViewById(R.id.cbo_127_1);
         cbo_x_128=(MaterialBetterSpinner)view.findViewById(R.id.cbo_x_128);
+        cbo_x_129_1=(MaterialBetterSpinner)view.findViewById(R.id.cbo_x_128);
+        cbo_x_129_2=(MaterialBetterSpinner)view.findViewById(R.id.cbo_x_128);
         chk_x_132_16=(CheckBox)view.findViewById(R.id.chk_x_132_16);
         chk_x_126_8=(CheckBox)view.findViewById(R.id.chk_x_126_8);
         chk_x_130_3=(CheckBox)view.findViewById(R.id.chk_x_130_3);
@@ -55,16 +60,17 @@ public class _X_Question extends Fragment {
         txt_x_130_3=(EditText)view.findViewById(R.id.txt_x_130_3);
         da=new MainDataBaseHandler(getActivity());
         if(da._120OO(Config.ID)){
-            layout.setVisibility(View.INVISIBLE);
+            layout.setVisibility(View.VISIBLE);
         }
         else {
-            layout.setVisibility(View.VISIBLE);
+            layout.setVisibility(View.GONE);
         }
         this.cpar = new c_params(Config.ID, container, view);
 
 
-        this.cpar.setDropdown(R.id.cbo_x_124, R.array.x_ilantaon_nagsasaka, "Select One");
+        this.cpar.setEditText(R.id.txt_x_124);
         this.cpar.setDropdown(R.id.cbo_x_125, R.array.x_kumpara, "Select One");
+        this.cpar.setDropdown(R.id.cbo_127_1, R.array.oo_hindi, "Hindi");
         this.cpar.setDropdown(R.id.cbo_x_127, R.array.oo_hindi, "Hindi");
         this.cpar.setDropdown(R.id.cbo_x_128, R.array.x_128, "Ang dating binhi ay mataas ang halaga");
         this.cpar.setDropdown(R.id.cbo_x_129_1, R.array.oo_hindi, "Hindi");
@@ -125,26 +131,67 @@ public class _X_Question extends Fragment {
         this.cpar.setCheckBox(R.id.chk_x_132_16);
         this.cpar.setEditText(R.id.txt_x_132_16);
 
-        cbo_x_127.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+
+        cbo_127_1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position){
                     case 0:
                         cbo_x_128.setText("Hindi");
                         cbo_x_128.setVisibility(View.INVISIBLE);
-                        txt_x_127_1.setVisibility(View.VISIBLE);
-                        txt_x_127_2.setVisibility(View.VISIBLE);
+
                         break;
                     case 1:
-                        txt_x_127_1.setText("");
-                        txt_x_127_2.setText("");
-                        txt_x_127_1.setVisibility(View.INVISIBLE);
-                        txt_x_127_2.setVisibility(View.INVISIBLE);
+
                         cbo_x_128.setVisibility(View.VISIBLE);
                         break;
                 }
             }
         });
+
+        cbo_x_129_1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                switch (position){
+                    case 0:
+
+                        falseall=true;
+                        break;
+                    case 1:
+                        falseall=false;
+
+                        break;
+                }
+            }
+        });
+        cbo_x_129_2.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                switch (position){
+                    case 0:
+
+                        falseall=true;
+                        break;
+                    case 1:
+                        falseall=false;
+
+
+
+                        break;
+                }
+                layout130.setVisibility(View.VISIBLE);
+                if(falseall){
+                    layout130.setVisibility(View.INVISIBLE);
+                }
+            }
+        });
+
+        falseall=cbo_x_129_2.getText().toString().equals("Hindi")&&cbo_x_129_1.getText().toString().equals("Hindi");
+        layout130.setVisibility(View.VISIBLE);
+        if(falseall){
+            layout130.setVisibility(View.INVISIBLE);
+        }
 
         if(chk_x_126_8.isChecked()){
             txt_x_126_8.setVisibility(View.VISIBLE);
@@ -243,8 +290,9 @@ public class _X_Question extends Fragment {
     @Override
     public void onDestroy() {
         da = new MainDataBaseHandler(getActivity().getApplicationContext());
-        this.cpar.putDropdown(R.id.cbo_x_124);
+        this.cpar.putEditText(R.id.txt_x_124);
         this.cpar.putDropdown(R.id.cbo_x_125);
+        this.cpar.putDropdown(R.id.cbo_127_1);
         this.cpar.putCheckBox(R.id.chk_x_126_1);
         this.cpar.putCheckBox(R.id.chk_x_126_2);
         this.cpar.putCheckBox(R.id.chk_x_126_3);

@@ -126,7 +126,7 @@ if(Config.CallbackIsCheck){
             img_Fromcam.setImageBitmap(photo);
 
             ByteArrayOutputStream stream = new ByteArrayOutputStream();
-            photo.compress(Bitmap.CompressFormat.PNG, 20, stream);
+            photo.compress(Bitmap.CompressFormat.PNG, 100, stream);
             byte[] byteArray = stream.toByteArray();
             MainDataBaseHandler da = new MainDataBaseHandler(getActivity());
             ContentValues cv = new ContentValues();

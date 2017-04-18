@@ -562,15 +562,12 @@ public class _O_Question extends Fragment {
         this.cpar.putEditText(R.id.txt_o_116a);
         this.cpar.putEditText(R.id.txt_o_116b);
         this.cpar.putEditText(R.id.txt_o_117);
-
         this.cpar.putEditText(R.id.txt_o_118a);
         this.cpar.putEditText(R.id.txt_o_118b);
         this.cpar.putEditText(R.id.txt_o_119);
-
         da.c_Update(cpar);
         super.onDestroy();
     }
-
     private void LoadIntent(String FragmentSequence, MaterialBetterSpinner obj, String table, String f_field) {
         try {
             Config.Count = Integer.valueOf(obj.getText().toString());
@@ -584,10 +581,8 @@ public class _O_Question extends Fragment {
         bundle.putString("table", table);
         bundle.putString("f_field", f_field);
         intent.putExtra("values", bundle);
-
         startActivity(intent);
     }
-
     private boolean validTOview(String value) {
 
         try {
