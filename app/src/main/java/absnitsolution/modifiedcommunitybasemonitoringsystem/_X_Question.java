@@ -63,6 +63,7 @@ public class _X_Question extends Fragment {
         }
         else {
             layout.setVisibility(View.INVISIBLE);
+
         }
         this.cpar = new c_params(Config.ID, container, view);
 
@@ -137,13 +138,11 @@ public class _X_Question extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position){
                     case 0:
-                        cbo_x_128.setText("Hindi");
-                        cbo_x_128.setVisibility(View.INVISIBLE);
-
+                        cbo_x_128.setVisibility(View.VISIBLE);
                         break;
                     case 1:
-
-                        cbo_x_128.setVisibility(View.VISIBLE);
+                        cbo_x_128.setText("Hindi");
+                        cbo_x_128.setVisibility(View.INVISIBLE);
                         break;
                 }
             }
@@ -159,7 +158,6 @@ public class _X_Question extends Fragment {
                         break;
                     case 1:
                         falseall=false;
-
                         break;
                 }
             }
@@ -174,9 +172,6 @@ public class _X_Question extends Fragment {
                         break;
                     case 1:
                         falseall=false;
-
-
-
                         break;
                 }
                 layout130.setVisibility(View.VISIBLE);

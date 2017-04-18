@@ -66,13 +66,15 @@ public class UploadData extends Fragment {
             {
                 //Boolean variable named network
                 connectionUrl = "jdbc:jtds:sqlserver://http://120.29.121.34:1433;DatabaseName=stamariamcbms";
+                Toast.makeText(getActivity(), "Success", Toast.LENGTH_SHORT).show();
             }
             else
             {
-
+                Toast.makeText(getActivity(), "Failed", Toast.LENGTH_SHORT).show();
             }
         } catch (IOException e) {
             e.printStackTrace();
+            Toast.makeText(getActivity(), e.getMessage(), Toast.LENGTH_SHORT).show();
         }
 
 
