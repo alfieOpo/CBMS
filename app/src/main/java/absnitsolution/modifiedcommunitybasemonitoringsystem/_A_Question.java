@@ -32,7 +32,7 @@ import java.util.List;
 public class _A_Question extends Fragment implements View.OnClickListener {
     EditText txt_Oras_Nagsimula, txt_a_numero, txt_a_tirahan;
     String alex;
-    String last_name="";
+
 
     c_params cpar;
     MainDataBaseHandler da;
@@ -63,8 +63,8 @@ public class _A_Question extends Fragment implements View.OnClickListener {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment___a__question, container, false);
         da=new MainDataBaseHandler(getActivity());
-     //   da.getUserInfo();
-      //  last_name=da.getLastName(Config.ID);
+         da.getUserInfo();
+
         list = new ArrayList<>();
 
         this.cpar = new c_params(Config.ID, container, view);

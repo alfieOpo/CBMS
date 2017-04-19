@@ -79,8 +79,8 @@ public class _1ststatedrow_Question extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         da=new MainDataBaseHandler(getActivity());
-     //   da.getUserInfo();
-     //   lastname=da.getLastName(Config.ID);
+
+         lastname=da.getLastName(Config.ID);
 
 
         this._key = getArguments().getString("_id");

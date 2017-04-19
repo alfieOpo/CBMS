@@ -28,7 +28,7 @@
                 android:id="@+id/textView16"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="65. Noong nakaraang labing-dalawang buwan, kayo ba o sinuman sa inyong pamilya  ay nagpapagamot upang malunasan ang sakit? " />
+                android:text="65. Noong nakaraang labing-dalawang buwan, kayo ba o sinuman sa inyong pamilya  ay nagpagamot upang malunasan ang sakit? " />
 
             <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                 android:id="@+id/cbo_a_miyembro_nagpagamot"

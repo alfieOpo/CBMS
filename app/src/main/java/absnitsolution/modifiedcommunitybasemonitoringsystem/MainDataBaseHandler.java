@@ -382,11 +382,12 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery("select D_047 from mcbms  where _id="+M_ID, null);
         if(cursor.moveToFirst()){
-            return cursor.getString(cursor.getColumnIndexOrThrow("last_name"));
+            return cursor.getString(cursor.getColumnIndexOrThrow("D_047"));
         }
         return "";
 
     }
+
 
     public int UserCount() {
         SQLiteDatabase db = this.getReadableDatabase();
@@ -1330,6 +1331,8 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
         String CREATE_MCBMS_TABLE = "CREATE TABLE " + TABLE_GA_8TH + "( _id INTEGER PRIMARY KEY AUTOINCREMENT," +
                 "_8th_001 TEXT," +
                 "_8th_002 TEXT," +
+                "_8th_003 TEXT," +
+                "_8th_004 TEXT," +
                 "IMEI TEXT," +
                 "IMSI TEXT," +
                 "AndroidID TEXT," +

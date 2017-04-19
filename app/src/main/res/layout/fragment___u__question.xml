@@ -36,7 +36,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="58 Mula Enero 2016 hangang sa kasalukuyan, nangyari ba kahit isang beses na nakaranas ang pamilya ng gutom at walang makain?" />
+                    android:text="58 Mula Enero 2017 hangang sa kasalukuyan, nangyari ba kahit isang beses na nakaranas ang pamilya ng gutom at walang makain?" />
 
                 <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                     android:id="@+id/cbo_7th_58"

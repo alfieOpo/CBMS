@@ -63,6 +63,44 @@
 
 
                         <TextView
+                            android:id="@+id/textView51"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="63.1 Kailan nakapasa sa board exam?" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                android:id="@+id/cbo_8_month"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="Month"
+                                android:tag="_8th_003"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp"
+                                card_view:met_floatingLabel="highlight" />
+
+                            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                android:id="@+id/cbo_8_year"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="Year"
+                                android:tag="_8th_004"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="14dp"
+                                card_view:met_floatingLabel="highlight" />
+                        </LinearLayout>
+
+                        <TextView
                             android:id="@+id/textView61"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
