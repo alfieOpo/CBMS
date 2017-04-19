@@ -32,6 +32,8 @@ import java.util.List;
 public class _A_Question extends Fragment implements View.OnClickListener {
     EditText txt_Oras_Nagsimula, txt_a_numero, txt_a_tirahan;
     String alex;
+    String last_name="";
+
     c_params cpar;
     MainDataBaseHandler da;
     MaterialBetterSpinner cbo_a_miyembro_dikasama, cbo_a_miyembro_ofw, cbo_a_miyembro_solomagulang, cbo_a_miyembro_maykapansanan, cbo_a_miyembro_seniorcitizen, cbo_a_miyembro_nakapasa, cbo_a_ilan_miyembro, cbo_a_ilan_magasawa, cbo_a_miyembro_namatay;
@@ -62,6 +64,7 @@ public class _A_Question extends Fragment implements View.OnClickListener {
         View view = inflater.inflate(R.layout.fragment___a__question, container, false);
 da=new MainDataBaseHandler(getActivity());
         da.getUserInfo();
+        last_name=da.getLastName(Config.ID);
         list = new ArrayList<>();
 
         this.cpar = new c_params(Config.ID, container, view);

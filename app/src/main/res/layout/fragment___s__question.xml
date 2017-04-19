@@ -178,13 +178,40 @@
                         android:layout_height="match_parent"
                         android:orientation="vertical">
 
+                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                            android:id="@+id/cbo_r_144"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:hint="142. Gaano kadalas ang pagkokolekta ng basura? "
+                            android:tag="D_326"
+                            android:textColorHint="#05ab9a"
+                            android:textSize="14dp"
+                            app:met_floatingLabel="highlight" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txt_s_ibapa_144"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint=""
+                                android:inputType="textPersonName"
+                                android:tag="D_328"
+                                android:textColorHint="#05ab9a"
+                                android:textSize="12sp" />
+                        </android.support.design.widget.TextInputLayout>
 
                         <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
                             android:id="@+id/cbo_s_142"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
-                            android:hint="142. Sino ang kumokolekta ng basura?"
+                            android:hint="143. Sino ang kumokolekta ng basura?"
                             android:tag="D_319"
                             android:textColorHint="#05ab9a"
                             android:textSize="14dp"
@@ -209,33 +236,6 @@
                         </android.support.design.widget.TextInputLayout>
 
 
-                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-                            android:id="@+id/cbo_r_144"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:hint="143. Gaano kadalas ang pagkokolekta ng basura? "
-                            android:tag="D_326"
-                            android:textColorHint="#05ab9a"
-                            android:textSize="14dp"
-                            app:met_floatingLabel="highlight" />
-
-                        <android.support.design.widget.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1">
-
-                            <EditText
-                                android:id="@+id/txt_s_ibapa_144"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:ems="10"
-                                android:hint=""
-                                android:inputType="textPersonName"
-                                android:tag="D_328"
-                                android:textColorHint="#05ab9a"
-                                android:textSize="12sp" />
-                        </android.support.design.widget.TextInputLayout>
 
                         <TextView
                             android:id="@+id/text_o_1"

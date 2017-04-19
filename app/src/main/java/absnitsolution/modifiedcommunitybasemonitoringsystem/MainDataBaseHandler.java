@@ -378,6 +378,15 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
         return cursor;
 
     }
+    public String getLastName(String M_ID) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("select D_047 from mcbms  where _id="+M_ID, null);
+        if(cursor.moveToFirst()){
+            return cursor.getString(cursor.getColumnIndexOrThrow("last_name"));
+        }
+        return "";
+
+    }
 
     public int UserCount() {
         SQLiteDatabase db = this.getReadableDatabase();

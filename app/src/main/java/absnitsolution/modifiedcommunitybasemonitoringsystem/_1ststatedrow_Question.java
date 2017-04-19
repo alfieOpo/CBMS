@@ -27,6 +27,7 @@ public class _1ststatedrow_Question extends Fragment {
     c_params cpar;
     String _key = "";
     MainDataBaseHandler da;
+    String lastname = "";
     EditText txt_kapanganakan, txt_1st_edad;
     MaterialBetterSpinner cbo_1st_relasyon, cbo_1st_relihiyon, cbo_1st_wika, cbo_1st_nagaaralba,
             cbo_1st_kungnagaaral, cbo_1st_kunghindinagaaral, cbo_1st_natapos, cbo_1st_kasanayan, cbo_1st_samahan, cbo_1st_klasengsamahan,
@@ -49,7 +50,7 @@ public class _1ststatedrow_Question extends Fragment {
 
 
 
-    CheckBox chk_1st_puno;
+    CheckBox chk_1st_puno, chk_1st_samesurname;
 
     public _1ststatedrow_Question() {
         // Required empty public constructor
@@ -77,6 +78,10 @@ public class _1ststatedrow_Question extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        da=new MainDataBaseHandler(getActivity());
+        da.getUserInfo();
+        lastname=da.getLastName(Config.ID);
+
 
         this._key = getArguments().getString("_id");
 
@@ -102,6 +107,7 @@ public class _1ststatedrow_Question extends Fragment {
         txt_1st_12 = (EditText) view.findViewById(R.id.txt_1st_12);
 
         chk_1st_puno =(CheckBox)view.findViewById(R.id.chk_1st_puno);
+        chk_1st_samesurname =(CheckBox)view.findViewById(R.id.chk_1st_samesurname);
 
         cbo_1st_relasyon = (MaterialBetterSpinner) view.findViewById(R.id.cbo_1st_relasyon);
         cbo_1st_relihiyon = (MaterialBetterSpinner) view.findViewById(R.id.cbo_1st_relihiyon);
@@ -679,6 +685,23 @@ public class _1ststatedrow_Question extends Fragment {
 
             }
         });
+
+        chk_1st_samesurname.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+
+                if (isChecked)
+                {
+                    txt_1st_miyembro.setText(txt_1st_miyembro.getText().toString() + " " + lastname);
+                }
+                else
+                {
+                    txt_1st_miyembro.setText(txt_1st_miyembro.getText().toString());
+                }
+
+            }
+        });
+
 
         cbo_1st_relasyon.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

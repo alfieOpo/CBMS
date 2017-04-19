@@ -51,6 +51,15 @@
 
 
                         <CheckBox
+                            android:id="@+id/chk_1st_samesurname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:tag="_1st_002"
+                            android:text="Same Surname" />
+
+                        <CheckBox
                             android:id="@+id/chk_1st_puno"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -329,7 +338,7 @@
                             android:layout_height="wrap_content"
                             android:layout_alignParentTop="true"
                             android:layout_centerHorizontal="true"
-                            android:text="D. EDUKASYON AT KATARUNGAN"
+                            android:text="D. EDUKASYON AT KARUNUNGAN"
                             android:textSize="16dp" />
 
                         <TextView
@@ -497,7 +506,7 @@
                             android:layout_height="wrap_content"
                             android:layout_alignParentTop="true"
                             android:layout_centerHorizontal="true"
-                            android:text="18.  Saan siya nag-sanay?"
+                            android:text="18.  Saan siya nagsanay?"
                             android:textSize="12dp" />
 
                         <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
