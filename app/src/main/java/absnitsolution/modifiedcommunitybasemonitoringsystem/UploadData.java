@@ -42,7 +42,7 @@ public class UploadData extends Fragment {
     TextView lbl_internetmessage;
     private ProgressDialog pd;
     InetAddress in;
-    String connectionUrl = "jdbc:jtds:sqlserver://192.168.1.170:1433;DatabaseName=stamariamcbms";
+    String connectionUrl = "jdbc:jtds:sqlserver://120.29.121.34:1433;DatabaseName=stamariamcbms";
     public UploadData() {
         // Required empty public constructor
     }
@@ -86,7 +86,7 @@ public class UploadData extends Fragment {
             }
         });
         try {
-            if (InetAddress.getByAddress("173.194.35.133".getBytes()).isReachable(1000)==true)
+            if (InetAddress.getByAddress("120.29.121.34".getBytes()).isReachable(1000)==true)
             {
                 //Boolean variable named network
                 connectionUrl = "jdbc:jtds:sqlserver://http://120.29.121.34:1433;DatabaseName=stamariamcbms";
@@ -108,7 +108,7 @@ public class UploadData extends Fragment {
             @Override
             public void onClick(View v) {
                 btn_upload.setVisibility(View.INVISIBLE);
-                // Establish the connection.
+
                 final Thread t = new Thread() {
                     @Override
                     public void run() {
@@ -128,7 +128,7 @@ public class UploadData extends Fragment {
 
                             db = new MainDataBaseHandler(getActivity());
                             Class.forName("net.sourceforge.jtds.jdbc.Driver");
-                            con = DriverManager.getConnection(connectionUrl, "sa", "abc123!@#");
+                            con = DriverManager.getConnection(connectionUrl, "mcbms_android_user", "^93fxa>pCg7#yVFW");
                             pm.setProgress(1);
                             setMainText("1");
                             sleep(400);
@@ -176,7 +176,11 @@ public class UploadData extends Fragment {
                             insertImage(db, con, "INSERT_RAW_images", "images");
                             pm.setProgress(12);
                             setMainText("12");
-                            sleep(400);
+                            insertIt(db, con, "INSERT_Enumerators", "users");
+
+
+
+
 
 
 

@@ -821,7 +821,6 @@
 
     </string-array>
 <string-array name="area">
-    <item>Select One</item>
     <item>square meter</item>
     <item>hectare</item>
 </string-array>
@@ -830,11 +829,60 @@
         <item>1 - 3 hektarya</item>
         <item>3.1 - 5 hektarya</item>
         <item>Higit sa 5 hektarya</item>
-
-
     </string-array>
 
-
+<string-array name="latitude">
+    <item>14.8131696</item>
+    <item>14.8503509</item>
+    <item>8.86113</item>
+    <item>14.9816383</item>
+    <item>14.795254</item>
+    <item>14.8577489</item>
+    <item>14.8508009</item>
+    <item>14.8463985</item>
+    <item>14.8363765</item>
+    <item>14.8160636</item>
+    <item>14.839791</item>
+    <item>14.79426</item>
+    <item>14.8380396</item>
+    <item>14.8100575</item>
+    <item>14.8337368</item>
+    <item>14.840101</item>
+    <item>14.8059235</item>
+    <item>14.8256255</item>
+    <item>14.8256248</item>
+    <item>14.8252945</item>
+    <item>14.838333</item>
+    <item>14.888428</item>
+    <item>14.8013762</item>
+    <item>14.8013755</item>
+</string-array>
+    <string-array name="longitude">
+        <item>120.944</item>
+        <item>120.9996</item>
+        <item>125.2258</item>
+        <item>120.7333</item>
+        <item>120.9674</item>
+        <item>120.9972</item>
+        <item>120.9783</item>
+        <item>120.9681</item>
+        <item>120.9743</item>
+        <item>120.9424</item>
+        <item>120.9495</item>
+        <item>120.9497</item>
+        <item>120.9497</item>
+        <item>120.9845</item>
+        <item>120.98</item>
+        <item>121.0005</item>
+        <item>120.9575</item>
+        <item>120.9785</item>
+        <item>120.9632</item>
+        <item>120.9448</item>
+        <item>120.9508</item>
+        <item>120.9808</item>
+        <item>120.9486</item>
+        <item>120.9355</item>
+    </string-array>
     <string-array name="s_sinokumokolekta">
         <item>MENRO</item>
         <item>Barangay garbage collector</item>

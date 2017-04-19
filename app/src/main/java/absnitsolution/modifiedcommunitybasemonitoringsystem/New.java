@@ -81,7 +81,7 @@ public class New extends Fragment {
         cbo_purok_sitio = (MaterialBetterSpinner) view.findViewById(R.id.cbo_purok_sitio);
 
 
-        String barangay=Config.usersinfo.barangay;
+
         this.cpar = new c_params(Config.ID, container, view);
         this.cpar.setDropdown(R.id.cbo_barangay, R.array.Barangay, Config.usersinfo.barangay);
         this.cpar.setDropdown(R.id.cbo_lungsod_bayan, R.array.lungsod_bayan, "Santa Maria");
@@ -300,75 +300,100 @@ public class New extends Fragment {
             switch (barangayname) {
                 case "Bagbaguin":
                     cpar.setDropdown(R.id.cbo_purok_sitio, R.array.Bagbaguin, "Select One");
+                    LoadLongitude("14.8131696","120.944");
                     break;
                 case "Balasing":
                     cpar.setDropdown(R.id.cbo_purok_sitio, R.array.Balasing, "Select One");
+                    LoadLongitude("14.8503509","120.9996");
                     break;
                 case "Buenavista":
                     cpar.setDropdown(R.id.cbo_purok_sitio, R.array.Buenavista, "Select One");
+                    LoadLongitude("8.86113","125.2258");
                     break;
                 case "Bulac":
                     cpar.setDropdown(R.id.cbo_purok_sitio, R.array.Bulac, "Select One");
+                    LoadLongitude("14.9816383","120.7333");
                     break;
                 case "Camangyanan":
                     cpar.setDropdown(R.id.cbo_purok_sitio, R.array.Camangyanan, "Select One");
+                    LoadLongitude("14.795254","120.9674");
                     break;
                 case "Catmon":
                     cpar.setDropdown(R.id.cbo_purok_sitio, R.array.Catmon, "Select One");
+                    LoadLongitude("14.8577489","120.9972");
                     break;
-                case "Cay Pombo":
+                case "Caypombo":
                     cpar.setDropdown(R.id.cbo_purok_sitio, R.array.Caypombo, "Select One");
+                    LoadLongitude("14.8508009","120.9783");
                     break;
                 case "Caysio":
                     cpar.setDropdown(R.id.cbo_purok_sitio, R.array.Caysio, "Select One");
+                    LoadLongitude("14.8463985","120.9681");
                     break;
                 case "Guyong":
                     cpar.setDropdown(R.id.cbo_purok_sitio, R.array.Guyong, "Select One");
+                    LoadLongitude("14.8363765","120.9743");
                     break;
                 case "Lalakhan":
                     cpar.setDropdown(R.id.cbo_purok_sitio, R.array.Lalakhan, "Select One");
+                    LoadLongitude("14.8160636","120.9424");
                     break;
                 case "Mag-asawang Sapa":
                     cpar.setDropdown(R.id.cbo_purok_sitio, R.array.Mag_asawang_Sapa, "Select One");
+                    LoadLongitude("14.839791","120.9495");
                     break;
                 case "Mahabang Parang":
                     cpar.setDropdown(R.id.cbo_purok_sitio, R.array.Mahabang_Parang, "Select One");
+                    LoadLongitude("14.79426","120.9497");
                     break;
                 case "Manggahan":
                     cpar.setDropdown(R.id.cbo_purok_sitio, R.array.Manggahan, "Select One");
+                    LoadLongitude("14.8380396","120.9497");
                     break;
                 case "Parada":
                     cpar.setDropdown(R.id.cbo_purok_sitio, R.array.Parada, "Select One");
+                    LoadLongitude("14.8100575","120.9845");
                     break;
                 case "Poblacion":
                     cpar.setDropdown(R.id.cbo_purok_sitio, R.array.Poblacion, "Select One");
+                    LoadLongitude("14.8337368","120.98");
                     break;
                 case "Pulong Buhangin":
                     cpar.setDropdown(R.id.cbo_purok_sitio, R.array.Pulong_Buhangin, "Select One");
+                    LoadLongitude("14.840101","121.0005");
                     break;
                 case "San Gabriel":
                     cpar.setDropdown(R.id.cbo_purok_sitio, R.array.San_Gabriel, "Select One");
+                    LoadLongitude("14.8059235","120.9575");
                     break;
                 case "San Jose Patag":
                     cpar.setDropdown(R.id.cbo_purok_sitio, R.array.San_Jose_Patag, "Select One");
+                    LoadLongitude("14.8256255","120.9785");
                     break;
                 case "San Vicente":
                     cpar.setDropdown(R.id.cbo_purok_sitio, R.array.San_Vicente, "Select One");
+                    LoadLongitude("14.8256248","120.9632");
                     break;
                 case "Sta. Clara":
                     cpar.setDropdown(R.id.cbo_purok_sitio, R.array.Sta_Clara, "Select One");
+                    LoadLongitude("14.8252945","120.9448");
                     break;
                 case "Sta. Cruz":
                     cpar.setDropdown(R.id.cbo_purok_sitio, R.array.Sta_Cruz, "Select One");
+                    LoadLongitude("14.838333","120.9508");
                     break;
                 case "Silangan":
                     cpar.setDropdown(R.id.cbo_purok_sitio, R.array.Silangan, "Select One");
+                    LoadLongitude("14.888428","120.9808");
                     break;
                 case "Sto. Tomas":
                     cpar.setDropdown(R.id.cbo_purok_sitio, R.array.Sto_Tomas, "Select One");
+                    LoadLongitude("14.8013762","120.9486");
                     break;
                 case "Tumana":
                     cpar.setDropdown(R.id.cbo_purok_sitio, R.array.Tumana, "Select One");
+
+                    LoadLongitude("14.8013755","120.9355");
                     break;
             }
         } catch (Exception xx) {
@@ -388,4 +413,10 @@ public class New extends Fragment {
         }
         return true;
     }
+     public void LoadLongitude(String Longitude,String Latitude){
+         Config.Latitude=Latitude;
+         Config.Longitude=Longitude;
+         tv_latitude.setText(Latitude);
+         tv_longitude.setText(Longitude);
+     }
 }
