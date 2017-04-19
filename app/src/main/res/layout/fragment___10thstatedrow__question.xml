@@ -44,7 +44,7 @@
                             android:id="@+id/textView50"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="74. Mula Enero hanggang sa kasalukuyan, ano ang pangalan ng kapamilya na namatay?" />
+                            android:text="74. Mula Oktubre 2016 hanggang sa kasalukuyan, mayroon ba kayong kapamilya na namatay? (Kung mayroon ilagay ang pangalan)" />
 
                         <android.support.design.widget.TextInputLayout
                             android:layout_width="match_parent"

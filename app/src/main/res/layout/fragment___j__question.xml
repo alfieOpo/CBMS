@@ -102,7 +102,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:tag="D_213"
-                    android:text="Santa Maria General  Hospital (RMMH)" />
+                    android:text="Santa Maria General  Hospital (RMMMH)" />
 
 
                 <CheckBox
