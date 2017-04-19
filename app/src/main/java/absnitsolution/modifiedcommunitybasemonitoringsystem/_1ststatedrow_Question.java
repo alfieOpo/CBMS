@@ -27,7 +27,7 @@ public class _1ststatedrow_Question extends Fragment {
     c_params cpar;
     String _key = "";
     MainDataBaseHandler da;
-    String lastname = "";
+    String lastname = "Tablante";
     EditText txt_kapanganakan, txt_1st_edad;
     MaterialBetterSpinner cbo_1st_relasyon, cbo_1st_relihiyon, cbo_1st_wika, cbo_1st_nagaaralba,
             cbo_1st_kungnagaaral, cbo_1st_kunghindinagaaral, cbo_1st_natapos, cbo_1st_kasanayan, cbo_1st_samahan, cbo_1st_klasengsamahan,
@@ -79,8 +79,8 @@ public class _1ststatedrow_Question extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         da=new MainDataBaseHandler(getActivity());
-        da.getUserInfo();
-        lastname=da.getLastName(Config.ID);
+     //   da.getUserInfo();
+     //   lastname=da.getLastName(Config.ID);
 
 
         this._key = getArguments().getString("_id");
@@ -696,7 +696,7 @@ public class _1ststatedrow_Question extends Fragment {
                 }
                 else
                 {
-                    txt_1st_miyembro.setText(txt_1st_miyembro.getText().toString());
+                    txt_1st_miyembro.setText("");
                 }
 
             }

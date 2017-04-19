@@ -62,9 +62,9 @@ public class _A_Question extends Fragment implements View.OnClickListener {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment___a__question, container, false);
-da=new MainDataBaseHandler(getActivity());
-        da.getUserInfo();
-        last_name=da.getLastName(Config.ID);
+        da=new MainDataBaseHandler(getActivity());
+     //   da.getUserInfo();
+      //  last_name=da.getLastName(Config.ID);
         list = new ArrayList<>();
 
         this.cpar = new c_params(Config.ID, container, view);
