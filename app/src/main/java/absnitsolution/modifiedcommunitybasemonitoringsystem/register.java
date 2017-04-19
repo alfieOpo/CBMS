@@ -1,6 +1,7 @@
 package absnitsolution.modifiedcommunitybasemonitoringsystem;
 
 
+import android.content.ContentValues;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -25,8 +26,9 @@ public class register extends Fragment {
 
     Button btn_save;
     EditText txt_first_name, txt_middle_name, txt_last_name,   txt_id_number;
-  MaterialBetterSpinner cbo_barangay;
-
+    MaterialBetterSpinner cbo_barangay;
+    MainDataBaseHandler da;
+    c_params cpar;
     public register() {
         // Required empty public constructor
     }
@@ -36,22 +38,24 @@ public class register extends Fragment {
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_register, container, false);
-        UsersDatabase ud=new UsersDatabase(getActivity());
-        ud.SetUserInfo();
-        btn_save = (Button) view.findViewById(R.id.btn_save);
-        cbo_barangay = (MaterialBetterSpinner) view.findViewById(R.id.cbo_barangay);
-        txt_id_number = (EditText) view.findViewById(R.id.txt_id_number);
-        txt_last_name = (EditText) view.findViewById(R.id.txt_last_name);
-        txt_middle_name = (EditText) view.findViewById(R.id.txt_middle_name);
-        txt_first_name = (EditText) view.findViewById(R.id.txt_first_name);
-        cbo_barangay.setAdapter(Adapter(R.array.Barangay));
-        txt_first_name.setText(Config.usersinfo.first_name);
-        txt_middle_name.setText(Config.usersinfo.middle_name);
-        txt_last_name.setText(Config.usersinfo.last_name);
-        txt_id_number.setText(Config.usersinfo.id_number);
-        cbo_barangay.setText(Config.usersinfo.barangay);
 
-        cbo_barangay.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        da=new MainDataBaseHandler(getActivity());
+        da.getUserInfo();
+
+        this.cpar = new c_params(Config.ID, container, view);
+        btn_save = (Button) view.findViewById(R.id.btn_save);
+        this.cpar.set_table("users");
+        this.cpar.set_key("1");
+        cbo_barangay=(MaterialBetterSpinner) view.findViewById(R.id.cbo_barangay);
+        this.cpar.setEditText(R.id.txt_id_number);
+        this.cpar.setEditText(R.id.txt_last_name);
+        this.cpar.setEditText(R.id.txt_first_name);
+        this.cpar.setEditText(R.id.txt_middle_name);
+        this.cpar.setDropdown(R.id.cbo_barangay,R.array.Barangay,"");
+
+
+
+          cbo_barangay.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Config.Barangay_code = getResources().getStringArray(R.array.Barangay_values)[position];
@@ -62,17 +66,16 @@ public class register extends Fragment {
          btn_save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-             UsersDatabase UD=new UsersDatabase(getActivity());
-                UD.UpdateUser(new UsersInfo(
-                        txt_first_name.getText().toString(),
-                        txt_middle_name.getText().toString(),
-                        txt_last_name.getText().toString(),
-                        txt_id_number.getText().toString(),
-                        cbo_barangay.getText().toString()) );
-                Config.usersinfo.barangay=cbo_barangay.getText().toString();
-                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                getActivity().setTitle("Home");
-                fragmentManager.beginTransaction().replace(R.id.frame, new switcher()).commit();
+
+
+                cpar.putEditText(R.id.txt_middle_name);
+                cpar.putEditText(R.id.txt_first_name);
+                cpar.putEditText(R.id.txt_last_name);
+                cpar.putEditText(R.id.txt_id_number);
+                cpar.putDropdown(R.id.cbo_barangay);
+                cpar.set_key("1");
+                da.c_Update(cpar,"users");
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frame, new switcher()).commit();
 
             }
         });

@@ -77,7 +77,16 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
         try {
             db.execSQL(ImageTable());
         } catch (Exception xx) {
-        }//create ga 1st
+        }
+        try {
+            db.execSQL(UserAccount());
+
+
+        } catch (Exception xx) {
+        String Error=xx.getMessage();
+            String Erro1r=xx.getMessage();
+        }
+
 
     }
 
@@ -256,6 +265,17 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
         }
         db.close();
     }
+    public void CREATEUSER(ContentValues v ) {
+
+        SQLiteDatabase db=this.getReadableDatabase();
+        long rowInserted = db.insert("users", null, v);
+        if (rowInserted != -1) {
+            Log.i("INSERT", "SUCCESS");
+        } else {
+            Log.i("INSERT", "FAILED");
+        }
+        db.close();
+    }
 
     public String GetData(String tag) {
 
@@ -356,6 +376,13 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery("select * from mcbms m left join images i on i.M_ID=m._id  where m.D_034 <> 1 ", null);
         return cursor;
+
+    }
+
+    public int UserCount() {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("select * from users", null);
+        return cursor.getCount();
 
     }
 
@@ -1350,6 +1377,19 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
                 "M_ID INT )";
         return CREATE_MCBMS_TABLE;
     }
+    private String UserAccount() {
+
+        String CREATE_MCBMS_TABLE = "CREATE TABLE users ( _id INTEGER PRIMARY KEY AUTOINCREMENT," +
+                "first_name TEXT," +
+                "middle_name TEXT," +
+                "last_name TEXT," +
+                "id_number TEXT," +
+                "barangay TEXT," +
+                "IMEI TEXT," +
+                "IMSI TEXT," +
+                "AndroidID TEXT)";
+        return CREATE_MCBMS_TABLE;
+    }
 
 
     private String ImageTable() {
@@ -1419,5 +1459,20 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
         db.execSQL("delete from mcbms where D_034 <> 1");
     }
 
-
+    public void getUserInfo(){
+        try{
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("select * from users", null);
+        if(cursor.moveToFirst()){
+            Config.usersinfo.first_name=cursor.getString(cursor.getColumnIndexOrThrow("first_name"));
+            Config.usersinfo.middle_name=cursor.getString(cursor.getColumnIndexOrThrow("middle_name"));
+            Config.usersinfo.last_name=cursor.getString(cursor.getColumnIndexOrThrow("last_name"));
+            Config.usersinfo.id_number=cursor.getString(cursor.getColumnIndexOrThrow("id_number"));
+            Config.usersinfo.barangay=cursor.getString(cursor.getColumnIndexOrThrow("barangay"));
+            Config.Tagapanayam=cursor.getString(cursor.getColumnIndexOrThrow("first_name"))+" "+
+            cursor.getString(cursor.getColumnIndexOrThrow("middle_name"))+" "+
+                    cursor.getString(cursor.getColumnIndexOrThrow("last_name"));
+            cursor.moveToNext();
+        }}catch (Exception xx){}
+    }
 }

@@ -46,31 +46,47 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toggle.syncState();
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        UsersDatabase UD=new UsersDatabase(getApplicationContext());
+        String ts = Context.TELEPHONY_SERVICE;
 
-        String BARANGAY=UD.GetBaragay();
-        UD. SetUserInfo();
+        TelephonyManager mTelephonyMgr = (TelephonyManager) getSystemService(ts);
+        String IMSI = mTelephonyMgr.getSubscriberId();
+        String IMEI = mTelephonyMgr.getDeviceId();
+        String AndroidID = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
+        if(da.UserCount()==0){
+            ContentValues v=new ContentValues();
+            v.put("first_name","System");
+            v.put("middle_name","Admin");
+            v.put("last_name","Account");
+            v.put("id_number","0");
+            v.put("barangay","0");
+            v.put("IMEI", IMEI);
+            v.put("IMSI", IMSI);
+            v.put("AndroidID", AndroidID);
+            da.CREATEUSER(v);
+        }
+
+        da.getUserInfo();
         if (Config.NewOPen == 0) {
 
             switcher switcher = new switcher();
             LoadFrame(switcher, "Home");
             Config.NewOPen = 1;
         }
-        if(BARANGAY.equals("")){
+        if(Config.usersinfo.barangay.equals("")){
 
-            UD.addUser();
+
             register register=new register();
             LoadFrame(register,"User Account");
 
         }
-        if(BARANGAY.equals("0")){
+        if(Config.usersinfo.barangay.equals("0")){
 
-            UD.SetUserInfo();
+
             register register=new register();
             LoadFrame(register,"User Account");
 
         }
-        Config.usersinfo.barangay=BARANGAY;
+
 
     }
 
@@ -254,13 +270,6 @@ else if (id == R.id.nav_register) {
     }
 
     public void CreateNew() {
-
-
-
-
-
-UsersDatabase ud=new UsersDatabase(getApplication());
-        ud.SetUserInfo();
         showStatus("MCBMS");
         new Thread() {
 

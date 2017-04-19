@@ -16,7 +16,6 @@ public class FlashScreen extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    UsersDatabase UD = new UsersDatabase(getApplicationContext());
 
                     sleep(2000);
                     Intent startmainactivity = new Intent(getApplicationContext(), MainActivity.class);

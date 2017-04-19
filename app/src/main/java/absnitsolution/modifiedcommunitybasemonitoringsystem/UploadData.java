@@ -11,6 +11,7 @@ import android.os.NetworkOnMainThreadException;
 import android.os.StrictMode;
 import android.provider.Settings;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AlertDialog;
 import android.util.Base64;
 import android.util.Log;
@@ -37,10 +38,11 @@ public class UploadData extends Fragment {
 
     MainDataBaseHandler db;
     View view;
+    Button btn_delete;
     TextView lbl_internetmessage;
     private ProgressDialog pd;
     InetAddress in;
-    String connectionUrl = "jdbc:jtds:sqlserver://192.168.1.170:1433;DatabaseName=stamariamcbms";
+    String connectionUrl = "jdbc:jtds:sqlserver://120.29.121.34:1433;DatabaseName=stamariamcbms";
     public UploadData() {
         // Required empty public constructor
     }
@@ -57,12 +59,34 @@ public class UploadData extends Fragment {
         view = inflater.inflate(R.layout.fragment_upload_data, container, false);
         final Button btn_upload = (Button) view.findViewById(R.id.btn_upload);
         lbl_internetmessage = (TextView) view.findViewById(R.id.lbl_internetmessage);
-
+        btn_delete = (Button) view.findViewById(R.id.btn_delete);
         //  if(hasActiveInternetConnection(getActivity().getApplicationContext(), lbl_internetmessage)){
 
+        btn_delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                AlertDialog.Builder builder2 = new AlertDialog.Builder(getActivity());
+                builder2.setIcon(R.drawable.edit_file);
+                builder2.setMessage("Do you want to delete all uploaded data.?");
+                builder2.setPositiveButton("YES", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        db.DeleteAll();
+
+                        getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frame, new switcher()).commit();
+                    }
+                });
+                builder2.setNegativeButton("NO", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+
+                    }
+                });
+                AlertDialog dialog2 = builder2.create();
+                dialog2.show();
+            }
+        });
         try {
-            if (InetAddress.getByAddress("173.194.35.133".getBytes()).isReachable(1000)==true)
+            if (InetAddress.getByAddress("120.29.121.34".getBytes()).isReachable(1000)==true)
             {
                 //Boolean variable named network
                 connectionUrl = "jdbc:jtds:sqlserver://http://120.29.121.34:1433;DatabaseName=stamariamcbms";
@@ -84,7 +108,7 @@ public class UploadData extends Fragment {
             @Override
             public void onClick(View v) {
                 btn_upload.setVisibility(View.INVISIBLE);
-                // Establish the connection.
+
                 final Thread t = new Thread() {
                     @Override
                     public void run() {
@@ -104,7 +128,7 @@ public class UploadData extends Fragment {
 
                             db = new MainDataBaseHandler(getActivity());
                             Class.forName("net.sourceforge.jtds.jdbc.Driver");
-                            con = DriverManager.getConnection(connectionUrl, "sa", "abc123!@#");
+                            con = DriverManager.getConnection(connectionUrl, "mcbms_android_user", "^93fxa>pCg7#yVFW");
                             pm.setProgress(1);
                             setMainText("1");
                             sleep(400);
@@ -152,23 +176,14 @@ public class UploadData extends Fragment {
                             insertImage(db, con, "INSERT_RAW_images", "images");
                             pm.setProgress(12);
                             setMainText("12");
-                            sleep(400);
+                            insertIt(db, con, "INSERT_Enumerators", "users");
 
-                            AlertDialog.Builder builder2 = new AlertDialog.Builder(getActivity());
-                            builder2.setIcon(R.drawable.edit_file);
-                            builder2.setMessage("Do you want to delete all uploaded data.?");
-                            builder2.setPositiveButton("YES", new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog, int id) {
-                                    db.DeleteAll();
-                                }
-                            });
-                            builder2.setNegativeButton("NO", new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog, int id) {
 
-                                }
-                            });
-                            AlertDialog dialog2 = builder2.create();
-                            dialog2.show();
+
+
+
+
+
                             //
                         } catch (Exception ie) {
                             ie.printStackTrace();
@@ -180,13 +195,14 @@ public class UploadData extends Fragment {
                             if (con != null) try {
                                 con.close();
                             } catch (Exception e) {
-                            String error =e.getMessage();
+                                String error =e.getMessage();
                                 String error4 =e.getMessage();
                                 String error2 =e.getMessage();
                                 String error3 =e.getMessage();
                             }
                         }
                         Reset();
+
 
                     }
                 };
@@ -306,7 +322,7 @@ public class UploadData extends Fragment {
             String error =ex.getMessage();
             String error4 =ex.getMessage();
             String error2 =ex.getMessage();
-Log.i("ALFIE",ex.getMessage());
+            Log.i("ALFIE",ex.getMessage());
         }
 
     }

@@ -51,7 +51,7 @@ public class _P_Question extends Fragment {
         txt_p_121=(EditText) view.findViewById(R.id.txt_p_121);
         txt_p_120=(EditText) view.findViewById(R.id.txt_p_120);
         this.cpar.setDropdown(R.id.cbo_p_120, R.array.p_katayuan_sinasaka, "N/A");
-        this.cpar.setDropdown(R.id.cbo_converter, R.array.area, "Oo");
+        this.cpar.setDropdown(R.id.cbo_converter, R.array.area,"Select one");
         this.cpar.setDropdown(R.id.cbo_nag_sasaka, R.array.oo_hindi, "Oo");
         this.cpar.setEditText(R.id.txt_p_120);
         this.cpar.setEditText(R.id.txt_equals);
@@ -64,8 +64,15 @@ public class _P_Question extends Fragment {
         this.cpar.setEditText(R.id.txt_p_123_5);
         txt_equals.setEnabled(false);
 
+
+        if(cbo_nag_sasaka.getText().toString().equals("Hindi")){
+            layout.setVisibility(View.INVISIBLE);
+        }
+        else {
+            layout.setVisibility(View.VISIBLE);
+        }
         cbo_converter.setOnItemClickListener(new AdapterView.OnItemClickListener()  {
-            @RequiresApi(api = Build.VERSION_CODES.N)
+
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 double mainvalue=0;
@@ -115,7 +122,6 @@ public class _P_Question extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if(position==5){
                     txt_p_120.setVisibility(View.VISIBLE);
-
                 }
                 else{
                     txt_p_120.setVisibility(View.INVISIBLE);
@@ -123,7 +129,6 @@ public class _P_Question extends Fragment {
                 }
             }
         });
-
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -141,8 +146,6 @@ public class _P_Question extends Fragment {
         btn_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
                 da = new MainDataBaseHandler(getActivity().getApplicationContext());
                 cpar.putDropdown(R.id.cbo_p_120);
                 cpar.putEditText(R.id.txt_p_120);

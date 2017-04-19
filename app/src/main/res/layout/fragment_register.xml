@@ -23,6 +23,7 @@
                 android:id="@+id/txt_first_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:tag="first_name"
                 android:ems="10"
                 android:hint="First Name"
                 android:inputType="textPersonName" />
@@ -32,6 +33,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:tag="middle_name"
                 android:hint="Middle Name"
                 android:inputType="textPersonName" />
 
@@ -40,6 +42,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:tag="last_name"
                 android:hint="Last Name"
                 android:inputType="textPersonName" />
 
@@ -50,6 +53,7 @@
                 android:layout_marginBottom="20dp"
                 android:layout_marginTop="40dp"
                 android:ems="10"
+                android:tag="id_number"
                 android:hint="ID NUMBER"
                 android:inputType="textPersonName" />
 
@@ -59,7 +63,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:hint="Barangay Assignment"
-                android:tag="D_224"
+
+                android:tag="barangay"
                 android:textColorHint="#05ab9a"
                 android:textSize="14dp"
                 app:met_floatingLabel="highlight" />
