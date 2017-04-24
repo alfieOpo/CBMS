@@ -695,8 +695,8 @@ public class _1ststatedrow_Question extends Fragment {
                     txt_1st_miyembro.setText(txt_1st_miyembro.getText().toString() + " " + lastname);
                 }
                 else
-                {
-                    txt_1st_miyembro.setText("");
+                {txt_1st_miyembro.setText("");
+                    txt_1st_miyembro.setText(da.get1stName(_key));
                 }
 
             }

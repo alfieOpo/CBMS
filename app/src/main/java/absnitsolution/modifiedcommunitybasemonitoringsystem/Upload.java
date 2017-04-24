@@ -28,16 +28,18 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class Upload extends AppCompatActivity {
     MainDataBaseHandler db;
     View view;
     TextView lbl_internetmessage;
-    String connectionUrl = "jdbc:jtds:sqlserver://192.168.1.170:1433;DatabaseName=stamariamcbms";
+    String connectionUrl = "jdbc:jtds:sqlserver://192.168.2.205:1433;DatabaseName=stamariamcbms";
     private ProgressDialog pd;
 
 
-
+    String AndroidID="";
 
 
     @Override
@@ -47,8 +49,43 @@ public class Upload extends AppCompatActivity {
 
         final Button btn_upload = (Button) view.findViewById(R.id.btn_upload);
         lbl_internetmessage = (TextView) view.findViewById(R.id.lbl_internetmessage);
-if(isURLReachable(getApplicationContext())){
-    String connectionUrl = "jdbc:jtds:sqlserver://120.29.121.34:1433;DatabaseName=stamariamcbms";
+          AndroidID= Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
+        Timer timer = new Timer();
+        timer.scheduleAtFixedRate(new TimerTask()
+        {
+            public void run()
+            {
+                try {
+                    Connection con = null;
+
+                    //  con = DriverManager.getConnection(connectionUrl, "mcbms_android_user", "^93fxa>pCg7#yVFW");
+                    con = DriverManager.getConnection(connectionUrl, "sa", "abc123!@#");
+                    PreparedStatement stmt = con.prepareStatement("SELECT _id,D_001,D_009, FROM RAW_MASTER WHERE AndroidID='"+AndroidID+"'");
+                    stmt.execute();
+
+                    ResultSet rs = stmt.getResultSet();
+                    String []Name=new String[rs.getFetchSize()];
+                    String []M_ID=new String[rs.getFetchSize()];
+                    String []oras_natapos=new String[rs.getFetchSize()];
+                    String []oras_nagsimula=new String[rs.getFetchSize()];
+                    rs.moveToCurrentRow();
+                    for(int i=0;i<rs.getFetchSize();i++){
+                        Name[i]=rs.getString("D_001");
+                        oras_natapos[i]=rs.getString("D_009");
+                        oras_nagsimula[i]=rs.getString("D_011");
+                        M_ID[i]=rs.getString("_id");
+                        rs.next();
+                    }
+                    stmt.close();
+                } catch (Exception e) {
+                    System.out.println("Statement error: " + e.getMessage());
+                }
+            }
+        }, 1000,10000);
+
+        if(isURLReachable(getApplicationContext())){
+    //String connectionUrl = "jdbc:jtds:sqlserver://120.29.121.34:1433;DatabaseName=stamariamcbms";
+    String connectionUrl = "jdbc:jtds:sqlserver://192.168.2.205:1433;DatabaseName=stamariamcbms";
 }
         Reset();
         btn_upload.setOnClickListener(new View.OnClickListener() {
@@ -77,7 +114,8 @@ if(isURLReachable(getApplicationContext())){
                             Class.forName("net.sourceforge.jtds.jdbc.Driver");
 
 
-                            con = DriverManager.getConnection(connectionUrl, "sa", "abc123!@#");
+                            //  con = DriverManager.getConnection(connectionUrl, "mcbms_android_user", "^93fxa>pCg7#yVFW");
+                           con = DriverManager.getConnection(connectionUrl, "sa", "abc123!@#");
                             pm.setProgress(1);
                             setMainText("1");
                             sleep(400);

@@ -13,12 +13,16 @@ import android.provider.Settings;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AlertDialog;
+import android.text.format.DateFormat;
 import android.util.Base64;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -33,16 +37,29 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.Statement;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class UploadData extends Fragment {
-
+    Thread thread;
     MainDataBaseHandler db;
     View view;
-    Button btn_delete;
+    Button btn_delete,btn_view_uploaded_files;
     TextView lbl_internetmessage;
     private ProgressDialog pd;
+    String AndroidID="";
     InetAddress in;
+    LinearLayout layout;
+    String []_MID;
+    ListView list_uploaded_files;
     String connectionUrl = "jdbc:jtds:sqlserver://120.29.121.34:1433;DatabaseName=stamariamcbms";
+    // String connectionUrl = "jdbc:jtds:sqlserver://192.168.2.205:1433;DatabaseName=stamariamcbms";
     public UploadData() {
         // Required empty public constructor
     }
@@ -60,8 +77,90 @@ public class UploadData extends Fragment {
         final Button btn_upload = (Button) view.findViewById(R.id.btn_upload);
         lbl_internetmessage = (TextView) view.findViewById(R.id.lbl_internetmessage);
         btn_delete = (Button) view.findViewById(R.id.btn_delete);
+        btn_view_uploaded_files= (Button) view.findViewById(R.id.btn_view_uploaded_files);
+        layout=(LinearLayout)view.findViewById(R.id.layout);
+        layout.setVisibility(View.INVISIBLE);
         //  if(hasActiveInternetConnection(getActivity().getApplicationContext(), lbl_internetmessage)){
+        list_uploaded_files  =(ListView)view.findViewById(R.id.list_uploaded_files);
+        btn_view_uploaded_files.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try{
+                    list_uploaded_files.getAdapter().getCount();
+                    btn_view_uploaded_files.setEnabled(false);
+                    layout.setVisibility(View.VISIBLE);
+                    thread.start();
+                }catch (Exception xx)
+                {
+                    btn_view_uploaded_files.setEnabled(false);
+                    layout.setVisibility(View.VISIBLE);
+                    thread.start();
+                }
 
+            }
+        });
+        AndroidID= Settings.Secure.getString(getActivity().getContentResolver(), Settings.Secure.ANDROID_ID);
+        thread=new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Connection con = null;
+                    Class.forName("net.sourceforge.jtds.jdbc.Driver");
+                    con = DriverManager.getConnection(connectionUrl, "mcbms_android_user", "^93fxa>pCg7#yVFW");
+                    //  con = DriverManager.getConnection(connectionUrl, "sa", "abc123!@#");
+                    Calendar c = Calendar.getInstance();
+                    System.out.println("Current time => " + c.getTime());
+
+                    SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+                    String formattedDate = df.format(c.getTime());
+                    Statement statement = con.createStatement();
+                    String sql="SELECT _id,D_001,D_009,D_011 FROM RAW_MASTER WHERE AndroidID='"+AndroidID+"' and  CAST(D_009 as date)  = cast('"+formattedDate+"' as date)";
+                    String sql1="SELECT _id,D_001,D_009,D_011 FROM RAW_MASTER WHERE AndroidID='"+AndroidID+"' and  CAST(D_009 as date)  = cast('"+formattedDate+"' as date)";
+                    String sql2="SELECT _id,D_001,D_009,D_011 FROM RAW_MASTER WHERE AndroidID='"+AndroidID+"' and  CAST(D_009 as date)  = cast('"+formattedDate+"' as date)";
+                    String sql3="SELECT _id,D_001,D_009,D_011 FROM RAW_MASTER WHERE AndroidID='"+AndroidID+"' and  CAST(D_009 as date)  = cast('"+formattedDate+"' as date)";
+                    String sql4="SELECT _id,D_001,D_009,D_011 FROM RAW_MASTER WHERE AndroidID='"+AndroidID+"' and  CAST(D_009 as date)  = cast('"+formattedDate+"' as date)";
+                    String sql5="SELECT _id,D_001,D_009,D_011 FROM RAW_MASTER WHERE AndroidID='"+AndroidID+"' and  CAST(D_009 as date)  = cast('"+formattedDate+"' as date)";
+
+
+                    ResultSet rs = statement.executeQuery(sql);
+                    List<String>Names=new ArrayList<String>();
+                    List<String>ID=new ArrayList<String>();
+                    List<String>timestart=new ArrayList<String>();
+                    List<String>timeend=new ArrayList<String>();
+                    while (rs.next()){
+                        Names.add(rs.getString("D_001"));
+                        timeend.add(rs.getString("D_009"));
+                        timestart.add(rs.getString("D_011"));
+                        ID.add(rs.getString("_id"));
+                    }
+                    String []Name=new String[Names.size()];
+                    String []M_ID=new String[ID.size()];
+                    String []oras_natapos=new String[timeend.size()];
+                    String []oras_nagsimula=new String[timestart.size()];
+                    for(int i=0;i<Names.size();i++){
+
+                        Name[i]=Names.get(i);
+                        M_ID[i]=ID.get(i);
+                        oras_natapos[i]=timeend.get(i);
+                        oras_nagsimula[i]=timestart.get(i);
+                    }
+                    _MID=M_ID;
+
+
+
+                    SetList(Name,M_ID,oras_nagsimula,oras_natapos);
+
+
+
+                    statement.close();
+
+                    Thread.sleep(1000);
+                } catch (Exception e) {
+                    System.out.println("Statement error: " + e.getMessage());
+                }
+
+            }
+        });
         btn_delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -71,9 +170,17 @@ public class UploadData extends Fragment {
                 builder2.setMessage("Do you want to delete all uploaded data.?");
                 builder2.setPositiveButton("YES", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        db.DeleteAll();
+                        try{
+                            for(String _id:_MID){
+                                db.DeleteAllUploadedfiles(_id);
+                                Toast.makeText(getActivity(), "Successfully Deleted All Uploaded Files.", Toast.LENGTH_SHORT).show();
+                                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frame, new switcher()).commit();
+                            }}catch (Exception xx){
+                            Toast.makeText(getActivity(), "No data found to delete.", Toast.LENGTH_SHORT).show();
+                        }
 
-                        getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frame, new switcher()).commit();
+
+
                     }
                 });
                 builder2.setNegativeButton("NO", new DialogInterface.OnClickListener() {
@@ -85,21 +192,7 @@ public class UploadData extends Fragment {
                 dialog2.show();
             }
         });
-        try {
-            if (InetAddress.getByAddress("120.29.121.34".getBytes()).isReachable(1000)==true)
-            {
-                //Boolean variable named network
-                connectionUrl = "jdbc:jtds:sqlserver://http://120.29.121.34:1433;DatabaseName=stamariamcbms";
-                Toast.makeText(getActivity(), "Success", Toast.LENGTH_SHORT).show();
-            }
-            else
-            {
-                Toast.makeText(getActivity(), "Failed", Toast.LENGTH_SHORT).show();
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-            Toast.makeText(getActivity(), e.getMessage(), Toast.LENGTH_SHORT).show();
-        }
+
 
 
 
@@ -108,7 +201,9 @@ public class UploadData extends Fragment {
             @Override
             public void onClick(View v) {
                 btn_upload.setVisibility(View.INVISIBLE);
-
+                thread.interrupt();
+                layout.setVisibility(View.INVISIBLE);
+                btn_view_uploaded_files.setVisibility(View.INVISIBLE);
                 final Thread t = new Thread() {
                     @Override
                     public void run() {
@@ -128,6 +223,7 @@ public class UploadData extends Fragment {
 
                             db = new MainDataBaseHandler(getActivity());
                             Class.forName("net.sourceforge.jtds.jdbc.Driver");
+                            //   con = DriverManager.getConnection(connectionUrl, "sa", "abc123!@#");
                             con = DriverManager.getConnection(connectionUrl, "mcbms_android_user", "^93fxa>pCg7#yVFW");
                             pm.setProgress(1);
                             setMainText("1");
@@ -177,13 +273,6 @@ public class UploadData extends Fragment {
                             pm.setProgress(12);
                             setMainText("12");
                             insertIt(db, con, "INSERT_Enumerators", "users");
-
-
-
-
-
-
-
                             //
                         } catch (Exception ie) {
                             ie.printStackTrace();
@@ -194,6 +283,9 @@ public class UploadData extends Fragment {
 
                             if (con != null) try {
                                 con.close();
+                                thread.start();
+                                layout.setVisibility(View.VISIBLE);
+                                btn_view_uploaded_files.setVisibility(View.VISIBLE);
                             } catch (Exception e) {
                                 String error =e.getMessage();
                                 String error4 =e.getMessage();
@@ -225,6 +317,25 @@ public class UploadData extends Fragment {
             }
         });
     }
+    private void SetList(final String []Name,
+                         final     String []M_ID,
+                         final String []oras_natapos,
+                         final String []oras_nagsimula) {
+        getActivity().runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Calendar c = Calendar.getInstance();
+                System.out.println("Current time => " + c.getTime());
+
+                SimpleDateFormat df = new SimpleDateFormat("EEE, d MMM yyyy");
+                String formattedDate = df.format(c.getTime());
+                TextView textView86=(TextView)view.findViewById(R.id.textView86);
+                textView86.setText("--"+formattedDate+"--");
+                Toast.makeText(getActivity(), M_ID.length+" uploaded file/s found", Toast.LENGTH_SHORT).show();
+                ArrayAdapter adapter=new UploadedfilesAdapter(getActivity(),Name,M_ID,oras_natapos,oras_nagsimula);
+                list_uploaded_files.setAdapter(adapter);   }
+        });
+    }
 
     private void setDetailsText(final String cnt, final String pos) {
         getActivity().runOnUiThread(new Runnable() {
@@ -241,6 +352,7 @@ public class UploadData extends Fragment {
             @Override
             public void run() {
                 Button btn_upload = (Button) view.findViewById(R.id.btn_upload);
+                Button btn_view_uploaded_files = (Button) view.findViewById(R.id.btn_view_uploaded_files);
                 TextView tvm = (TextView) view.findViewById(R.id.tv_main);
                 TextView tvd = (TextView) view.findViewById(R.id.tv_details);
                 ProgressBar pm = (ProgressBar) view.findViewById(R.id.pb_main);
@@ -261,6 +373,7 @@ public class UploadData extends Fragment {
             @Override
             public void run() {
                 Button btn_upload = (Button) view.findViewById(R.id.btn_upload);
+                Button btn_view_uploaded_files = (Button) view.findViewById(R.id.btn_view_uploaded_files);
                 TextView tvm = (TextView) view.findViewById(R.id.tv_main);
                 TextView tvd = (TextView) view.findViewById(R.id.tv_details);
                 ProgressBar pm = (ProgressBar) view.findViewById(R.id.pb_main);

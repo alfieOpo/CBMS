@@ -388,7 +388,15 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
 
     }
 
+    public String get1stName(String id) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("select _1st_001 from "+TABLE_GA_1ST+"  where _id="+id, null);
+        if(cursor.moveToFirst()){
+            return cursor.getString(cursor.getColumnIndexOrThrow("_1st_001"));
+        }
+        return "";
 
+    }
     public int UserCount() {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery("select * from users", null);
@@ -1468,9 +1476,24 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
         db.execSQL("delete from ga_9th where M_ID in (Select _id from mcbms where D_034 <> 1)");
         db.execSQL("delete from ga_10th where M_ID in (Select _id from mcbms where D_034 <> 1)");
         db.execSQL("delete from go_1st where M_ID in (Select _id from mcbms where D_034 <> 1)");
+        db.execSQL("delete from images where M_ID in (Select _id from mcbms where D_034 <> 1)");
         db.execSQL("delete from mcbms where D_034 <> 1");
     }
-
+    public void DeleteAllUploadedfiles(String MID) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL("delete from ga_1st where M_ID ="+MID);
+        db.execSQL("delete from ga_2nd where M_ID  ="+MID);
+        db.execSQL("delete from ga_3rd where M_ID  ="+MID);
+        db.execSQL("delete from ga_4th where M_ID ="+MID);
+        db.execSQL("delete from ga_5th where M_ID ="+MID);
+        db.execSQL("delete from ga_6th where M_ID ="+MID);
+        db.execSQL("delete from ga_8th where M_ID ="+MID);
+        db.execSQL("delete from ga_9th where M_ID ="+MID);
+        db.execSQL("delete from ga_10th where M_ID ="+MID);
+        db.execSQL("delete from go_1st where M_ID ="+MID);
+        db.execSQL("delete from images where M_ID ="+MID);
+        db.execSQL("delete from mcbms where _id="+MID);
+    }
     public void getUserInfo(){
         try{
         SQLiteDatabase db = this.getReadableDatabase();

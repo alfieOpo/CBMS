@@ -8,11 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-
-
-/**
- * A simple {@link Fragment} subclass.
- */
 public class mySettings extends Fragment {
     EditText txt_local_address, txt_internet_address;
     Button btn_save;

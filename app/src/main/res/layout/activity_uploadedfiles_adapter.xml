@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="absnitsolution.modifiedcommunitybasemonitoringsystem.UploadedfilesAdapter">
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nakapanayam :"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+    <TextView
+        android:id="@+id/txt_oras_nagsimula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Oras Nagsimula :" />
+
+    <TextView
+        android:id="@+id/txt_oras_natapos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Oras Natapos :" />
+
+    <TextView
+        android:id="@+id/txt_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="invisible" />
+</LinearLayout>

@@ -34,7 +34,7 @@ public class switcher extends Fragment {
         gridview=(GridView)view.findViewById(R.id.gridview);
         Config.EDIT=false;
         Config.ID="0";
-        String []name={"New","List","Callback List","Gallery","Updload","Setting","User Account","About Us"};
+        String []name={"New","List","Callback List","Gallery","Upload","Setting","User Account","About Us"};
         int [] image={R.drawable.new_logo,
                 R.drawable.list_logo,
                 R.drawable.callback_logo,
@@ -73,7 +73,7 @@ public class switcher extends Fragment {
                 case "Gallery":
                     LoadFrame(new Gallery(),name);
                     break;
-                case "Updload":
+                case "Upload":
                     LoadFrame(new UploadData(),name);
                     break;
                 case "Setting":

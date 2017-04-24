@@ -93,17 +93,25 @@ public class New extends Fragment {
         this.cpar.setEditText(R.id.txt_first_name);
         this.cpar.setEditText(R.id.txt_middle_name);
         this.cpar.setEditText(R.id.txt_last_name);
+
+        if(cbo_barangay.getText().toString().equals("0")){
+            cbo_purok_sitio.setVisibility(View.INVISIBLE);
+        }
+        else{
+            cbo_purok_sitio.setVisibility(View.VISIBLE);
+        }
         cbo_barangay.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Config.Barangay_code = getResources().getStringArray(R.array.Barangay_values)[position];
                 try {
                     LoadSitio(cbo_barangay.getText().toString());
+                    cbo_purok_sitio.setVisibility(View.VISIBLE);
                 } catch (Exception xx) {
                 }
             }
         });
-        if (!cbo_barangay.getText().toString().equals("Select One")) {
+        if (!cbo_barangay.getText().toString().equals("0")) {
             cbo_purok_sitio.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

@@ -525,8 +525,9 @@
                             android:layout_height="match_parent"
 
                             android:text="VIEW"
-                            android:textColor="#ffffff"
+
                             android:textSize="8sp"
+                            android:textColor="#ffffff"
                             android:theme="@style/MyButton" />
                     </LinearLayout>
 
