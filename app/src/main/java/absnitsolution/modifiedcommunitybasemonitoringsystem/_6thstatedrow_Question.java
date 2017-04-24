@@ -19,7 +19,7 @@ public class _6thstatedrow_Question extends Fragment {
     c_params cpar;
     String _key = "";
     MainDataBaseHandler da;
-MaterialBetterSpinner cbo_6th_mayseniorid;
+MaterialBetterSpinner cbo_6th_mayseniorid,cbo_6th_mayphilhealth;
     EditText txt_6th_saannagagamitangid,txt_pangalan_ng_senior_citizen;
     public _6thstatedrow_Question() {
         // Required empty public constructor
@@ -34,6 +34,7 @@ MaterialBetterSpinner cbo_6th_mayseniorid;
         View view = inflater.inflate(R.layout.fragment___6thstatedrow__question, container, false);
         this.cpar = new c_params(Config.ID, container, view);
         cbo_6th_mayseniorid=(MaterialBetterSpinner)view.findViewById(R.id.cbo_6th_mayseniorid);
+        cbo_6th_mayphilhealth=(MaterialBetterSpinner)view.findViewById(R.id.cbo_6th_mayphilhealth);
         txt_6th_saannagagamitangid=(EditText)view.findViewById(R.id.txt_6th_saannagagamitangid);
         txt_pangalan_ng_senior_citizen=(EditText)view.findViewById(R.id.txt_pangalan_ng_senior_citizen);
         this.cpar.set_table("ga_6th");
@@ -42,6 +43,10 @@ MaterialBetterSpinner cbo_6th_mayseniorid;
         this.cpar.setEditText(R.id.txt_6th_saannagagamitangid);
         this.cpar.setEditText(R.id.txt_pangalan_ng_senior_citizen);
         this.cpar.setDropdown(R.id.cbo_6th_mayphilhealth, R.array.meron_wala, "Mayroon");
+
+        if(cbo_6th_mayphilhealth.getText().toString().equals("")){
+            cbo_6th_mayphilhealth.setText("Mayroon");
+        }
         txt_pangalan_ng_senior_citizen.setSelectAllOnFocus(true);
 
 

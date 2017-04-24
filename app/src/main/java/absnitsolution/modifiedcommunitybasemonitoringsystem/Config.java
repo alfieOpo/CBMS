@@ -15,6 +15,8 @@ import java.text.NumberFormat;
 public class Config {
     public static String Latitude = "";
     public static String Longitude = "";
+    public static String tempLatitude = "";
+    public static String tempLongitude = "";
     public static String ID = "0";
     public static String STATUS = "";
     public static Boolean EDIT = false;

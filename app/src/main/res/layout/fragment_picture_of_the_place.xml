@@ -41,6 +41,20 @@
                 android:textColor="#ffffff"
                 android:theme="@style/MyButton" />
 
+            <TextView
+                android:id="@+id/tv_latitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="latitude"
+                android:text="Latitude" />
+
+            <TextView
+                android:id="@+id/tv_longitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="longitude"
+                android:text="Longitude" />
+
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

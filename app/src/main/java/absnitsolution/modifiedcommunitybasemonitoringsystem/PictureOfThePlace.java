@@ -19,7 +19,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.TimePicker;
+
+import org.w3c.dom.Text;
 
 import java.io.ByteArrayOutputStream;
 import java.text.DateFormat;
@@ -36,9 +39,12 @@ public class PictureOfThePlace extends Fragment {
     ImageView img_Fromcam;
     ImageButton btn_back, btn_next;
     c_params cpar;
+    View view;
     MainDataBaseHandler da;
     EditText txt_oras_nag_simula, txt_puna;
     DateFormat formatDateTime = DateFormat.getDateTimeInstance();
+  TextView tv_latitude ;
+    TextView  tv_longitude;
     Calendar dateTime = Calendar.getInstance();
     TimePickerDialog.OnTimeSetListener t = new TimePickerDialog.OnTimeSetListener() {
         @Override
@@ -59,7 +65,7 @@ public class PictureOfThePlace extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-        View view = inflater.inflate(R.layout.fragment_picture_of_the_place, container, false);
+          view = inflater.inflate(R.layout.fragment_picture_of_the_place, container, false);
         this.cpar = new c_params(Config.ID, container, view);
         btn_save_capture = (Button) view.findViewById(R.id.btn_save_capture);
         btn_back = (ImageButton) view.findViewById(R.id.btn_back);
@@ -158,9 +164,21 @@ if(Config.CallbackIsCheck){
     @Override
     public void onDestroy() {
         da = new MainDataBaseHandler(getActivity());
+        tv_latitude = (TextView) view.findViewById(R.id.tv_latitude);
+        tv_longitude = (TextView) view.findViewById(R.id.tv_longitude);
+if(!Config.Latitude.equals("")){
 
+    tv_latitude.setText(Config.Latitude);
+    tv_longitude.setText(Config.Longitude);
+}
+else{
+    tv_latitude.setText(Config.tempLatitude);
+    tv_longitude.setText(Config.tempLongitude);
+}
         this.cpar.putEditText(R.id.txt_oras_nag_simula);
         this.cpar.putEditText(R.id.txt_puna);
+        cpar.putTextView(R.id.tv_latitude);
+        cpar.putTextView(R.id.tv_longitude);
         da.c_Update(cpar);
         super.onDestroy();
     }

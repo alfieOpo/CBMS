@@ -400,7 +400,6 @@ public class New extends Fragment {
                     break;
                 case "Tumana":
                     cpar.setDropdown(R.id.cbo_purok_sitio, R.array.Tumana, "Select One");
-
                     LoadLongitude("14.8013755","120.9355");
                     break;
             }
@@ -422,9 +421,18 @@ public class New extends Fragment {
         return true;
     }
      public void LoadLongitude(String Longitude,String Latitude){
-         Config.Latitude=Latitude;
-         Config.Longitude=Longitude;
+         Config.tempLatitude=Latitude;
+         Config.tempLongitude=Longitude;
+
+
          tv_latitude.setText(Latitude);
          tv_longitude.setText(Longitude);
+
+         if(!Config.Latitude.equals("")){
+
+             tv_latitude.setText(Config.Latitude);
+             tv_longitude.setText(Config.Longitude);
+
+         }
      }
 }
