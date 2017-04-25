@@ -376,7 +376,10 @@ public class _O_Question extends Fragment {
                 int _106a = 0;//-
                 try {
                     _106a = da.getSUMGO_1ST(Config.ID, AndroidID, "o_002");
-                } catch (Exception xx) {
+                }
+                catch (Exception xx) {
+                    String error=xx.getMessage();
+                    String error1=xx.getMessage();
                 }
                 sum2.Add(_106a);//-
                 sum2.Add(txt_o_116a);//--

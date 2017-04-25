@@ -99,6 +99,8 @@
         <item>Sitio Manggahan</item>
         <item>GK Village</item>
         <item>Bagong Barrio</item>
+        <item>Sitio Buli</item>
+        <item>Sitio Nigro</item>
     </string-array>
     <string-array name="Buenavista">
         <item>Kabatuhan</item>
@@ -173,7 +175,7 @@
         <item>Celeste</item>
         <item>Palagpusan</item>
         <item>Kabog</item>
-        <item>Gulod</item>
+        <item>Gulod/Sunrays</item>
         <item>Lote</item>
         <item>Kayrumit I</item>
         <item>Kayrumit II</item>
@@ -187,11 +189,9 @@
         <item>Luwasan</item>
         <item>Centro</item>
         <item>CDO</item>
-        <item>Sunrays</item>
         <item>Gravador</item>
         <item>Concepcion</item>
         <item>FFHNAS</item>
-
     </string-array>
     <string-array name="Lalakhan">
         <item>Lambak</item>
@@ -1093,7 +1093,7 @@
         <item>Manufacturing</item>
         <item>Electricity, Gas and Water Supply</item>
         <item>Construction</item>
-        <item>Wholesale and Retail Trade; Repair of 15 Motor Vehicles, Motorcycles and Personal and Household Goods</item>
+        <item>Wholesale and Retail</item>
         <item>Hotel and Restaurants</item>
         <item>Transport, Storage and Communication</item>
         <item>Financial Intermediation</item>
@@ -1105,6 +1105,7 @@
         <item>Private Households with Employed Persons</item>
         <item>Extra-territorial Organizations and Bodies</item>
         <item>Government</item>
+        <item>Repair of Motor vehicle </item>
         <item>Others (specify) __</item>
 
     </string-array>

@@ -60,11 +60,11 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
+                                android:gravity="right"
                                 android:hint="(106a) Sa sweldo"
                                 android:inputType="numberDecimal"
                                 android:tag="o_002"
                                 android:textAlignment="gravity"
-                                android:gravity="right"
                                 android:textColorHint="#05ab9a"
                                 android:textSize="14dp" />
                         </android.support.design.widget.TextInputLayout>

@@ -480,19 +480,16 @@ public class MainDataBaseHandler extends SQLiteOpenHelper {
             return Integer.valueOf(cursor.getString(0));
         }
         return 0;
-
     }
 
     public int getSUMGO_1ST(String M_ID, String AndroidID, String Maidfield) {
         SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.rawQuery("select sum(" + Maidfield + ") total from go_1st where M_ID=" + M_ID + " and AndroidID='" + AndroidID + "'", null);
+        Cursor cursor = db.rawQuery("select sum(replace(" + Maidfield + ",',','') ) total from go_1st where M_ID=" + M_ID + " and AndroidID='" + AndroidID + "'", null);
         if (cursor.moveToFirst()) {
-            return Integer.valueOf(cursor.getString(0));
+            return Integer.valueOf(cursor.getString(0).replace(",",""));
         }
         return 0;
-
     }
-
     public double getGA_1ST92(String M_ID) {
         SQLiteDatabase db = this.getReadableDatabase();
         String Sql = "select D_092 from mcbms where _id=" + M_ID;

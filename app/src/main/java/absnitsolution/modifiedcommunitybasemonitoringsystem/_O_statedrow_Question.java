@@ -50,7 +50,7 @@ public class _O_statedrow_Question extends Fragment {
             }
         }
         else{
-            txt_o_b_106a.setText("0.00");
+            txt_o_b_106a.setText("0");
         }
 
         if(!txt_o_b_106b.getText().toString().equals("")){
