@@ -58,7 +58,7 @@ public class Upload extends AppCompatActivity {
                 try {
                     Connection con = null;
 
-                    //  con = DriverManager.getConnection(connectionUrl, "mcbms_android_user", "^93fxa>pCg7#yVFW");
+                    //  con = DriverManager.getConnection(connectionUrl, "username", "password");
                     con = DriverManager.getConnection(connectionUrl, "username", "password");
                     PreparedStatement stmt = con.prepareStatement("SELECT _id,D_001,D_009, FROM RAW_MASTER WHERE AndroidID='"+AndroidID+"'");
                     stmt.execute();
