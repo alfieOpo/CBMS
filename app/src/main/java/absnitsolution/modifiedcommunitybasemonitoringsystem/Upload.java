@@ -59,7 +59,7 @@ public class Upload extends AppCompatActivity {
                     Connection con = null;
 
                     //  con = DriverManager.getConnection(connectionUrl, "mcbms_android_user", "^93fxa>pCg7#yVFW");
-                    con = DriverManager.getConnection(connectionUrl, "sa", "abc123!@#");
+                    con = DriverManager.getConnection(connectionUrl, "username", "password");
                     PreparedStatement stmt = con.prepareStatement("SELECT _id,D_001,D_009, FROM RAW_MASTER WHERE AndroidID='"+AndroidID+"'");
                     stmt.execute();
 
@@ -84,8 +84,8 @@ public class Upload extends AppCompatActivity {
         }, 1000,10000);
 
         if(isURLReachable(getApplicationContext())){
-    //String connectionUrl = "jdbc:jtds:sqlserver://120.29.121.34:1433;DatabaseName=stamariamcbms";
-    String connectionUrl = "jdbc:jtds:sqlserver://192.168.2.205:1433;DatabaseName=stamariamcbms";
+    //String connectionUrl = "jdbc:jtds:sqlserver://iphere:1433;DatabaseName=stamariamcbms";
+    String connectionUrl = "jdbc:jtds:sqlserver://iphere:1433;DatabaseName=stamariamcbms";
 }
         Reset();
         btn_upload.setOnClickListener(new View.OnClickListener() {
@@ -114,8 +114,8 @@ public class Upload extends AppCompatActivity {
                             Class.forName("net.sourceforge.jtds.jdbc.Driver");
 
 
-                            //  con = DriverManager.getConnection(connectionUrl, "mcbms_android_user", "^93fxa>pCg7#yVFW");
-                           con = DriverManager.getConnection(connectionUrl, "sa", "abc123!@#");
+                            //  con = DriverManager.getConnection(connectionUrl, "username", "password");
+                           con = DriverManager.getConnection(connectionUrl, "username", "password");
                             pm.setProgress(1);
                             setMainText("1");
                             sleep(400);
@@ -370,7 +370,7 @@ public class Upload extends AppCompatActivity {
         NetworkInfo netInfo = cm.getActiveNetworkInfo();
         if (netInfo != null && netInfo.isConnected()) {
             try {
-                URL url = new URL("http://120.29.121.34");   // Change to "http://google.com" for www  test.
+                URL url = new URL("iphere");   // Change to "http://google.com" for www  test.
                 HttpURLConnection urlc = (HttpURLConnection) url.openConnection();
                 urlc.setConnectTimeout(10 * 1000);          // 10 s.
                 urlc.connect();
